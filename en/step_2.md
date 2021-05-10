@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add an introductory sentence. What will learners achieve by the end of this step?
+In this step, you will create an on-screen controller that can be used to move your rover around the stage.
 </div>
 <div>
 Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
@@ -11,11 +11,51 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 
 --- task ---
 
-Step content... 
-Can use:
-**Test:**
-**Choose:**
-**Tip:**
+Open the starter project online at...
+Offline ...
+
+--- /task ---
+
+You should see a scene with a robotic rover and a hilly background. In the bottom corner are sprites that will be used to make the rover move.
+
+--- task ---
+
+The buttons of the controller are named `up`, `down`, `left` and `right`. Add blocks to each button so that when they are clicked, they `broadcast`{:class="block3events"} their own name. You will need to create a `New message`{:class="block3events"} for each sprite. Here is an example for the `up` button.
+
+```blocks3
+when this sprite clicked
+broadcast (up v)
+```
+
+--- /task ---
+
+--- task ---
+
+When the `up` and `down` buttons are clicked, the rover should change its `y` position, by a small amount. Increasing `y` will make the rover move up. Decreasing `y` will make the rover move down.
+
+```blocks3
+when I receive [up v]
+change y by (10)
+
+when I receive [down v]
+change y by (-10)
+```
+
+--- /task ---
+
+--- task ---
+
+Test your rover's controls by clicking on the up and down buttons.
+
+--- /task ---
+
+--- task ---
+
+The rover needs to go back to the same starting position at the starn of each new mission.
+
+```blocks3
+when flag clicked
+go to x: (0) y: (-90)
 
 --- /task ---
 
