@@ -49,13 +49,31 @@ Add more sprites to your project. You can add a `sun` sprite, a `cloud` sprite, 
 
 --- task ---
 
-
-Add code to poistion each sprite when the flag is clicked, and then to move the sprite when it receives the `left`{:class="block3events"} and `right`{:class="block3events"} messages. Objects that are close to you should appear low down and move quite a lot, such as the soil. Objects that are further away should appear higher up and move a small amount, such as the sun.
+Add code to poistion each sprite when the flag is clicked.
 
 --- /task ---
 
+When a sprite receives the `left`{:class="block3events"} and `right`{:class="block3events"} messages it shoudl move.
 
+Objects that are appear close to you be low down and move quite a large distance, such as the soil. Objects that you want to appear further away should be higher up and move a small distance, such as the sun.
 
+In this example the soil has the following blocks:
 
+```blocks3
+when flag clicked
+go to x: (-57) y: (10)
+
+when I receive [right v]
+change x by (-20)
+
+when I receive [left v]
+change x by (20)
+```
+
+--- task ---
+
+Add code to each of your sprites so that they move when they receive `left`{:class="block3events"} and `right`{:class="block3events"} messages.
+
+--- /task ---
 
 --- save ---
