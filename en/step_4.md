@@ -111,7 +111,7 @@ when flag clicked
 go to x: (-90) y: (-80)
 switch costume to (tree1 v)
 
-when I received [sample fruit v]
+when I receive [sample fruit v]
 switch costume to (tree2 v)
 ```
 
@@ -179,8 +179,10 @@ set size to (50) %
 forever
 repeat (10)
 change [whirl v] effect by (50)
+end
 repeat (20)
 change [whirl v] effect by (-50)
+end
 repeat (10)
 change [whirl v] effect by (50)
 
