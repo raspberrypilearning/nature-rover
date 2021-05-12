@@ -1,9 +1,9 @@
-## Collecting samples
+## Collect a sample
 
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will change the appearance of the sprites and the rover when the rover as samples are collected.
+In this step, you will change the appearance of the sprites and the rover when the rover collects samples.
 </div>
 <div>
 Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
@@ -12,11 +12,11 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 
 --- task ---
 
-Look at the rovers costumes. There are four animations available. The rover can extend it's arm, drill in the ground, suck in air and extend a solar panel. You can add more animation sequences if you like, by duplicating and editing the costumes.
+Look at the rovers' costumes. There are six animations available. The rover can extend its arm, drill in the ground, suck in air, extend a solar panel, take a picture, or scoop something up. You can add more animation sequences if you like, by duplicating and editing the costumes.
 
 --- /task ---
 
-When we want to organise a lot of code, such as several costume changes, it is useful to use a programming technique called functions. In Scratch functions are called `My Blocks`{:class="block3custom"}
+When we want to organise a lot of code, such as several costume changes, it is useful to use a programming technique called a **function**. In Scratch functions are called `My Blocks`{:class="block3custom"}
 
 In this first example, a function will be used to animate the rover's arm, to make it look like it is grabbing something.
 

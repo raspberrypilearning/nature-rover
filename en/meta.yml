@@ -10,8 +10,8 @@ steps:
   - title: Make the controller
   - title: Add scrolling
   - title: Collect a sample
-  - title: Counting samples
-  - title: Adding more samples
+  - title: Count samples
+  - title: Add more samples
   - title: Reflection
     knowledge_quiz:
       path: quiz1

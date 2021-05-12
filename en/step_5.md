@@ -1,4 +1,4 @@
-## Counting samples
+## Count samples
 
 
 <div style="display: flex; flex-wrap: wrap">

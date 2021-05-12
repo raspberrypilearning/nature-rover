@@ -30,7 +30,7 @@ The rover needs to move when the direction buttons are clicked.
 
 --- task ---
 
-Add code to each button so that when they are clicked, they `broadcast`{:class="block3events"} their own name. You will need to create a `New message`{:class="block3events"} for each sprite. Here is an example for the `up` button.
+Add code to each button so that when they are clicked, they `broadcast`{:class="block3events"} their own name. You will need to create a `New message`{:class="block3events"} for each sprite. Here is an example for the `up` button:
 
 ```blocks3
 when this sprite clicked
@@ -63,7 +63,7 @@ change y by (-10)
 
 --- task ---
 
-The rover needs to go back to the same starting position at the starn of each new mission.
+The rover needs to go back to the same starting position at the start of each new mission.
 
 ```blocks3
 when flag clicked

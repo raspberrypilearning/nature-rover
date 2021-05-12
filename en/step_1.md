@@ -22,7 +22,8 @@ You will:
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-Description of what to do or think about when looking at the example.
+What happens when you click the buttons to move the rover? How would you describe how the background/sprites move?
+Try and collect a sample by moving the rover to one of the sprites and then clicking the rover.
 </div>
 <div class="scratch-preview" style="margin-left: 15px;">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/485673032/?autostart=false" frameborder="0"></iframe>
