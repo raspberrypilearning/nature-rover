@@ -41,39 +41,10 @@ Test your left and right buttons now. It should appear as if the rover moves tow
 
 --- /task ---
 
---- task ---
+sprites disappear when they reach a certain x/y (tree -290 290) 
+gif showing dragging tree around (x coordinate changes)
 
-Add more sprites to your project. You can add a `sun` sprite, a `cloud` sprite, and a `soil` sprite. You will have to draw the soil sprite yourself.
+easy way to reset animation/game/scene
 
---- /task ---
-
---- task ---
-
-Add code to poistion each sprite when the flag is clicked.
-
---- /task ---
-
-When a sprite receives the `left`{:class="block3events"} and `right`{:class="block3events"} messages it shoudl move.
-
-Objects that are appear close to you be low down and move quite a large distance, such as the soil. Objects that you want to appear further away should be higher up and move a small distance, such as the sun.
-
-In this example the soil has the following blocks:
-
-```blocks3
-when flag clicked
-go to x: (-57) y: (10)
-
-when I receive [right v]
-change x by (-20)
-
-when I receive [left v]
-change x by (20)
-```
-
---- task ---
-
-Add code to each of your sprites so that they move when they receive `left`{:class="block3events"} and `right`{:class="block3events"} messages.
-
---- /task ---
 
 --- save ---
