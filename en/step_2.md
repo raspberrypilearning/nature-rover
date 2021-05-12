@@ -43,7 +43,7 @@ When the `up` and `down` buttons are clicked, the rover should change its `y` po
 
 --- task ---
 
-Add code so the buttons make the rover move up and down
+Add code so the buttons make the rover move up and down.
 
 ```blocks3
 when I receive [up v]
@@ -57,7 +57,7 @@ change y by (-10)
 
 --- task ---
 
-Test your rover's controls by clicking on the up and down buttons.
+**Test:** your rover's controls by clicking on the up and down buttons.
 
 --- /task ---
 
@@ -70,5 +70,7 @@ when flag clicked
 go to x: (0) y: (-90)
 ```
 --- /task ---
+
+You do not need to add code move the rover left and right yet. In the next step, you will add left and right controls.
 
 --- save ---

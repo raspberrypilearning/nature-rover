@@ -3,10 +3,10 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For the left and right movement of the rover, rather than making the rover move, you will make foreground and background sprites scroll to the left and right.
+For the rover to move left and right, instead of the rover sprite moving, the foreground and background sprites move or 'scroll' to the left and right.
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
+Add Gif showing how the scrolling works ![](images/image.png){:width="300px"}
 </div>
 </div>
 
