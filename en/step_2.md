@@ -16,11 +16,21 @@ Offline ...
 
 --- /task ---
 
-You should see a scene with a robotic rover and a hilly background. In the bottom corner are sprites that will be used to make the rover move.
+You should see a scene with a robotic rover and a hilly background. 
 
 --- task ---
 
-The buttons of the controller are named `up`, `down`, `left` and `right`. Add blocks to each button so that when they are clicked, they `broadcast`{:class="block3events"} their own name. You will need to create a `New message`{:class="block3events"} for each sprite. Here is an example for the `up` button.
+Create a controller using 5 different sprites. One should be the body of the controller, and the other four are direction buttons. Here's an example to help you.
+
+![image of a controller on the Scratch stage with four green buttons on a yellow oval background](images/controller.png)
+
+--- /task ---
+
+The rover needs to move when the direction buttons are clicked.
+
+--- task ---
+
+Add code to each button so that when they are clicked, they `broadcast`{:class="block3events"} their own name. You will need to create a `New message`{:class="block3events"} for each sprite. Here is an example for the `up` button.
 
 ```blocks3
 when this sprite clicked
@@ -29,9 +39,11 @@ broadcast (up v)
 
 --- /task ---
 
+When the `up` and `down` buttons are clicked, the rover should change its `y` position, by a small amount. Increasing `y` will make the rover move up. Decreasing `y` will make the rover move down.
+
 --- task ---
 
-When the `up` and `down` buttons are clicked, the rover should change its `y` position, by a small amount. Increasing `y` will make the rover move up. Decreasing `y` will make the rover move down.
+Add code so the buttons make the rover move up and down
 
 ```blocks3
 when I receive [up v]
