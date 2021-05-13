@@ -2,10 +2,10 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Add an introductory sentence. What will learners achieve by the end of this step?
+Choose what the rover samples next! Do they see a new species of plant, bug or animal? Do they see some water or mysterious liquid? Do they want to sample some dirt or a rock? Or something else?
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
+![](images/image.png){:width="300px"}
 </div>
 </div>
 

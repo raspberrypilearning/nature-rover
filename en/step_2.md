@@ -13,6 +13,7 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 
 Open the starter project online at...
 Offline ...
+(need option to control with keypad in this step)
 
 --- /task ---
 
