@@ -107,12 +107,12 @@ switch costume to (inactive v)
 On the tree sprite, add blocks to set the costume of the tree at the start of the project, and the costume it should switch to when it receives the `sample fruit`{:class="block3evens"} broadcast.
 
 ```blocks3
-when flag clicked
+when I receive [start v]
 go to x: (-90) y: (-80)
-switch costume to (tree1 v)
++ switch costume to (tree1 v)
 
-when I receive [sample fruit v]
-switch costume to (tree2 v)
++ when I receive [sample fruit v]
++ switch costume to (tree2 v)
 ```
 
 --- /task ---
@@ -132,7 +132,7 @@ On the rover sprite, change the `when this sprite clicked`{:class="block3events"
 ```blocks3
 when this sprite clicked
 if <touching color (#FFA500) ?> then
-sample air ::custom
+sample fruit ::custom
 ```
 
 --- /task ---

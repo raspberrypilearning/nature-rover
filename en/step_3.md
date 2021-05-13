@@ -1,6 +1,5 @@
 ## Add scrolling
 
-
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 For the rover to move left and right, instead of the rover sprite moving, the foreground and background sprites move or 'scroll' to the left and right.
@@ -17,7 +16,7 @@ Click on the Tree sprite in your starter project, and then set its starting posi
 ![The Tree sprite](images/tree-sprite.png)]
 
 ```blocks3
-when flag clicked
+when I receive [start v]
 go to x:(-90) y:(-80)
 ```
 
@@ -49,16 +48,31 @@ change x by (-10)
 
 --- /task ---
 
-Did you notice that the tree almost disappears, then it starts following the rover? To make the scene more realistic, the tree should stay in one place. 
+Did you notice that when the tree reaches the very edge of the screen, it stops moving? You can fix this by moving the tree to the other side of the screen, when its `x`{:class='block3motion'} coordinate is too high or too low.
 
 --- task ---
 
-Add to your scrolling effect and make the tree disappear when it gets far away enough from the rover.
+Using a `forever`{:class='block3control'} loop, and `if`{:class='block3control'} blocks, check the x coordinate of the tree, and move it to the other side of the screen when x is higher than `290` or lower than `-290`
+
+```blocks3
+when I receive [start v]
+go to x:(-90) y:(-80)
++ forever
+if <(x position) > (290)> then
+set x to (-280)
+end
+if <(x position) < (-290)> then
+set x to (280)
+end
+end
+```
 
 --- /task ---
 
+--- task ---
 
-easy way to reset animation/game/scene
+Now move your rover around the screen. When the tree reaches the edge, it should vanish off the edge of the screen and reappear on the other side.
 
+--- /task ---
 
 --- save ---
