@@ -1,6 +1,6 @@
 ## Introduction
 
-In this project, <mark> short project description </mark>
+In this project, you will create a wilderness scene for a nature rover to explore.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">**Rovers**</span> are robots. They can be used to carry out science experiments in remote places, like Mars!  They examine their surroundings and they can be directed to interesting features and take samples. If they are solar powered, they can place themselves in sunny positions to recharge their batteries.
