@@ -65,11 +65,34 @@ change y by (-10)
 
 The rover needs to go back to the same starting position at the start of each new mission.
 
-```blocks3
-when flag clicked
-go to x: (0) y: (-90)
-```
+
+
 --- /task ---
+
+You need one more block at this point in the project. The rover is going to control the start of the game for all the other sprites, so when the green flag is clicked it needs to broadcast a `start`{:class='block3events'} message.
+
+--- task ---
+
+Create a new broadcast and add it to a `green flag clicked`{:class='block3events'} set of blocks.
+
+```blocks3
++ when flag clicked
++ broadcast [start v]
+``` 
+
+--- /task ---
+
+--- task ---
+
+Now reset the position of the rover, each time the game starts
+
+```blocks3
++ when I receive [start v]
++ go to x: (0) y: (-90)
+```
+
+--- /task ---
+
 
 You do not need to add code move the rover left and right yet. In the next step, you will add left and right controls.
 
