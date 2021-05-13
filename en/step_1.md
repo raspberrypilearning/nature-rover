@@ -12,7 +12,7 @@ You will:
 + Move sprites with a touch friendly controller
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Scrolling**</span> Moving graphics left, right, up or down on a computer screen.
+<span style="color: #0faeb0">**Scrolling**</span> is when graphics (or objects in your scene) move left, right, up or down on a computer screen. Scrolling makes scenes look more realistic.
 </p>
 
 --- no-print ---
@@ -22,7 +22,8 @@ You will:
 ### Try it
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-What happens when you click the buttons to move the rover? How would you describe how the background/sprites move?
+What happens when you click the buttons to move the rover? How would you describe how the background/sprites scroll (move around)?
+
 Try and collect a sample by moving the rover to one of the sprites and then clicking the rover.
 </div>
 <div class="scratch-preview" style="margin-left: 15px;">
