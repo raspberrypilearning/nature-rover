@@ -12,7 +12,13 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 
 --- task ---
 
-Look at the rovers' costumes. There are six animations available. The rover can extend its arm, drill in the ground, suck in air, extend a solar panel, take a picture, or scoop something up. You can add more animation sequences if you like, by duplicating and editing the costumes.
+Look at the rovers' costumes. There are six animations available. The rover can:
+- extend its arm
+- drill in the ground
+- suck in air
+- extend a solar panel
+- take a picture, or 
+- scoop something up. 
 
 --- /task ---
 

@@ -9,6 +9,8 @@ Choose what the rover samples next! Do they see a new species of plant, bug or a
 </div>
 </div>
 
+**Choose:** Depending on what you want the rover to sample next, you can either use the rover animations that are there already, or create more animation sequences by duplicating and editing the costumes.
+
 --- task ---
 
 Create functions that use the other rover animations, in the same way you did for extending the arm.
