@@ -149,10 +149,11 @@ go to x:(-90) y:(-80)
 + forever
 if <(x position) > (290)> then
 set x to (-280)
-+ switch to costume (tree1 v)
++ switch costume to (tree1 v)
 end
 if <(x position) < (-290)> then
 set x to (280)
++ switch costume to (tree1 v)
 end
 end
 ```
