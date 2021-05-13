@@ -9,9 +9,9 @@ steps:
   - title: Introduction
   - title: Make the controller
   - title: Add scrolling
-  - title: Collect a sample
-  - title: Count samples
-  - title: Add more samples
+  - title: Collect a tree sample
+  - title: Collect a cloud sample
+  - title: Create another sample
   - title: Reflection
     knowledge_quiz:
       path: quiz1
