@@ -3,7 +3,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will change the appearance of the sprites and the rover when the rover collects samples.
+In this step, you will change the appearance of a sprite and the rover when the rover collects samples.
 </div>
 <div>
 Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
@@ -16,9 +16,11 @@ Look at the rovers' costumes. There are six animations available. The rover can 
 
 --- /task ---
 
-When we want to organise a lot of code, such as several costume changes, it is useful to use a programming technique called a **function**. In Scratch functions are called `My Blocks`{:class="block3custom"}
+When we want to organise a lot of code, such as several costume changes, it is useful to use a programming technique called a **function**. In Scratch, functions are called `My Blocks`{:class="block3custom"}.
 
-In this first example, a function will be used to animate the rover's arm, to make it look like it is grabbing something.
+For your rover, each function will relate to one of the rover animations.
+
+Now, use a function to animate the rover's arm, so it can grab the fruit from the tree sprite.
 
 --- task ---
 
@@ -133,6 +135,26 @@ On the rover sprite, change the `when this sprite clicked`{:class="block3events"
 when this sprite clicked
 if <touching color (#FFA500) ?> then
 sample fruit ::custom
+```
+
+--- /task ---
+
+--- task ---
+
+Now that the tree sprite changes when a fruit is sampled, you need to reset the sprite to it's first costume when it goes off the screen.0faeb0
+
+```blocks3
+when I receive [start v]
+go to x:(-90) y:(-80)
++ forever
+if <(x position) > (290)> then
+set x to (-280)
++ switch to costume (tree1 v)
+end
+if <(x position) < (-290)> then
+set x to (280)
+end
+end
 ```
 
 --- /task ---

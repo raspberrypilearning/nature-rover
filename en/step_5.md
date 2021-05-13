@@ -23,7 +23,17 @@ go to x: (0) y: (-90)
 
 --- /task ---
 
-Each time the rover collects a sample from the tree, 
+Each time the rover collects a sample from the tree, the `samples`{:class='block3variables'} should increase by `1`.
+
+--- task ---
+
+Add a block to increase the `sample`{:class='block3variables'} when the `sample fruit`{:class='block3function'}
+
+
+
+--- /task ---
+
+
 
 
 --- save ---
