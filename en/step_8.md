@@ -1,45 +1,33 @@
 ## Upgrade your project
 
-<div style="display: flex; flex-wrap: wrap">
-<div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Your rover needs to know when it has collected all the samples it can. Variables can help with this.
-</div>
-<div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
-</div>
-</div>
+Make your rover interact with the nature scene even more, similar to what a real rover might do. 
 
+You can:
+- add even more samples to your project, using the prebuilt animations or ones you create yourself.
+- use variables to count samples, that increases each time a sample is collected.
+- introduce an energy variable so that the rover has to use a renewable energy source like the sun, to recharge.
+- animate the rover when it has collected enough samples (for example, it could do a dance and then fly away)
 
---- task ---
-
-Create a new variable called `samples`{:class='block3variables'} and set it to `0` at the start of the game.
+You can use any of the blocks that you learned about in this project, as well as those that you already know.
 
 ```blocks3
-when I receive [start v]
-go to x: (0) y: (-90)
-+ set [samples v] to (0)
+define collect sample ::custom
 ```
 
---- /task ---
+```blocks3
+set [energy v] to (100)
+```
 
-Each time the rover collects a sample from the tree, the `samples`{:class='block3variables'} should increase by `1`.
+```blocks3
+change [energy v] by (-1)
+```
 
---- task ---
+```blocks3
+if <touching color (#FFAA00)> ? then
+```
 
-Add a block to increase the `sample`{:class='block3variables'} when the `sample fruit`{:class='block3function'}
+You can view an example of a [completed project here](https://scratch.mit.edu/projects/485673032/){:target="_blank"}.
 
 
-
---- /task ---
-
---- collapse ---
-
----
-title: Completed project
----
-
-You can view the [completed project here](https://scratch.mit.edu/projects/485673032/){:target="_blank"}.
-
---- /collapse ---
 
 --- save ---
