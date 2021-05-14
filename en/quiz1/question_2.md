@@ -1,3 +1,5 @@
+## Reflection
+
 
 --- question ---
 
@@ -5,37 +7,69 @@
 legend: Question 2 of 3
 ---
 
-You made Pico say hello in a speech bubble.
+Have a look at this project showing a rover exploring a mountain scene.
 
-```blocks3
-say [Hello!] for [2] secs
-```
+GIF
 
-Where would you go to find this block?
+What code would get the cloud to scroll slower than the mountain? The mountain is changing by increments of 10.
+
 
 --- choices ---
 
-- (x) 
+- ( )```blocks3
+when I receive [left v]
+change x by (-5)
+
+when I receive [right v]
+change x by (5)
+```
 
   --- feedback ---
+The cloud is scrolling slower than the mountain here, but this code makes the cloud difficult for the rover to reach because it moves in the same direction as the rover.
+  --- /feedback ---
+
+- ( )```blocks3
+
+when I receive [left v]
+change y by (5)
+
+when I receive [right v]
+change y by (5)
+
+```
+
+  --- feedback ---
+
+  With this code, the cloud will be moving up and down instead of left and right. How can you get the cloud to move left and right? Think about the stage as a coordinate grid.
 
   --- /feedback ---
 
-- ( ) 
+- ( ) ```blocks3
+when I receive [left v]
+change x by (20)
+
+when I receive [right v]
+change y by (-20)
+
+```
 
   --- feedback ---
+
+  The cloud is scrolling in the right direction here, however it is scrolling much faster than the mountain, even though it is farther away from the rover than the mountain.
 
   --- /feedback ---
 
-- ( ) 
+- (x) ```blocks3
+when I receive [left v]
+change x by (5)
+
+when I receive [right v]
+change x by (-5)
+```
 
   --- feedback ---
 
-  --- /feedback ---
-
-- ( ) 
-
-  --- feedback ---
+Great! the cloud moves right when the rover moves left, and left when the rover moves right.  The cloud scrolls slower than the mountain because x is changed in increments of 5.
 
   --- /feedback ---
 

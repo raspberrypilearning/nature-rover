@@ -7,9 +7,10 @@ In this project, you will create a wilderness scene for a nature rover to explor
 </p>
 
 You will:
-+ Create a realistic scene using scrolling
-+ Organise costume changes with `my blocks`{:class='block3custom'}
 + Move sprites with a touch friendly controller
++ Organise costume changes with `my blocks`{:class='block3custom'}
++ Create a realistic scene using scrolling
+
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">**Scrolling**</span> is when graphics (or objects in your scene) move left, right, up or down on a computer screen. Scrolling makes scenes look more realistic.
