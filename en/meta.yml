@@ -10,7 +10,7 @@ steps:
   - title: Make the controller
   - title: Add scrolling
   - title: Collect a tree sample
-  - title: Collect a cloud sample
+  - title: Collect an air sample
   - title: Create another sample
   - title: Reflection
     knowledge_quiz:

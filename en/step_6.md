@@ -11,9 +11,16 @@ Choose what the rover samples next! Do they see a new species of plant, bug or a
 
 **Choose:** Depending on what you want the rover to sample next, you can either use the rover animations that are there already, or create more animation sequences by duplicating and editing the costumes.
 
+- create sprite set up
+- add scrolling
+- function for rover
+- new broadcast
+- rover touching sprite or colour
+- optional - add animated change to sprite
+
 --- task ---
 
-Create functions that use the other rover animations, in the same way you did for extending the arm.
+Create functions that use the other rover animations, in the same way you did for extending the arm. Duplicate code from the other functions, changing the dropdowns.
 
 Here is one to operate the rover's drill
 
@@ -41,30 +48,6 @@ switch costume to (inactive v)
 
 Use costume changes, size changes and graphics effects to change the appearance of the sprites, once they receive their broadcast.
 
-Here is how the cloud is set up on the example provided.
-
-```blocks3
-when flag clicked
-show
-go to x: (190) y: (14)
-clear graphic effects
-set [ghost v] effect to (60)
-set size to (50) %
-forever
-repeat (10)
-change [whirl v] effect by (50)
-end
-repeat (20)
-change [whirl v] effect by (-50)
-end
-repeat (10)
-change [whirl v] effect by (50)
-
-when I receive [sample air v]
-repeat (5)
-change size by (-10)
-hide
-```
 --- /task ---
 
 --- task ---
