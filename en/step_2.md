@@ -5,7 +5,7 @@
 In this step, you will create an on-screen controller that can be used to move your rover around the stage.
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
+![](images/step-2.gif.png){:width="300px"}
 </div>
 </div>
 
