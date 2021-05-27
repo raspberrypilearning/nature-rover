@@ -24,7 +24,7 @@ go to x:(-90) y:(-80)
 
 The tree sprite should move in the **opposite** direction as the broadcast. So if the broadcast is `left`{:class="block3events"} then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"} then the `x`{:class="block3motion"} of the tree will decrease.
 
-![animation of tree moving right and left showing the x coordinate changing](scroling-tree.gif)
+![animation of tree moving right and left showing the x coordinate changing](scrolling-tree.gif)
 
 --- task ---
 
