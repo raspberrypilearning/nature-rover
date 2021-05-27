@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will create an on-screen controller that can be used to move your rover around the stage.
+In this step, you will create an on-screen controller that can be used to move your rover up and down.
 </div>
 <div>
 ![](images/step-2.gif){:width="300px"}

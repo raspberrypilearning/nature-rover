@@ -11,9 +11,9 @@ Add Gif showing how the scrolling works ![](images/image.png){:width="300px"}
 
 --- task ---
 
-Click on the Tree sprite in your starter project, and then set its starting position.
+Add a **Tree** sprite in to your project, and then set its starting position.
 
-![The Tree sprite](images/tree-sprite.png)]
+![The Tree sprite](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -24,7 +24,7 @@ go to x:(-90) y:(-80)
 
 The tree sprite should move in the **opposite** direction as the broadcast. So if the broadcast is `left`{:class="block3events"} then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"} then the `x`{:class="block3motion"} of the tree will decrease.
 
-![add GIF of tree moving gif showing dragging tree around (x coordinate changes)]
+![animation of tree moving right and left showing the x coordinate changing](scroling-tree.gif)
 
 --- task ---
 
