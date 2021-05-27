@@ -21,7 +21,7 @@ Add a cloud sprite to your project from the library of sprites in Scratch, or dr
 
 --- collapse ---
 ---
-title: Choose: Add graphic effects to the cloud
+title: **Choose** Add graphic effects to the cloud
 ---
 
 Using some graphic effects, change the appearance of the cloud sprite, so that it looks like a swirling ball of gas. You can play with different graphic effects, but the below example makes the sprite appear a little transparent and makes it swirl around.

@@ -1,6 +1,5 @@
 ## Collect a sample
 
-
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
 In this step, you will change the appearance of a sprite and the rover when the rover collects samples.
@@ -12,7 +11,7 @@ Image, gif or video showing what they will achieve by the end of the step. ![](i
 
 --- task ---
 
-Look at the rovers' costumes. There are six animations available. The rover can:
+Look at the rover's costumes. There are six animations available. The rover can:
 - extend its arm
 - drill in the ground
 - suck in air
