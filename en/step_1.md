@@ -28,7 +28,7 @@ What happens when you click the buttons to move the rover? How would you describ
 Try and collect a sample by moving the rover to one of the sprites and then clicking the rover.
 </div>
 <div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/485673032/?autostart=false" frameborder="0"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/536887721/?autostart=false" frameborder="0"></iframe>
 </div>
 </div>
 --- /task ---
