@@ -90,6 +90,8 @@ title: Duplicating code
 
 ---
 
+Here is an easy way of duplicating the code for your new function.
+
 ![animation showing code being duplicated](duplicating.gif)
 
 --- /collapse ---
