@@ -26,7 +26,7 @@ change [energy v] by (-1)
 if <touching color (#FFAA00)> ? then
 ```
 
-You can view an example of a [completed project here](https://scratch.mit.edu/projects/485673032/){:target="_blank"}.
+You can view an example of a [completed project here](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
 
 
 
