@@ -5,7 +5,7 @@
 Choose what the rover samples next! Do they see a new species of plant, bug or animal? Do they see some water or mysterious liquid? Do they want to sample some dirt or a rock? Or something else?
 </div>
 <div>
-![](images/step-6/gif){:width="300px"}
+![](images/step-6.gif){:width="300px"}
 </div>
 </div>
 
