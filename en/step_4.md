@@ -21,7 +21,7 @@ Look at the rover's costumes. There are six animations available. The rover can:
 
 --- /task ---
 
-When we want to organise a lot of code, such as several costume changes, it is useful to use a programming technique called a **function**. In Scratch, functions are called `My Blocks`{:class="block3custom"}.
+When we want to organise a lot of code, such as several costume changes, it is useful to use a programming technique called a **function**. In Scratch, functions are called `My Blocks`{:class="block3myblocks"}.
 
 For your rover, each function will relate to one of the rover animations.
 
@@ -29,20 +29,22 @@ Now, use a function to animate the rover's arm, so it can grab the fruit from th
 
 --- task ---
 
-In the `My Blocks`{:class="block3custom"} menu click on **Make a Block**, and name your new block `sample fruit`{:class="block3custom"}.
+In the `My Blocks`{:class="block3myblocks"} menu click on **Make a Block**, and name your new block `sample fruit`{:class="block3myblocks"}.
 
 --- /task ---
 
 A new block should appear in your script. It will look like this:
 
+![rover sprite](images/rover-sprite.png)
 ```blocks3
 define sample fruit
 ```
 
 --- task ---
 
-Beneath this block, attach some `switch costume`{:class="block3looks"} and `wait`{:class="block3control"} blocks, to animate the robot
+Beneath this block, attach some `switch costume`{:class="block3looks"} blocks and `wait`{:class="block3control"} blocks, to animate the robot
 
+![rover sprite](images/rover-sprite.png)
 ```blocks3
 define sample fruit
 switch costume to (inactive v)
@@ -68,6 +70,7 @@ You can click on the `define sample fruit`{:class="block3custom"} block to see t
 
 To use your new function, you can attach it to an `event`{:class="block3events"} block. In the `My Blocks`{:class="block3custom"} menu, you should see the block you made. Use it in the following script.
 
+![rover sprite](images/rover-sprite.png)
 ```blocks3
 when this sprite clicked
 sample fruit ::custom
@@ -85,7 +88,7 @@ Now you need to make the rover actually collect a sample. In this example, the r
 
 --- task ---
 
-The tree sprite has been edited to give it two different costumes. One with a fruit on, and one without a fruit. Edit one of your sprites, so that it has two different costumes.
+The tree sprite should be edited to give it two different costumes. One with a fruit on, and one without a fruit. Edit one of your costumes, so that it has two different costumes.
 
 --- /task ---
 
@@ -93,6 +96,7 @@ The tree sprite has been edited to give it two different costumes. One with a fr
 
 Back on the rover sprite, you can create a new `broadcast`{:class="block3events"} that will be used to trigger the costume change. Add this new broadcast into your `define sample fruit`{:class="block3custom"} function.
 
+![rover sprite](images/rover-sprite.png)
 ```blocks3
 define sample fruit
 switch costume to (inactive v)
@@ -113,6 +117,7 @@ switch costume to (inactive v)
 
 On the tree sprite, add blocks to set the costume of the tree at the start of the project, and the costume it should switch to when it receives the `sample fruit`{:class="block3evens"} broadcast.
 
+![tree sprite](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
 go to x: (-90) y: (-80)
@@ -126,7 +131,8 @@ go to x: (-90) y: (-80)
 
 --- task ---
 
-Test that your code is working, by clicking on the flag, and then clicking on your rover. It's arm should extend, and the tree sprite should change costumes.
+Test that your code is working, by clicking on the flag, and then clicking on your rover. It's arm should extend, and the tree sprite 
+should change costumes.
 
 --- /task ---
 
@@ -136,6 +142,7 @@ The rover should only be able to collect the fruit, if it is touching it.
 
 On the rover sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3custom"} function is only called if the rover is touching the colour of your fruit.
 
+![rover sprite](images/rover-sprite.png)
 ```blocks3
 when this sprite clicked
 if <touching color (#FFA500) ?> then
@@ -148,6 +155,7 @@ sample fruit ::custom
 
 Now that the tree sprite changes when a fruit is sampled, you need to reset the sprite to it's first costume when it goes off the screen.0faeb0
 
+![tree sprite](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
 go to x:(-90) y:(-80)

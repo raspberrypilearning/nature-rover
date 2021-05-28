@@ -30,6 +30,7 @@ The tree sprite should move in the **opposite** direction as the broadcast. So i
 
 To get this moving effect, change the x values when the `left`{:class="block3events"} and `right`{:class="block3events"} broadcasts are recieved.
 
+![The Tree sprite](images/tree-sprite.png)
 ```blocks3
 when I receive [left v]
 change x by (10)
@@ -54,6 +55,7 @@ Did you notice that when the tree reaches the very edge of the screen, it stops 
 
 Using a `forever`{:class='block3control'} loop, and `if`{:class='block3control'} blocks, check the x coordinate of the tree, and move it to the other side of the screen when x is higher than `290` or lower than `-290`
 
+![The Tree sprite](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
 go to x:(-90) y:(-80)
