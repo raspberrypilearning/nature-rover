@@ -93,7 +93,9 @@ go to x: (0) y: (-90)
 You do not need to add code to move the rover left and right yet. In the next step, you will add left and right controls.
 
 To finish off, you must make sure that the controller is always in the foreground.
+
 --- task ---
+
 Add blocks so that the buttons appear all appear in the foreground.
 
 ![the up sprite](images/up-sprite.png)
