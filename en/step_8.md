@@ -23,7 +23,7 @@ change [energy v] by (-1)
 ```
 
 ```blocks3
-if <touching color (#FFAA00)> ? then
+if <touching color (#FFAA00) ?> then
 ```
 
 You can view an example of a [completed project here](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
