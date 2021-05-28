@@ -171,8 +171,8 @@ Add an animated effect to the cloud that changes the size.
 when I receive [sample air v]
 repeat (5)
 change size by (-10)
-hide
 end
+hide
 set size to (50) %
 ```
 

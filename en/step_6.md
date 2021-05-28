@@ -5,19 +5,17 @@
 Choose what the rover samples next! Do they see a new species of plant, bug or animal? Do they see some water or mysterious liquid? Do they want to sample some dirt or a rock? Or something else?
 </div>
 <div>
-![](images/image.png){:width="300px"}
+![](images/step-6/gif){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-**Choose:** Add a new sample sprite for the rover to collect to your project, either by selecting one from the library or darwing your own.
+**Choose:** Add a new sample sprite for the rover to collect to your project, either by selecting one from the library or drawing your own.
 
 --- /task ---
 
 Get your sample sprite to scroll. If it is low down on the screen it should move more, and if it is high up on the screen it should move less.
-
-![image or gif reminding of more realistic scrolling]
 
 --- task ---
 
@@ -41,7 +39,7 @@ Create a new `broadcast message`{:class='block3events'} that will be used in the
 
 --- task ---
 
-Use an `if`{:class='block3control'} block to detect if the rover is touching the sprite or touching a colour on the sprite, so that the new `function`{:class='block3custom'} is only called then.
+Use an `if`{:class='block3control'} block to detect if the rover is touching the sprite or touching a colour on the sprite, so that the new `function`{:class='block3myblocks'} is only called then.
 
 --- /task ---
 
