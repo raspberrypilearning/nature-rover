@@ -55,7 +55,7 @@ For the cloud to scroll, it needs to move when it receives the `left`{:class='bl
 
 --- task ---
 
-Add code to make the cloud move. You may need to adjust the numbers, depending on the size and position of the sprite. As the cloud shoudl appear further back, it should move less than the tree.
+Add code to make the cloud move. You may need to adjust the numbers, depending on the size and position of the sprite. As the cloud should appear further back, it should move less than the tree.
 
 ![cloud sprite](images/cloud-sprite.png)
 ```blocks3
