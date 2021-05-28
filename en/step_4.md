@@ -88,7 +88,7 @@ Now you need to make the rover actually collect a sample. In this example, the r
 
 --- task ---
 
-The tree sprite should be edited to give it two different costumes. One with a fruit on (`tree 1`{:class="block3looks"}), and one without a fruit (`tree 2`{:class="block3looks"}. Edit one of your costumes, so that it has two different costumes.
+The tree sprite should be edited to give it two different costumes. One with a fruit on (`tree 1`{:class="block3looks"}), and one without a fruit (`tree 2`{:class="block3looks"}). Edit one of your costumes, so that it has two different costumes.
 
 --- /task ---
 
