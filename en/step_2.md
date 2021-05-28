@@ -92,4 +92,28 @@ go to x: (0) y: (-90)
 
 You do not need to add code to move the rover left and right yet. In the next step, you will add left and right controls.
 
+To finish off, you must make sure that the controller is always in the foreground.
+--- task ---
+Add blocks so that the buttons appear all appear in the foreground.
+
+![the up sprite](images/up-sprite.png)
+```blocks3
+when I recieve [start v]
+go to [front v] layer
+```blocks3
+--- /task ---
+
+--- task ---
+
+Now send the controller background to the front layer, and then back four, so it appears behind the buttons.
+
+![controller background sprite](images/controller-back-sprite.png)\
+```blocks
+when I recieve [start v]
+go to [front v] layer
+go [backward v] (4) layers
+```
+
+--- /task ---
+
 --- save ---

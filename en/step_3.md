@@ -5,7 +5,7 @@
 For the rover to move left and right, instead of the rover sprite moving, the foreground and background sprites move or 'scroll' to the left and right.
 </div>
 <div>
-Add Gif showing how the scrolling works ![](images/image.png){:width="300px"}
+![](images/step-3.gif){:width="300px"}
 </div>
 </div>
 
@@ -76,5 +76,21 @@ end
 Now move your rover around the screen. When the tree reaches the edge, it should vanish off the edge of the screen and reappear on the other side.
 
 --- /task ---
+
+--- task ---
+
+Lastly make the rover turn left and right so that if faces in the correct direction.
+
+![rover sprite](images/rover-sprite.png)
+```blocks3
+when I receive [left v]
+point in direction (-90)
+
+when I receive [right v]
+point in direction (90)
+```
+--- /task ---
+
+
 
 --- save ---

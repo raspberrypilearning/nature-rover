@@ -62,13 +62,13 @@ switch costume to (inactive v)
 
 --- task ---
 
-You can click on the `define sample fruit`{:class="block3custom"} block to see the animation happen. It won't run when we click the green flag though, as you have not yet **called** the function in your script.
+You can click on the `define sample fruit`{:class="block3myblocks"} block to see the animation happen. It won't run when we click the green flag though, as you have not yet **called** the function in your script.
 
 --- /task ---
 
 --- task ---
 
-To use your new function, you can attach it to an `event`{:class="block3events"} block. In the `My Blocks`{:class="block3custom"} menu, you should see the block you made. Use it in the following script.
+To use your new function, you can attach it to an `event`{:class="block3events"} block. In the `My Blocks`{:class="block3myblocks"} menu, you should see the block you made. Use it in the following script.
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
@@ -94,7 +94,7 @@ The tree sprite should be edited to give it two different costumes. One with a f
 
 --- task ---
 
-Back on the rover sprite, you can create a new `broadcast`{:class="block3events"} that will be used to trigger the costume change. Add this new broadcast into your `define sample fruit`{:class="block3custom"} function.
+Back on the rover sprite, you can create a new `broadcast`{:class="block3events"} that will be used to trigger the costume change. Add this new broadcast into your `define sample fruit`{:class="block3myblocks"} function.
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
@@ -117,11 +117,19 @@ switch costume to (inactive v)
 
 On the tree sprite, add blocks to set the costume of the tree at the start of the project, and the costume it should switch to when it receives the `sample fruit`{:class="block3evens"} broadcast.
 
-![tree sprite](images/tree-sprite.png)
+![The Tree sprite](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
-go to x: (-90) y: (-80)
-+ switch costume to (tree1 v)
+go to x:(-90) y:(-80)
++ switch costume to (tree2 v)
+forever
+if <(x position) > (290)> then
+set x to (-280)
+end
+if <(x position) < (-290)> then
+set x to (280)
+end
+end
 
 + when I receive [sample fruit v]
 + switch costume to (tree2 v)
@@ -159,7 +167,7 @@ Now that the tree sprite changes when a fruit is sampled, you need to reset the 
 ```blocks3
 when I receive [start v]
 go to x:(-90) y:(-80)
-+ forever
+forever
 if <(x position) > (290)> then
 set x to (-280)
 + switch costume to (tree1 v)
