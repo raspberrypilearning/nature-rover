@@ -100,7 +100,8 @@ Add blocks so that the buttons appear all appear in the foreground.
 ```blocks3
 when I recieve [start v]
 go to [front v] layer
-```blocks3
+```
+
 --- /task ---
 
 --- task ---
