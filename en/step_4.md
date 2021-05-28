@@ -5,7 +5,7 @@
 In this step, you will change the appearance of a sprite and the rover when the rover collects samples.
 </div>
 <div>
-Image, gif or video showing what they will achieve by the end of the step. ![](images/image.png){:width="300px"}
+![](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
@@ -88,7 +88,7 @@ Now you need to make the rover actually collect a sample. In this example, the r
 
 --- task ---
 
-The tree sprite should be edited to give it two different costumes. One with a fruit on, and one without a fruit. Edit one of your costumes, so that it has two different costumes.
+The tree sprite should be edited to give it two different costumes. One with a fruit on (`tree 1`{:class="block3looks"}), and one without a fruit (`tree 2`{:class="block3looks"}. Edit one of your costumes, so that it has two different costumes.
 
 --- /task ---
 
@@ -121,7 +121,7 @@ On the tree sprite, add blocks to set the costume of the tree at the start of th
 ```blocks3
 when I receive [start v]
 go to x:(-90) y:(-80)
-+ switch costume to (tree2 v)
++ switch costume to (tree 1 v)
 forever
 if <(x position) > (290)> then
 set x to (-280)
@@ -132,7 +132,7 @@ end
 end
 
 + when I receive [sample fruit v]
-+ switch costume to (tree2 v)
++ switch costume to (tree 2 v)
 ```
 
 --- /task ---
