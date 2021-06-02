@@ -22,16 +22,13 @@ What script would you add to the rover to make it move up and down
 
 --- choices ---
 
-- ( ) ```block3
+- ( ) 
 
+```block3
 when touching [up button v]
-
 change y by (10)
 
-
-
 when touching [down button v]
-
 change y by (-10)
 
 ```
@@ -43,31 +40,26 @@ change y by (-10)
 
   --- /feedback ---
 
-- ( ) ```blocks3
+- ( )
 
+```blocks3
 when this sprite clicked
-
 change y by (10)
-
 ```
 
-
-  --- feedback ---
+--- feedback ---
 
   This would move the rover when it was clicked on, rather than when the buttons are clicked on.
 
   --- /feedback ---
 
-- (x) ```block3
+- (x)
 
+```block3
 when I receive [up v]
-
 change y by (10)
 
-
-
 when I receive [down v]
-
 change y by -10
 
 ``` 
@@ -78,16 +70,13 @@ change y by -10
 
   --- /feedback ---
 
-- ( ) ```block3
+- ( ) 
 
+```block3
 define up
-
 change y by (10)
 
-
-
 define down
-
 change y by (-10)
 
 ```

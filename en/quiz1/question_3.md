@@ -23,7 +23,9 @@ Which of the following scripts would call the function above to make the cat dan
 
 --- choices ---
 
-- ( ) ```blocks3
+- ( ) 
+
+```blocks3
 when this sprite clicked
 change costume to [costume 1 v]
 wait (0.1) seconds
@@ -41,7 +43,9 @@ wait (0.1) seconds
 
   --- /feedback ---
 
-- ( ) ```blocks3
+- ( ) 
+
+```blocks3
 when this sprite clicked
 cat dance ::custom
 ```
@@ -52,7 +56,9 @@ cat dance ::custom
 
   --- /feedback ---
 
-- ( ) ```blocks3
+- ( ) 
+
+```blocks3
 when I receive [cat animation v]
 change costume to [costume 1 v]
 wait (0.1) seconds
@@ -70,7 +76,9 @@ wait (0.1) seconds
 
   --- /feedback ---
 
-- (x) ```blocks3
+- (x)
+
+```blocks3
 when this sprite clicked
 cat animation ::custom
 ```

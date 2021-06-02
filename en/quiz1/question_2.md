@@ -16,7 +16,9 @@ What code would get the cloud to scroll slower than the mountain? The mountain i
 
 --- choices ---
 
-- ( )```blocks3
+- ( )
+
+```blocks3
 when I receive [left v]
 change x by (-5)
 
@@ -28,8 +30,9 @@ change x by (5)
 The cloud is scrolling slower than the mountain here, but this code makes the cloud difficult for the rover to reach because it moves in the same direction as the rover.
   --- /feedback ---
 
-- ( )```blocks3
+- ( )
 
+```blocks3
 when I receive [left v]
 change y by (5)
 
@@ -44,13 +47,14 @@ change y by (5)
 
   --- /feedback ---
 
-- ( ) ```blocks3
+- ( )
+
+```blocks3
 when I receive [left v]
 change x by (20)
 
 when I receive [right v]
 change y by (-20)
-
 ```
 
   --- feedback ---
@@ -59,7 +63,9 @@ change y by (-20)
 
   --- /feedback ---
 
-- (x) ```blocks3
+- (x)
+
+```blocks3
 when I receive [left v]
 change x by (5)
 
