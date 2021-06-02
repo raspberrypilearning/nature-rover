@@ -25,11 +25,11 @@ What script would you add to the rover to make it move up and down
 - ( ) 
 
 ```blocks3
+when flag clicked
 forever
 if <touching [up button v]> then
 change y by (10)
-
-forever
+end
 if <touching [down button v]> then
 change y by (-10)
 
