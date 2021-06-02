@@ -24,7 +24,7 @@ What script would you add to the rover to make it move up and down
 
 - ( ) 
 
-```block3
+```blocks3
 when touching [up button v]
 change y by (10)
 
@@ -55,7 +55,7 @@ change y by (10)
 
 - (x)
 
-```block3
+```blocks3
 when I receive [up v]
 change y by (10)
 
@@ -72,7 +72,7 @@ change y by -10
 
 - ( ) 
 
-```block3
+```blocks3
 define up
 change y by (10)
 
