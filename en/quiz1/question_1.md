@@ -25,10 +25,12 @@ What script would you add to the rover to make it move up and down
 - ( ) 
 
 ```blocks3
-when touching [up button v]
+forever
+if <touching [up button v]> then
 change y by (10)
 
-when touching [down button v]
+forever
+if <touching [down button v]> then
 change y by (-10)
 
 ```
@@ -60,7 +62,7 @@ when I receive [up v]
 change y by (10)
 
 when I receive [down v]
-change y by -10
+change y by (-10)
 
 ``` 
 

@@ -9,13 +9,13 @@ is used  This script is a function that is used to get a cat to dance:
 
 ```blocks3
 define cat animation
-change costume to [costume 1 v]
+switch costume to [costume 1 v]
 wait (0.1) seconds
-change costume to [costume 2 v]
+switch costume to [costume 2 v]
 wait (0.1) seconds
-change costume to [costume 3 v]
+switch costume to [costume 3 v]
 wait (0.1) seconds
-change costume to [costume 4 v]
+switch costume to [costume 4 v]
 wait (0.1) seconds
 ```
 
@@ -27,13 +27,13 @@ Which of the following scripts would call the function above to make the cat dan
 
 ```blocks3
 when this sprite clicked
-change costume to [costume 1 v]
+switch costume to [costume 1 v]
 wait (0.1) seconds
-change costume to [costume 2 v]
+switch costume to [costume 2 v]
 wait (0.1) seconds
-change costume to [costume 3 v]
+switch costume to [costume 3 v]
 wait (0.1) seconds
-change costume to [costume 4 v]
+switch costume to [costume 4 v]
 wait (0.1) seconds
 ```
 
@@ -60,13 +60,13 @@ cat dance ::custom
 
 ```blocks3
 when I receive [cat animation v]
-change costume to [costume 1 v]
+switch costume to [costume 1 v]
 wait (0.1) seconds
-change costume to [costume 2 v]
+switch costume to [costume 2 v]
 wait (0.1) seconds
-change costume to [costume 3 v]
+switch costume to [costume 3 v]
 wait (0.1) seconds
-change costume to [costume 4 v]
+switch costume to [costume 4 v]
 wait (0.1) seconds
 ```
 
