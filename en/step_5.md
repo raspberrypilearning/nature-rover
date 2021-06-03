@@ -170,7 +170,7 @@ Add an animated effect to the cloud that changes the size.
 ```blocks3
 when I receive [sample air v]
 repeat (5)
-change size by (-10)
+change size by (-10) //shrink the cloud
 end
 hide
 set size to (50) %
