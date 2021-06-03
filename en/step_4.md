@@ -46,7 +46,7 @@ Beneath this block, attach some `switch costume`{:class="block3looks"} blocks an
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
-define sample fruit
+define sample fruit //animates the robot to collect fruit
 switch costume to (inactive v)
 wait (0.3) seconds
 switch costume to (arm 1 v)
@@ -73,7 +73,7 @@ To use your new function, you can attach it to an `event`{:class="block3events"}
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
 when this sprite clicked
-sample fruit ::custom
+sample fruit ::custom //run the animation
 ```
 
 --- /task ---

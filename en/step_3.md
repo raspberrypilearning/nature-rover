@@ -60,11 +60,11 @@ Using a `forever`{:class='block3control'} loop, and `if`{:class='block3control'}
 when I receive [start v]
 go to x:(-90) y:(-80)
 + forever
-if <(x position) > (290)> then
-set x to (-280)
+if <(x position) > (290)> then //the tree is at the far right
+set x to (-280) //move tree to far left
 end
-if <(x position) < (-290)> then
-set x to (280)
+if <(x position) < (-290)> then //the tree is at the far left
+set x to (280) //move tree to far right
 end
 end
 ```
