@@ -38,6 +38,8 @@ go to x: (0) y: (0)
 
 When the `left`{:class='block3events'} and `right`{:class='block3events'} broadcasts are received, the **hills** sprite should move. To give the appearance of moving in the correct direction, the background would move **left** when the **rover** is moving right. The direction of motion should be **opposite** to the `broadcast`{:class='block3events'}.
 
+So if the broadcast is `left`{:class="block3events"} then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"} then the `x`{:class="block3motion"} of the **hills** will decrease.
+
 --- task ---
 
 Add blocks to control the motion of the **hills** sprite and it's clone.
@@ -90,7 +92,7 @@ forever
 if <(x position) > (460)> then //hills is off the right side of screen
 set x to (-460) //reset to left side of screen
 end
-if <(x position) <> (-460)> then //hills is off the left side of screen
+if <(x position) < (-460)> then //hills is off the left side of screen
 set x to (460) //reset to right side of screen
 end
 ```
@@ -116,13 +118,15 @@ go to x:(0) y:(-80)
 
 --- /task ---
 
-The tree sprite should also move in the **opposite** direction as the broadcast. So if the broadcast is `left`{:class="block3events"} then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"} then the `x`{:class="block3motion"} of the tree will decrease.
+The tree sprite should also move in the **opposite** direction as the broadcast as well.
 
 ![animation of tree moving right and left showing the x coordinate changing](images/scrolling-tree.gif)
 
+As the **tree** is closer to the viewer, it should appear to move a greater distance than the **hills**.
+
 --- task ---
 
-To get this moving effect, change the x values when the `left`{:class="block3events"} and `right`{:class="block3events"} broadcasts are recieved.
+To get this moving effect, change the x values when the `left`{:class="block3events"} and `right`{:class="block3events"} broadcasts are received.
 
 ![The Tree sprite](images/tree-sprite.png)
 ```blocks3
