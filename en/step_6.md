@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Choose what the rover samples next! Do they see a new species of plant, bug or animal? Do they see some water or mysterious liquid? Do they want to sample some dirt or a rock? Or something else?
+Choose what the rover samples next! Do they see a new species of plant, bug or animal? Do they see some water or mysterious liquid? Do they want to sample some dirt or a rock, or even the air? Or something else?
 </div>
 <div>
 ![](images/step-6.gif){:width="300px"}

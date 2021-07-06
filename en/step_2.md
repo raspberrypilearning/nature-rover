@@ -124,12 +124,12 @@ Add **perspective** to your rover, by making it smaller when it moves upwards, a
 ```blocks3
 when I receive [up v]
 change y by (10)
-change size by (-3)
+change size by (-1)
 
 
 when I receive [down v]
 change y by (-10)
-change size by (3)
+change size by (1)
 ```
 
 --- /task ---
