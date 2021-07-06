@@ -37,7 +37,7 @@ You are going to create a controller using 5 different sprites. One should be th
 
 **Tip**: It's easier to create a single button first, add the code, and then duplicate the button and change the code for each one. So just create the **up** button and the body of the controller to start with.
 
-![the body of the controller with just a single up button](up_button_and_backdrop.png)
+![the body of the controller with just a single up button](images/up_button_and_backdrop.png)
 
 --- collapse ---
 ---
@@ -68,7 +68,7 @@ broadcast (up v)
 
 --- /task ---
 
-When the `up` buttons is clicked, the rover should change its `y`{:class="block3motion"} position, by a small amount. Increasing `y`{:class="block3motion"} will make the rover move up. Decreasing `y`{:class="block3motion"} would make the rover move down.
+When the **up** button is clicked, the rover should change its `y`{:class="block3motion"} position, by a small amount. Increasing `y`{:class="block3motion"} will make the rover move up. Decreasing `y`{:class="block3motion"} would make the rover move down.
 
 --- task ---
 
@@ -113,7 +113,7 @@ go to x: (0) y: (-90)
 
 --- /task ---
 
-To finish off, you must make sure that the controller is always in front of all the other sprites, and then duplicate your button, and edit the code.
+To finish off, you must make sure that the controller is always in front of all the other sprites, and then duplicate your button, and edit the code of the duplicates.
 
 --- task ---
 
@@ -132,19 +132,20 @@ end
 
 --- task ---
 
-Duplicate your **up** button sprite three times. Rename the duplicates **down**, **right**, and **left**. Add the broadcasts for each button. Here is an example of the **right** button
+Duplicate your **up** button sprite three times. Rename the duplicates **down**, **right**, and **left**. Add the broadcasts for each button, and set its layer and position. Here is an example for the **right** button
 
-![the up sprite](images/right-sprite.png)
+![the right sprite](images/right-sprite.png)
 ```blocks3
 when this sprite clicked
 broadcast (right v)
+
+when I receive [start v]
+forever
+go to [front v] layer
+go to x: (-164) y:-141
 ```
 
---- /task ---
-
---- task ---
-
-Position each of the buttons for the controller and then change the `go to x: y:`{:class='block3motion'} blocks so that they are correctly arranged when the simulation starts.
+Your controller should look something like this, when the game starts.
 
 ![image of a controller on the Scratch stage with four green buttons on a yellow oval background](images/controller.png)
 
@@ -166,7 +167,7 @@ change y by (-10)
 
 --- task ---
 
-Now send the controller background to the front layer, and then back four, so it appears behind the buttons.
+Now send the controller's background to the front layer, and then back four, so it appears behind the buttons.
 
 ![controller background sprite](images/controller-back-sprite.png)\
 ```blocks3
