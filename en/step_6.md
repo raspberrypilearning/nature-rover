@@ -27,7 +27,7 @@ Add code so that your sprite scrolls.
 
 --- task ---
 
-Add a `My Blocks`{:class='block3myblocks'} block to your rover sprite to animate the rover when it collects the new sample. You can copy and paste the code from one of the other functions.
+Add a `My Blocks`{:class='block3myblocks'} block to your rover sprite to animate the rover when it collects the new sample. You can copy and paste the code from one of the other `My Blocks`{:class='block3myblocks'} you have created.
 
 --- /task ---
 
