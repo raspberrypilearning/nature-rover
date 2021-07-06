@@ -26,11 +26,11 @@ change [energy v] by (-1)
 if <touching color (#FFAA00) ?> then
 ```
 
-</div>
+
 <div class="scratch-preview" style="margin-left: 15px;">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/536887721/?autostart=false" frameborder="0"></iframe>
 </div>
-</div>
+
 
 You can view the example above [here](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
 
