@@ -64,8 +64,6 @@ change x by (-20)
 --- /task ---
 
 
---- /task ---
-
 Did you notice that when the tree reaches the very edge of the screen, it stops moving? You can fix this by moving the tree to the other side of the screen, when its `x`{:class='block3motion'} coordinate is too high or too low.
 
 --- task ---
@@ -113,6 +111,10 @@ point in direction (90)
 
 --- /task ---
 
+--- task ---
 
+**Test**: Run your project and test it. Make sure the tree appears to fall of the edge of the screen and appear on the other side when the rover moves.
+
+--- /task ---
 
 --- save ---
