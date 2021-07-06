@@ -11,10 +11,103 @@ For the rover to move left and right, instead of the rover sprite moving, the fo
 
 --- task ---
 
+Select the **hills* sprite. At the start of the game, you need to make sure that it is in the correct position and on the back layer.
+
+![hills sprite](images/hills-sprite.png)
+```blocks3
+when I receive [start v]
+go to [back v] layer
+go to x: (0) y: (0)
+```
+
+--- /task ---
+
+--- task ---
+
+The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3'control}. Then the original sprite can be moved to the far right hand side of the screen.
+
+![hills sprite](images/hills-sprite.png)
+```blocks3
+when I receive [start v]
+go to [back v] layer
+go to x: (0) y: (0)
++ create a clone of [myself v]
+change x by (460)
+```
+--- /task ---
+
+When the `left`{:class='block3events'} and `right`{:class='block3events'} broadcasts are received, the **hills** sprite should move. To give the appearance of moving in the correct direction, the background would move **left** when the **rover** is moving right. The direction of motion should be **opposite** to the `broadcast`{:class='block3events'}.
+
+--- task ---
+
+Add blocks to control the motion of the **hills** sprite and it's clone.
+
+![hills sprite](images/hills-sprite.png)
+```blocks3
+when I receive [left v]
+change x by (3)
+
+when I receive [right v]
+change x by (-3)
+```
+
+--- /task ---
+
+--- task ---
+
+**Test**: Use the controller or the arrow keys to move around. The rover should appear to be moving left and right.
+
+--- /task ---
+
+At the moment, there are two copies of the **hills** sprite. The original and a clone. When you get to the end of either one, you'll notice that the screen is just white.
+
+To fix this, the sprite and it's clone need to be moved to the other side of the screen, when they go too far.
+
+--- task ---
+
+Create a new broadcast called `scroll`{:class='block3events'} and add it to the `start`{:class='block3events'} script.
+
+![hills sprite](images/hills-sprite.png)
+```blocks3
+when I receive [start v]
+go to [back v] layer
+go to x: (0) y: (0)
+create a clone of [myself v]
+change x by (460)
+broadcast [scroll v]
+```
+
+--- /task ---
+
+--- task ---
+
+Add code to detect if the **hills* sprite or it's clone have moved too far to the left or right, and then reset their positions to the other side of the screen.
+
+![hills sprite](images/hills-sprite.png)
+```blocks3
+when I receive [scroll v]
+forever
+if <(x position) > (460)> then
+set x to (-460)
+end
+if <(x position) <> (-460)> then
+set x to (460)
+end
+--- /task ---
+
+--- task ---
+
+**Test**: Try and use the controller or arrow keys to move the rover. The background should scroll, and the rover never reaches the end.
+
+--- /task ---
+
+Now you can add some more objects to your scene, and scroll them in a similar way.
+
+--- task ---
+
 Add a **Tree** sprite in to your project, and then set its starting position.
 
 ![The Tree sprite](images/tree-sprite.png)
-
 ```blocks3
 when I receive [start v]
 go to x:(0) y:(-80)
@@ -22,7 +115,7 @@ go to x:(0) y:(-80)
 
 --- /task ---
 
-The tree sprite should move in the **opposite** direction as the broadcast. So if the broadcast is `left`{:class="block3events"} then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"} then the `x`{:class="block3motion"} of the tree will decrease.
+The tree sprite should also move in the **opposite** direction as the broadcast. So if the broadcast is `left`{:class="block3events"} then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"} then the `x`{:class="block3motion"} of the tree will decrease.
 
 ![animation of tree moving right and left showing the x coordinate changing](images/scrolling-tree.gif)
 
@@ -48,23 +141,6 @@ change x by (-10)
 **Test:** What happens if you go as far away from the tree as you can?
 
 --- /task ---
-
---- task ---
-
-Use similar code on the soil sprite so that it also moves on the `broadcasts`{:class='block3events'}. Because the soil sprite is lower on the screen, it should appears to be closer to the viewer. This means that it needs to move a little faster.
-
-![the soil sprite](images/soil-sprite.png)
-```blocks3
-when I receive [left v]
-change x by (20)
-
-when I receive [right v]
-change x by (-20)
-```
-**Test:** your left and right buttons now. Because the tree and soil move, it gives the impression that the rover is moving.
-
---- /task ---
-
 
 Did you notice that when the tree reaches the very edge of the screen, it stops moving? You can fix this by moving the tree to the other side of the screen, when its `x`{:class='block3motion'} coordinate is too high or too low.
 

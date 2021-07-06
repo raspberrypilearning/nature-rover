@@ -67,8 +67,9 @@ broadcast [start v]
 
 --- task ---
 
-If you are working on a computer, it might be easier to have keyboard controls, rather than using the buttons. Keyboard controls can easily be added to the **rover** sprite.
+If you are working on a computer, it might be easier to have keyboard controls, rather than using the buttons. Keyboard controls can be added to the **rover** sprite.
 
+![the rover sprite](images/rover-sprite.png)
 ```blocks3
 when [up arrow v] key pressed
 broadcast [right v]
@@ -166,7 +167,7 @@ set size to (50) %
 
 --- task ---
 
-The **rover** should always appear in front of the other sprites, for now.
+The **rover** should appear in front of the other sprites, for now. Move the **rover** to the front layer.
 
 ![the rover sprite](images/rover-sprite.png)
 ```blocks3
