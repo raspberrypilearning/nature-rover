@@ -7,7 +7,7 @@ In this project, you will create a wilderness scene for a nature rover to explor
 </p>
 
 You will:
-+ Move sprites with a touch friendly controller
++ Move sprites using perspective to give the appearance of distance. 
 + Organise costume changes with `my blocks`{:class='block3custom'}
 + Create a realistic scene using scrolling
 
