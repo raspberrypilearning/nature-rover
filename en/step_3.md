@@ -47,6 +47,8 @@ change x by (-10)
 
 **Test:** What happens if you go as far away from the tree as you can?
 
+--- /task ---
+
 --- task ---
 
 Use similar code on the soil sprite so that it also moves on the `broadcasts`{:class='block3events'}. Because the soil sprite is lower on the screen, it should appears to be closer to the viewer. This means that it needs to move a little faster.
