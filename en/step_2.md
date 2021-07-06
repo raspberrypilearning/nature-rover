@@ -180,6 +180,42 @@ go [backward v] (4) layers
 
 --- task ---
 
+The **rover** should always appear in front of the other sprites
+
+![the rover sprite](images/rover-sprite.png)
+```blocks3
+when I receive [start v]
+go to x: (0) y: (-90)
++ go to [front v] layer
+```
+--- /task ---
+
+
+--- collapse ---
+---
+title: Add keyboard controls
+---
+
+If you are working on a computer, it might be easier to have keyboard controls, rather than using the buttons. Keyboard controls can easily be added to the **rover** sprite.
+
+```blocks3
+when [up arrow v] key pressed
+broadcast [right v]
+
+when [down arrow v] key pressed
+broadcast [down v]
+
+when [right arrow v] key pressed
+broadcast [right v]
+
+when [left arrow v] key pressed
+broadcast [left v]
+```
+
+--- /collapse ---
+
+--- task ---
+
 **Test**: that your controller works, and moves the rover up and down. Also test that your buttons move back to the correct position if they are accidentally dragged around.
 
 --- /task ---

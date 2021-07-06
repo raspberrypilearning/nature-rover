@@ -17,7 +17,7 @@ Add a **Tree** sprite in to your project, and then set its starting position.
 
 ```blocks3
 when I receive [start v]
-go to x:(-90) y:(-80)
+go to x:(0) y:(-80)
 ```
 
 --- /task ---
@@ -43,9 +43,26 @@ change x by (-10)
 
 --- task ---
 
-**Test:** your left and right buttons now. It should appear as if the rover moves towards and away from the tree.
+**Test:** your left and right buttons now. The tree should move each time you click on the controller.
 
 **Test:** What happens if you go as far away from the tree as you can?
+
+--- task ---
+
+Use similar code on the soil sprite so that it also moves on the `broadcasts`{:class='block3events'}. Because the soil sprite is lower on the screen, it should appears to be closer to the viewer. This means that it needs to move a little faster.
+
+![the soil sprite](images/soil-sprite.png)
+```blocks3
+when I receive [left v]
+change x by (20)
+
+when I receive [right v]
+change x by (-20)
+```
+**Test:** your left and right buttons now. Because the tree and soil move, it gives the impression that the rover is moving.
+
+--- /task ---
+
 
 --- /task ---
 
@@ -83,6 +100,10 @@ Lastly make the rover turn left and right so that if faces in the correct direct
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
+when flag clicked
+broadcast [start v]
++ set rotation style [left-right v]
+
 when I receive [left v]
 point in direction (-90)
 

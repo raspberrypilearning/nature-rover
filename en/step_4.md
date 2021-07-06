@@ -13,6 +13,9 @@ In this step, you will change the appearance of a sprite and the rover when the 
 
 Look at the rover's costumes. There are six animations available. The rover can:
 - extend its arm
+
+![3 costumes showing the rover arm extending](images/arm-animation.png)
+
 - drill in the ground
 - suck in air
 - extend a solar panel
@@ -21,11 +24,9 @@ Look at the rover's costumes. There are six animations available. The rover can:
 
 --- /task ---
 
-When we want to organise a lot of code, such as several costume changes, it is useful to use a programming technique called a **function**. In Scratch, functions are called `My Blocks`{:class="block3myblocks"}.
+When we want to organise a lot of code, such as several costume changes, it is useful to in Scratch to use `My Blocks`{:class="block3myblocks"}. This allows you to create your own custom blocks.
 
-For your rover, each function will relate to one of the rover animations.
-
-Now, use a function to animate the rover's arm, so it can grab the fruit from the tree sprite.
+Your rover will have a `My Block`{:class="block3myblocks"} for each animation
 
 --- task ---
 
@@ -43,6 +44,8 @@ define sample fruit
 --- task ---
 
 Beneath this block, attach some `switch costume`{:class="block3looks"} blocks and `wait`{:class="block3control"} blocks, to animate the robot
+
+**Tip**: It is quicker to create your first `switch costume`{:class='block3looks'} block and `wait`{:class='block3control'} block, and then duplicate them, and change the costume being used.
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
@@ -62,13 +65,15 @@ switch costume to (inactive v)
 
 --- task ---
 
-You can click on the `define sample fruit`{:class="block3myblocks"} block to see the animation happen. It won't run when we click the green flag though, as you have not yet **called** the function in your script.
+You can click on the `define sample fruit`{:class="block3myblocks"} block to see the animation happen. If you are on a small screen, you might need to look closely.
+
+It won't run when we click the green flag though, as you have not yet used your new `sample fruit block`{:class='block3myblocks'} in your project.
 
 --- /task ---
 
 --- task ---
 
-To use your new function, you can attach it to an `event`{:class="block3events"} block. In the `My Blocks`{:class="block3myblocks"} menu, you should see the block you made. Use it in the following script.
+To use your new block, you can attach it to an `event`{:class="block3events"} block. In the `My Blocks`{:class="block3myblocks"} menu, you should see the block you made. Use it in the following script.
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
@@ -88,13 +93,37 @@ Now you need to make the rover actually collect a sample. In this example, the r
 
 --- task ---
 
-The tree sprite should be edited to give it two different costumes. One with a fruit on (`tree 1`{:class="block3looks"}), and one without a fruit (`tree 2`{:class="block3looks"}). Edit one of your costumes, so that it has two different costumes.
+The tree sprite should be edited to give it two different costumes. One with a fruit on (`tree with fruit`{:class="block3looks"}), and one without a fruit (`tree without fruit`{:class="block3looks"}). Edit one of your costumes, so that it has two different costumes.
 
 --- /task ---
 
 --- task ---
 
-Back on the rover sprite, you can create a new `broadcast`{:class="block3events"} that will be used to trigger the costume change. Add this new broadcast into your `define sample fruit`{:class="block3myblocks"} function.
+On the tree sprite, add blocks to set the costume of the tree at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
+
+![The Tree sprite](images/tree-sprite.png)
+```blocks3
+when I receive [start v]
+go to x:(-90) y:(-80)
++ switch costume to (tree with fruit v)
+forever
+if <(x position) > (290)> then
+set x to (-280)
+end
+if <(x position) < (-290)> then
+set x to (280)
+end
+end
+
++ when I receive [sample fruit v]
++ switch costume to (tree without fruit v)
+```
+
+--- /task ---
+
+--- task ---
+
+Back on the rover sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new broadcast into your `define sample fruit`{:class="block3myblocks"} function.
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
@@ -115,30 +144,6 @@ switch costume to (inactive v)
 
 --- task ---
 
-On the tree sprite, add blocks to set the costume of the tree at the start of the project, and the costume it should switch to when it receives the `sample fruit`{:class="block3evens"} broadcast.
-
-![The Tree sprite](images/tree-sprite.png)
-```blocks3
-when I receive [start v]
-go to x:(-90) y:(-80)
-+ switch costume to (tree 1 v)
-forever
-if <(x position) > (290)> then
-set x to (-280)
-end
-if <(x position) < (-290)> then
-set x to (280)
-end
-end
-
-+ when I receive [sample fruit v]
-+ switch costume to (tree 2 v)
-```
-
---- /task ---
-
---- task ---
-
 Test that your code is working, by clicking on the flag, and then clicking on your rover. It's arm should extend, and the tree sprite 
 should change costumes.
 
@@ -149,6 +154,8 @@ The rover should only be able to collect the fruit, if it is touching it.
 --- task ---
 
 On the rover sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3custom"} function is only called if the rover is touching the colour of your fruit.
+
+**Tip**: Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
@@ -167,6 +174,7 @@ Now that the tree sprite changes when a fruit is sampled, you need to reset the 
 ```blocks3
 when I receive [start v]
 go to x:(-90) y:(-80)
+switch costume to (tree with fruit v)
 forever
 if <(x position) > (290)> then
 set x to (-280)
@@ -180,5 +188,12 @@ end
 ```
 
 --- /task ---
+
+--- task ---
+
+**Test**: your project. Move the **rover** so that it is touching the fruit, then click on the **rover** and watch it collect the fruit from the tree.
+
+--- /task ---
+
 
 --- save ---
