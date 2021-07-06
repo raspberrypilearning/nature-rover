@@ -27,7 +27,7 @@ Add code so that your sprite scrolls.
 
 --- task ---
 
-Add a function to your rover sprite to animate the rover when it collects the new sample. You can copy and paste the code from one of the other functions.
+Add a `My Blocks`{:class='block3myblocks'} block to your rover sprite to animate the rover when it collects the new sample. You can copy and paste the code from one of the other functions.
 
 --- /task ---
 
@@ -39,7 +39,7 @@ Create a new `broadcast message`{:class='block3events'} that will be used in the
 
 --- task ---
 
-Use an `if`{:class='block3control'} block to detect if the rover is touching the sprite or touching a colour on the sprite, so that the new `function`{:class='block3myblocks'} is only called then.
+Use an `if`{:class='block3control'} block to detect if the rover is touching the sprite or touching a colour on the sprite, so that the new `block`{:class='block3myblocks'} is only used then.
 
 --- /task ---
 

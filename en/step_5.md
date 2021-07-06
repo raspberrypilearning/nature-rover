@@ -178,11 +178,11 @@ switch costume to (tree with fruit v)
 forever
 if <(x position) > (290)> then
 set x to (-280)
-+ switch costume to (tree1 v)
++ switch costume to (tree with fruit v)
 end
 if <(x position) < (-290)> then
 set x to (280)
-+ switch costume to (tree1 v)
++ switch costume to (tree with fruit v)
 end
 end
 ```

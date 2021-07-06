@@ -25,10 +25,10 @@ You will:
 <div style="flex-basis: 175px; flex-grow: 1">  
 What happens when you click the buttons to move the rover? How would you describe how the background/sprites scroll (move around)?
 
-Try and collect a sample by moving the rover to one of the sprites and then clicking the rover.
+Try and collect a sample by moving the rover until it is touching the fruit or the soil and then clicking the rover.
 </div>
 <div class="scratch-preview" style="margin-left: 15px;">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/536887721/?autostart=false" frameborder="0"></iframe>
+  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/551066826/?autostart=false" frameborder="0"></iframe>
 </div>
 </div>
 --- /task ---

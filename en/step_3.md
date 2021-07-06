@@ -24,15 +24,15 @@ go to x: (0) y: (0)
 
 --- task ---
 
-The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3'control}. Then the original sprite can be moved to the far right hand side of the screen.
+The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3control'}. Then the original sprite can be moved to the far right hand side of the screen.
 
 ![hills sprite](images/hills-sprite.png)
 ```blocks3
 when I receive [start v]
 go to [back v] layer
 go to x: (0) y: (0)
-+ create clone of [myself v]
-+ change x by (460)
++ create clone of [myself v] //create a copy of hills
++ change x by (460) //move the original hills to the right of screen
 ```
 --- /task ---
 
@@ -74,8 +74,8 @@ Create a new broadcast called `scroll`{:class='block3events'} and add it to the 
 when I receive [start v]
 go to [back v] layer
 go to x: (0) y: (0)
-create clone of [myself v] //create a copy of hills
-change x by (460) //move the original hills to the right of screen
+create clone of [myself v]
+change x by (460) 
 + broadcast [scroll v]
 ```
 
