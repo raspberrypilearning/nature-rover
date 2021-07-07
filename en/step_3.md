@@ -11,7 +11,7 @@ For the rover to move left and right, instead of the rover sprite moving, the ba
 
 --- task ---
 
-Select the **hills* sprite. At the start of the game, you need to make sure that it is in the correct position and on the back layer.
+Select the **hills** sprite. At the start of the game, you need to make sure that it is in the correct position and on the back layer.
 
 ![hills sprite](images/hills-sprite.png)
 ```blocks3
