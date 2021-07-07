@@ -22,6 +22,10 @@ go to x: (0) y: (0)
 
 --- /task ---
 
+<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
+<span style="color: #0faeb0">**Layers**</span> are like stacked sheets of clear plastic, that you can draw images on. If an image on the top of the stack is covering the image below it, you will not be able to see it properly. Background images should be near the **back** layer. Images closer to the viewer should be near the **front** layer.
+</p>
+
 --- task ---
 
 The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3control'}. Then the original sprite can be moved to the far right hand side of the screen.
