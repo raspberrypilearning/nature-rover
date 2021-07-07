@@ -9,10 +9,19 @@ legend: Question 2 of 3
 
 Have a look at this project showing a rover exploring a mountain scene.
 
-GIF
+![animation showing rover with mountain moving in the background and a static cloud](images/mountain-animation.gif)
 
-What code would get the cloud to scroll slower than the mountain? The mountain is changing by increments of 10.
+Here is the code for moving the mountain.
 
+```blocks3
+when I receive [left v]
+change x by (10)
+
+when I receive [right v]
+change x by (-10)
+```
+
+Which code blocks would get the cloud to scroll slower than the mountain?
 
 --- choices ---
 

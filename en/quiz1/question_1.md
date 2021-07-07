@@ -16,9 +16,9 @@ legend: Question 1 of 3
 
 Here is a controller that broadcasts up when the up button is clicked and down when the down button is clicked:
 
-Image
+![four button controller](images/controller.png)
 
-What script would you add to the rover to make it move up and down
+Which of the following code blocks would you add to the rover to make it move up and down
 
 --- choices ---
 
