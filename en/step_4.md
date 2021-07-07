@@ -1,184 +1,106 @@
-## Collect a sample
+## Scroll more sprites
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will change the appearance of a sprite and the rover when the rover collects samples.
+When adding more sprites to your scene, these need to scroll left and right as well.
 </div>
 <div>
 ![](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
---- task ---
-
-Look at the rover's costumes. There are six animations available. The rover can:
-- extend its arm
-- drill in the ground
-- suck in air
-- extend a solar panel
-- take a picture, or 
-- scoop something up. 
-
---- /task ---
-
-When we want to organise a lot of code, such as several costume changes, it is useful to use a programming technique called a **function**. In Scratch, functions are called `My Blocks`{:class="block3myblocks"}.
-
-For your rover, each function will relate to one of the rover animations.
-
-Now, use a function to animate the rover's arm, so it can grab the fruit from the tree sprite.
+Now you can add some more objects to your scene, and scroll them in a similar way.
 
 --- task ---
 
-In the `My Blocks`{:class="block3myblocks"} menu click on **Make a Block**, and name your new block `sample fruit`{:class="block3myblocks"}.
+Add a **Tree** sprite in to your project, and then set its starting position.
 
---- /task ---
-
-A new block should appear in your script. It will look like this:
-
-![rover sprite](images/rover-sprite.png)
+![The Tree sprite](images/tree-sprite.png)
 ```blocks3
-define sample fruit
+when I receive [start v]
+go to x:(0) y:(-80)
 ```
 
+--- /task ---
+
+The tree sprite should also move in the **opposite** direction as the broadcast as well.
+
+![animation of tree moving right and left showing the x coordinate changing](images/scrolling-tree.gif)
+
+As the **tree** is closer to the viewer, it should appear to move a greater distance than the **hills**.
+
 --- task ---
 
-Beneath this block, attach some `switch costume`{:class="block3looks"} blocks and `wait`{:class="block3control"} blocks, to animate the robot
+To get this moving effect, change the x values when the `left`{:class="block3events"} and `right`{:class="block3events"} broadcasts are received.
 
-![rover sprite](images/rover-sprite.png)
+![The Tree sprite](images/tree-sprite.png)
 ```blocks3
-define sample fruit //animates the robot to collect fruit
-switch costume to (inactive v)
-wait (0.3) seconds
-switch costume to (arm 1 v)
-wait (0.3) seconds
-switch costume to (arm 2 v)
-wait (0.3) seconds
-switch costume to (arm 1 v)
-wait (0.3) seconds
-switch costume to (inactive v)
+when I receive [left v]
+change x by (10)
+
+when I receive [right v]
+change x by (-10)
 ```
 
 --- /task ---
 
 --- task ---
 
-You can click on the `define sample fruit`{:class="block3myblocks"} block to see the animation happen. It won't run when we click the green flag though, as you have not yet **called** the function in your script.
+**Test:** your left and right buttons now. The tree should move each time you click on the controller.
+
+**Test:** What happens if you go as far away from the tree as you can?
 
 --- /task ---
 
---- task ---
-
-To use your new function, you can attach it to an `event`{:class="block3events"} block. In the `My Blocks`{:class="block3myblocks"} menu, you should see the block you made. Use it in the following script.
-
-![rover sprite](images/rover-sprite.png)
-```blocks3
-when this sprite clicked
-sample fruit ::custom //run the animation
-```
-
---- /task ---
+Did you notice that when the tree reaches the very edge of the screen, it stops moving? You can fix this by moving the tree to the other side of the screen, when its `x`{:class='block3motion'} coordinate is too high or too low.
 
 --- task ---
 
-Click on the rover, and you should see the rover animation.
-
---- /task ---
-
-Now you need to make the rover actually collect a sample. In this example, the rover will collect a fruit from a tree.
-
---- task ---
-
-The tree sprite should be edited to give it two different costumes. One with a fruit on (`tree 1`{:class="block3looks"}), and one without a fruit (`tree 2`{:class="block3looks"}). Edit one of your costumes, so that it has two different costumes.
-
---- /task ---
-
---- task ---
-
-Back on the rover sprite, you can create a new `broadcast`{:class="block3events"} that will be used to trigger the costume change. Add this new broadcast into your `define sample fruit`{:class="block3myblocks"} function.
-
-![rover sprite](images/rover-sprite.png)
-```blocks3
-define sample fruit
-switch costume to (inactive v)
-wait (0.3) seconds
-switch costume to (arm 1 v)
-wait (0.3) seconds
-switch costume to (arm 2 v)
-wait (0.3) seconds
-+ broadcast (sample fruit v)
-switch costume to (arm 1 v)
-wait (0.3) seconds
-switch costume to (inactive v)
-```
-
---- /task ---
-
---- task ---
-
-On the tree sprite, add blocks to set the costume of the tree at the start of the project, and the costume it should switch to when it receives the `sample fruit`{:class="block3evens"} broadcast.
+Using a `forever`{:class='block3control'} loop, and `if`{:class='block3control'} blocks, check the x coordinate of the tree, and move it to the other side of the screen when x is higher than `290` or lower than `-290`
 
 ![The Tree sprite](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
 go to x:(-90) y:(-80)
-+ switch costume to (tree 1 v)
-forever
-if <(x position) > (290)> then
-set x to (-280)
++ forever
+if <(x position) > (290)> then //the tree is at the far right
+set x to (-280) //move tree to far left
 end
-if <(x position) < (-290)> then
-set x to (280)
+if <(x position) < (-290)> then //the tree is at the far left
+set x to (280) //move tree to far right
 end
 end
-
-+ when I receive [sample fruit v]
-+ switch costume to (tree 2 v)
 ```
 
 --- /task ---
 
 --- task ---
 
-Test that your code is working, by clicking on the flag, and then clicking on your rover. It's arm should extend, and the tree sprite 
-should change costumes.
+Now move your rover around the screen. When the tree reaches the edge, it should vanish off the edge of the screen and reappear on the other side.
 
 --- /task ---
 
-The rover should only be able to collect the fruit, if it is touching it.
-
 --- task ---
 
-On the rover sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3custom"} function is only called if the rover is touching the colour of your fruit.
+Lastly make the rover turn left and right so that if faces in the correct direction.
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
-when this sprite clicked
-if <touching color (#FFA500) ?> then
-sample fruit ::custom
+when flag clicked
+broadcast [start v]
++ set rotation style [left-right v]
+
+when I receive [left v]
+point in direction (-90)
+
+when I receive [right v]
+point in direction (90)
 ```
 
 --- /task ---
 
 --- task ---
 
-Now that the tree sprite changes when a fruit is sampled, you need to reset the sprite to it's first costume when it goes off the screen.0faeb0
-
-![tree sprite](images/tree-sprite.png)
-```blocks3
-when I receive [start v]
-go to x:(-90) y:(-80)
-forever
-if <(x position) > (290)> then
-set x to (-280)
-+ switch costume to (tree1 v)
-end
-if <(x position) < (-290)> then
-set x to (280)
-+ switch costume to (tree1 v)
-end
-end
-```
+**Test**: Run your project and test it. Make sure the tree appears to fall of the edge of the screen and appear on the other side when the rover moves.
 
 --- /task ---
-
---- save ---

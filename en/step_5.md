@@ -1,210 +1,200 @@
-## Collect an air sample
+## Collect a sample
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Another way of making the rover appear to collect samples, is by changing some of the properties of a sprite, rather than it's costume.
+In this step, you will change the appearance of a sprite and the rover when the rover collects samples.
 </div>
 <div>
-![](images/step-5.gif){:width="300px"}
+![](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
-<p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Parallax scrolling**</span> is when background images move past the camera more slowly than foreground images
-</p>
-
 --- task ---
 
-Add a cloud sprite to your project from the library of sprites in Scratch, or draw one yourself, and position and resize it below the sky so that the rover can reach it.
+Look at the rover's costumes. There are six animations available. The rover can:
+- extend its arm
 
-![image of the scratch scene, with an added cloud resized to 50%](images/add-cloud.png)
+![3 costumes showing the rover arm extending](images/arm-animation.png)
+
+- drill in the ground
+- suck in air
+- extend a solar panel
+- take a picture, or 
+- scoop something up. 
 
 --- /task ---
 
---- collapse ---
----
-title: Add graphic effects to the cloud
----
+When we want to organise a lot of code, such as several costume changes, it is useful to in Scratch to use `My Blocks`{:class="block3myblocks"}. This allows you to create your own custom blocks.
 
-Using some graphic effects, change the appearance of the cloud sprite, so that it looks like a swirling ball of gas. You can play with different graphic effects, but the below example makes the sprite appear a little transparent and makes it swirl around.
-
-![animation of the cloud swirling in a cycle](images/cloud.gif)
-
-![cloud sprite](images/cloud-sprite.png)
-```blocks3
-when I receive [start v]
-show
-go to x: (190) y: (14)
-clear graphic effects
-set [ghost v] effect to (60)
-set size to (50) %
-forever
-repeat (10)
-change [whirl v] effect by (50)
-end
-repeat (20)
-change [whirl v] effect by (-50)
-end
-repeat (10)
-change [whirl v] effect by (50)
-```
-
---- /collapse ---
-
-For the cloud to scroll, it needs to move when it receives the `left`{:class='block3events'} and `right`{:class='block3events'} messages. As the cloud is further away from the viewer than the tree, it should move a smaller distance each time, and still dissapear off the edge of the screen and reappear on the other side. 
+Your rover will have a `My Block`{:class="block3myblocks"} for each animation
 
 --- task ---
 
-Add code to make the cloud move. You may need to adjust the numbers, depending on the size and position of the sprite. As the cloud should appear further back, it should move less than the tree.
-
-![cloud sprite](images/cloud-sprite.png)
-```blocks3
-when I receive [left v]
-change x by (5)
-
-when I receive [right v]
-change x by (-5)
-
-when I receive [start v]
-+ forever
-if <(x position) > (250)> then
-set x to (-240)
-end
-if <(x position) < (-250)> then
-set x to (240)
-end
-end
-```
+In the `My Blocks`{:class="block3myblocks"} menu click on **Make a Block**, and name your new block `sample fruit`{:class="block3myblocks"}.
 
 --- /task ---
 
-Get the rover to collect the air sample.
-
---- task ---
-
-Set up an animation function for the rover sprite, so that it can collect the air sample. You can duplicate the code from the sample tree function to do this.
-
---- collapse ---
----
-
-title: Duplicating code
-
----
-
-Here is an easy way of duplicating the code for your new function.
-
-![animation showing code being duplicated](images/duplicating.gif)
-
---- /collapse ---
+A new block should appear in your script. It will look like this:
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
-define sample air
-switch costume to (inactive v)
-wait (0.3) seconds
-switch costume to (air 1 v)
-wait (0.3) seconds
-switch costume to (air 2 v)
-wait (0.3) seconds
-switch costume to (air 3 v)
-wait (0.3) seconds
-switch costume to (air 2 v)
-wait (0.3) seconds
-switch costume to (air 1 v)
-wait (0.3) seconds
-switch costume to (inactive v)
+define sample fruit
 ```
-
---- /task ---
-
-Get the rover to broadcast a message to the cloud sprite so that it knows when to animate.
 
 --- task ---
 
-Create a new broadcast message called `sample air`{:class='block3events'} and then add it into your `sample air`{:class='block3custom'} function.
+Beneath this block, attach some `switch costume`{:class="block3looks"} blocks and `wait`{:class="block3control"} blocks, to animate the robot
+
+**Tip**: It is quicker to create your first `switch costume`{:class='block3looks'} block and `wait`{:class='block3control'} block, and then duplicate them, and change the costume being used.
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
-define sample air
+define sample fruit //animates the robot to collect fruit
 switch costume to (inactive v)
 wait (0.3) seconds
-switch costume to (air 1 v)
+switch costume to (arm 1 v)
 wait (0.3) seconds
-switch costume to (air 2 v)
+switch costume to (arm 2 v)
 wait (0.3) seconds
-switch costume to (air 3 v)
-wait (0.3) seconds
-+ broadcast (sample air v)
-switch costume to (air 2 v)
-wait (0.3) seconds
-switch costume to (air 1 v)
+switch costume to (arm 1 v)
 wait (0.3) seconds
 switch costume to (inactive v)
 ```
 
 --- /task ---
 
-The function should only be called if the rover is touching the cloud sprite.
+--- task ---
+
+You can click on the `define sample fruit`{:class="block3myblocks"} block to see the animation happen. If you are on a small screen, you might need to look closely.
+
+It won't run when we click the green flag though, as you have not yet used your new `sample fruit block`{:class='block3myblocks'} in your project.
+
+--- /task ---
 
 --- task ---
 
-Add code so that the rover only `samples air`{:class='block3custom'} `if`{:class='block3control'} it is `touching the cloud`{:class='block3sensing'}.
+To use your new block, you can attach it to an `event`{:class="block3events"} block. In the `My Blocks`{:class="block3myblocks"} menu, you should see the block you made. Use it in the following script.
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
 when this sprite clicked
-if <touching color [Cloud v] ?> then
-sample air ::custom
-end
-```
-
---- /task ---
-
-Get the air sample to animate when the rover collects it. You can make it do what you like but in this example it disappears while being sucked up by the rover.
-
---- task ---
-
-Add an animated effect to the cloud that changes the size.
-
-![cloud sprite](images/cloud-sprite.png)
-```blocks3
-when I receive [sample air v]
-repeat (5)
-change size by (-10) //shrink the cloud
-end
-hide
-set size to (50) %
+sample fruit ::custom //run the animation
 ```
 
 --- /task ---
 
 --- task ---
 
-**Test** your project by clicking the green flag and then moving your rover until it touches the cloud. Click on the rover and it should appear to suck up the cloud.
+Click on the rover, and you should see the rover animation.
+
+--- /task ---
+
+Now you need to make the rover actually collect a sample. In this example, the rover will collect a fruit from a tree.
+
+--- task ---
+
+The tree sprite should be edited to give it two different costumes. One with a fruit on (`tree with fruit`{:class="block3looks"}), and one without a fruit (`tree without fruit`{:class="block3looks"}). Edit one of your costumes, so that it has two different costumes.
 
 --- /task ---
 
 --- task ---
 
-Now change your cloud sprite's code so that it resets when it goes off the screen.
+On the tree sprite, add blocks to set the costume of the tree at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
 
-![cloud sprite](images/cloud-sprite.png)
+![The Tree sprite](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
-+ forever
-if <(x position) > (250)> then
-set x to (-240)
-show
+go to x:(-90) y:(-80)
++ switch costume to (tree with fruit v)
+forever
+if <(x position) > (290)> then
+set x to (-280)
 end
-if <(x position) < (-250)> then
-set x to (240)
-show
+if <(x position) < (-290)> then
+set x to (280)
+end
+end
+
++ when I receive [sample fruit v]
++ switch costume to (tree without fruit v)
+```
+
+--- /task ---
+
+--- task ---
+
+Back on the rover sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new broadcast into your `define sample fruit`{:class="block3myblocks"} function.
+
+![rover sprite](images/rover-sprite.png)
+```blocks3
+define sample fruit
+switch costume to (inactive v)
+wait (0.3) seconds
+switch costume to (arm 1 v)
+wait (0.3) seconds
+switch costume to (arm 2 v)
+wait (0.3) seconds
++ broadcast (sample fruit v)
+switch costume to (arm 1 v)
+wait (0.3) seconds
+switch costume to (inactive v)
+```
+
+--- /task ---
+
+--- task ---
+
+Test that your code is working, by clicking on the flag, and then clicking on your rover. It's arm should extend, and the tree sprite should change costumes.
+
+**Tip**: Switch into full screen mode and you will be able to see the animation more easily.
+
+--- /task ---
+
+The rover should only be able to collect the fruit, if it is touching it.
+
+--- task ---
+
+On the rover sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the rover is touching the colour of your fruit.
+
+**Tip**: Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
+
+![rover sprite](images/rover-sprite.png)
+```blocks3
+when this sprite clicked
+if <touching color (#FFA500) ?> then
+sample fruit ::custom
+```
+
+--- /task ---
+
+--- task ---
+
+Now that the tree sprite changes when a fruit is sampled, you need to reset the sprite to it's first costume when it goes off the screen.0faeb0
+
+![tree sprite](images/tree-sprite.png)
+```blocks3
+when I receive [start v]
+go to x:(-90) y:(-80)
+switch costume to (tree with fruit v)
+forever
+if <(x position) > (290)> then
+set x to (-280)
++ switch costume to (tree with fruit v)
+end
+if <(x position) < (-290)> then
+set x to (280)
++ switch costume to (tree with fruit v)
 end
 end
 ```
 
 --- /task ---
 
+--- task ---
+
+**Test**: your project. Move the **rover** so that it is touching the fruit, then click on the **rover** and watch it collect the fruit from the tree.
+
+--- /task ---
 
 
 --- save ---

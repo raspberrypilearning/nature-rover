@@ -7,10 +7,10 @@ copyedit: false
 last_tested: "2021-03-26"
 steps:
   - title: Introduction
-  - title: Make the controller
-  - title: Add scrolling
-  - title: Collect a tree sample
-  - title: Collect an air sample
+  - title: Control the rover
+  - title: Scroll the background
+  - title: Scroll more sprites
+  - title: Collect a sample
   - title: Create another sample
   - title: Reflection
     knowledge_quiz:
