@@ -144,8 +144,9 @@ switch costume to (inactive v)
 
 --- task ---
 
-Test that your code is working, by clicking on the flag, and then clicking on your rover. It's arm should extend, and the tree sprite 
-should change costumes.
+Test that your code is working, by clicking on the flag, and then clicking on your rover. It's arm should extend, and the tree sprite should change costumes.
+
+**Tip**: Switch into full screen mode and you will be able to see the animation more easily.
 
 --- /task ---
 
