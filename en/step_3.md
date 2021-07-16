@@ -44,9 +44,11 @@ When the `left`{:class='block3events'} and `right`{:class='block3events'} broadc
 
 So if the broadcast is `left`{:class="block3events"} then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"} then the `x`{:class="block3motion"} of the **hills** will decrease.
 
+![scratch stage shown with sprite in the bottom right hand corner and an x y coordinate system shown as the backdrop](images/scratch-grid.png)
+
 --- task ---
 
-Add blocks to control the motion of the **hills** sprite and it's clone.
+Add blocks to control the motion of the **hills** sprite and its clone.
 
 ![hills sprite](images/hills-sprite.png)
 ```blocks3
