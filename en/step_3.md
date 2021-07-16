@@ -2,7 +2,7 @@
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For the rover to move left and right, instead of the rover sprite moving, the background sprite moves or 'scrolls' to the left and right.
+For the rover to look like it's move left and right, instead of the rover sprite moving, the background sprite moves or 'scrolls' to the left and right.
 </div>
 <div>
 ![](images/step-3.gif){:width="300px"}

@@ -18,7 +18,7 @@ Here is a controller that broadcasts up when the up button is clicked and down w
 
 ![four button controller](images/controller.png)
 
-Which of the following code blocks would you add to the rover to make it move up and down
+Which of the following code blocks would you add to **the rover sprite** to make it move up and down
 
 --- choices ---
 

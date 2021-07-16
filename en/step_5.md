@@ -65,6 +65,28 @@ switch costume to (inactive v)
 
 --- task ---
 
+Add a block so that the rover plays a sound when it collects the fruit sample
+
+![rover sprite](images/rover-sprite.png)
+```blocks3
+define sample fruit //animates the robot to collect fruit
+switch costume to (inactive v)
+wait (0.3) seconds
+switch costume to (arm 1 v)
+wait (0.3) seconds
+switch costume to (arm 2 v)
+wait (0.3) seconds
++ start sound (Collect v)
+switch costume to (arm 1 v)
+wait (0.3) seconds
+switch costume to (inactive v)
+```
+
+--- /task ---
+
+
+--- task ---
+
 You can click on the `define sample fruit`{:class="block3myblocks"} block to see the animation happen. If you are on a small screen, you might need to look closely.
 
 It won't run when we click the green flag though, as you have not yet used your new `sample fruit block`{:class='block3myblocks'} in your project.
