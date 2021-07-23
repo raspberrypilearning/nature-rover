@@ -13,10 +13,6 @@ switch costume to [costume 1 v]
 wait (0.1) seconds
 switch costume to [costume 2 v]
 wait (0.1) seconds
-switch costume to [costume 3 v]
-wait (0.1) seconds
-switch costume to [costume 4 v]
-wait (0.1) seconds
 ```
 
 Which of the following scripts would use the `cat animation`{:class='block3myblocks'} above to make the cat dance when the Sprite is clicked?
@@ -30,10 +26,6 @@ when this sprite clicked
 switch costume to [costume 1 v]
 wait (0.1) seconds
 switch costume to [costume 2 v]
-wait (0.1) seconds
-switch costume to [costume 3 v]
-wait (0.1) seconds
-switch costume to [costume 4 v]
 wait (0.1) seconds
 ```
 
@@ -63,10 +55,6 @@ when I receive [cat animation v]
 switch costume to [costume 1 v]
 wait (0.1) seconds
 switch costume to [costume 2 v]
-wait (0.1) seconds
-switch costume to [costume 3 v]
-wait (0.1) seconds
-switch costume to [costume 4 v]
 wait (0.1) seconds
 ```
 
