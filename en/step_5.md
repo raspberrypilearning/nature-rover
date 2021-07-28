@@ -24,9 +24,9 @@ Look at the rover's costumes. There are six animations available. The rover can:
 
 --- /task ---
 
-When we want to organise a lot of code, such as several costume changes, it is useful to in Scratch to use `My Blocks`{:class="block3myblocks"}. This allows you to create your own custom blocks.
+When we want to organise a lot of code, such as several costume changes, it is useful in Scratch to use `My Blocks`{:class="block3myblocks"}. This allows you to create your own custom blocks.
 
-Your rover will have a `My Block`{:class="block3myblocks"} for each animation
+Your rover will have a `My Block`{:class="block3myblocks"} for each animation.
 
 --- task ---
 
@@ -166,7 +166,7 @@ switch costume to (inactive v)
 
 --- task ---
 
-Test that your code is working, by clicking on the flag, and then clicking on your rover. It's arm should extend, and the tree sprite should change costumes.
+Test that your code is working, by clicking on the flag, and then clicking on your rover. Its arm should extend, and the tree sprite should change costumes.
 
 **Tip**: Switch into full screen mode and you will be able to see the animation more easily.
 
@@ -183,7 +183,7 @@ On the rover sprite, change the `when this sprite clicked`{:class="block3events"
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
 when this sprite clicked
-if <touching color (#FFA500) ?> then
+if <touching color (#FFA500) ?> then //colour of fruit
 sample fruit ::custom
 ```
 
@@ -191,7 +191,7 @@ sample fruit ::custom
 
 --- task ---
 
-Now that the tree sprite changes when a fruit is sampled, you need to reset the sprite to it's first costume when it goes off the screen.0faeb0
+Now that the tree sprite changes when a fruit is sampled, you need to reset the sprite to its first costume when it goes off the screen.0faeb0
 
 ![tree sprite](images/tree-sprite.png)
 ```blocks3
