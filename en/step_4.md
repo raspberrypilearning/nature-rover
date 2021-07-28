@@ -36,10 +36,10 @@ To get this moving effect, change the x values when the `left`{:class="block3eve
 ![The Tree sprite](images/tree-sprite.png)
 ```blocks3
 when I receive [left v]
-change x by (10)
+change x by (10) //bigger number than the hills
 
 when I receive [right v]
-change x by (-10)
+change x by (-10) //bigger number than the hills
 ```
 
 --- /task ---

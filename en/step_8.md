@@ -32,7 +32,7 @@ if <touching color (#FFAA00) ?> then
 </div>
 
 
-You can view the example above [here](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
+You can view the complete project [here](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
 
 
 
