@@ -1,12 +1,12 @@
 ## Upgrade your project
 
-Make your rover interact with the nature scene even more, similar to what a real rover might do. 
+Make your rover interact with the nature scene even more, similar to how a real rover would behave. 
 
 You can:
-- add even more samples to your project, using the prebuilt animations or ones you create yourself.
-- use variables to count samples, that increases each time a sample is collected.
-- introduce an energy variable so that the rover has to use a renewable energy source like the sun, to recharge.
-- animate the rover when it has collected enough samples (for example, it could do a dance and then fly away)
+- Add even more samples to your project, using the prebuilt animations or ones you create yourself
+- Use variables to count samples; increase the count each time a sample is collected
+- Introduce an energy variable so that the rover has to use a renewable energy source like the sun, to recharge
+- Animate the rover when it has collected enough samples (for example, it could do a dance and then fly away)
 
 You can use any of the blocks that you learned about in this project, as well as those that you already know.
 
