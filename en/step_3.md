@@ -36,7 +36,7 @@ when I receive [start v]
 go to [back v] layer
 go to x: (0) y: (0)
 + create clone of [myself v] //Create a copy of the hills
-+ change x by (460) //Move the origial hills to the right of the screen
++ change x by (460) //Move the original hills to the right of the screen
 ```
 --- /task ---
 
@@ -67,9 +67,9 @@ change x by (-3)
 
 --- /task ---
 
-At the moment, there are two copies of the **hills** sprite. The original and a clone. When you get to the end of either one, you'll notice that the screen is just white.
+At the moment, there are two copies of the **hills** sprite: the original and a clone. When you get to the end of either one, you'll notice that the screen is just white.
 
-To fix this, the sprite and its clone need to be moved to the other side of the screen, when they go too far.
+To fix this, the sprite and its clone need to be moved to the other side of the screen when they go too far.
 
 --- task ---
 
