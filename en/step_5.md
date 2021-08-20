@@ -11,7 +11,7 @@ In this step, you will change the appearance of a sprite and the rover to show t
 
 --- task ---
 
-Look at the **rover's** costumes. There are six animations available. The **rover** can:
+Look at the **rover** sprite's costumes. There are six animations available. The **rover** can:
 - Extend its arm
 
 ![Three costumes showing the rover arm extending.](images/arm-animation.png)
@@ -26,7 +26,7 @@ Look at the **rover's** costumes. There are six animations available. The **rove
 
 When you want to organise a lot of code in Scratch, such as several costume changes, it is useful to use `My Blocks`{:class="block3myblocks"}. This allows you to create your own custom blocks.
 
-Your **rover** will have a `My Block`{:class="block3myblocks"} for each animation.
+Your **rover** sprite will have a `My Block`{:class="block3myblocks"} for each animation.
 
 --- task ---
 
@@ -65,7 +65,7 @@ switch costume to (inactive v)
 
 --- task ---
 
-Add a block so that the **rover** plays a sound when it collects the fruit sample.
+Add a block so that the **rover** sprite plays a sound when it collects the fruit sample.
 
 ![The rover sprite.](images/rover-sprite.png)
 ```blocks3
@@ -107,7 +107,7 @@ sample fruit ::custom //Run the animation
 
 --- task ---
 
-Click on the **rover**, and you should see the rover animation.
+Click on the **rover** sprite, and you should see the animation.
 
 --- /task ---
 
@@ -123,7 +123,7 @@ The **tree** sprite should be edited to give it two different costumes. One with
 
 On the **tree** sprite, add blocks to set the costume of the **tree** at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
 
-![The Tree sprite.](images/tree-sprite.png)
+![The tree sprite.](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
 go to x:(-90) y:(-80)
@@ -166,7 +166,7 @@ switch costume to (inactive v)
 
 --- task ---
 
-**Test:** To check that your code is working, click on the flag, and then click on your **rover**. Its arm should extend, and the **tree** sprite should change costumes.
+**Test:** To check that your code is working, click on the flag, and then click on your **rover** sprite. Its arm should extend, and the **tree** sprite should change costumes.
 
 **Tip:** Switch to full screen mode and you will be able to see the animation more easily.
 
@@ -176,7 +176,7 @@ The rover should only be able to collect the fruit, if it is touching it.
 
 --- task ---
 
-On the **rover** sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the **rover** is touching the colour of your fruit.
+On the **rover** sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the **rover** sprite is touching the colour of your fruit.
 
 **Tip:** Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
 
@@ -214,7 +214,7 @@ end
 
 --- task ---
 
-**Test:** Move the **rover** so that it is touching the fruit, then click on the **rover** and watch it collect the fruit from the tree.
+**Test:** Move the **rover** sprite so that it is touching the fruit, then click on the **rover** sprite and watch it collect the fruit from the tree.
 
 --- /task ---
 
