@@ -25,11 +25,11 @@ If you are working offline, the starter project can be found at [rpf.io/en/p/nat
 
 --- /task ---
 
-You should see a scene with a robotic rover, a hilly background, and a controller in the bottom right.
+You should see a scene with a robotic rover, a hilly background, and a controller in the bottom, left-hand corner.
 
 ![The staring background showing hills, a pile of mud, and a robot.](images/starter-background.png)
 
-You are going to use the controller or keyboard controls to make the **rover** look as if it is moving towards or away from the viewer.
+You are going to use the controller or keyboard controls to make the rover look as if it is moving towards or away from the viewer.
 
 --- task ---
 
@@ -51,7 +51,7 @@ This keeps the buttons in the correct position, and broadcasts their directions 
 
 --- /task ---
 
-The **rover** is going to control the start of the game for all the other sprites; so when the green flag is clicked, the sprite needs to broadcast a `start`{:class='block3events'} message.
+The **rover** is going to control the start of the game for all the other sprites; so when the green flag is clicked, the **rover** sprite needs to broadcast a `start`{:class='block3events'} message.
 
 --- task ---
 
@@ -124,19 +124,19 @@ Add **perspective** to your **rover** by making it smaller when it moves upwards
 ```blocks3
 when I receive [up v]
 change y by (10)
-change size by (-1) //smaller is further away
+change size by (-1) //Smaller looks further away
 
 
 when I receive [down v]
 change y by (-10)
-change size by (1) // bigger is closer
+change size by (1) //Bigger looks closer
 ```
 
 --- /task ---
 
 --- task ---
 
-You'll need to reset the rover's size at the start of the game.
+You'll need to reset the **rover's** size at the start of the game.
 
 ```blocks3
 when I receive [start v]
@@ -167,7 +167,7 @@ set size to (50) %
 
 --- task ---
 
-The **rover** should appear in front of the other sprites, for now. Move the **rover** to the front layer.
+For now, the **rover** should appear in front of the other sprites. Move the **rover** to the front layer.
 
 ![The rover sprite.](images/rover-sprite.png)
 ```blocks3
