@@ -18,7 +18,7 @@ Open the starter project online at [rpf.io/nature-rover-starter](https://rpf.io/
 title: Working offline
 ---
 
-If you are working offline, the starter project can be found at [rpf.io/en/p/nature-rover-go](https://rpf.io/en/p/nature-rover-go)
+If you are working offline, the starter project can be found at [rpf.io/p/en/nature-rover-go](https://rpf.io/p/en/nature-rover-go)
 
 --- /collapse ---
 
