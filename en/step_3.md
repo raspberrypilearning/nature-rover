@@ -95,10 +95,10 @@ Add code to detect if the **hills** sprite or its clone have moved too far to th
 ```blocks3
 when I receive [scroll v]
 forever
-if <(x position) > (460)> then //The **hills** sprite is off the right side of the screen
+if <(x position) > (460)> then //The hills sprite is off the right side of the screen
 set x to (-460) //Reset to the left side of the screen
 end
-if <(x position) < (-460)> then //The **hills** sprite is off the left side of the screen
+if <(x position) < (-460)> then //The hills sprite is off the left side of the screen
 set x to (460) //Reset to the right side of the screen
 end
 ```
