@@ -35,5 +35,5 @@ Try and collect a sample by moving the rover until it is touching the fruit or t
 --- /no-print ---
 
 --- print-only ---
-![Completed project](images/showcase_static.png)
+![Completed project](images/showcase-static.png)
 --- /print-only ---
