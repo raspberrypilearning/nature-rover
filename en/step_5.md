@@ -37,6 +37,7 @@ In the `My Blocks`{:class="block3myblocks"} menu, click on **Make a Block**, and
 A new block should appear in your script. It will look like this:
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 define sample fruit
 ```
@@ -48,6 +49,7 @@ Beneath this block, attach some `switch costume`{:class="block3looks"} blocks an
 **Tip:** It is quicker to create your first `switch costume`{:class='block3looks'} block and `wait`{:class='block3control'} block, then duplicate them, and change the costume being used.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 define sample fruit //Animates the robot to collect fruit
 switch costume to (inactive v)
@@ -68,6 +70,7 @@ switch costume to (inactive v)
 Add a block so that the **rover** sprite plays a sound when it collects the fruit sample.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 define sample fruit //Animates the robot to collect fruit
 switch costume to (inactive v)
@@ -98,6 +101,7 @@ The animation won't run when you click the green flag though, as you have not ye
 To use your new block, you can attach it to an `event`{:class="block3events"} block. In the `My Blocks`{:class="block3myblocks"} menu, you should see the block you made. Use it in the following script.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 when this sprite clicked
 sample fruit ::custom //Run the animation
@@ -124,6 +128,7 @@ The **tree** sprite should be edited to give it two different costumes. One with
 On the **tree** sprite, add blocks to set the costume of the **tree** at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
 
 ![The tree sprite.](images/tree-sprite.png)
+
 ```blocks3
 when I receive [start v]
 go to x:(-90) y:(-80)
@@ -148,6 +153,7 @@ end
 On the **rover** sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new `broadcast`{:class="block3events"} into your `define sample fruit`{:class="block3myblocks"} function.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 define sample fruit
 switch costume to (inactive v)
@@ -181,6 +187,7 @@ On the **rover** sprite, change the `when this sprite clicked`{:class="block3eve
 **Tip:** Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 when this sprite clicked
 if <touching color (#FFA500) ?> then //Colour of fruit
@@ -194,6 +201,7 @@ sample fruit ::custom
 Now that the **tree** sprite changes when a fruit is sampled, you need to reset the sprite to its first costume when it goes off the screen.
 
 ![The tree sprite.](images/tree-sprite.png)
+
 ```blocks3
 when I receive [start v]
 go to x:(-90) y:(-80)

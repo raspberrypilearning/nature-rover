@@ -31,9 +31,12 @@ Try and collect a sample by moving the rover until it is touching the fruit or t
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/551066826/?autostart=false" frameborder="0"></iframe>
 </div>
 </div>
+
 --- /task ---
 --- /no-print ---
 
 --- print-only ---
+
 ![Completed project](images/showcase-static.png)
+
 --- /print-only ---
