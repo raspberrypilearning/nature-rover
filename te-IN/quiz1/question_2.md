@@ -35,7 +35,11 @@ when I receive [right v]
 change x by (5)
 ```
 
-  --- feedback --- The cloud is scrolling slower than the mountain here, but this code makes the cloud difficult for the rover to reach because it moves in the same direction as the rover. --- /feedback ---
+  --- feedback ---
+
+The cloud is scrolling slower than the mountain here, but this code makes the cloud difficult for the rover to reach because it moves in the same direction as the rover.
+
+  --- /feedback ---
 
 - ( )
 
