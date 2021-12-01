@@ -14,6 +14,7 @@ For the rover to look like it's moving left and right, instead of the **rover** 
 Select the **hills** sprite. At the start of the game, you need to make sure that it is in the correct position and on the back layer.
 
 ![The hills sprite.](images/hills-sprite.png)
+
 ```blocks3
 when I receive [start v]
 go to [back v] layer
@@ -31,6 +32,7 @@ go to x: (0) y: (0)
 The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3control'}. Then, the original sprite can be moved to the far right-hand side of the screen.
 
 ![The hills sprite.](images/hills-sprite.png)
+
 ```blocks3
 when I receive [start v]
 go to [back v] layer
@@ -38,6 +40,7 @@ go to x: (0) y: (0)
 + create clone of [myself v] //Create a copy of the hills
 + change x by (460) //Move the original hills to the right of the screen
 ```
+
 --- /task ---
 
 When the `left`{:class='block3events'} and `right`{:class='block3events'} broadcasts are received, the **hills** sprite should move. To give the appearance of moving in the correct direction, the background moves **left** when the **rover** is moving right. The direction of motion should be **opposite** to the `broadcast`{:class='block3events'}.
@@ -51,6 +54,7 @@ So, if the broadcast is `left`{:class="block3events"}, then the `x`{:class="bloc
 Add blocks to control the motion of the **hills** sprite and its clone.
 
 ![The hills sprite.](images/hills-sprite.png)
+
 ```blocks3
 when I receive [left v]
 change x by (3)
@@ -76,6 +80,7 @@ To fix this, the sprite and its clone need to be moved to the other side of the 
 Create a new broadcast called `scroll`{:class='block3events'} and add it to the `start`{:class='block3events'} script.
 
 ![The hills sprite.](images/hills-sprite.png)
+
 ```blocks3
 when I receive [start v]
 go to [back v] layer
@@ -92,6 +97,7 @@ change x by (460)
 Add code to detect if the **hills** sprite or its clone have moved too far to the left or right, and then reset their positions to the other side of the screen.
 
 ![The hills sprite.](images/hills-sprite.png)
+
 ```blocks3
 when I receive [scroll v]
 forever
@@ -102,6 +108,7 @@ if <(x position) < (-460)> then //The hills sprite is off the left side of the s
 set x to (460) //Reset to the right side of the screen
 end
 ```
+
 --- /task ---
 
 --- task ---

@@ -36,6 +36,7 @@ You are going to use the controller or keyboard controls to make the rover look 
 Look at the **Code** tab for each of the buttons. The code will look something like this:
 
 ![The up sprite.](images/up-sprite.png)
+
 ```blocks3
 when this sprite clicked
 broadcast (up v)
@@ -58,6 +59,7 @@ The **rover** is going to control the start of the game for all the other sprite
 Add the broadcast to a `green flag clicked`{:class='block3events'} block.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 when flag clicked
 broadcast [start v]
@@ -70,6 +72,7 @@ broadcast [start v]
 If you are working on a computer, it might be easier to use the keyboard controls, rather than using the buttons. Keyboard controls can be added to the **rover** sprite.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 when [up arrow v] key pressed
 broadcast [up v]
@@ -100,6 +103,7 @@ When the **up** button is clicked or the <kbd>up arrow</kbd> is pressed, the **r
 Add code so the **up** button makes the **rover** move up.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 when I receive [up v]
 change y by (10)
@@ -121,6 +125,7 @@ change y by (-10)
 Add **perspective** to your **rover** by making it smaller when it moves upwards, and larger when it moves downwards.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 when I receive [up v]
 change y by (10)
@@ -157,6 +162,7 @@ set size to (50) %
 Now reset the position of the **rover** each time the game starts.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 when I receive [start v]
 set size to (50) %
@@ -170,6 +176,7 @@ set size to (50) %
 For now, the **rover** should appear in front of the other sprites. Move the **rover** to the front layer.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 when I receive [start v]
 set size to (50) %

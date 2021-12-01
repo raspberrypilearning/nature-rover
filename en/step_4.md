@@ -34,6 +34,7 @@ As the tree is closer to the viewer, it should appear to move a greater distance
 To get this moving effect, change the `x`{:class='block3motion'} values that the **tree** sprite moves by when the `left`{:class="block3events"} and `right`{:class="block3events"} broadcasts are received.
 
 ![The tree sprite.](images/tree-sprite.png)
+
 ```blocks3
 when I receive [left v]
 change x by (10) //Use a bigger number than for the hills
@@ -59,6 +60,7 @@ Did you notice that when the tree reaches the very edge of the screen, it stops 
 Using a `forever`{:class='block3control'} loop, and `if`{:class='block3control'} blocks, check the `x`{:class='block3motion'} coordinate of the tree, and move it to the other side of the screen when `x`{:class='block3motion'} is higher than `290` or lower than `-290`.
 
 ![The tree sprite.](images/tree-sprite.png)
+
 ```blocks3
 when I receive [start v]
 go to x:(-90) y:(-80)
@@ -85,6 +87,7 @@ Now move your **rover** sprite around the screen. When the tree reaches the edge
 Lastly, make the **rover** turn left and right so that it faces the direction it is moving in.
 
 ![The rover sprite.](images/rover-sprite.png)
+
 ```blocks3
 when flag clicked
 broadcast [start v]
