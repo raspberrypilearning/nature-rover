@@ -1,21 +1,21 @@
-## Scroll more sprites
+## మరిన్ని sprite లను స్క్రోల్ చేయండి
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-When adding more sprites to your scene, these need to scroll left and right as well.
+మీ సన్నివేశానికి మరిన్ని sprite లను జోడించేటప్పుడు, ఇవి ఎడమ మరియు కుడికి కూడా స్క్రోల్ చేయాలి.
 </div>
 <div>
 ![](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
-Now you can add some more objects to your scene, and scroll them in a similar way.
+ఇప్పుడు మీరు మీ సన్నివేశానికి మరికొన్ని వస్తువులను జోడించవచ్చు మరియు వాటిని ఇదే విధంగా స్క్రోల్ చేయవచ్చు.
 
 --- task ---
 
-Add a **tree** sprite to your project, and then set its starting position.
+**tree** sprite ని జోడించి, ఆపై దాని ప్రారంభ స్థానాన్ని సెట్ చేయండి.
 
-![The tree sprite.](images/tree-sprite.png)
+![Tree sprite.](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
 go to x:(0) y:(-80)
@@ -23,17 +23,17 @@ go to x:(0) y:(-80)
 
 --- /task ---
 
-The **tree** sprite should also move in the **opposite** direction to the broadcast as well.
+**tree** sprite కూడా బ్రాడ్ కాస్ట్ దిశకు, **ఎదురుగా** దిశలో కదలాలి.
 
-![Animation of a tree moving right and left, showing the x coordinate changing.](images/scrolling-tree.gif)
+![చెట్టు యొక్క యానిమేషన్ కుడి మరియు ఎడమకు కదులుతుంది, తద్వారా x కోఆర్డినేట్ మారుతున్నట్లు చూపుతుంది.](images/scrolling-tree.gif)
 
-As the tree is closer to the viewer, it should appear to move a greater distance than the hills each time the button or key is pressed.
+చెట్టు వీక్షకుడికి దగ్గరగా ఉన్నందున, బటన్ లేదా కీని నొక్కిన ప్రతిసారీ అది కొండల కంటే ఎక్కువ దూరం కదులుతున్నట్లు కనిపిస్తుంది.
 
 --- task ---
 
-To get this moving effect, change the `x`{:class='block3motion'} values that the **tree** sprite moves by when the `left`{:class="block3events"} and `right`{:class="block3events"} broadcasts are received.
+ఈ కదిలే ప్రభావాన్ని పొందడానికి, బ్రాడ్ కాస్ట్ ల ద్వారా పొందే, **tree** sprite యొక్క `left`{:class="block3events"} కి మరియు `right`{:class="block3events"} కి కదిలే `x`{:class='block3motion'} విలువలను మార్చండి.
 
-![The tree sprite.](images/tree-sprite.png)
+![Tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -47,19 +47,19 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**Test:** Check your left and right buttons now. The tree should move each time you click on the controller.
+**పరీక్ష:** ఇప్పుడు మీ ఎడమ మరియు కుడి బటన్‌లను తనిఖీ చేయండి. మీరు కంట్రోలర్‌పై క్లిక్ చేసిన ప్రతిసారీ చెట్టు కదలాలి.
 
-**Test:** What happens if you go as far away from the tree as you can?
+**పరీక్ష:** మీరు చెట్టు నుండి వీలైనంత దూరంగా వెళితే ఏమి జరుగుతుంది?
 
 --- /task ---
 
-Did you notice that when the tree reaches the very edge of the screen, it stops moving? You can fix this by moving the tree to the other side of the screen, when its `x`{:class='block3motion'} coordinate is too high or too low.
+చెట్టు స్క్రీన్ అంచుకు చేరుకున్నప్పుడు, అది కదలకుండా ఆగిపోతుందని మీరు గమనించారా? `x`{:class='block3motion'} కోఆర్డినేట్ చాలా ఎక్కువగా లేదా చాలా తక్కువగా ఉన్నప్పుడు మీరు చెట్టును స్క్రీన్‌కి అవతలి వైపుకు తరలించడం ద్వారా దీన్ని పరిష్కరించవచ్చు.
 
 --- task ---
 
-Using a `forever`{:class='block3control'} loop, and `if`{:class='block3control'} blocks, check the `x`{:class='block3motion'} coordinate of the tree, and move it to the other side of the screen when `x`{:class='block3motion'} is higher than `290` or lower than `-290`.
+`forever`{:class='block3control'} లూప్, మరియు `if`{:class='block3control'} బ్లాకులను ఉపయోగించి, చెట్టు యొక్క `x`{:class='block3motion'} కోఆర్డినేట్ ను చెక్ చేయండి, మరియు `x`{:class='block3motion'} విలువ `290` కంటే ఎక్కువగా ఉన్నప్పుడు లేదా `-290` కన్నా తక్కువయినపుడు, దానిని, స్క్రీన్ కి అవతలి వైపుకు తరలించండి.
 
-![The tree sprite.](images/tree-sprite.png)
+![Tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -78,15 +78,15 @@ end
 
 --- task ---
 
-Now move your **rover** sprite around the screen. When the tree reaches the edge, it should vanish off the edge of the screen and reappear on the other side.
+ఇప్పుడు మీ **rover** sprite ని స్క్రీన్ చుట్టూ తరలించండి. చెట్టు అంచుకు చేరుకున్నప్పుడు, అది స్క్రీన్ అంచు నుండి అదృశ్యమై, మరొక వైపు మళ్లీ కనిపిస్తుంది.
 
 --- /task ---
 
 --- task ---
 
-Lastly, make the **rover** turn left and right so that it faces the direction it is moving in.
+చివరగా, **rover** ఎడమ మరియు కుడి వైపుకు తిప్పండి, తద్వారా అది కదులుతున్న దిశకు ఎదురుగా ఉంటుంది.
 
-![The rover sprite.](images/rover-sprite.png)
+![Rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -104,6 +104,6 @@ point in direction (90)
 
 --- task ---
 
-**Test**: Run your project and test it. Make sure the tree appears to fall off the edge of the screen and appears on the other side when the rover moves.
+**పరీక్ష:** మీ ప్రాజెక్ట్‌ను అమలు చేయండి మరియు దానిని పరీక్షించండి. రోవర్ కదులుతున్నప్పుడు, చెట్టు స్క్రీన్ అంచు నుండి పడిపోయి, మరలా మరొక వైపు కనిపించేలా చూసుకోండి.
 
 --- /task ---
