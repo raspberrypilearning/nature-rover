@@ -1,24 +1,24 @@
 
-Well done, you have learned a lot! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
+ಭೇಷ್, ನೀವು ಬಹಳಷ್ಟು ಕಲಿತಿದ್ದೀರಿ! ಈಗ ಪುನರ್ಮನನ ಮಾಡುವ ಸಮಯ — ಪುನರ್ಮನನ ಕಲಿಕೆಯ ಒಂದು ಮಹತ್ವದ ಭಾಗ, ಏಕೆಂದರೆ ಅದು ನಿಮ್ಮ ಮೆದುಳಿನಲ್ಲಿ ಹೊಸ ಸಂಪರ್ಕಗಳನ್ನು ಮಾಡಲು ಸಹಾಯ ಮಾಡುತ್ತದೆ.
 
-Answer the three questions below to reflect on what you've learned.
+ನೀವು ಕಲಿತಿದ್ದನ್ನು ಪುನರ್ಮನನ ಮಾಡಲು ಈ ಕೆಳಗಿನ ಮೂರು ಪ್ರಶ್ನೆಗಳಿಗೆ ಉತ್ತರಿಸಿ.
 
-After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+ಪ್ರತಿಯೊಂದು ಪ್ರಶ್ನೆಯ ನಂತರ, ಸಬ್ಮಿಟ್‌ ಒತ್ತಿ. ಸರಿಯಾದ ಉತ್ತರದ ಕಡೆಗೆ ನಿಮಗೆ ಮಾರ್ಗದರ್ಶನ ನೀಡಲಾಗುತ್ತದೆ. ಈ ಚಟುವಟಿಕೆಯನ್ನು ನೀವು ಎಷ್ಟು ಸಲ ಬೇಕಾದರೂ ಮಾಡಬಹುದು.
 
-Have fun!
+ಆನಂದಿಸಿ!
 
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: ಪ್ರಶ್ನೆ 1 ರಲ್ಲಿ 3
 ---
 
-Here is a controller that broadcasts up when the up button is clicked and down when the down button is clicked:
+ಅಪ್‌ ಬಟನ್‌ನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಅಪ್‌ ಎಂದು ಮತ್ತು ಡೌನ್‌ ಬಟನ್‌ನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಡೌನ್‌ ಎಂದು ಪ್ರಸಾರಮಾಡುವ ನಿಯಂತ್ರಕ ಇಲ್ಲಿದೆ:
 
-![four button controller](images/controller.png)
+![ನಾಲ್ಕು ಬಟನ್ ನಿಯಂತ್ರಕ](images/controller.png)
 
-Which of the following code blocks would you add to **the rover sprite** to make it move up and down
+**The rover sprite** ಮೇಲೆ ಮತ್ತು ಕೆಳಗೆ ಚಲಿಸಲು ನೀವು ಈ ಕೆಳಗಿನ ಯಾವ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸುತ್ತೀರಿ
 
 --- choices ---
 
@@ -38,7 +38,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This would move the rover when it is touching the buttons, rather than when the buttons are pressed.
+  ಇದು ರೋವರ್‌ನ್ನು ಬಟನ್‌ಗಳು ಒತ್ತಲ್ಪಟ್ಟಾಗ ಚಲಿಸುವಂತೆ ಮಾಡುವ ಬದಲು ಅದು ಬಟನ್‌ಗಳನ್ನು ಸ್ಪರ್ಶಿಸಿದಾಗ ಚಲಿಸುವಂತೆ ಮಾಡುತ್ತದೆ.
 
   --- /feedback ---
 
@@ -51,7 +51,7 @@ change y by (10)
 
 --- feedback ---
 
-  This would move the rover when it was clicked on, rather than when the buttons are clicked on.
+  ಇದು ರೋವರ್‌ನ್ನು ಬಟನ್‌ಗಳ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಚಲಿಸುವಂತೆ ಮಾಡುವ ಬದಲು ಅದರ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಚಲಿಸುವಂತೆ ಮಾಡುತ್ತದೆ.
 
   --- /feedback ---
 
@@ -68,7 +68,7 @@ change y by (-10)
 
   --- feedback ---
 
-  Yes, this script receives the up and down broadcasts from the controller buttons and gets the rover to move up and down.
+  ಹೌದು, ಈ ಬರಹ ನಿಯಂತ್ರಕ ಬಟನ್‌ಗಳಿಂದ ಅಪ್‌ ಮತ್ತು ಡೌನ್‌ ಪ್ರಸಾರವನ್ನು ಸ್ವೀಕರಿಸುತ್ತದೆ ಮತ್ತು ರೋವರ್‌ನ್ನು ಮೇಲೆ ಕೆಳಗೆ ಚಲಿಸುವಂತೆ ಮಾಡುತ್ತದೆ.
 
   --- /feedback ---
 
@@ -86,7 +86,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This creates functions for moving up and down, but as the functions are not called, the rover would not move.
+  ಇದು ಮೆಲೆ ಮತ್ತು ಕೆಳಗೆ ಚಲಿಸುವಂತೆ ಮಾಡಲು ಫಂಕ್ಷನ್‌ಗಳನ್ನು ರಚಿಸುತ್ತದೆ, ಆದರೆ ಫಂಕ್ಷನ್‌ಗಳನ್ನು ಆಮಂತ್ರಿಸಿಲ್ಲವಾದುದರಿಂದ ರೋವರ್ ಚಲಿಸುವುದಿಲ್ಲ.
 
   --- /feedback ---
 
