@@ -1,8 +1,8 @@
-## Scroll the background
+## ಹಿನ್ನೆಲೆಯನ್ನು ಚಲಿಸಿ
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For the rover to look like it's moving left and right, instead of the **rover** sprite moving, the **background** sprite moves or scrolls to the left or right.
+ರೋವರ್‌ ಎಡ ಮತ್ತು ಬಲಕ್ಕೆ ಚಲಿಸುತ್ತಿರುವಂತೆ ಕಾಣಲು, **rover** ಸ್ಪ್ರೈಟ್‌ ಚಲಿಸುವ ಬದಲು, **background** ಸ್ಪ್ರೈಟ್‌ ಚಲಿಸುತ್ತದೆ ಅಥವಾ ಎಡ ಅಥವಾ ಬಲಕ್ಕೆ ಚಲಿಸುತ್ತದೆ.
 </div>
 <div>
 ![](images/step-3.gif){:width="300px"}
@@ -11,9 +11,9 @@ For the rover to look like it's moving left and right, instead of the **rover** 
 
 --- task ---
 
-Select the **hills** sprite. At the start of the game, you need to make sure that it is in the correct position and on the back layer.
+**hills** ಸ್ಪ್ರೈಟ್‌ ಆಯ್ಕೆ ಮಾಡಿಕೊಳ್ಳಿ. ಆಟದ ಪ್ರಾರಂಭದಲ್ಲಿ, ನೀವು ಅದು ಸರಿಯಾದ ಸ್ಥಾನದಲ್ಲಿದೆಯೇ ಮತ್ತು ಹಿಂದಿನ ಪದರದಲ್ಲಿದೆ ಎಂಬುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಬೇಕು.
 
-![The hills sprite.](images/hills-sprite.png)
+![ಹಿಲ್ಸ್‌ ಸ್ಪ್ರೈಟ್.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -24,14 +24,14 @@ go to x: (0) y: (0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Layers**</span> are like stacked sheets of clear plastic that you can draw images on. If an image on the top of the stack is covering the image below it, you will not be able to see the bottom image properly. Background images should be near the **back** layer. Images closer to the viewer should be near the **front** layer.
+<span style="color: #0faeb0">**ಪದರಗಳು**</span> ಎಂದರೆ ನೀವು ಅವುಗಳ ಮೇಲೆ ಚಿತ್ರ ಬಿಡಿಸಬಹುದಾದ ಪೇರಿಸಿಟ್ಟ ಸ್ಪಷ್ಟವಾದ ಪ್ಲಾಸ್ಟಿಕ್‌ ಹಾಳೆಗಳಂತೆ. ಸ್ಟಾಕ್‌ ಮೇಲ್ಭಾಗದಲ್ಲಿರುವ ಚಿತ್ರವು ಅದರ ಕೆಳಗೆ ಇರುವ ಚಿತ್ರವನ್ನು ಆವರಿಸಿದ್ದರೆ, ನೀವು ಕೆಳಗಡೆಯ ಚಿತ್ರವನ್ನು ಸರಿಯಾಗಿ ನೋಡಲು ಸಾಧ್ಯವಾಗುವುದಿಲ್ಲ. ಹಿನ್ನೆಲೆಯ ಚಿತ್ರಗಳು **ಹಿಂದಿನ** ಪದರದ ಹತ್ತಿರ ಇರಬೇಕು. ವೀಕ್ಷಕರಿಗೆ ಹತ್ತಿರವಿರುವ ಚಿತ್ರಗಳು **ಮುಂದಿನ** ಪದರದ ಹತ್ತಿರವಿರಬೇಕು.
 </p>
 
 --- task ---
 
-The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3control'}. Then, the original sprite can be moved to the far right-hand side of the screen.
+**hills** ಸ್ಪ್ರೈಟ್‌ ತನ್ನದೇ ನಕಲುನ್ನು ಮಾಡಬೇಕು. ಇವುಗಳನ್ನು `clones`{:class='block3control'} ಎಂದು ಕರೆಯುತ್ತಾರೆ. ಆಮೇಲೆ, ಮೂಲ ಸ್ಪ್ರೈಟ್‌ನ್ನು ಪರದೆಯ ಬಲ-ಭಾಗದಲ್ಲಿ ದೂರಕ್ಕೆ ಚಲಿಸಬಹುದು.
 
-![The hills sprite.](images/hills-sprite.png)
+![ಹಿಲ್ಸ್‌ ಸ್ಪ್ರೈಟ್.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -43,17 +43,17 @@ go to x: (0) y: (0)
 
 --- /task ---
 
-When the `left`{:class='block3events'} and `right`{:class='block3events'} broadcasts are received, the **hills** sprite should move. To give the appearance of moving in the correct direction, the background moves **left** when the **rover** is moving right. The direction of motion should be **opposite** to the `broadcast`{:class='block3events'}.
+`left`{:class='block3events'} ಮತ್ತು `right`{:class='block3events'} ಪ್ರಸಾರಗಳನ್ನು ಸ್ವೀಕರಿಸಿದಾಗ, **hills** ಸ್ಪ್ರೈಟ್‌ ಚಲಿಸಬೇಕು. ಸರಿಯಾದ ದಿಕ್ಕನಲ್ಲಿ ಚಲಿಸುತ್ತಿರುವ ನೋಟವನ್ನು ಕೊಡಲು, **ರೋವರ್** ಬಲಕ್ಕೆ ಚಲಿಸುತ್ತಿರುವಾಗ ಹಿನ್ನೆಲೆಯು **ಎಡಕ್ಕೆ** ಚಲಿಸುತ್ತದೆ. ಚಲನೆಯ ದಿಕ್ಕು `broadcast`{:class='block3events'} ಕ್ಕೆ **ವಿರುದ್ಧವಾಗಿ** ಇರಬೇಕು.
 
-So, if the broadcast is `left`{:class="block3events"}, then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"}, then the `x`{:class="block3motion"} of the **hills** will decrease.
+ಆದುದರಿಂದ, ಪ್ರಸಾರವು `left`{:class="block3events"} ಆಗಿದ್ದರೆ, `x`{:class="block3motion"} ಸ್ಥಾನವು ಹೆಚ್ಚುತ್ತದೆ. ಪ್ರಸಾರವು `right`{:class="block3events"} ಆಗಿದ್ದರೆ, **hills** ನ `x`{:class="block3motion"} ಕಡಿಮೆಯಾಗುತ್ತದೆ.
 
-![Scratch stage shown with a sprite in the bottom right-hand corner and an x y coordinate system shown as the backdrop.](images/scratch-grid.png)
+![ಸ್ಪ್ರೈಟ್‌ ಬಲ ಕೆಳಮೂಲೆಯಲ್ಲಿರುವುದು ಮತ್ತು x y ನಿರ್ದೇಶಾಂಕಗಳ ವ್ಯವಸ್ಥೆಯನ್ನು ಹಿನ್ನೆಲೆಯಾಗಿ ತೋರಿಸಿರುವ Scratch ವೇದಿಕೆ.](images/scratch-grid.png)
 
 --- task ---
 
-Add blocks to control the motion of the **hills** sprite and its clone.
+**hills** ಸ್ಪ್ರೈಟ್‌ ಮತ್ತು ಅದರ ತದ್ರೂಪದ ಚಲನೆಯನ್ನು ನಿಯಂತ್ರಿಸಲು ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ.
 
-![The hills sprite.](images/hills-sprite.png)
+![ಹಿಲ್ಸ್‌ ಸ್ಪ್ರೈಟ್.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -67,19 +67,19 @@ change x by (-3)
 
 --- task ---
 
-**Test**: Use the controller or the <kbd>arrow</kbd> keys to move around. The rover should appear to be moving left and right.
+**ಪರೀಕ್ಷೆ**: ಸುತ್ತಲೂ ಚಲಿಸಲು ನಿಯಂತ್ರಕ ಅಥವಾ <kbd>arrow</kbd> ಕೀಗಳನ್ನು ಉಪಯೋಗಿಸಿ. ರೋವರ್ ಎಡ ಮತ್ತು ಬಲಕ್ಕೆ ಚಲಿಸುತ್ತಿರುವಂತೆ ಕಾಣಬೇಕು.
 
 --- /task ---
 
-At the moment, there are two copies of the **hills** sprite: the original and a clone. When you get to the end of either one, you'll notice that the screen is just white.
+ಈ ಸಮಯದಲ್ಲಿ, **hills** ಸ್ಪ್ರೈಟ್‌ನ ಎರಡು ನಕಲುಗಳಿವೆ: ಮೂಲ ಮತ್ತು ತದ್ರೂಪ. ನೀವು ಯಾವುದಾದರೊಂದರ ತುದಿಯನ್ನು ತಲುಪಿದಾಗ, ಪರದೆಯು ಬಿಳಿ ಮಾತ್ರ ಆಗುವುದನ್ನು ನೀವು ಗಮನಿಸಬಹುದು.
 
-To fix this, the sprite and its clone need to be moved to the other side of the screen when they go too far.
+ಇದನ್ನು ಸರಿಪಡಿಸಲು, ನೀವು ತುಂಬಾ ದೂರ ಹೋದಾಗ ಸ್ಪ್ರೈಟ್‌ ಮತ್ತು ಅದರ ತದ್ರೂಪವನ್ನು ಪರದೆಯ ಇನ್ನೊಂದು ಬದಿಗೆ ಚಲಿಸಬೇಕು.
 
 --- task ---
 
-Create a new broadcast called `scroll`{:class='block3events'} and add it to the `start`{:class='block3events'} script.
+`scroll`{:class='block3events'} ಎಂದು ಕರೆಯಲ್ಪಡುವ ಹೊಸ ಪ್ರಸಾರವನ್ನು ರಚಿಸಿ ಮತ್ತು ಅದನ್ನು `start`{:class='block3events'} ಬರಹಕ್ಕೆ ಸೇರಿಸಿ.
 
-![The hills sprite.](images/hills-sprite.png)
+![ಹಿಲ್ಸ್‌ ಸ್ಪ್ರೈಟ್.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -94,9 +94,9 @@ change x by (460)
 
 --- task ---
 
-Add code to detect if the **hills** sprite or its clone have moved too far to the left or right, and then reset their positions to the other side of the screen.
+**hills** ಸ್ಪ್ರೈಟ್‌ ಅಥವಾ ಅದರ ತದ್ರೂಪ ಎಡಕ್ಕೆ ಅಥವಾ ಬಲಕ್ಕೆ ತುಂಬಾ ದೂರ ಚಲಿಸಿವೆಯೇ ಎಂದು ಪತ್ತೆ ಮಾಡಲು ಕೋಡ್‌ ಸೇರಿಸಿ ಮತ್ತು ನಂತರ ಅವುಗಳ ಸ್ಥಾನವನ್ನು ಪರದೆಯ ಇನ್ನೊಂದು ಬದಿಗೆ ಮರುಹೊಂದಿಸಿ.
 
-![The hills sprite.](images/hills-sprite.png)
+![ಹಿಲ್ಸ್‌ ಸ್ಪ್ರೈಟ್.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [scroll v]
@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**Test**: Use the controller or <kbd>arrow</kbd> keys to move the **rover**. The background should scroll, and the **rover** should never reach the end.
+**ಪರೀಕ್ಷೆ**: **rover**ನ್ನು ಚಲಿಸಲು ನಿಯಂತ್ರಕ ಅಥವಾ <kbd>arrow</kbd> ಕೀಗಳನ್ನು ಉಪಯೋಗಿಸಿ. ಹಿನ್ನೆಲೆ ಚಲಿಸಬೇಕು, ಮತ್ತು **rover** ಎಂದಿಗೂ ತುದಿಯನ್ನು ತಲುಪಬಾರದು.
 
 --- /task ---
 
