@@ -1,31 +1,31 @@
-## Introduction
+## ಪರಿಚಯ
 
-In this project, you will create a wilderness scene for a nature rover to explore.
+ಈ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ, ನೀವು ಪ್ರಕೃತಿ ರೋವರ್‌ ಅನ್ವೇಷಿಸಲು ಕಾಡಿನ ದೃಶ್ಯವನ್ನು ರಚಿಸುತ್ತೀರಿ.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Rovers**</span> are robots. They can be used to carry out science experiments in remote places, like Mars!  They examine their surroundings and they can be directed to interesting features and take samples. If they are solar powered, they can place themselves in a sunny position to recharge their batteries.
+<span style="color: #0faeb0">**ರೋವರ್‌ಗಳು**</span> ರೋಬೋಟ್‌ಗಳು. ಮಂಗಳ ಗ್ರಹದಂತಹ ದೂರದ ಸ್ಥಳಗಳಲ್ಲಿ ವಿಜ್ಞಾನದ ಪ್ರಯೋಗಗಳನ್ನು ಕೈಗೊಳ್ಳಲು ಅವುಗಳನ್ನು ಬಳಸಬಹುದು!  ಅವುಗಳು ತಮ್ಮ ಸುತ್ತಮುತ್ತಲಿನ ಪ್ರದೇಶಗಳನ್ನು ಪರೀಕ್ಷಿಸುತ್ತವೆ ಮತ್ತು ಅವುಗಳನ್ನು ಆಸಕ್ತಿದಾಯಕ ವೈಶಿಷ್ಟ್ಯಗಳಿರುವೆಡಗೆ ಕಳುಹಿಸಿ ಮಾದರಿಗಳನ್ನು ತೆಗೆದುಕೊಳ್ಳಲು ನಿರ್ದೇಶಿಸಬಹುದು. ಅವುಗಳು ಸೌರ ಶಕ್ತಿಯನ್ನು ಉಪಯೋಗಿಸುವದಾದರೆ, ಅವುಗಳು ತಮ್ಮ ಬ್ಯಾಟರಿಗಳನ್ನು ರಿಚಾರ್ಜ್‌ ಮಾಡಲು ತಮ್ಮನ್ನು ತಾವು ಬಿಸಿಲಿರುವ ಜಾಗದಲ್ಲಿ ಇರಿಸಿಕೊಳ್ಳಬಹುದು.
 </p>
 
-You will:
-+ Move sprites using perspective to give the appearance of distance
-+ Organise costume changes with `my blocks`{:class='block3myblocks'}
-+ Create a realistic scene using scrolling
+ನೀವು:
++ ದೂರದಲ್ಲಿರುವ ಹಾಗೆ ಕಾಣುವಂತೆ ಮಾಡಲು ಯಥಾದೃಷ್ಟಿ ಉಪಯೋಗಿಸಿಕೊಂಡು ಸ್ಪ್ರೈಟ್‌ಗಳನ್ನು ಚಲಿಸುವಿರಿ
++ `my blocks`{:class='block3myblocks'} ಗಳೊಂದಿಗೆ ಉಡುಪಿನ ಬದಲಾವಣೆಗಳನ್ನು ಆಯೋಜಿಸುವಿರಿ
++ ಸ್ಕ್ರಾಲಿಂಗ್‌ ಉಪಯೋಗಿಸಿ ನೈಜ ದೃಶ್ಯಗಳನ್ನು ರಚಿಸುವಿರಿ
 
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Scrolling**</span> is when graphics (or objects in your scene) move left, right, up, or down on a computer screen. Scrolling makes scenes look more realistic.
+<span style="color: #0faeb0">**ಸ್ಕ್ರಾಲಿಂಗ್**</span> ಎಂದರೆ ಗ್ರಾಫಿಕ್ಸ್ (ಅಥವಾ ನಿಮ್ಮ ದೃಶ್ಯದಲ್ಲಿರುವ ವಸ್ತುಗಳು) ಕಂಪ್ಯೂಟರ್ ಪರದೆಯ ಮೇಲೆ ಎಡಕ್ಕೆ, ಬಲಕ್ಕೆ, ಮೇಲಕ್ಕೆ ಅಥವಾ ಕೆಳಕ್ಕೆ ಚಲಿಸಿದಾಗ ಅದು ಸ್ಕ್ರಾಲಿಂಗ್. ಸ್ಕ್ರಾಲಿಂಗ್‌ ದೃಶ್ಯಗಳನ್ನು ಹೆಚ್ಚು ನೈಜವಾಗಿ ಕಾಣುವಂತೆ ಮಾಡುತ್ತದೆ.
 </p>
 
 --- no-print ---
 
 --- task ---
 
-### Try it
+### ಇದನ್ನು ಪ್ರಯತ್ನಿಸಿ
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 175px; flex-grow: 1">  
-What happens when you click the buttons to move the rover? How would you describe how the background/sprites scroll (move around)?
+ರೋವರ್‌ನ್ನು ಚಲಿಸಲು ನೀವು ಬಟನ್‌ಗಳನ್ನು ಕ್ಲಿಕ್ ಮಾಡಿದಾಗ ಏನಾಗುತ್ತದೆ? ಹಿನ್ನೆಲೆ/ಸ್ಪ್ರೈಟ್ ಸ್ಕ್ರಾಲ್ (ಸುತ್ತಲೂ ಚಲಿಸುವುದು) ಹೇಗೆ ಎಂದು ನೀವು ಹೇಗೆ ವಿವರಿಸುತ್ತೀರಿ?
 
-Try and collect a sample by moving the rover until it is touching the fruit or the soil, and then clicking the rover.
+ಹಣ್ಣು ಅಥವಾ ಮಣ್ಣನ್ನು ಸ್ಪರ್ಶಿಸುವವರೆಗೆ ರೋವರ್‌ನ್ನು ಚಲಿಸುವ ಮೂಲಕ ಮತ್ತು ನಂತರ ರೋವರ್‌ನ್ನು ಕ್ಲಿಕ್ ಮಾಡುವ ಮೂಲಕ ಮಾದರಿಯನ್ನು ಸಂಗ್ರಹಿಸಲು ಪ್ರಯತ್ನಿಸಿ.
 </div>
 <div class="scratch-preview" style="margin-left: 15px;">
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/551066826/?autostart=false" frameborder="0"></iframe>
@@ -36,6 +36,6 @@ Try and collect a sample by moving the rover until it is touching the fruit or t
 
 --- print-only ---
 
-![Completed project](images/showcase-static.png)
+![ಪೂರ್ಣಗೊಂಡ ಪ್ರಾಜೆಕ್ಟ್](images/showcase-static.png)
 
 --- /print-only ---
