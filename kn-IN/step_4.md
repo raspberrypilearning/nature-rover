@@ -1,21 +1,21 @@
-## Scroll more sprites
+## ಇನ್ನಷ್ಟು ಸ್ಪ್ರೈಟ್‌ಗಳನ್ನು ಚಲಿಸಿ
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-When adding more sprites to your scene, these need to scroll left and right as well.
+ನಿಮ್ಮ ದೃಶ್ಯಕ್ಕೆ ಇನ್ನಷ್ಟು ಸ್ಪ್ರೈಟ್‌ಗಳನ್ನು ಸೇರಿಸುವಾಗ, ಇವುಗಳೂ ಕೂಡ ಎಡ ಮತ್ತು ಬಲಕ್ಕೆ ಚಲಿಸಬೇಕು.
 </div>
 <div>
 ![](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
-Now you can add some more objects to your scene, and scroll them in a similar way.
+ಈಗ ನೀವು ನಿಮ್ಮ ದೃಶ್ಯಕ್ಕೆ ಇನ್ನೂ ಕೆಲವು ವಸ್ತುಗಳನ್ನು ಸೇರಿಸಬಹುದು, ಮತ್ತು ಅವುಗಳನ್ನೂ ಸಹ ಇದೇ ರೀತಿಯಲ್ಲಿ ಚಲಿಸುವಂತೆ ಮಾಡಿ.
 
 --- task ---
 
-Add a **tree** sprite to your project, and then set its starting position.
+ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ಗೆ **tree** ಸ್ಪ್ರೈಟ್‌ ಸೇರಿಸಿ, ಮತ್ತು ನಂತರ ಅದರ ಪ್ರಾರಂಭಿಕ ಸ್ಥಾನವನ್ನು ಹೊಂದಿಸಿ.
 
-![The tree sprite.](images/tree-sprite.png)
+![ಮರ ಸ್ಪ್ರೈಟ್.](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
 go to x:(0) y:(-80)
@@ -23,17 +23,17 @@ go to x:(0) y:(-80)
 
 --- /task ---
 
-The **tree** sprite should also move in the **opposite** direction to the broadcast as well.
+**tree** ಸ್ಪ್ರೈಟ್‌ ಸಹ ಪ್ರಸಾರಕ್ಕೆ **ವಿರುದ್ಧ** ದಿಕ್ಕಿನಲ್ಲಿ ಚಲಿಸಬೇಕು.
 
-![Animation of a tree moving right and left, showing the x coordinate changing.](images/scrolling-tree.gif)
+![X ನಿರ್ದೇಶಾಂಕಗಳು ಬದಲಾಗುವುದನ್ನು ತೋರಿಸುತ್ತ ಬಲ ಮತ್ತು ಎಡಕ್ಕೆ ಚಲಿಸುತ್ತಿರುವ ಮರದ ಅನಿಮೇಶನ್.](images/scrolling-tree.gif)
 
-As the tree is closer to the viewer, it should appear to move a greater distance than the hills each time the button or key is pressed.
+ಮರವು ವೀಕ್ಷಕರಿಗೆ ಹತ್ತಿರವಿರುವುದರಿಂದ, ಪ್ರತಿಯೊಂದು ಬಾರಿ ಬಟನ್‌ ಅಥವಾ ಕೀಯನ್ನು ಒತ್ತಿದಾಗ ಅದು ಬೆಟ್ಟಗಳಿಗಿಂತ ಹೆಚ್ಚಿನ ದೂರದಲ್ಲಿ ಚಲಿಸುತ್ತಿರುವಂತೆ ಗೋಚರಿಸಬೇಕು.
 
 --- task ---
 
-To get this moving effect, change the `x`{:class='block3motion'} values that the **tree** sprite moves by when the `left`{:class="block3events"} and `right`{:class="block3events"} broadcasts are received.
+ಚಲಿಸುವ ಈ ಪರಿಣಾಮವನ್ನು ಪಡೆಯಲು, `x`{:class='block3motion'} ಮೌಲ್ಯಗಳನ್ನು ಬದಲಾಯಿಸಿ ಅದರಿಂದ **tree** ಸ್ಪ್ರೈಟ್‌ `left`{:class="block3events"} ಮತ್ತು `right`{:class="block3events"} ಪ್ರಸಾರಗಳನ್ನು ಸ್ವೀಕರಿಸಿದಾಗ ಚಲಿಸುತ್ತದೆ.
 
-![The tree sprite.](images/tree-sprite.png)
+![ಮರ ಸ್ಪ್ರೈಟ್.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -47,19 +47,19 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**Test:** Check your left and right buttons now. The tree should move each time you click on the controller.
+**ಪರೀಕ್ಷೆ:** ಈಗ ನಿಮ್ಮ ಎಡ ಮತ್ತು ಬಲ ಬಟನ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸಿ. ನೀವು ಪ್ರತಿಯೊಂದು ಬಾರಿ ನಿಯಂತ್ರಕವನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಮರ ಚಲಿಸಬೇಕು.
 
-**Test:** What happens if you go as far away from the tree as you can?
+**ಪರೀಕ್ಷೆ:** ನೀವು ಮರದಿಂದ ಸಾಧ್ಯವಾದಷ್ಟು ದೂರ ಹೋದರೆ ಏನಾಗುತ್ತದೆ?
 
 --- /task ---
 
-Did you notice that when the tree reaches the very edge of the screen, it stops moving? You can fix this by moving the tree to the other side of the screen, when its `x`{:class='block3motion'} coordinate is too high or too low.
+ಮರವು ಪರದೆಯ ಬಹಳ ತುದಿಗೆ ತಲುಪಿದಾಗ, ಅದು ಚಲಿಸುವುದನ್ನು ನಿಲ್ಲಿಸುವುದನ್ನು ನೀವು ಗಮನಿಸಿದಿರಾ? ಅದರ `x`{:class='block3motion'} ನಿರ್ದೇಶಾಂಕಗಳು ತುಂಬಾ ಹೆಚ್ಚು ಅಥವಾ ಕಡಿಮೆ ಆದಾಗ, ನೀವು ಮರವನ್ನು ಪರದೆಯ ಇನ್ನೊಂದು ಬದಿಗೆ ಚಲಿಸಿ ಇದನ್ನು ಸರಿಪಡಿಸಬಹುದು.
 
 --- task ---
 
-Using a `forever`{:class='block3control'} loop, and `if`{:class='block3control'} blocks, check the `x`{:class='block3motion'} coordinate of the tree, and move it to the other side of the screen when `x`{:class='block3motion'} is higher than `290` or lower than `-290`.
+`forever`{:class='block3control'} ಲೂಪ್‌ ಮತ್ತು `if`{:class='block3control'} ಬ್ಲಾಕ್‌ಗಳನ್ನು ಉಪಯೋಗಿಸಿ, ಮರದ ನಿರ್ದೇಶಾಂಕಗಳನ್ನು `x`{:class='block3motion'} ಪರಿಶೀಲಿಸಿ, ಅದನ್ನು `x`{:class='block3motion'} `290` ಕ್ಕಿಂತ ಹೆಚ್ಚಿರುವಾಗ ಅಥವಾ `-290`.ಕ್ಕಿಂತ ಕಡಿಮೆ ಇರುವಾಗ ಪರದೆಯ ಇನ್ನೊಂದು ಬದಿಗೆ ಚಲಿಸಿ.
 
-![The tree sprite.](images/tree-sprite.png)
+![ಮರ ಸ್ಪ್ರೈಟ್.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -78,15 +78,15 @@ end
 
 --- task ---
 
-Now move your **rover** sprite around the screen. When the tree reaches the edge, it should vanish off the edge of the screen and reappear on the other side.
+ಈಗ ನಿಮ್ಮ **rover** ಸ್ಪ್ರೈಟ್‌ನ್ನು ಪರದೆಯ ಸುತ್ತ ಚಲಿಸಿ. ಮರವು ಅಂಚನ್ನು ತಲುಪಿದಾಗ, ಅದು ಪರದೆಯ ಅಂಚಿನಿಂದ ಕಣ್ಮರೆಯಾಗಬೇಕು ಮತ್ತು ಇನ್ನೊಂದು ಬದಿಯಲ್ಲಿ ಮತ್ತೆ ಕಾಣಿಸಿಕೊಳ್ಳಬೇಕು.
 
 --- /task ---
 
 --- task ---
 
-Lastly, make the **rover** turn left and right so that it faces the direction it is moving in.
+ಕೊನೆಯದಾಗಿ, **rover** ನ್ನು ಅದು ಚಲಿಸುತ್ತಿರುವ ದಿಕ್ಕಿನಲ್ಲಿ ಮುಖಮಾಡಿರುವಂತೆ ಮಾಡಲು ಎಡ ಮತ್ತು ಬಲಕ್ಕೆ ಅದನ್ನು ತಿರುಗಿಸಿ.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -104,6 +104,6 @@ point in direction (90)
 
 --- task ---
 
-**Test**: Run your project and test it. Make sure the tree appears to fall off the edge of the screen and appears on the other side when the rover moves.
+**ಪರೀಕ್ಷಿಸಿ:** ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ನ್ನು ರನ್‌ ಮಾಡಿ ಮತ್ತು ಅದನ್ನು ಪರೀಕ್ಷಿಸಿ. ರೋವರ್‌ ಚಲಿಸಿದಾಗ ಮರವು ಪರದೆಯ ಅಂಚಿನಿಂದ ಬೀಳುವಂತೆ ಕಾಣಿಸುವುದನ್ನು ಮತ್ತು ಇನ್ನೊಂದು ಬದಿಯಲ್ಲಿ ಕಾಣಿಸುಕೊಳ್ಳುವುದನ್ನು ಖಚಿತಪಡಿಸಿಕೊಳ್ಳಿ.
 
 --- /task ---
