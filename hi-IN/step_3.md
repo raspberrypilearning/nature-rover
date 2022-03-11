@@ -1,8 +1,8 @@
-## Scroll the background
+## पृष्ठभूमि को स्क्रॉल करें
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For the rover to look like it's moving left and right, instead of the **rover** sprite moving, the **background** sprite moves or scrolls to the left or right.
+यह दिखाने के लिए की रोवर बाएं और दाएं घूम रहा है, **rover** स्प्राइट हिलने के बजाय, **backgrown** स्प्राइट बाईं या दाईं ओर चलता है या स्क्रॉल करता है।
 </div>
 <div>
 ![](images/step-3.gif){:width="300px"}
@@ -11,9 +11,9 @@ For the rover to look like it's moving left and right, instead of the **rover** 
 
 --- task ---
 
-Select the **hills** sprite. At the start of the game, you need to make sure that it is in the correct position and on the back layer.
+**hills** स्प्राइट चुनें। खेल की शुरुआत में, आपको यह सुनिश्चित करने की ज़रूरत है कि यह सही स्थिति में है और पीछे की परत पर है।
 
-![The hills sprite.](images/hills-sprite.png)
+![hills स्प्राइट।](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -24,14 +24,14 @@ go to x: (0) y: (0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Layers**</span> are like stacked sheets of clear plastic that you can draw images on. If an image on the top of the stack is covering the image below it, you will not be able to see the bottom image properly. Background images should be near the **back** layer. Images closer to the viewer should be near the **front** layer.
+<span style="color: #0faeb0">**लेयर्स **</span> स्पष्ट प्लास्टिक की एक के ऊपर एक रखी शीट की तरह हैं जिन पर आप चित्र बना सकते हैं। यदि ढेर के शीर्ष पर एक चित्र उसके नीचे के चित्र को ढक कर रही है, तो आप नीचे के चित्र को ठीक से नहीं देख पाएंगे। पृष्टभूमि के चित्र **पीछे वाली ** परत के पास होने चाहिए। देखनेवाले के करीब के चित्र **आगे की ** लेयर के पास होने चाहिए।
 </p>
 
 --- task ---
 
-The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3control'}. Then, the original sprite can be moved to the far right-hand side of the screen.
+**hills** स्प्राइट को स्वयं की एक प्रति बनाने की आवश्यकता है। इन्हें `clones`{:class='block3control'} कहा जाता है। फिर, मूल स्प्राइट को स्क्रीन के एकदम दाईं ओर ले जाया जा सकता है।
 
-![The hills sprite.](images/hills-sprite.png)
+![hills स्प्राइट।](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -43,17 +43,17 @@ go to x: (0) y: (0)
 
 --- /task ---
 
-When the `left`{:class='block3events'} and `right`{:class='block3events'} broadcasts are received, the **hills** sprite should move. To give the appearance of moving in the correct direction, the background moves **left** when the **rover** is moving right. The direction of motion should be **opposite** to the `broadcast`{:class='block3events'}.
+जब `left`{:class='block3events'} और `right`{:class='block3events'} प्रसारण प्राप्त होते हैं, तो **hills** स्प्राइट हिलना चाहिए। सही दिशा में गतिमान होने का आभास देने के लिए, जब **रोवर** दाईं ओर घूम रहा हो तो पृष्ठभूमि **left** चलती है। हिलने की दिशा `broadcast`{:class='block3events'} के</strong> विपरीत ** होनी चाहिए</p>
 
-So, if the broadcast is `left`{:class="block3events"}, then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"}, then the `x`{:class="block3motion"} of the **hills** will decrease.
+इसलिए, यदि प्रसारण `left`{:class="block3events" है, तो `x`{:class="block3motion"} स्थिति बढ़ जाएगी। यदि प्रसारण `right`{:class="block3events"}है, तो **hills** का `x`{:class="block3motion"} घट जाएगा।
 
-![Scratch stage shown with a sprite in the bottom right-hand corner and an x y coordinate system shown as the backdrop.](images/scratch-grid.png)
+![Scratch मंच नीचे दाएं कोने में एक स्प्राइट और पृष्ठभूमि के रूप में दिखाया गया एक x y समन्वय प्रणाली के साथ दिखाया गया है।](images/scratch-grid.png)
 
 --- task ---
 
-Add blocks to control the motion of the **hills** sprite and its clone.
+**hills** स्प्राइट और उसके क्लोन की गति को नियंत्रित करने के लिए ब्लॉक जोड़ें।
 
-![The hills sprite.](images/hills-sprite.png)
+![hills स्प्राइट।](images/hills-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -67,19 +67,19 @@ change x by (-3)
 
 --- task ---
 
-**Test**: Use the controller or the <kbd>arrow</kbd> keys to move around. The rover should appear to be moving left and right.
+**परिक्षण**: घूमने के लिए कंट्रोलर या <kbd>arrow</kbd> कुंजियों का उपयोग करें। रोवर को बाएँ और दाएँ चलते हुए दिखना चाहिए।
 
 --- /task ---
 
-At the moment, there are two copies of the **hills** sprite: the original and a clone. When you get to the end of either one, you'll notice that the screen is just white.
+इस समय पर, **hills** स्प्राइट की दो प्रतियां हैं: मूल और एक क्लोन। जब आप किसी एक के अंत तक पहुँचते हैं, तो आप देखेंगे कि स्क्रीन बिलकुल सफ़ेद है।
 
-To fix this, the sprite and its clone need to be moved to the other side of the screen when they go too far.
+इसे ठीक करने के लिए, स्प्राइट और उसके क्लोन को बहुत दूर जाने पर स्क्रीन के दूसरी तरफ ले जाने की आवश्यकता होती है।
 
 --- task ---
 
-Create a new broadcast called `scroll`{:class='block3events'} and add it to the `start`{:class='block3events'} script.
+`scroll`{:class='block3events'} नामक एक नया प्रसारण बनाएं और इसे `start`{:class='block3events'} स्क्रिप्ट में जोड़ें।
 
-![The hills sprite.](images/hills-sprite.png)
+![hills स्प्राइट।](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -94,9 +94,9 @@ change x by (460)
 
 --- task ---
 
-Add code to detect if the **hills** sprite or its clone have moved too far to the left or right, and then reset their positions to the other side of the screen.
+यह पता लगाने के लिए कोड जोड़ें कि क्या **hills** स्प्राइट या उसका क्लोन बाईं या दाईं ओर बहुत दूर चला गया है, और फिर उनकी स्थिति को स्क्रीन के दूसरी तरफ रीसेट करें।
 
-![The hills sprite.](images/hills-sprite.png)
+![hills स्प्राइट।](images/hills-sprite.png)
 
 ```blocks3
 when I receive [scroll v]
@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**Test**: Use the controller or <kbd>arrow</kbd> keys to move the **rover**. The background should scroll, and the **rover** should never reach the end.
+**परिक्षण**: **rover** को हिलाने के लिए कंट्रोलर या <kbd>arrow</kbd> कुंजियों का उपयोग करें। पृष्ठभूमि को स्क्रॉल करना चाहिए, और **rover** को कभी भी अंत तक नहीं पहुंचना चाहिए।
 
 --- /task ---
 
