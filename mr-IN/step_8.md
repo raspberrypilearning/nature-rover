@@ -1,14 +1,14 @@
-## Upgrade your project
+## तुमचा प्रोजेक्ट अपग्रेड करा
 
-Make your rover interact with the nature scene even more, similar to how a real rover would behave.
+वास्तविक रोव्हर जसा वागेल त्याचप्रमाणे तुमच्या रोव्हरला निसर्ग दृश्याशी संवाद साधू द्या.
 
-You can:
-- Add even more samples to your project, using the prebuilt animations or ones you create yourself
-- Use variables to count samples; increase the count each time a sample is collected
-- Introduce an energy variable so that the rover has to use a renewable energy source like the sun, to recharge
-- Animate the rover when it has collected enough samples (for example, it could do a dance and then fly away)
+तुम्ही हे करू शकता:
+- आधीच असलेल्या ऍनिमेशनचा वापर करून किंवा तुम्ही स्वतः तयार करून तुमच्या प्रोजेक्टमध्ये अधिक नमूने जोडा
+- नमूने मोजण्यासाठी व्हेरिएबलचा वापर करा, प्रत्येक वेळी नमूना गोळा केल्यावर मोजणी वाढवा
+- एनर्जी व्हेरिएबलचा परिचय करून द्या जेणेकरून रोव्हरला रीचार्ज करण्यासाठी सुर्यासारखा नुतनीकरणयोग्य ऊर्जा स्त्रोत वापरावा लागेल
+- रोव्हरने पुरेसे नमुने गोळा केल्यावर त्याला ऍनिमेट करा (उदाहरणार्थ, तो नृत्य करू शकतो आणि नंतर उडून जाऊ शकतो)
 
-You can use any of the blocks that you learned about in this project, as well as those that you already know.
+तुम्ही या प्रोजेक्टमध्ये शिकलेल्या तसेच तुम्हाला आधीपासून माहिती असलेल्या कोणत्याही ब्लॉक्सचा वापर करू शकता.
 
 ```blocks3
 define collect sample ::custom
@@ -31,7 +31,7 @@ if <touching color (#FFAA00) ?> then
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/536887721/?autostart=false" frameborder="0"></iframe>
 </div>
 
-You can view the complete project [here](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
+तुम्ही पूर्ण प्रोजेक्ट [येथे](https://scratch.mit.edu/projects/536887721){:target="_blank"} बघू शकता.
 
 
 
