@@ -1,21 +1,21 @@
-## Scroll more sprites
+## अधिक स्प्राइट स्क्रॉल करें
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-When adding more sprites to your scene, these need to scroll left and right as well.
+अपने दृश्य में अधिक स्प्राइट जोड़ते समय, इन्हें बाएँ और दाएँ स्क्रॉल करने की भी आवश्यकता होती है।
 </div>
 <div>
 ![](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
-Now you can add some more objects to your scene, and scroll them in a similar way.
+अब आप अपने दृश्य में कुछ और वस्तुएँ जोड़ सकते हैं, और उन्हें इसी तरह स्क्रॉल कर सकते हैं।
 
 --- task ---
 
-Add a **tree** sprite to your project, and then set its starting position.
+**tree** स्प्राइट जोड़ें, और फिर इसकी प्रारंभिक स्थिति निर्धारित करें।
 
-![The tree sprite.](images/tree-sprite.png)
+![tree स्प्राइट।](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
 go to x:(0) y:(-80)
@@ -23,17 +23,17 @@ go to x:(0) y:(-80)
 
 --- /task ---
 
-The **tree** sprite should also move in the **opposite** direction to the broadcast as well.
+**tree** स्प्राइट को प्रसारण के साथ-साथ **विपरीत** दिशाओं में भी जाना चाहिए।
 
-![Animation of a tree moving right and left, showing the x coordinate changing.](images/scrolling-tree.gif)
+![x निर्देशांक बदलते हुए दिखाते हुए दाएँ और बाएँ चलते हुए एक पेड़ का एनिमेशन।](images/scrolling-tree.gif)
 
-As the tree is closer to the viewer, it should appear to move a greater distance than the hills each time the button or key is pressed.
+चूँकि पेड़ दर्शक के करीब है, इसे हर बार बटन या कुंजी दबाए जाने पर पहाड़ियों की तुलना में अधिक दूरी पर जाना चाहिए।
 
 --- task ---
 
-To get this moving effect, change the `x`{:class='block3motion'} values that the **tree** sprite moves by when the `left`{:class="block3events"} and `right`{:class="block3events"} broadcasts are received.
+इस गतिमान प्रभाव को प्राप्त करने के लिए, `x`{:class='block3motion'}मान बदलें कि **tree** स्प्राइट चलता है जब `left`{:class="block3events"} और `right`{:class="block3events"} प्रसारण प्राप्त होते हैं।
 
-![The tree sprite.](images/tree-sprite.png)
+![tree स्प्राइट।](images/tree-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -47,19 +47,19 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**Test:** Check your left and right buttons now. The tree should move each time you click on the controller.
+**परीक्षण:** अभी अपने बाएँ और दाएँ बटन जाँचें। हर बार जब आप नियंत्रक पर क्लिक करते हैं तो पेड़ हिलना चाहिए।
 
-**Test:** What happens if you go as far away from the tree as you can?
+**परिक्षण:** क्या होता है यदि आप पेड़ से जितना हो सके उतना दूर जाते हैं?
 
 --- /task ---
 
-Did you notice that when the tree reaches the very edge of the screen, it stops moving? You can fix this by moving the tree to the other side of the screen, when its `x`{:class='block3motion'} coordinate is too high or too low.
+क्या आपने देखा है कि जब पेड़ स्क्रीन के बिल्कुल किनारे पर पहुंच जाता है, तो वह हिलना बंद कर देता है? आप पेड़ को स्क्रीन के दूसरी ओर ले जाकर इसे ठीक कर सकते हैं, जब इसका `x`{:class='block3motion'} निर्देशांक बहुत अधिक या बहुत कम हो।
 
 --- task ---
 
-Using a `forever`{:class='block3control'} loop, and `if`{:class='block3control'} blocks, check the `x`{:class='block3motion'} coordinate of the tree, and move it to the other side of the screen when `x`{:class='block3motion'} is higher than `290` or lower than `-290`.
+`forever`{:class='block3control'} लूप और `if`{:class='block3control'} ब्लॉक का उपयोग करके, पेड़ के `x`{:class='block3motion'} निर्देशांक को चेक करें और जब `x`{:class='block3motion'} `290` से बड़ा हो या `-290` से कम हो तो इसे स्क्रीन के दूसरी ओर ले जाएँ ह।
 
-![The tree sprite.](images/tree-sprite.png)
+![tree स्प्राइट।](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -78,15 +78,15 @@ end
 
 --- task ---
 
-Now move your **rover** sprite around the screen. When the tree reaches the edge, it should vanish off the edge of the screen and reappear on the other side.
+अब अपने **rover** स्प्राइट को स्क्रीन के चारों ओर घुमाएँ। जब पेड़ किनारे पर पहुंचता है, तो उसे स्क्रीन के किनारे से गायब हो जाना चाहिए और दूसरी तरफ फिर से दिखना चाहिए।
 
 --- /task ---
 
 --- task ---
 
-Lastly, make the **rover** turn left and right so that it faces the direction it is moving in.
+अंत में, **rover** को बाएँ और दाएँ मोड़ें ताकि वह उस दिशाकी ओर मुंह करे जिसमें वह आगे बढ़ रहा है।
 
-![The rover sprite.](images/rover-sprite.png)
+![rover स्प्राइट।](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -104,6 +104,6 @@ point in direction (90)
 
 --- task ---
 
-**Test**: Run your project and test it. Make sure the tree appears to fall off the edge of the screen and appears on the other side when the rover moves.
+**परिक्षण**: अपना प्रोजेक्ट चलाएँ और उसका परीक्षण करें। सुनिश्चित करें कि पेड़ स्क्रीन के किनारे से गिरता हुआ प्रतीत होता है और रोवर के हिलने पर दूसरी तरफ दिखाई देता है।
 
 --- /task ---
