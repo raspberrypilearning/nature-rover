@@ -1,8 +1,8 @@
-## Create another sample
+## మరొక నమూనాను సృష్టించండి
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Choose what the rover samples next! Does it see a new species of plant, bug, or animal? Does it see some water or mysterious liquid? Does it want to sample some dirt or a rock, or even the air? Or something else?
+తదుపరి రోవర్ నమూనాలను ఎంచుకోండి! ఇది కొత్త జాతి మొక్క, బగ్ లేదా జంతువును చూస్తుందా? ఇది కొంత నీరు లేదా అంతుచిక్కని ద్రవాన్ని చూస్తుందా? ఇది కొంత ధూళిని లేదా రాయిని లేదా గాలిని కూడా నమూనా చేయాలనుకుంటున్నారా? లేక ఇంకేమైనా?
 </div>
 <div>
 ![](images/step-6.gif){:width="300px"}
@@ -11,29 +11,29 @@ Choose what the rover samples next! Does it see a new species of plant, bug, or 
 
 --- task ---
 
-**Choose:** Add a new **sample** sprite for the rover to collect. You can add this to your project either by selecting one from the library or drawing your own.
+**ఎంచుకోండి:** రోవర్ సేకరించడం కోసం కొత్త **sample** sprite ని జోడింఛండి. లైబ్రరీ నుండి ఒకదాన్ని ఎంచుకోవడం ద్వారా లేదా మీ స్వంతంగా గీయడం ద్వారా మీరు దీన్ని మీ ప్రాజెక్ట్‌కి జోడించవచ్చు.
 
 --- /task ---
 
-Get your **sample** sprite to scroll. If it is low down on the screen it should move more (`change x by`{:class='block3motion'} should be higher than `5`), and if it is high up on the screen it should move less (`change x by`{:class='block3motion'} should be lower than `5`).
+స్క్రోల్ చేయడానికి మీ **sample** sprite ను పొందండి. ఒకవేళ ఇది స్క్రీన్ దిగువున ఉంటే, ఇది ఎక్కువ కదలాల్సి వస్తుంది (`change x by`{:class='block3motion'} should be higher than `5`), మరియు ఒకవేళ ఇది స్క్రీన్ దఎగువున ఉంటే, ఇది తక్కువ కదలాల్సి వస్తుంది (`change x by`{:class='block3motion'} should be lower than `5`).
 
 --- task ---
 
-Add code so that your sprite scrolls.
+మీ sprite స్క్రోల్ అయ్యేలా కోడ్‌ని జోడించండి.
 
 --- /task ---
 
-**Choose:** Depending on what you want the rover to sample next, you can either use the rover animations that are there already, or create more animation sequences by duplicating and editing the costumes.
+**ఎంచుకోండి:** మీరు రోవర్ తదుపరి నమూనాను ఎలా కోరుకుంటున్నారో దానిపై ఆధారపడి, మీరు ఇప్పటికే ఉన్న రోవర్ యానిమేషన్‌లను ఉపయోగించవచ్చు లేదా costume లను నకిలీ చేయడం మరియు సవరించడం ద్వారా మరిన్ని యానిమేషన్ సన్నివేశాలను సృష్టించవచ్చు.
 
 --- task ---
 
-Add a `My Blocks`{:class='block3myblocks'} block to your **rover** sprite to animate the rover when it collects the new sample. You can copy and paste the code from one of the other `My Blocks`{:class='block3myblocks'} you have created.
+`My Blocks`{:class='block3myblocks'} బ్లాకును మీ **rover** sprite నమూనాను సేకరించినపుడు, దానిని యానిమేట్ చేయడానికి ఉపయోగించండి. మీరు సృష్టించిన ఇతర `My Blocks`{:class='block3myblocks'} నుండి కోడ్‌ని కాపీ చేసి పేస్ట్ చేయవచ్చు.
 
-For instance, here is a costume sequence for collecting solar energy:
+ఉదాహరణకు, సౌర శక్తిని సేకరించడానికి ఇక్కడ ఒక costume సీక్వెన్స్ ఉంది:
 
-![Three costumes shown with the rover extending a solar panel.](images/solar-animation.png)
+![రోవర్ సోలార్ ప్యానెల్‌ను విస్తరించి ఉన్న మూడు costumes చూపబడ్డాయి.](images/solar-animation.png)
 
-To animate this series of costumes you could use the following code:
+ఈ costume శ్రేణిని యానిమేట్ చేయడానికి మీరు క్రింది కోడ్‌ని ఉపయోగించవచ్చు:
 
 ```blocks3
 define recharge
@@ -57,19 +57,19 @@ wait (0.3) seconds
 
 --- task ---
 
-Next, `broadcast`{:class='block3events'} a new message in your new `My Block`{:class='block3myblocks'} block that will cause a `costume`{:class='block3looks'} or `graphic effect`{:class='block3looks'} change in the **sample** sprite.
+తరువాత, మీ కొత్త `My Block`{:class='block3myblocks'} బ్లాకులో, ఒక కొత్త సందేశాన్ని, `broadcast`{:class='block3events'} చేయండి తద్వారా అది **sample** sprite లో, `costume`{:class='block3looks'} మార్పు లేదా `graphic effect`{:class='block3looks'} మార్పు iకలగజేస్తుంది.
 
 --- /task ---
 
 --- task ---
 
-Use an `if`{:class='block3control'} block to detect if the rover is touching the sprite or touching a colour on the sprite, so that the new `My Block`{:class='block3myblocks'} is only used then.
+రోవర్, sprite ను లేదా sprite పై రంగును తాకుతుందో లేదో గుర్తించడానికి `if`{:class='block3control'} బ్లాక్‌ని ఉపయోగించండి, తద్వారా కొత్త `My Block`{:class='block3myblocks'} అప్పుడు మాత్రమే ఉపయోగించబడుతుంది.
 
 --- /task ---
 
 --- task ---
 
-If you like, add an animation to the sprite, so that its appearance changes when the rover has collected the sample.
+మీరు కావాలనుకుంటే, spriteకి యానిమేషన్‌ను జోడించండి, తద్వారా రోవర్ నమూనాను సేకరించినప్పుడు దాని రూపాన్ని మార్చండి.
 
 --- /task ---
 
