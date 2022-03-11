@@ -1,8 +1,8 @@
-## Control the rover
+## ರೋವರ್‌ನ್ನು ನಿಯಂತ್ರಿಸಿ
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will use an on-screen controller or the keyboard to move your rover up and down.
+ಈ ಹಂತದಲ್ಲಿ, ನೀವು ನಿಮ್ಮ ರೋವರ್‌ನ್ನು ಮೇಲೆ ಮತ್ತು ಕೆಳಗೆ ಚಲಿಸಲು ಪರದೆ-ಮೇಲಿನ ನಿಯಂತ್ರಕ ಅಥವಾ ಕೀಬೋರ್ಡ್‌ನ್ನು ಉಪಯೋಗಿಸುತ್ತೀರಿ.
 </div>
 <div>
 ![](images/step-2.gif){:width="300px"}
@@ -11,31 +11,31 @@ In this step, you will use an on-screen controller or the keyboard to move your 
 
 --- task ---
 
-Open the starter project online at [rpf.io/nature-rover-starter](https://rpf.io/nature-rover-starter){:target="_blank"}.
+ಸ್ಟಾರ್ಟರ್ ಪ್ರಾಜೆಕ್ಟ್ ಅನ್ನು ಆನ್‌ಲೈನ್‌ನಲ್ಲಿ [rpf.io/nature-rover-starter](https://rpf.io/nature-rover-starter){:target="_blank"} ನಲ್ಲಿ ತೆರೆಯಿರಿ.
 
 --- collapse ---
 ---
-title: Working offline
+title: ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುವುದು
 ---
 
-If you are working offline, the starter project can be found at [rpf.io/p/en/nature-rover-go](https://rpf.io/p/en/nature-rover-go)
+ನೀವು ಆಫ್‌ಲೈನ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಿದ್ದರೆ, ಸ್ಟಾರ್ಟರ್ ಪ್ರಾಜೆಕ್ಟನ್ನು ಇಲ್ಲಿ [rpf.io/p/en/nature-rover-go](https://rpf.io/p/en/nature-rover-go) ಕಾಣಬಹುದು
 
 --- /collapse ---
 
 
 --- /task ---
 
-You should see a scene with a robotic rover, a hilly background, and a controller in the bottom, left-hand corner.
+ನೀವು ರೋಬೋಟಿಕ್ ರೋವರ್, ಗುಡ್ಡಗಾಡು ಹಿನ್ನೆಲೆ ಮತ್ತು ಕೆಳಗಿನ ಎಡ ಮೂಲೆಯಲ್ಲಿ ನಿಯಂತ್ರಕವನ್ನು ಹೊಂದಿರುವ ದೃಶ್ಯವನ್ನು ನೋಡಬೇಕು.
 
-![The staring background showing hills, a pile of mud, and a robot.](images/starter-background.png)
+![ಬೆಟ್ಟಗಳನ್ನು, ಮಣ್ಣಿನ ರಾಶಿ ಮತ್ತು ಒಂದು ರೋಬೋಟ್‌ ತೋರಿಸುತ್ತಿರುವ ಪ್ರಾರಂಭಿಕ ಹಿನ್ನೆಲೆ.](images/starter-background.png)
 
-You are going to use the controller or keyboard controls to make the rover look as if it is moving towards or away from the viewer.
+ರೋವರ್‌ ವೀಕ್ಷಕರ ಕಡೆಗೆ ಅಥವಾ ಅವರಿಂದ ದೂರಕ್ಕೆ ಚಲಿಸುತ್ತಿರುವ ಹಾಗೆ ಕಾಣುವಂತೆ ಮಾಡಲು ನೀವು ನಿಯಂತ್ರಕ ಅಥವಾ ಕೀಬೋರ್ಡ್‌ ನಿಯಂತ್ರಣಗಳನ್ನು ಉಪಯೋಗಿಸುತ್ತೀರಿ.
 
 --- task ---
 
-Look at the **Code** tab for each of the buttons. The code will look something like this:
+ಪ್ರತಿಯೊಂದು ಬಟನ್‌ಗಾಗಿ **Code** ಟ್ಯಾಬ್‌ ನೋಡಿ. ಕೋಡ್‌ ಬಹುಶಹ ಈ ರೀತಿ ಕಾಣುತ್ತದೆ:
 
-![The up sprite.](images/up-sprite.png)
+![ಅಪ್ ಸ್ಪ್ರೈಟ್.](images/up-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -48,17 +48,17 @@ go to x:(-190) y: (-121)
 end
 ```
 
-This keeps the buttons in the correct position, and broadcasts their directions when they are clicked.
+ಇದು ಬಟನ್‌ಗಳನ್ನು ಸರಿಯಾದ ಸ್ಥಾನದಲ್ಲಿ ಇಡುತ್ತದೆ ಮತ್ತು ಅವುಗಳನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಅವುಗಳ ದಿಕ್ಕನ್ನು ಪ್ರಸಾರ ಮಾಡುತ್ತದೆ.
 
 --- /task ---
 
-The **rover** is going to control the start of the game for all the other sprites; so when the green flag is clicked, the **rover** sprite needs to broadcast a `start`{:class='block3events'} message.
+**rover** ಉಳಿದ ಎಲ್ಲಾ ಸ್ಪ್ರೈಟ್‌ಗಳಿಗೂ ಆಟದ ಪ್ರಾರಂಭವನ್ನು ನಿಯಂತ್ರಿಸುತ್ತದೆ; ಆದುದರಿಂದ, ಹಸಿರು ಬಾವುಟವನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ, **rover** ಸ್ಪ್ರೈಟ್‌ `start`{:class='block3events'} ಸಂದೇಶವನ್ನು ಪ್ರಸಾರಮಾಡಬೇಕು.
 
 --- task ---
 
-Add the broadcast to a `green flag clicked`{:class='block3events'} block.
+`green flag clicked`{:class='block3events'} ಬ್ಲಾಕ್‌ಗೆ ಪ್ರಸಾರವನ್ನು ಸೇರಿಸಿ.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -69,9 +69,9 @@ broadcast [start v]
 
 --- task ---
 
-If you are working on a computer, it might be easier to use the keyboard controls, rather than using the buttons. Keyboard controls can be added to the **rover** sprite.
+ನೀವು ಕಂಪ್ಯೂಟರ್‌ನಲ್ಲಿ ಕೆಲಸ ಮಾಡುತ್ತಿರುವಿರಾದರೆ, ಬಟನ್‌ಗಳನ್ನು ಉಪಯೋಗಿಸುವ ಬದಲು ಕೀಬೋರ್ಡ್‌ ನಿಯಂತ್ರಕಗಳನ್ನು ಉಪಯೋಗಿಸುವುದು ಸುಲಭವಾಗಬಹುದು. ಕೀಬೋರ್ಡ್‌ ನಿಯಂತ್ರಕಗಳನ್ನು **rover** ಸ್ಪ್ರೈಟ್‌ಗೆ ಸೇರಿಸಬಹುದು.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 when [up arrow v] key pressed
@@ -87,8 +87,7 @@ when [left arrow v] key pressed
 broadcast [left v]
 ```
 
-If you don't want to use the controller, then click on each of the **button** sprites and click on the `hide`{:class='block3looks'} block in the `looks`{:class='block3looks'} 
-menu.
+ನಿಮಗೆ ನಿಯಂತ್ರಕವನ್ನು ಉಪಯೋಗಿಸುವುದು ಬೇಡವಾದರೆ, ಪ್ರತಿಯೊಂದು **button** ಸ್ಪ್ರೈಟ್‌ಗಳ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು `looks`{:class='block3looks'} ಮೆನುನಲ್ಲಿ `hide`{:class='block3looks'} ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ.
 
 ```blocks3
 hide
@@ -96,13 +95,13 @@ hide
 
 --- /task ---
 
-When the **up** button is clicked or the <kbd>up arrow</kbd> is pressed, the **rover** should change its `y`{:class="block3motion"} position by a small amount. Increasing `y`{:class="block3motion"} will make the **rover** move up. Decreasing `y`{:class="block3motion"} will make the **rover** move down.
+**up** ಬಟನ್‌ನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಅಥವಾ <kbd>up arrow</kbd> ವನ್ನು ಒತ್ತಿದಾಗ, **rover** ಅದರ `y`{:class="block3motion"} ಸ್ಥಾನವನ್ನು ಸಣ್ಣ ಪ್ರಮಾಣದಲ್ಲಿ ಬದಲಾಯಿಸಬೇಕು. `y`{:class="block3motion"}ನ್ನು ಹೆಚ್ಚಿಸುವುದು **rover** ಮೇಲಕ್ಕೆ ಚಲಿಸುವಂತೆ ಮಾಡುತ್ತದೆ. `y`{:class="block3motion"}ನ್ನು ಕಡಿಮೆ ಮಾಡುವುದು **rover** ಕೆಳಕ್ಕೆ ಚಲಿಸುವಂತೆ ಮಾಡುತ್ತದೆ.
 
 --- task ---
 
-Add code so the **up** button makes the **rover** move up.
+**up** ಬಟನ್ **rover** ಮೇಲಕ್ಕೆ ಚಲಿಸುವಂತೆ ಮಾಡಲು ಕೋಡ್‌ ಸೇರಿಸಿ.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [up v]
@@ -114,17 +113,17 @@ change y by (-10)
 
 --- /task ---
 
-**You don't need to worry about the left and right motion yet. Left and right motion will be added in the next step of the project.**
+**ನೀವು ಈಗಲೇ ಎಡ ಮತ್ತು ಬಲ ಚಲನೆಯ ಬಗೆಗೆ ಯೋಚಿಸಬೇಕಿಲ್ಲ. ಎಡ ಮತ್ತು ಬಲ ಚಲನೆಯನ್ನು ಪ್ರಾಜೆಕ್ಟ್‌ನ ಮುಂದಿನ ಹಂತದಲ್ಲಿ ಸೇರಿಸಲಾಗುತ್ತದೆ.**
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Perspective**</span> is used in computer graphics to make a scene more realistic. Objects that are far away normally appear to be smaller and higher up the screen. Objects that are close appear to be larger and lower down the screen.
+<span style="color: #0faeb0">**ಯಥಾದೃಷ್ಟಿ**</span> ಯನ್ನು ಕಂಪ್ಯೂಟರ್‌ ಗ್ರಾಫಿಕ್ಸ್‌ನಲ್ಲಿ ದೃಶ್ಯವನ್ನು ಹೆಚ್ಚು ನೈಜವಾಗಿಸಲು ಉಪಯೋಗಿಸುತ್ತಾರೆ. ದೂರದಲ್ಲಿರುವ ವಸ್ತುಗಳು ಸಾಮಾನ್ಯವಾಗಿ ಚಿಕ್ಕದಾಗಿ ಮತ್ತು ಪರದೆಯ ಮೇಲೆ ಎತ್ತರದಲ್ಲಿ ಕಂಡುಬರುತ್ತವೆ. ಹತ್ತಿರದಲ್ಲಿರುವ ವಸ್ತುಗಳು ದೊಡ್ಡದಾಗಿ ಕಾಣುತ್ತವೆ ಮತ್ತು ಪರದೆಯ ಕೆಳ ಭಾಗದಲ್ಲಿ ಇರುತ್ತವೆ.
 </p>
 
 --- task ---
 
-Add **perspective** to your **rover** by making it smaller when it moves upwards, and larger when it moves downwards.
+**ಯಥಾದೃಷ್ಟಿ** ಯನ್ನು ನಿಮ್ಮ **ರೋವರ್‌** ಗೆ ಅದು ಮೇಲ್ಮುಖವಾಗಿ ಚಲಿಸಿದಾಗ ಚಿಕ್ಕದನ್ನಾಗಿ ಮಾಡುವ ಮತ್ತು ಅದು ಕೆಳಮುಖವಾಗಿ ಚಲಿಸುವಾಗ ದೊಡ್ಡದನ್ನಾಗಿ ಮಾಡುವ ಮೂಲಕ ಸೇರಿಸಿ.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [up v]
@@ -141,7 +140,7 @@ change size by (1) //Bigger looks closer
 
 --- task ---
 
-You'll need to reset the **rover's** size at the start of the game.
+ಆಟದ ಪ್ರಾರಂಭದಲ್ಲಿ ನೀವು **rover's** ಗಾತ್ರವನ್ನು ಮರುಹೊಂದಿಸಬೇಕಾಗುತ್ತದೆ.
 
 ```blocks3
 when I receive [start v]
@@ -153,15 +152,15 @@ set size to (50) %
 
 --- task ---
 
-**Test:** Click the **up** and **down** buttons to check the control of your **rover**, or use the arrow keys.
+**ಪರೀಕ್ಷೆ:** ನಿಮ್ಮ **rover**ನ ನಿಯಂತ್ರಣವನ್ನು ಪರಿಶೀಲಿಸಲು **up** ಮತ್ತು **down** ಬಟನ್‌ಗಳನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿ ಅಥವಾ ಬಾಣದ ಕೀಗಳನ್ನು ಉಪಯೋಗಿಸಿ.
 
 --- /task ---
 
 --- task ---
 
-Now reset the position of the **rover** each time the game starts.
+ಈಗ ಪ್ರತಿಬಾರಿ ಆಟ ಪ್ರಾರಂಭವಾಗುವಾಗ **rover** ನ ಸ್ಥಾನವನ್ನು ಮರುಹೊಂದಿಸಿ.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -173,9 +172,9 @@ set size to (50) %
 
 --- task ---
 
-For now, the **rover** should appear in front of the other sprites. Move the **rover** to the front layer.
+ಸದ್ಯಕ್ಕೆ, **rover** ಉಳಿದ ಸ್ಪ್ರೈಟ್‌ಗಳ ಮುಂದೆ ಕಾಣಿಸಿಕೊಳ್ಳಬೇಕು. **rover**ನ್ನು ಮುಂಭಾಗದ ಪದರಕ್ಕೆ ಚಲಿಸಿ.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -188,7 +187,7 @@ go to x: (0) y: (-90)
 
 --- task ---
 
-**Test**: Click the green flag to test that your game resets correctly.
+**ಪರೀಕ್ಷೆ**: ನಿಮ್ಮ ಆಟ ಸರಿಯಾಗಿ ಮರುಹೊಂದಿಕೆ ಆಗುತ್ತಿದೆಯೇ ಎಂದು ಪರೀಕ್ಷಿಸಲು ಹಸಿರು ಬಾವುಟ ಕ್ಲಿಕ್‌ ಮಾಡಿ.
 
 --- /task ---
 
