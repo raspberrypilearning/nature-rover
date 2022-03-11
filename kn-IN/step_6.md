@@ -1,8 +1,8 @@
-## Create another sample
+## ಇನ್ನೊಂದು ಮಾದರಿಯನ್ನು ರಚಿಸಿ
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Choose what the rover samples next! Does it see a new species of plant, bug, or animal? Does it see some water or mysterious liquid? Does it want to sample some dirt or a rock, or even the air? Or something else?
+ರೋವರ್‌ ಮುಂದೆ ಯಾವ ಮಾದರಿಯನ್ನು ಸಂಗ್ರಹಿಸಬೇಕು ಎನ್ನುವುದನ್ನು ಆಯ್ಕೆಮಾಡಿ! ಅದು ಹೊಸ ಜಾತಿಯ ಸಸ್ಯ, ಕೀಟ ಅಥವಾ ಪ್ರಾಣಿಯನ್ನು ನೋಡುತ್ತದೆಯೇ? ಅದು ಸ್ವಲ್ಪ ನೀರು ಅಥವಾ ನಿಗೂಢ ದ್ರವವನ್ನು ನೋಡುತ್ತದೆಯೇ? ಅದು ಸ್ವಲ್ಪ ಕೆಸರು ಅಥವಾ ಕಲ್ಲು ಅಥವಾ ಗಾಳಿಯ ಮಾದರಿಯನ್ನೂ ಕೂಡ ಸಂಗ್ರಹಿಸ ಬಯಸುತ್ತದೆಯೇ? ಅಥವಾ ಇನ್ನೇನಾದರೂ?
 </div>
 <div>
 ![](images/step-6.gif){:width="300px"}
@@ -11,29 +11,29 @@ Choose what the rover samples next! Does it see a new species of plant, bug, or 
 
 --- task ---
 
-**Choose:** Add a new **sample** sprite for the rover to collect. You can add this to your project either by selecting one from the library or drawing your own.
+**ಆಯ್ಕೆ ಮಾಡಿಕೊಳ್ಳಿ:** ರೋವರ್‌ಗೆ ಸಂಗ್ರಹಿಸಲು ಹೊಸ **sample** ಸ್ಪ್ರೈಟ್‌ ಸೇರಿಸಿ. ನೀವು ಇದನ್ನು ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ಗೆ ಗ್ರಂಥಾಲಯದಿಂದ ಒಂದನ್ನು ಆಯ್ದುಕೊಂಡು ಅಥವಾ ನಿಮ್ಮದೇ ಸ್ವಂತದೊಂದನ್ನು ಚಿತ್ರಿಸಿ ಕೂಡ ಸೇರಿಸಬಹುದು.
 
 --- /task ---
 
-Get your **sample** sprite to scroll. If it is low down on the screen it should move more (`change x by`{:class='block3motion'} should be higher than `5`), and if it is high up on the screen it should move less (`change x by`{:class='block3motion'} should be lower than `5`).
+ನಿಮ್ಮ **sample** ಸ್ಪ್ರೈಟ್‌ ಚಲಿಸುವಂತೆ ಮಾಡಿ. ಅದು ಪರದೆಯ ಮೇಲೆ ಕೆಳಭಾಗದಲ್ಲಿದ್ದರೆ (`change x by`{:class='block3motion'} `5`)ಕ್ಕಿಂತ ಹೆಚ್ಚಿದ್ದಾಗ ಹೆಚ್ಚು ಚಲಿಸಬೇಕು, ಮತ್ತು ಅದು ಪರದೆಯ ಮೇಲೆ ಮೇಲ್ಭಾಗದಲ್ಲಿದ್ದರೆ (`change x by`{:class='block3motion'} `5`) ಕ್ಕಿಂತ ಕಡಿಮೆಯಿದ್ದಾಗ ಕಡಿಮೆ ಚಲಿಸಬೇಕು.
 
 --- task ---
 
-Add code so that your sprite scrolls.
+ನಿಮ್ಮ ಸ್ಪ್ರೈಟ್‌ ಚಲಿಸುವಂತೆ ಕೋಡ್‌ ಸೇರಿಸಿ.
 
 --- /task ---
 
-**Choose:** Depending on what you want the rover to sample next, you can either use the rover animations that are there already, or create more animation sequences by duplicating and editing the costumes.
+**ಆಯ್ಕೆಮಾಡಿಕೊಳ್ಳಿ:** ನಿಮಗೆ ರೋವರ್‌ ಮುಂದೆ ಯಾವ ಮಾದರಿ ಸಂಗ್ರಹಿಸಬೇಕು ಎನ್ನುವುದನ್ನು ಅವಲಂಬಿಸಿ, ನೀವು ಈಗಾಗಲೇ ಅಸ್ತಿಸತ್ವದಲ್ಲಿರುವ ರೋವರ್‌ ಅನಿಮೇಶನ್‌ಗಳನ್ನು ಉಪಯೋಗಿಸಬಹುದು ಅಥವಾ ಉಡುಪುಗಳನ್ನು ನಕಲು ಮಾಡುವುದು ಮತ್ತು ಎಡಿಟ್‌ ಮಾಡುವ ಮೂಲಕ ಇನ್ನಷ್ಟು ಅನಿಮೇಶನ್‌ ಅನುಕ್ರಮಣಿಕೆಗಳನ್ನು ರಚಿಸಬಹುದು.
 
 --- task ---
 
-Add a `My Blocks`{:class='block3myblocks'} block to your **rover** sprite to animate the rover when it collects the new sample. You can copy and paste the code from one of the other `My Blocks`{:class='block3myblocks'} you have created.
+ಅದು ಹೊಸ ಮಾದರಿಯನ್ನು ಸಂಗ್ರಹಿಸಿದಾಗ ನಿಮ್ಮ **rover** ಸ್ಪ್ರೈಟ್‌ ಅನಿಮೇಟ್‌ ಮಾಡಲು ಅದಕ್ಕೆ `My Blocks`{:class='block3myblocks'} ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ. ನೀವು ರಚಿಸಿದ ಇತರೆ `My Blocks`{:class='block3myblocks'} ರೊಂದರಿಂದ ನೀವು ಕೋಡ್‌ನ್ನು ಕಾಪಿ ಮತ್ತು ಪೇಸ್ಟ್‌ ಮಾಡಬಹುದು.
 
-For instance, here is a costume sequence for collecting solar energy:
+ಉದಾಹರಣೆಗೆ, ಸೌರ ಶಕ್ತಿಯನ್ನು ಸಂಗ್ರಹಿಸಲು ಉಡುಪುಗಳ ಅನುಕ್ರಮಣಿಕೆ ಇಲ್ಲಿದೆ:
 
-![Three costumes shown with the rover extending a solar panel.](images/solar-animation.png)
+![ರೋವರ್‌ ಸೌರ ಫಲಕವನ್ನು ವಿಸ್ತರಿಸುತ್ತಿರುವುದರೊಂದಿಗೆ ಮೂರು ಉಡುಪುಗಳನ್ನು ತೋರಿಸಲಾಗಿದೆ.](images/solar-animation.png)
 
-To animate this series of costumes you could use the following code:
+ಉಡುಪುಗಳ ಈ ಸರಣಿಯನ್ನು ಅನಿಮೇಟ್‌ ಮಾಡಲು ನೀವು ಈ ಕೆಳಗಿನ ಕೋಡ್‌ನ್ನು ಉಪಯೋಗಿಸಬಹುದು:
 
 ```blocks3
 define recharge
@@ -57,19 +57,19 @@ wait (0.3) seconds
 
 --- task ---
 
-Next, `broadcast`{:class='block3events'} a new message in your new `My Block`{:class='block3myblocks'} block that will cause a `costume`{:class='block3looks'} or `graphic effect`{:class='block3looks'} change in the **sample** sprite.
+ನಂತರ, ಹೊಸ ಸಂದೇಶವನ್ನು ನಿಮ್ಮ ಹೊಸ `My Block`{:class='block3myblocks'} ಬ್ಲಾಕ್‌ನಲ್ಲಿ `broadcast`{:class='block3events'} ಮಾಡಿ ಅದು `costume`{:class='block3looks'} ಅಥವಾ `graphic effect`{:class='block3looks'} ಬದಲಾವಣೆಯನ್ನು **sample** ಸ್ಪ್ರೈಟ್‌ನಲ್ಲಿ ಉಂಟುಮಾಡುತ್ತದೆ.
 
 --- /task ---
 
 --- task ---
 
-Use an `if`{:class='block3control'} block to detect if the rover is touching the sprite or touching a colour on the sprite, so that the new `My Block`{:class='block3myblocks'} is only used then.
+ರೋವರ್‌ ಸ್ಪ್ರೈಟ್‌ನ್ನು ಸ್ಪರ್ಶಿಸುತ್ತಿದೆಯೇ ಅಥವಾ ಸ್ಪ್ರೈಟ್‌ ಮೇಲಿನ ಬಣ್ಣವನ್ನು ಸ್ಪರ್ಶಿಸುತ್ತಿದೆಯೇ ಎಂದು ಪತ್ತೆಮಾಡಲು `if`{:class='block3control'} ಉಪಯೋಗಿಸಿ, ಅದರಿಂದ ಹೊಸ `My Block`{:class='block3myblocks'} ಆಗ ಮಾತ್ರ ಉಪಯೋಗಿಸಲ್ಪಡುತ್ತದೆ.
 
 --- /task ---
 
 --- task ---
 
-If you like, add an animation to the sprite, so that its appearance changes when the rover has collected the sample.
+ನಿಮಗೆ ಇಷ್ಟವಾದಲ್ಲಿ, ಸ್ಪ್ರೈಟ್‌ಗೆ ಅನಿಮೇಶನ್‌ನ್ನು ಸೇರಿಸಿ, ಅದರಿಂದ ರೋವರ್‌ ಮಾದರಿಯನ್ನು ಸಂಗ್ರಹಿಸಿದಾಗ ಅದರ ನೋಟ ಬದಲಾಗುತ್ತದೆ.
 
 --- /task ---
 
