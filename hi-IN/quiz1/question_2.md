@@ -1,17 +1,17 @@
-## Reflection
+## सोचिए
 
 
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: 3 में से दूसरा प्रश्न
 ---
 
-Have a look at this project showing a rover exploring a mountain scene.
+इस प्रोजेक्ट पर एक नज़र डालें जिसमें एक रोवर एक पर्वत दृश्य पर घूम रहा है।
 
-![animation showing rover with mountain moving in the background and a static cloud](images/mountain-animation.gif)
+![पृष्ठभूमि में हिलते हुए पहाड़ और एक स्थिर बादल के साथ रोवर दिखाते हुए एनीमेशन](images/mountain-animation.gif)
 
-Here is the code for moving the mountain.
+यहाँ पहाड़ को हिलाने का कोड है।
 
 ```blocks3
 when I receive [left v]
@@ -21,7 +21,7 @@ when I receive [right v]
 change x by (-10)
 ```
 
-Which code blocks would get the cloud to scroll slower than the mountain?
+कौन सा कोड ब्लॉक बादल को पहाड़ की तुलना में धीमी गति से स्क्रॉल कराएगा?
 
 --- choices ---
 
@@ -37,7 +37,7 @@ change x by (5)
 
   --- feedback ---
 
-The cloud is scrolling slower than the mountain here, but this code makes the cloud difficult for the rover to reach because it moves in the same direction as the rover.
+बादल यहां पहाड़ की तुलना में धीमी गति से स्क्रॉल कर रहा है, लेकिन यह कोड रोवर के लिए बादल तक पहुंचना मुश्किल बना देता है क्योंकि यह रोवर के समान दिशा में चलता है।
 
   --- /feedback ---
 
@@ -54,7 +54,7 @@ change y by (5)
 
   --- feedback ---
 
-  With this code, the cloud will be moving up and down instead of left and right. How can you get the cloud to move left and right? Think about the stage as a coordinate grid.
+  इस कोड के साथ, बादल बाएँ और दाएँ के बजाय ऊपर और नीचे घूमेगा। आप बादल को बाएँ और दाएँ कैसे घुमा सकते हैं? मंच को एक समन्वय ग्रिड के रूप में सोचें।
 
   --- /feedback ---
 
@@ -70,7 +70,7 @@ change y by (-20)
 
   --- feedback ---
 
-  The cloud is scrolling in the right direction here, however it is scrolling much faster than the mountain, even though it is farther away from the rover than the mountain.
+  बादल यहां सही दिशा में स्क्रॉल कर रहा है, हालांकि यह पहाड़ की तुलना में बहुत तेजी से स्क्रॉल कर रहा है, भले ही यह पहाड़ की तुलना में रोवर से बहुत दूर है।
 
   --- /feedback ---
 
@@ -86,7 +86,7 @@ change x by (-5)
 
   --- feedback ---
 
-Great! the cloud moves right when the rover moves left, and left when the rover moves right.  The cloud scrolls slower than the mountain because x is changed in increments of 5.
+बहुत बढ़िया! जब रोवर बाईं ओर चलता है तो बादल दाएँ चलता है, और जब रोवर दाएँ चलता है तो बाएँ।  बादल पर्वत की तुलना में धीमी गति से स्क्रॉल करता है क्योंकि x 5 की वृद्धि में बदला जाता है।
 
   --- /feedback ---
 
