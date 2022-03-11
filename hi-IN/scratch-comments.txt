@@ -1,32 +1,32 @@
-Smaller looks further away
+छोटा और दूर दिखता है
 
-Bigger looks closer
+बड़ा करीब दिखता है
 
-Create a copy of the hills
+पहाड़ियों की एक प्रति बनाएँ
 
-Move the original hills to the right of the screen
+मूल पहाड़ियों को स्क्रीन के दाईं ओर ले जाएं
 
-The hills sprite is off the right side of the screen
+hills स्प्राइट स्क्रीन के दाईं ओर है
 
-Reset to the left side of the screen
+स्क्रीन के बाईं ओर रीसेट करें
 
-The hills sprite is off the left side of the screen
+hills स्प्राइट स्क्रीन के बाईं ओर है
 
-Reset to the right side of the screen
+स्क्रीन के दाईं ओर रीसेट करें
 
-Use a bigger number than for the hills
+पहाड़ियों की तुलना में अधिक संख्या में प्रयोग करें
 
-The tree is at the far right
+पेड़ एकदम दाहिनी ओर है
 
-Move the tree to the far left
+पेड़ को एकदम बाईं ओर ले जाएं
 
-The tree is at the far left
+पेड़ एकदम बाईं ओर है
 
-Move the tree to the far right
+पेड़ को एकदम दाईं ओर ले जाएं
 
-Animates the robot to collect fruit
+फल इकट्ठा करने के लिए रोबोट को एनिमेट करता है
 
-Run the animation
+एनिमेशन चलाएँ
 
-Colour of fruit
+फल का रंग
 
