@@ -1,32 +1,32 @@
-Smaller looks further away
+दूर लहान दिसतो
 
-Bigger looks closer
+जवळ मोठा दिसतो
 
-Create a copy of the hills
+टेकड्यांची कॉपी तयार करा
 
-Move the original hills to the right of the screen
+मूळ टेकड्या स्क्रीनच्या उजवीकडे हलवा
 
-The hills sprite is off the right side of the screen
+hills स्प्राइट स्क्रीनच्या उजव्या बाजूला आहे
 
-Reset to the left side of the screen
+स्क्रीनच्या डाव्या बाजूला रीसेट करा
 
-The hills sprite is off the left side of the screen
+hills स्प्राइट स्क्रीनच्या डाव्या बाजूला आहे
 
-Reset to the right side of the screen
+स्क्रीनच्या उजव्या बाजूला रीसेट करा
 
-Use a bigger number than for the hills
+टेकड्यांसाठी पेक्षा मोठी संख्या वापरा
 
-The tree is at the far right
+झाड अगदी उजवीकडे आहे
 
-Move the tree to the far left
+झाड अगदी डावीकडे हलवा
 
-The tree is at the far left
+झाड अगदी डावीकडे आहे
 
-Move the tree to the far right
+झाड अगदी उजवीकडे हलवा
 
-Animates the robot to collect fruit
+फळ गोळा करण्यासाठी रोबोट ऍनिमेट करा
 
-Run the animation
+ऍनिमेशन रन करा
 
-Colour of fruit
+फळाचा रंग
 
