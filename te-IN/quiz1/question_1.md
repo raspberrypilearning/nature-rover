@@ -1,24 +1,24 @@
 
-Well done, you have learned a lot! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
+బాగా చేసారు, మీరు చాలా నేర్చుకున్నారు! ఇప్పుడు, విశ్లేషించే సమయం వచ్చింది — విశ్లేషించడం అనేది నేర్చుకోవడంలో ముఖ్యమైన భాగం, ఎందుకంటే ఇది మీ మెదడులో కొత్త కనెక్షన్‌లను ఏర్పరచడంలో సహాయపడుతుంది.
 
-Answer the three questions below to reflect on what you've learned.
+మీరు నేర్చుకున్న వాటిని పరిశీలించడానికి దిగువ మూడు ప్రశ్నలకు సమాధానం ఇవ్వండి.
 
-After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+ప్రతి ప్రశ్న తర్వాత, సబ్మిట్ నొక్కండి. మీరు సరైన సమాధానం వైపు మార్గనిర్దేశం చేయబడతారు. మీరు ఈ చర్యను మీకు కావలసినన్ని సార్లు చేయవచ్చు.
 
-Have fun!
+ఆస్వాదించండి!
 
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: 3లో 1వ ప్రశ్న
 ---
 
-Here is a controller that broadcasts up when the up button is clicked and down when the down button is clicked:
+అప్ బటన్‌ను క్లిక్ చేసినప్పుడు పైకి మరియు డౌన్ బటన్‌ను క్లిక్ చేసినప్పుడు క్రిందికి బ్రాడ్ కాస్ట్ చేసే కంట్రోలర్ ఇక్కడ ఉంది:
 
-![four button controller](images/controller.png)
+![నాలుగు బటన్ కంట్రోలర్](images/controller.png)
 
-Which of the following code blocks would you add to **the rover sprite** to make it move up and down
+**Rover sprite** పైకి క్రిందికి కదిలించడానికి, ఈ క్రింది కోడ్ బ్లాక్‌లలో మీరు ఏది దానికి జోడిస్తారు
 
 --- choices ---
 
@@ -38,7 +38,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This would move the rover when it is touching the buttons, rather than when the buttons are pressed.
+  ఇది బటన్‌లను నొక్కినప్పుడు కాకుండా బటన్‌లను తాకినప్పుడు రోవర్‌ను కదిలిస్తుంది.
 
   --- /feedback ---
 
@@ -51,7 +51,7 @@ change y by (10)
 
 --- feedback ---
 
-  This would move the rover when it was clicked on, rather than when the buttons are clicked on.
+  ఇది బటన్‌లను నొక్కినప్పుడు కాకుండా బటన్‌లను తాకినప్పుడు రోవర్‌ను కదిలిస్తుంది.
 
   --- /feedback ---
 
@@ -68,7 +68,7 @@ change y by (-10)
 
   --- feedback ---
 
-  Yes, this script receives the up and down broadcasts from the controller buttons and gets the rover to move up and down.
+  అవును, ఈ స్క్రిప్ట్ కంట్రోలర్ బటన్‌ల నుండి పైకి క్రిందికి బ్రాడ్ కాస్ట్ లను అందుకుంటుంది మరియు రోవర్‌ని పైకి క్రిందికి తరలించేలా చేస్తుంది.
 
   --- /feedback ---
 
@@ -86,7 +86,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This creates functions for moving up and down, but as the functions are not called, the rover would not move.
+  ఇది పైకి మరియు క్రిందికి కదలడానికి ఫంక్షన్‌లను సృష్టిస్తుంది, కానీ ఫంక్షన్‌లు పిలవబడనందున, రోవర్ కదలదు.
 
   --- /feedback ---
 
