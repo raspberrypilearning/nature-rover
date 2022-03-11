@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: ಪ್ರಶ್ನೆ 3 ರಲ್ಲಿ 3
 ---
 
-This script is a function that is used to get a cat to dance:
+ಈ ಬರಹವು ಬೆಕ್ಕನ್ನು ನೃತ್ಯ ಮಾಡಿಸಲು ಉಪಯೋಗಿಸುವ ಫಂಕ್ಷನ್:
 
 ```blocks3
 define cat animation
@@ -15,7 +15,7 @@ switch costume to [costume 2 v]
 wait (0.1) seconds
 ```
 
-Which of the following scripts would use the `cat animation`{:class='block3myblocks'} above to make the cat dance when the Sprite is clicked?
+ಸ್ಪ್ರೈಟ್‌ನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಬೆಕ್ಕು ನೃತ್ಯ ಮಾಡುವಂತೆ ಮಾಡಲು ಈ ಕೆಳಗಿನ ಯಾವ ಬ್ಲಾಕ್‌ಗಳನ್ನು `cat animation`{:class='block3myblocks'} ಉಪಯೋಗಿಸುತ್ತವೆ?
 
 --- choices ---
 
@@ -31,7 +31,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but does not use `cat animation`{:class='block3myblocks'} the that has been made.
+  ಇದು ಬೆಕ್ಕು ನೃತ್ಯ ಮಾಡುವಂತೆ ಮಾಡುತ್ತದೆ, ಆದರೆ ಅದನ್ನು ಮಾಡಿದ `cat animation`{:class='block3myblocks'} ನ್ನು ಉಪಯೋಗಿಸುವುದಿಲ್ಲ.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ cat dance ::custom
 
   --- feedback ---
 
-  This is calling a `cat dance`{:class='block3myblocks'} block, but not the cat `cat animation`{:class='block3myblocks'} block.
+  ಇದು `cat dance`{:class='block3myblocks'} ಬ್ಲಾಕ್‌ ಆಮಂತ್ರಿಸುವುದು, ಆದರೆ ಬೆಕ್ಕಿನ `cat animation`{:class='block3myblocks'} ಬ್ಲಾಕ್‌ ಅಲ್ಲ.
 
   --- /feedback ---
 
@@ -60,7 +60,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but not when the sprite is clicked. It also does not use the `cat animation`{:class='block3myblocks'} block.
+  ಇದು ಬೆಕ್ಕು ನೃತ್ಯ ಮಾಡುವಂತೆ ಮಾಡುತ್ತದೆ, ಆದರೆ ಸ್ಪ್ರೈಟ್‌ ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಅಲ್ಲ. ಇದು `cat animation`{:class='block3myblocks'} ಬ್ಲಾಕ್‌ನ್ನೂ ಸಹ ಉಪಯೋಗಿಸುವುದಿಲ್ಲ.
 
   --- /feedback ---
 
@@ -73,7 +73,7 @@ cat animation ::custom
 
   --- feedback ---
 
-Yes, in this answer, the `cat animation`{:class='block3myblocks'} block is used when the sprite is clicked, causing the cat to dance.
+ಹೌದು, ಈ ಉತ್ತರದಲ್ಲಿ, `cat animation`{:class='block3myblocks'} ಬ್ಲಾಕ್‌ನ್ನು ಸ್ಪ್ರೈಟ್‌ ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಉಪಯೋಗಿಸಲಾಗಿದೆ, ಅದು ಬೆಕ್ಕು ನೃತ್ಯ ಮಾಡುವಂತೆ ಮಾಡುತ್ತದೆ.
 
   --- /feedback ---
 
