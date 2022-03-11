@@ -1,32 +1,32 @@
-Smaller looks further away
+ಚಿಕ್ಕದು ಮತ್ತಷ್ಟು ದೂರವಿರುವಂತೆ ಕಾಣುತ್ತದೆ
 
-Bigger looks closer
+ದೊಡ್ಡದು ಹತ್ತಿರವಿರುವಂತೆ ಕಾಣುತ್ತದೆ
 
-Create a copy of the hills
+ಬೆಟ್ಟಗಳ ನಕಲನ್ನು ರಚಿಸಿ
 
-Move the original hills to the right of the screen
+ಮೂಲ ಬೆಟ್ಟಗಳನ್ನು ಪರದೆಯ ಬಲಕ್ಕೆ ಸರಿಸಿ
 
-The hills sprite is off the right side of the screen
+ಬೆಟ್ಟಗಳ ಸ್ಪ್ರೈಟ್‌ ಪರದೆಯ ಬಲಭಾಗಕ್ಕೆ ದೂರದಲ್ಲಿದೆ
 
-Reset to the left side of the screen
+ಪರದೆಯ ಎಡಭಾಗಕ್ಕೆ ಮರುಹೊಂದಿಸಿ
 
-The hills sprite is off the left side of the screen
+ಬೆಟ್ಟಗಳ ಸ್ಪ್ರೈಟ್‌ ಪರದೆಯ ಎಡಭಾಗಕ್ಕೆ ದೂರದಲ್ಲಿದೆ
 
-Reset to the right side of the screen
+ಪರದೆಯ ಬಲಭಾಗಕ್ಕೆ ಮರುಹೊಂದಿಸಿ
 
-Use a bigger number than for the hills
+ಬೆಟ್ಟಗಳಿಗೆ ಅದಕ್ಕಿಂತ ದೊಡ್ಡ ಸಂಖ್ಯೆಯನ್ನು ಬಳಸಿ
 
-The tree is at the far right
+ಮರವು ಬಲಭಾಗದಲ್ಲಿ ದೂರದಲ್ಲಿದೆ
 
-Move the tree to the far left
+ಮರವನ್ನು ಎಡಬಾಗದಲ್ಲಿ ದೂರಕ್ಕೆ ಚಲಿಸಿ
 
-The tree is at the far left
+ಮರವು ಎಡಭಾಗದಲ್ಲಿ ದೂರದಲ್ಲಿದೆ
 
-Move the tree to the far right
+ಮರವನ್ನು ಬಲಭಾಗದಲ್ಲಿ ದೂರಕ್ಕೆ ಚಲಿಸಿ
 
-Animates the robot to collect fruit
+ಹಣ್ಣುಗಳನ್ನು ಸಂಗ್ರಹಿಸಲು ರೋಬೋಟ್‌ನ್ನು ಅನಿಮೇಟ್‌ ಮಾಡುತ್ತದೆ
 
-Run the animation
+ಅನಿಮೇಶನ್‌ ರನ್‌ ಮಾಡಿ
 
-Colour of fruit
+ಹಣ್ಣಿನ ಬಣ್ಣ
 
