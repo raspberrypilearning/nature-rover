@@ -1,17 +1,17 @@
-## Reflection
+## ಪುನರ್ಮನನ
 
 
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: ಪ್ರಶ್ನೆ 2 ರಲ್ಲಿ 3
 ---
 
-Have a look at this project showing a rover exploring a mountain scene.
+ರೋವರ್‌ ಪರ್ವತದ ದೃಶ್ಯವನ್ನು ಅನ್ವೇಷಣೆ ಮಾಡುವುದನ್ನು ತೋರಿಸುವ ಈ ಪ್ರಾಜೆಕ್ಟ ಒಮ್ಮೆ ನೋಡಿ.
 
-![animation showing rover with mountain moving in the background and a static cloud](images/mountain-animation.gif)
+![ಹಿನ್ನಲೆಯಲ್ಲಿ ಪರ್ವತ ಚಲಿಸುತ್ತಿರುವುದು ಮತ್ತು ಸ್ಥಿರ ಮೋಡದೊಂದಿಗೆ ರೋವರ್‌ನ್ನು ತೋರಿಸುವ ಅನಿಮೇಷನ್](images/mountain-animation.gif)
 
-Here is the code for moving the mountain.
+ಪರ್ವತವನ್ನು ಚಲಿಸಲು ಕೋಡ್ ಇಲ್ಲಿದೆ.
 
 ```blocks3
 when I receive [left v]
@@ -21,7 +21,7 @@ when I receive [right v]
 change x by (-10)
 ```
 
-Which code blocks would get the cloud to scroll slower than the mountain?
+ಯಾವ ಕೋಡ್‌ ಬ್ಲಾಕ್‌ಗಳು ಮೋಡಗಳು ಪರ್ವತಗಳಿಗಿಂತ ನಿಧಾನವಾಗಿ ಚಲಿಸುವಂತೆ ಮಾಡುತ್ತವೆ?
 
 --- choices ---
 
@@ -37,7 +37,7 @@ change x by (5)
 
   --- feedback ---
 
-The cloud is scrolling slower than the mountain here, but this code makes the cloud difficult for the rover to reach because it moves in the same direction as the rover.
+ಇಲ್ಲಿ ಮೋಡವು ಪರ್ವತಕ್ಕಿಂತ ನಿಧಾನವಾಗಿ ಚಲಿಸುತ್ತಿದೆ, ಆದರೆ ಈ ಕೋಡ್‌ ರೋವರ್‌ಗೆ ತಲುಪಲು ಮೋಡವನ್ನು ಕಷ್ಟವಾಗಿಸುತ್ತೆ ಏಕೆಂದರೆ ಅದು ರೋವರ್‌ ಚಲಿಸುವ ದಿಕ್ಕಿನಲ್ಲಿಯೇ ಚಲಿಸುತ್ತಿರುತ್ತದೆ.
 
   --- /feedback ---
 
@@ -54,7 +54,7 @@ change y by (5)
 
   --- feedback ---
 
-  With this code, the cloud will be moving up and down instead of left and right. How can you get the cloud to move left and right? Think about the stage as a coordinate grid.
+  ಈ ಕೋಡ್‌ನಿಂದ, ಮೋಡವು ಎಡ ಮತ್ತು ಬಲಕ್ಕೆ ಚಲಿಸುವ ಬದಲು ಮೇಲೆ ಮತ್ತು ಕೆಳಗೆ ಚಲಿಸುತ್ತದೆ. ಮೋಡವು ಎಡ ಮತ್ತು ಬಲಕ್ಕೆ ಚಲಿಸುವಂತೆ ನೀವು ಹೇಗೆ ಮಾಡಬಹುದು? ಸ್ಟೇಜ್‌ನ್ನು ನಿರ್ದೇಶಾಂಕದ ಗ್ರಿಡ್‌ ಎಂದು ಯೋಚಿಸಿ.
 
   --- /feedback ---
 
@@ -70,7 +70,7 @@ change y by (-20)
 
   --- feedback ---
 
-  The cloud is scrolling in the right direction here, however it is scrolling much faster than the mountain, even though it is farther away from the rover than the mountain.
+  ಇಲ್ಲಿ ಮೋಡವು ಸರಿಯಾದ ದಿಕ್ಕಿನಲ್ಲಿ ಚಲಿಸುತ್ತಿದೆ, ಅದು ರೋವರ್‌ನಿಂದ ಪರ್ವತಕ್ಕಿಂತ ಬಹಳ ದೂರದಲ್ಲಿದೆಯಾದರೂ, ಅದು ಪರ್ತವಕ್ಕಿಂತ ತುಂಬಾ ವೇಗದಲ್ಲಿ ಚಲಿಸುತ್ತಿದೆ.
 
   --- /feedback ---
 
@@ -86,7 +86,7 @@ change x by (-5)
 
   --- feedback ---
 
-Great! the cloud moves right when the rover moves left, and left when the rover moves right.  The cloud scrolls slower than the mountain because x is changed in increments of 5.
+ಅತ್ಯುತ್ತಮ! ರೋವರ್‌ ಎಡಕ್ಕೆ ಚಲಿಸಿದಾಗ ಮೋಡವು ಬಲಕ್ಕೆ, ಮತ್ತು ರೋವರ್‌ ಬಲಕ್ಕೆ ಚಲಿಸದಿದಾಗ ಎಡಕ್ಕೆ ಚಲಿಸುತ್ತದೆ.  ಮೋಡವು ಪರ್ವತಕ್ಕಿಂತ ನಿಧಾನವಾಗಿ ಚಲಿಸುತ್ತದೆ ಏಕೆಂದರೆ x ನ್ನು 5 ರ ಏರಿಕೆಗಳಿಗೆ ಬದಲಾಯಿಸಲಾಗಿದೆ.
 
   --- /feedback ---
 
