@@ -1,12 +1,12 @@
-root = true
+रूट = खरे
 
 [*]
-indent_style = space
+indent_style = स्पेस
 indent_size = 2
-end_of_line = lf
+end_of_line = जर
 charset = utf-8
-trim_trailing_whitespace = true
-insert_final_newline = true
+trim_trailing_whitespace = खरे
+insert_final_newline = खरे
 
 [*.md]
-trim_trailing_whitespace = false
+trim_trailing_whitespace = चूक
