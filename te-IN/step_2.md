@@ -1,8 +1,8 @@
-## Control the rover
+## రోవర్‌ను నియంత్రించండి
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will use an on-screen controller or the keyboard to move your rover up and down.
+ఈ దశలో, మీరు మీ రోవర్‌ని పైకి క్రిందికి తరలించడానికి ఆన్-స్క్రీన్ కంట్రోలర్ లేదా కీబోర్డ్‌ని ఉపయోగిస్తారు.
 </div>
 <div>
 ![](images/step-2.gif){:width="300px"}
@@ -11,31 +11,31 @@ In this step, you will use an on-screen controller or the keyboard to move your 
 
 --- task ---
 
-Open the starter project online at [rpf.io/nature-rover-starter](https://rpf.io/nature-rover-starter){:target="_blank"}.
+ఆన్‌లైన్‌లో స్టార్టర్ ప్రాజెక్ట్‌ను [rpf.io/nature-rover-starter](https://rpf.io/nature-rover-starter){:target="_blank"}లో తెరవండి.
 
 --- collapse ---
 ---
-title: Working offline
+title: ఆఫ్‌లైన్‌లో పని చేస్తోంది
 ---
 
-If you are working offline, the starter project can be found at [rpf.io/p/en/nature-rover-go](https://rpf.io/p/en/nature-rover-go)
+మీరు ఆఫ్‌లైన్‌లో పని చేస్తుంటే, స్టార్టర్ ప్రాజెక్ట్‌ను [rpf.io/p/en/nature-rover-go](https://rpf.io/p/en/nature-rover-go)లో కనుగొనవచ్చు
 
 --- /collapse ---
 
 
 --- /task ---
 
-You should see a scene with a robotic rover, a hilly background, and a controller in the bottom, left-hand corner.
+మీరు రోబోటిక్ రోవర్, కొండ ప్రాంతపు నేపథ్యం మరియు దిగువ ఎడమవైపు మూలలో కంట్రోలర్‌తో కూడిన దృశ్యాన్ని చూడాలి.
 
-![The staring background showing hills, a pile of mud, and a robot.](images/starter-background.png)
+![కొండలు, మట్టి కుప్ప మరియు రోబోట్‌ని చూపిస్తూ చూపిస్తున్న నేపథ్యం.](images/starter-background.png)
 
-You are going to use the controller or keyboard controls to make the rover look as if it is moving towards or away from the viewer.
+రోవర్ వీక్షకుడి వైపు లేదా దూరంగా కదులుతున్నట్లు కనిపించేలా చేయడానికి మీరు కంట్రోలర్ లేదా కీబోర్డ్ నియంత్రణలను ఉపయోగించబోతున్నారు.
 
 --- task ---
 
-Look at the **Code** tab for each of the buttons. The code will look something like this:
+ప్రతి బటన్ కోసం **Code** ట్యాబ్‌ను చూడండి. కోడ్ ఇలా కనిపిస్తుంది:
 
-![The up sprite.](images/up-sprite.png)
+![Up sprite.](images/up-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -48,17 +48,17 @@ go to x:(-190) y: (-121)
 end
 ```
 
-This keeps the buttons in the correct position, and broadcasts their directions when they are clicked.
+ఇది బటన్‌లను సరైన స్థితిలో ఉంచుతుంది మరియు వాటిని క్లిక్ చేసినప్పుడు వాటి దిశలను బ్రాడ్ కాస్ట్ చేస్తుంది.
 
 --- /task ---
 
-The **rover** is going to control the start of the game for all the other sprites; so when the green flag is clicked, the **rover** sprite needs to broadcast a `start`{:class='block3events'} message.
+**rover** అన్ని ఇతర sprite ల కోసం ఆట ప్రారంభాన్ని కంట్రోల్ చేయబోతుంది; కాబట్టి ఆకుపచ్చ జెండాను క్లిక్ చేసినప్పుడు, **rover** sprite `start`{:class='block3events'} సందేశాన్ని బ్రాడ్ కాస్ట్ చేయాలి.
 
 --- task ---
 
-Add the broadcast to a `green flag clicked`{:class='block3events'} block.
+`green flag clicked`{:class='block3events'} బ్లాక్ కు broadcast ను జోడించండి.
 
-![The rover sprite.](images/rover-sprite.png)
+![Rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -69,9 +69,9 @@ broadcast [start v]
 
 --- task ---
 
-If you are working on a computer, it might be easier to use the keyboard controls, rather than using the buttons. Keyboard controls can be added to the **rover** sprite.
+మీరు కంప్యూటర్‌లో పని చేస్తున్నట్లయితే, బటన్‌లను ఉపయోగించడం కంటే కీబోర్డ్ కంట్రోల్స్ ను ఉపయోగించడం సులభం కావచ్చు. కీబోర్డ్ కంట్రోల్స్ **rover** sprite కు జోడించబడతాయి.
 
-![The rover sprite.](images/rover-sprite.png)
+![Rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when [up arrow v] key pressed
@@ -87,8 +87,7 @@ when [left arrow v] key pressed
 broadcast [left v]
 ```
 
-If you don't want to use the controller, then click on each of the **button** sprites and click on the `hide`{:class='block3looks'} block in the `looks`{:class='block3looks'} 
-menu.
+మీరు కంట్రోలర్‌ను ఉపయోగించకూడదనుకుంటే, ప్రతి **button** sprite లపై క్లిక్ చేసి `looks`{:class='block3looks'} మెనులో కల `hide`{:class='block3looks'} బ్లాక్‌పై క్లిక్ చేయండి.
 
 ```blocks3
 hide
@@ -96,13 +95,13 @@ hide
 
 --- /task ---
 
-When the **up** button is clicked or the <kbd>up arrow</kbd> is pressed, the **rover** should change its `y`{:class="block3motion"} position by a small amount. Increasing `y`{:class="block3motion"} will make the **rover** move up. Decreasing `y`{:class="block3motion"} will make the **rover** move down.
+**up** బటన్ క్లిక్ చేసినపుడు లేదా <kbd>up arrow</kbd> ప్రెస్ చేసినపుడు, **rover** చిన్న మొత్తంలో తన `y`{:class="block3motion"} పొజిషన్ ను మార్చుకోవాలి. `y`{:class="block3motion"} పెంచడం ద్వారా **rover** ను పైవైపుకు కదిలించవచ్ఛు. `y`{:class="block3motion"} ని తగ్గించడం ద్వారా **rover** రోవర్ ను క్రిందికి కదిలించవచ్చు.
 
 --- task ---
 
-Add code so the **up** button makes the **rover** move up.
+**up** బటన్ **rover** ని పైకి కదిలేలా చేయడానికి కోడ్‌ని జోడించండి.
 
-![The rover sprite.](images/rover-sprite.png)
+![Rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [up v]
@@ -114,17 +113,17 @@ change y by (-10)
 
 --- /task ---
 
-**You don't need to worry about the left and right motion yet. Left and right motion will be added in the next step of the project.**
+**మీరు ఇంకా ఎడమ మరియు కుడి కదలికల గురించి ఆందోళన చెందాల్సిన అవసరం లేదు. ప్రాజెక్ట్ యొక్క తదుపరి దశలో ఎడమ మరియు కుడి కదలిక జోడించబడుతుంది.**
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Perspective**</span> is used in computer graphics to make a scene more realistic. Objects that are far away normally appear to be smaller and higher up the screen. Objects that are close appear to be larger and lower down the screen.
+<span style="color: #0faeb0">**Perspective**</span> దృశ్యాన్ని మరింత వాస్తవికంగా చేయడానికి కంప్యూటర్ గ్రాఫిక్స్‌లో ఉపయోగించబడుతుంది. సాధారణంగా దూరంగా ఉన్న వస్తువులు స్క్రీన్‌పై చిన్నవిగా మరియు ఎత్తుగా కనిపిస్తాయి. దగ్గరగా ఉన్న వస్తువులు స్క్రీన్‌పై పెద్దవిగా మరియు క్రిందికి కనిపిస్తాయి.
 </p>
 
 --- task ---
 
-Add **perspective** to your **rover** by making it smaller when it moves upwards, and larger when it moves downwards.
+అది పైకి కదులుతున్నప్పుడు చిన్నదిగా మరియు క్రిందికి కదులుతున్నప్పుడు పెద్దదిగా కనిపించేలా మీ **rover** కి **perspective** ని జోడించండి.
 
-![The rover sprite.](images/rover-sprite.png)
+![Rovef sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [up v]
@@ -141,7 +140,7 @@ change size by (1) //Bigger looks closer
 
 --- task ---
 
-You'll need to reset the **rover's** size at the start of the game.
+మీరు గేమ్ ప్రారంభంలో **rover** పరిమాణాన్ని రీసెట్ చేయాలి.
 
 ```blocks3
 when I receive [start v]
@@ -153,15 +152,15 @@ set size to (50) %
 
 --- task ---
 
-**Test:** Click the **up** and **down** buttons to check the control of your **rover**, or use the arrow keys.
+**పరీక్ష:** **rover** కంట్రోల్ ను తనిఖీ చేయడానికి **up** మరియు **down** బటన్‌లను క్లిక్ చేయండి లేదా యారో కీ లను ఉపయోగించండి.
 
 --- /task ---
 
 --- task ---
 
-Now reset the position of the **rover** each time the game starts.
+ఇప్పుడు ఆట ప్రారంభమైన ప్రతిసారీ **rover** స్థానాన్ని రీసెట్ చేయండి.
 
-![The rover sprite.](images/rover-sprite.png)
+![Rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -173,9 +172,9 @@ set size to (50) %
 
 --- task ---
 
-For now, the **rover** should appear in front of the other sprites. Move the **rover** to the front layer.
+ప్రస్తుతానికి, **rover** ఇతర sprite ల కన్నా ముందు కనిపించాలి. **rover** ని ముందు లేయర్ కు తరలించండి.
 
-![The rover sprite.](images/rover-sprite.png)
+![Rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -188,7 +187,7 @@ go to x: (0) y: (-90)
 
 --- task ---
 
-**Test**: Click the green flag to test that your game resets correctly.
+**పరీక్ష**: మీ గేమ్ సరిగ్గా రీసెట్ చేయబడిందో లేదో పరీక్షించడానికి ఆకుపచ్చ జెండాను క్లిక్ చేయండి.
 
 --- /task ---
 
