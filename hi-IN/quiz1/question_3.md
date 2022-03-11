@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: 3 में से तीसरा प्रश्न
 ---
 
-This script is a function that is used to get a cat to dance:
+यह स्क्रिप्ट एक फलन है जिसका उपयोग बिल्ली को नृत्य करने के लिए किया जाता है:
 
 ```blocks3
 define cat animation
@@ -15,7 +15,7 @@ switch costume to [costume 2 v]
 wait (0.1) seconds
 ```
 
-Which of the following scripts would use the `cat animation`{:class='block3myblocks'} above to make the cat dance when the Sprite is clicked?
+निम्नलिखित में से कौन सी स्क्रिप्ट ऊपर दी गयी`cat animation`{:class='block3myblocks'} का उपयोग बिल्ली को स्प्राइट क्लिक करने पर नृत्य करने के लिए करेगी?
 
 --- choices ---
 
@@ -31,7 +31,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but does not use `cat animation`{:class='block3myblocks'} the that has been made.
+  यह बिल्ली को नृत्य करा देगा, लेकिन `cat animation`{:class='block3myblocks'} का उपयोग नहीं करता है जिसे बनाया गया है।
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ cat dance ::custom
 
   --- feedback ---
 
-  This is calling a `cat dance`{:class='block3myblocks'} block, but not the cat `cat animation`{:class='block3myblocks'} block.
+  इसे `cat dance`{:class='block3myblocks'} ब्लॉक बुलाना कहा जाता है ना की `cat animation`{:class='block3myblocks'} ब्लॉक
 
   --- /feedback ---
 
@@ -60,7 +60,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but not when the sprite is clicked. It also does not use the `cat animation`{:class='block3myblocks'} block.
+  यह बिल्ली को नृत्य करा देगा, लेकिन तब नहीं जब स्प्राइट क्लिक किया जाता है। यह `cat animation`{:class='block3myblocks'} ब्लॉक का भी उपयोग नहीं करता है।
 
   --- /feedback ---
 
@@ -73,7 +73,7 @@ cat animation ::custom
 
   --- feedback ---
 
-Yes, in this answer, the `cat animation`{:class='block3myblocks'} block is used when the sprite is clicked, causing the cat to dance.
+हाँ, इस उत्तर में, `cat animation`{:class='block3myblocks'} ब्लॉक का उपयोग तब किया जाता है जब स्प्राइट पर क्लिक किया जाता है, जिससे बिल्ली नृत्य करती है।
 
   --- /feedback ---
 
