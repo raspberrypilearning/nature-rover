@@ -1,27 +1,27 @@
 ---
-title: Nature rover
+title: ಪ್ರಕೃತಿ ರೋವರ್
 hero_image: images/banner.png
-description: Use Scratch to create a wilderness scene for a nature rover to explore
+description: ಪ್ರಕೃತಿ ರೋವರ್‌ ಅನ್ವೇಷಿಸಲು ಕಾಡಿನ ದೃಶ್ಯವನ್ನು ರಚಿಸಲು ಸ್ಕ್ರಾಚ್‌ ಉಪಯೋಗಿಸಿ
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: Introduction
+    title: ಪರಿಚಯ
   - 
-    title: Control the rover
+    title: ರೋವರ್‌ನ್ನು ನಿಯಂತ್ರಿಸಿ
   - 
-    title: Scroll the background
+    title: ಹಿನ್ನೆಲೆಯನ್ನು ಚಲಿಸಿ
     completion: engaged
   - 
-    title: Scroll more sprites
+    title: ಇನ್ನಷ್ಟು ಸ್ಪ್ರೈಟ್‌ಗಳನ್ನು ಚಲಿಸಿ
   - 
-    title: Collect a sample
+    title: ಮಾದರಿಯನ್ನು ಸಂಗ್ರಹಿಸಿ
   - 
-    title: Create another sample
+    title: ಇನ್ನೊಂದು ಮಾದರಿಯನ್ನು ರಚಿಸಿ
   - 
-    title: Reflection
+    title: ಪುನರ್ಮನನ
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -29,7 +29,7 @@ steps:
       passing_score: 3
     completion: internal
   - 
-    title: Upgrade your project
+    title: ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ ಅಪ್‌ಗ್ರೇಡ್‌ ಮಾಡಿ
     completion: external
   - 
-    title: What next?
+    title: ಮುಂದೆ ಏನು?
