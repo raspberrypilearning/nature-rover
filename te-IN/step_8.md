@@ -1,14 +1,14 @@
-## Upgrade your project
+## మీ ప్రాజెక్ట్‌ను అప్‌గ్రేడ్ చేయండి
 
-Make your rover interact with the nature scene even more, similar to how a real rover would behave.
+నిజమైన రోవర్ ఎలా ప్రవర్తిస్తుందో అలాగే ప్రకృతి దృశ్యంతో మీ రోవర్ ఇంటరాక్ట్ అయ్యేలా చేయండి.
 
-You can:
-- Add even more samples to your project, using the prebuilt animations or ones you create yourself
-- Use variables to count samples; increase the count each time a sample is collected
-- Introduce an energy variable so that the rover has to use a renewable energy source like the sun, to recharge
-- Animate the rover when it has collected enough samples (for example, it could do a dance and then fly away)
+మీరు ఇవి చేయవచ్చు:
+- ముందుగా నిర్మించిన యానిమేషన్‌లు లేదా మీరే సృష్టించుకున్న వాటిని ఉపయోగించి మీ ప్రాజెక్ట్‌కి మరిన్ని నమూనాలను జోడించండి
+- నమూనాలను లెక్కించడానికి వేరియబుల్స్ ఉపయోగించండి; నమూనా సేకరించిన ప్రతిసారీ గణనను పెంచండి
+- Energy వేరియబుల్‌ని పరిచయం చేయండి, తద్వారా రోవర్ రీఛార్జ్ చేయడానికి సూర్యుడి వంటి పునరుత్పాదక శక్తి వనరులను ఉపయోగించాలి
+- తగినంత నమూనాలను సేకరించినప్పుడు రోవర్‌ను యానిమేట్ చేయండి (ఉదాహరణకు, అది నృత్యం చేయచ్చు లేదా ఎగిరిపోవచ్చు)
 
-You can use any of the blocks that you learned about in this project, as well as those that you already know.
+మీరు ఈ ప్రాజెక్ట్‌లో నేర్చుకున్న బ్లాక్‌లలో దేనినైనా ఉపయోగించవచ్చు, అలాగే మీకు ఇప్పటికే తెలిసిన వాటిని ఉపయోగించవచ్చు.
 
 ```blocks3
 define collect sample ::custom
@@ -31,7 +31,7 @@ if <touching color (#FFAA00) ?> then
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/536887721/?autostart=false" frameborder="0"></iframe>
 </div>
 
-You can view the complete project [here](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
+మీరు పూర్తి ప్రాజెక్ట్ [ఇక్కడ](https://scratch.mit.edu/projects/536887721){:target="_blank"} వీక్షించవచ్చు.
 
 
 
