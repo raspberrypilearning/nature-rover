@@ -1,10 +1,10 @@
-## What next?
+## आगे क्या?
 
-If you are following the [Further Scratch](https://projects.raspberrypi.org/en/pathways/further-scratch) pathway, you can move on to the [Puzzle room](https://projects.raspberrypi.org/en/projects/puzzle-room) project. In this project, you will make a space ship puzzle room with a character that solves the puzzles.
+अगर आप [Further Scratch](https://projects.raspberrypi.org/en/pathways/further-scratch) मार्ग का अनुसरण कर रहे हैं तो आप [पज़्ज़ल रूम](https://projects.raspberrypi.org/en/projects/puzzle-room) प्रोजेक्ट पर जा सकते हैं। इस प्रोजेक्ट में, आप पहेली को हल करने वाले चरित्र के साथ एक अंतरिक्ष जहाज पहेली कक्ष बनाएंगे।
 
 --- print-only ---
 
-![Puzzle room](images/puzzle_room.png)
+![पज़्ज़ल रूम](images/puzzle_room.png)
 
 --- /print-only ---
 
@@ -16,4 +16,4 @@ If you are following the [Further Scratch](https://projects.raspberrypi.org/en/p
 
 --- /no-print ---
 
-If you want to have more fun exploring Scratch, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch&curriculum%5B%5D=%201).
+यदि आप Scratch को एक्सप्लोर करने में और अधिक मज़ा लेना चाहते हैं, तो आप [इन प्रोजेक्टस ](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch&curriculum%5B%5D=%201) को आज़मा सकते हैं।
