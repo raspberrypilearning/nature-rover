@@ -1,8 +1,8 @@
-## Collect a sample
+## ಮಾದರಿಯನ್ನು ಸಂಗ್ರಹಿಸಿ
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will change the appearance of a sprite and the rover to show the rover collecting samples.
+ಈ ಹಂತದಲ್ಲಿ, ರೋವರ್ ಮಾದರಿಗಳನ್ನು ಸಂಗ್ರಹಿಸುವುದನ್ನು ತೋರಿಸಲು ನೀವು ಸ್ಪ್ರೈಟ್ ಮತ್ತು ರೋವರ್‌ನ ನೋಟವನ್ನು ಬದಲಾಯಿಸುತ್ತೀರಿ.
 </div>
 <div>
 ![](images/step-4.gif){:width="300px"}
@@ -11,32 +11,32 @@ In this step, you will change the appearance of a sprite and the rover to show t
 
 --- task ---
 
-Look at the **rover** sprite's costumes. There are six animations available. The **rover** can:
-- Extend its arm
+**rover** ಸ್ಪ್ರೈಟ್‌ನ ಉಡುಪುಗಳನ್ನು ನೋಡಿ. ಆರು ಅನಿಮೇಶನ್‌ಗಳು ಲಭ್ಯವಿರುತ್ತವೆ. **rover**:
+- ಅದರ ತೋಳುಗಳನ್ನು ವಿಸ್ತರಿಸಬಹುದು
 
-![Three costumes showing the rover arm extending.](images/arm-animation.png)
+![ರೋವರ್‌ ತೋಳನ್ನು ವಿಸ್ತರಿಸುವುದನ್ನು ತೋರಿಸುತ್ತಿರುವ ಮೂರು ಉಡುಪುಗಳು.](images/arm-animation.png)
 
-- Drill into the ground
-- Suck in air
-- Extend a solar panel
-- Take a picture
-- Scoop something up
+- ನೆಲವನ್ನು ಕೊರೆಯಬಹುದು
+- ಗಾಳಿಯನ್ನು ಒಳಕ್ಕೆಳೆದುಕೊಳ್ಳಬಹುದು
+- ಸೌರ ಫಲಕವನ್ನು ವಿಸ್ತರಿಸಬಹುದು
+- ಚಿತ್ರವನ್ನು ತೆಗೆದುಕೊಳ್ಳಬಹುದು
+- ಏನನ್ನಾದರೂ ಮೊಗೆದು ತೆಗೆಯಬಹುದು
 
 --- /task ---
 
-When you want to organise a lot of code in Scratch, such as several costume changes, it is useful to use `My Blocks`{:class="block3myblocks"}. This allows you to create your own custom blocks.
+ಅನೇಕ ಉಡುಪುಗಳ ಬದಲಾವಣೆಗಳಂತಹ ಬಹಳಷ್ಟು ಕೋಡ್‌ಗಳನ್ನುನೀವು Scratch ನಲ್ಲಿ ಸಂಯೋಜಿಸಲು ಬಯಸಿದಾಗ, `My Blocks`{:class="block3myblocks"} ಉಪಯೋಗಿಸುವುದು ಉಪಯುಕ್ತವಾಗಿರುತ್ತದೆ. ಇದು ನಿಮಗೆ ನಿಮ್ಮದೇ ಆದ ಬ್ಲಾಕ್‌ಗಳನ್ನು ರಚಿಸಲು ಅನುವುಮಾಡಿಕೊಡುತ್ತದೆ.
 
-Your **rover** sprite will have a `My Block`{:class="block3myblocks"} for each animation.
+ನಿಮ್ಮ **rover** ಸ್ಪ್ರೈಟ್‌ ಪ್ರತಿಯೊಂದು ಅನಿಮೇಶನ್‌ಗೆ `My Block`{:class="block3myblocks"} ಹೊಂದಿರುತ್ತದೆ.
 
 --- task ---
 
-In the `My Blocks`{:class="block3myblocks"} menu, click on **Make a Block**, and name your new block `sample fruit`{:class="block3myblocks"}.
+`My Blocks`{:class="block3myblocks"} ಮೆನುನಲ್ಲಿ, **Make a Block** ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ, ಮತ್ತು ನಿಮ್ಮ ಹೊಸ ಬ್ಲಾಕ್‌ನ್ನು `sample fruit`{:class="block3myblocks"} ಎಂದು ಹೆಸರಿಸಿ.
 
 --- /task ---
 
-A new block should appear in your script. It will look like this:
+ನಿಮ್ಮ ಬರಹದಲ್ಲಿ ಹೊಸ ಬ್ಲಾಕ್‌ ಕಾಣಿಸಿಕೊಳ್ಳಬೇಕು. ಅದು ಈ ರೀತಿ ಕಾಣಿಸುತ್ತದೆ:
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -44,11 +44,11 @@ define sample fruit
 
 --- task ---
 
-Beneath this block, attach some `switch costume`{:class="block3looks"} blocks and `wait`{:class="block3control"} blocks, to animate the robot.
+ಈ ಬ್ಲಾಕ್‌ ಕೆಳಗೆ, ರೋಬೋಟ್‌ನ್ನು ಅನಿಮೇಟ್‌ ಮಾಡಲು ಕೆಲವು `switch costume`{:class="block3looks"} ಬ್ಲಾಕ್‌ಗಳನ್ನು ಮತ್ತು `wait`{:class="block3control"} ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ.
 
-**Tip:** It is quicker to create your first `switch costume`{:class='block3looks'} block and `wait`{:class='block3control'} block, then duplicate them, and change the costume being used.
+**ಸಲಹೆ:** ನಿಮ್ಮ ಮೊದಲ `switch costume`{:class='block3looks'} ಬ್ಲಾಕ್‌ ಮತ್ತು `wait`{:class='block3control'} ಬ್ಲಾಕ್‌ ರಚಿಸುವುದು ಬೇಗ ಆಗುತ್ತದೆ, ನಂತರ ಅವುಗಳನ್ನು ನಕಲು ಮಾಡಿ, ಮತ್ತು ಉಪಯೋಗಿಸುತ್ತಿರುವ ಉಡುಪನ್ನು ಬದಲಾಯಿಸಿ.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit //Animates the robot to collect fruit
@@ -67,9 +67,9 @@ switch costume to (inactive v)
 
 --- task ---
 
-Add a block so that the **rover** sprite plays a sound when it collects the fruit sample.
+**rover** ಸ್ಪ್ರೈಟ್‌ ಹಣ್ಣಿನ ಮಾದರಿಯನ್ನು ಸಂಗ್ರಹಿಸಿದಾಗ ಧ್ವನಿಯನ್ನು ನುಡಿಸುವಂತೆ ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit //Animates the robot to collect fruit
@@ -90,17 +90,17 @@ switch costume to (inactive v)
 
 --- task ---
 
-You can click on the `define sample fruit`{:class="block3myblocks"} block to see the animation. If you are on a small screen, you might need to look closely.
+ನೀವು ಅನಿಮೇಶನ್‌ ನೋಡಲು `define sample fruit`{:class="block3myblocks"} ಬ್ಲಾಕ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಬಹುದು. ನೀವು ಸಣ್ಣ ಪರದೆಯನ್ನು ಉಪಯೋಗಿಸುತ್ತಿದ್ದರೆ, ನೀವು ಹತ್ತಿರದಿಂದ ನೋಡಬೇಕಾಗಬಹುದು.
 
-The animation won't run when you click the green flag though, as you have not yet used your new `sample fruit block`{:class='block3myblocks'} in your project.
+ನೀವು ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ ಇನ್ನೂ ನಿಮ್ಮ ಹೊಸ `sample fruit block`{:class='block3myblocks'} ಉಪಯೋಗಿಸಿಲ್ಲವಾದುದರಿಂದ ಹಸಿರು ಬಾವುಟದ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗಲೂ ಅನಿಮೇಶನ್‌ ರನ್‌ ಆಗುವುದಿಲ್ಲ.
 
 --- /task ---
 
 --- task ---
 
-To use your new block, you can attach it to an `event`{:class="block3events"} block. In the `My Blocks`{:class="block3myblocks"} menu, you should see the block you made. Use it in the following script.
+ನಿಮ್ಮ ಹೊಸ ಬ್ಲಾಕ್‌ನ್ನು ಉಪಯೋಗಿಸಲು, ನೀವು ಅದನ್ನು `event`{:class="block3events"} ಬ್ಲಾಕ್‌ಗೆ ಸೇರಿಸಬಹುದು. `My Blocks`{:class="block3myblocks"} ಮೆನುನಲ್ಲಿ, ನೀವು ಮಾಡಿದ ಬ್ಲಾಕ್‌ನ್ನು ನೀವು ನೋಡಬೇಕು. ಈ ಕೆಳಗಿನ ಬರಹದಲ್ಲಿ ಅದನ್ನು ಉಪಯೋಗಿಸಿ.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -111,23 +111,23 @@ sample fruit ::custom //Run the animation
 
 --- task ---
 
-Click on the **rover** sprite, and you should see the animation.
+**rover** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ, ಮತ್ತು ನೀವು ಅನಿಮೇಶನ್‌ ನೋಡಬೇಕು.
 
 --- /task ---
 
-Now you need to make the rover actually collect a sample. In this example, the rover will collect a fruit from a tree.
+ಈಗ ನೀವು ರೋವರ್‌ ನಿಜವಾಗಿ ಮಾದರಿಯನ್ನು ಸಂಗ್ರಹಿಸುವಂತೆ ಮಾಡಬೇಕು. ಈ ಉದಾಹರಣೆಯಲ್ಲಿ, ರೋವರ್‌ ಮರದಿಂದ ಹಣ್ಣೊಂದನ್ನು ಸಂಗ್ರಹಿಸುತ್ತದೆ.
 
 --- task ---
 
-The **tree** sprite should be edited to give it two different costumes. One with a fruit on (`tree with fruit`{:class="block3looks"}), and one without a fruit (`tree without fruit`{:class="block3looks"}). Edit one of the costumes, so that the **tree** has two different costumes.
+ಎರಡು ಬೇರೆ ಬೇರೆ ಉಡುಪುಗಳನ್ನು ಅದಕ್ಕೆ ಕೊಡಲು **tree** ಸ್ಪ್ರೈಟ್‌ನ್ನು ಎಡಿಟ್‌ ಮಾಡಬೇಕು. ಒಂದು ಹಣ್ಣು ಹಾಕಿಕೊಂಡು (`tree with fruit`{:class="block3looks"}), ಮತ್ತು ಒಂದು ಹಣ್ಣಿಲ್ಲದೆ (`tree without fruit`{:class="block3looks"}). **tree** ಗೆ ಎರಡು ಬೇರೆ ಬೇರೆ ಉಡುಪುಗಳು ಇರುವಂತೆ ಅವುಗಳಲ್ಲಿ ಒಂದು ಉಡುಪನ್ನು ಎಡಿಟ್‌ ಮಾಡಿ.
 
 --- /task ---
 
 --- task ---
 
-On the **tree** sprite, add blocks to set the costume of the **tree** at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
+**tree** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ, **tree** ಉಡುಪನ್ನು ಪ್ರಾಜೆಕ್ಟ್‌ ಪ್ರಾರಂಭದಲ್ಲಿ ಹೊಂದಿಸಲು, ಮತ್ತು ಅದು `sample fruit`{:class="block3events"} ಪ್ರಸಾರವನ್ನು ಸ್ವೀಕರಿಸಿದಾಗ ಬದಲಾಯಿಸಬೇಕಾದ ಉಡುಪಿಗೆ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ.
 
-![The tree sprite.](images/tree-sprite.png)
+![ಮರ ಸ್ಪ್ರೈಟ್.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -150,9 +150,9 @@ end
 
 --- task ---
 
-On the **rover** sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new `broadcast`{:class="block3events"} into your `define sample fruit`{:class="block3myblocks"} function.
+**rover** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ, ಉಡುಪು ಬದಲಾವಣೆಯನ್ನು ಪ್ರಚೋದಿಸಲು ನೀವು ಹೊಸ `broadcast`{:class="block3events"} ಉಪಯೋಗಿಸಬಹುದು. ಈ ಹೊಸ `broadcast`{:class="block3events"} ನ್ನು ನಿಮ್ಮ`define sample fruit`{:class="block3myblocks"} ಫಂಕ್ಷನ್‌ ಒಳಗೆ ಸೇರಿಸಿ.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -172,21 +172,21 @@ switch costume to (inactive v)
 
 --- task ---
 
-**Test:** To check that your code is working, click on the flag, and then click on your **rover** sprite. Its arm should extend, and the **tree** sprite should change costumes.
+**ಪರೀಕ್ಷೆ:** ನಿಮ್ಮ ಕೋಡ್‌ ಕೆಲಸಮಾಡುತ್ತಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಲು, ಬಾವುಟದ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು ನಂತರ ನಿಮ್ಮ **rover** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ. ಅದರ ತೋಳುಗಳು ವಿಸ್ತರಿಸಬೇಕು, ಮತ್ತು **tree** ಸ್ಪ್ರೈಟ್‌ ಉಡುಪುಗಳನ್ನು ಬದಲಾಯಿಸಬೇಕು.
 
-**Tip:** Switch to full screen mode and you will be able to see the animation more easily.
+**ಸಲಹೆ:** ಫುಲ್‌ ಸ್ಕ್ರೀನ್‌ ಮೋಡ್‌ಗೆ ಬದಲಾಯಿಸಿ ಮತ್ತು ನೀವು ಅನಿಮೇಶನ್‌ನ್ನು ಇನ್ನೂ ಸುಲಭವಾಗಿ ನೋಡಬಹುದು.
 
 --- /task ---
 
-The rover should only be able to collect the fruit, if it is touching it.
+ರೋವರ್‌ ಹಣ್ಣನ್ನು ಸ್ಪರ್ಶಿಸುತ್ತಿದ್ದರೆ ಮಾತ್ರ, ಅದಕ್ಕೆ ಹಣ್ಣನ್ನು ಸಂಗ್ರಹಿಸಲು ಸಾಧ್ಯವಾಗಬೇಕು.
 
 --- task ---
 
-On the **rover** sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the **rover** sprite is touching the colour of your fruit.
+**rover** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ, `when this sprite clicked`{:class="block3events"} ಬ್ಲಾಕ್‌ಗಳ ಸೆಟ್‌ನ್ನು ಬದಲಾಯಿಸಿ, ಅದರಿಂದ **rover** ಸ್ಪ್ರೈಟ್‌ ನಿಮ್ಮ ಹಣ್ಣಿನ ಬಣ್ಣವನ್ನು ಸ್ಪರ್ಶಿಸುತ್ತಿದ್ದರೆ ಮಾತ್ರ `sample fruit`{:class="block3myblocks"} ಫಂಕ್ಷನ್‌ನ್ನು ಆಮಂತ್ರಿಸಲಾಗುತ್ತದೆ.
 
-**Tip:** Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
+**ಸಲಹೆ:** ಪರೀಕ್ಷೆಯಿಂದ ನಿಮ್ಮ ಉಡುಪುಗಳ ಬದಲಾವಣೆಯು ಹಣ್ಣು ಕಾಣಿಸುತ್ತಿಲ್ಲ ಎಂದು ಅರ್ಥ ಕೊಡಬಹುದು. **tree** ಸ್ಪ್ರೈಟ್‌ಗೆ ಕಾಸ್ಟ್ಯೂಮ್‌ ಟ್ಯಾಬ್‌ ಮೇಲಷ್ಟೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ, ಮತ್ತು ಹಣ್ಣು ಕಾಣಿಸುತ್ತಿರುವ ಉಡುಪಿಗೆ ಬದಲಾಯಿಸಿ.
 
-![The rover sprite.](images/rover-sprite.png)
+![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -198,9 +198,9 @@ sample fruit ::custom
 
 --- task ---
 
-Now that the **tree** sprite changes when a fruit is sampled, you need to reset the sprite to its first costume when it goes off the screen.
+ಈಗ **tree** ಸ್ಪ್ರೈಟ್ ಹಣ್ಣಿನ ಮಾದರಿ ಸಂಗ್ರಹಿಸಿದಾಗ ಬದಲಾಗುತ್ತದೆಯಾದುದರಿಂದ, ಅದು ಪರದೆಯಿಂದ ಹೊರಹೋದಾಗ ನೀವು ಸ್ಪ್ರೈಟ್‌ನ್ನು ಅದರ ಮೊದಲನೆಯ ಉಡುಪಿಗೆ ಮರುಹೊಂದಿಸಬೇಕು.
 
-![The tree sprite.](images/tree-sprite.png)
+![ಮರ ಸ್ಪ್ರೈಟ್.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -222,7 +222,7 @@ end
 
 --- task ---
 
-**Test:** Move the **rover** sprite so that it is touching the fruit, then click on the **rover** sprite and watch it collect the fruit from the tree.
+**ಪರೀಕ್ಷೆ:** **rover** ಸ್ಪ್ರೈಟ್‌ ಹಣ್ಣನ್ನು ಸ್ಪರ್ಶಿಸುವಂತೆ ಅದನ್ನು ಚಲಿಸಿ, ನಂತರ **rover** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು ಅದು ಮರದಿಂದ ಹಣ್ಣು ಸಂಗ್ರಹಿಸುವುದನ್ನು ವೀಕ್ಷಿಸಿ.
 
 --- /task ---
 
