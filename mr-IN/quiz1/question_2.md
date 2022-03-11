@@ -1,17 +1,17 @@
-## Reflection
+## परावर्तन
 
 
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: प्रश्न 3 पैकी 2
 ---
 
-Have a look at this project showing a rover exploring a mountain scene.
+हा प्रोजेक्ट बघा जो पर्वताचे दृश्य शोधणारा रोव्हर दाखवतो.
 
-![animation showing rover with mountain moving in the background and a static cloud](images/mountain-animation.gif)
+![बॅकग्राऊंड आणि स्थीर क्लाऊड मध्ये हलणाऱ्या पर्वतासह रोव्हर दाखवणारे ऍनिमेशन](images/mountain-animation.gif)
 
-Here is the code for moving the mountain.
+पर्वत हलवण्यासाठी येथे कोड आहे.
 
 ```blocks3
 when I receive [left v]
@@ -21,7 +21,7 @@ when I receive [right v]
 change x by (-10)
 ```
 
-Which code blocks would get the cloud to scroll slower than the mountain?
+कोणत्या कोड ब्लॉक्सला पर्वतापेक्षा हळू स्क्रोल करण्यासाठी क्लाऊड मिळेल?
 
 --- choices ---
 
@@ -37,7 +37,7 @@ change x by (5)
 
   --- feedback ---
 
-The cloud is scrolling slower than the mountain here, but this code makes the cloud difficult for the rover to reach because it moves in the same direction as the rover.
+येथे क्लाऊड पर्वतापेक्षा हळू स्क्रोल करत आहे, परंतु हा कोड रोव्हरला पोहोचण्यासाठी क्लाऊडला कठीण बनवतो कारण तो रोव्हर प्रमाणे त्याच दिशेत हलतो.
 
   --- /feedback ---
 
@@ -54,7 +54,7 @@ change y by (5)
 
   --- feedback ---
 
-  With this code, the cloud will be moving up and down instead of left and right. How can you get the cloud to move left and right? Think about the stage as a coordinate grid.
+  या कोडसह, क्लाऊड डावी आणि उजवी कडे ऐवजी वर आणि खाली हलेल. तुम्हाला डावी आणि उजवीकडे हलणारा क्लाऊड कसा मिळू शकतो? कोऑर्डीनेट ग्रीड प्रमाणे stage बद्दल विचार करा.
 
   --- /feedback ---
 
@@ -70,7 +70,7 @@ change y by (-20)
 
   --- feedback ---
 
-  The cloud is scrolling in the right direction here, however it is scrolling much faster than the mountain, even though it is farther away from the rover than the mountain.
+  येथे क्लाऊड उजव्या दिशेत स्क्रोल करत आहे, तरीसुद्धा तो पर्वतापेक्षा जास्त जलद स्क्रोल करतो, तो पर्वतापेक्षा रोव्हरपासून दूर असली तरीही.
 
   --- /feedback ---
 
@@ -86,7 +86,7 @@ change x by (-5)
 
   --- feedback ---
 
-Great! the cloud moves right when the rover moves left, and left when the rover moves right.  The cloud scrolls slower than the mountain because x is changed in increments of 5.
+उत्तम! रोव्हर डावीकडे हलल्यावर क्लाऊड उजवीकडे हलतो, आणि उजवीकडे हलल्यावर डावीकडे हलतो.  क्लाऊड पर्वतापेक्षा हळू स्क्रोल करतो कारण x 5 च्या वाढीमध्ये बदलतो.
 
   --- /feedback ---
 
