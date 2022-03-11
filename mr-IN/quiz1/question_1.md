@@ -1,24 +1,24 @@
 
-Well done, you have learned a lot! Now it's time to reflect - reflecting is an important part of learning because it helps make new connections in your brain.
+छान, तुम्ही खूप काही शिकलात! आता, चिंतन करण्याची वेळ आहे - चिंतन हा अभ्यासाचा महत्वाचा भाग आहे, कारण त्यामुळे तुमच्या मेंदूला नवीन माहिती मिळण्यास मदत होते.
 
-Answer the three questions below to reflect on what you've learned.
+तुम्ही काय शिकलात याचे चिंतन करण्यासाठी खालील तीन प्रश्नांची उत्तरे द्या.
 
-After each question, press submit. You will be guided towards the correct answer. You can do this activity as many times as you want to.
+प्रत्येक प्रश्नानंतर submit दाबा. तुम्हाला योग्य उत्तराचे मार्गदर्शन केले जाईल. तुम्हाला हवे तेवढ्या वेळा तुम्ही ही कृती करू शकता.
 
-Have fun!
+मजा करा!
 
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: प्रश्न 3 पैकी 1
 ---
 
-Here is a controller that broadcasts up when the up button is clicked and down when the down button is clicked:
+येथे एक कंट्रोलर आहे जो वरचे बटण क्लिक केल्यावर वर आणि डाउन बटणावर क्लिक केल्यावर खाली ब्रॉडकास्ट करतो:
 
-![four button controller](images/controller.png)
+![चार बटन कंट्रोलर](images/controller.png)
 
-Which of the following code blocks would you add to **the rover sprite** to make it move up and down
+खालीलपैकी कोणता कोड तुम्ही तो वर आणि खाली हलवण्यासाठी **the rover sprite** मध्ये जोडाल
 
 --- choices ---
 
@@ -38,7 +38,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This would move the rover when it is touching the buttons, rather than when the buttons are pressed.
+  हे बटन दाबल्यावर पेक्षा बटनाला स्पर्श केल्यावर रोव्हर हलवेल.
 
   --- /feedback ---
 
@@ -51,7 +51,7 @@ change y by (10)
 
 --- feedback ---
 
-  This would move the rover when it was clicked on, rather than when the buttons are clicked on.
+  हे रोव्हरला बटन क्लिक केल्यावर पेक्षा त्यावर क्लिक केल्यावर हलवेल.
 
   --- /feedback ---
 
@@ -68,7 +68,7 @@ change y by (-10)
 
   --- feedback ---
 
-  Yes, this script receives the up and down broadcasts from the controller buttons and gets the rover to move up and down.
+  हो, या स्क्रिप्टला कंट्रोलर बटन मधून वर आणि खाली ब्रॉडकास्ट मिळतो आणि रोव्हर वर आणि खाली हलतो.
 
   --- /feedback ---
 
@@ -86,7 +86,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This creates functions for moving up and down, but as the functions are not called, the rover would not move.
+  वर आणि खाली हलण्यासाठी हे फंक्शन तयार करते, परंतु फंक्शनला बोलविले नाही तर, रोव्हर हलणार नाही.
 
   --- /feedback ---
 
