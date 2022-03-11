@@ -1,0 +1,12 @@
+रूट = खरे
+
+[*]
+indent_style = स्पेस
+indent_size = 2
+end_of_line = जर
+charset = utf-8
+trim_trailing_whitespace = खरे
+insert_final_newline = खरे
+
+[*.md]
+trim_trailing_whitespace = चूक

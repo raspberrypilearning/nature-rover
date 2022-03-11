@@ -1,0 +1,26 @@
+---
+title: ಪ್ರಕೃತಿ ರೋವರ್
+hero_image: images/banner.png
+description: ಪ್ರಕೃತಿ ರೋವರ್‌ ಅನ್ವೇಷಿಸಲು ಕಾಡಿನ ದೃಶ್ಯವನ್ನು ರಚಿಸಲು ಸ್ಕ್ರಾಚ್‌ ಉಪಯೋಗಿಸಿ
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - title: ಪರಿಚಯ
+  - title: ರೋವರ್‌ನ್ನು ನಿಯಂತ್ರಿಸಿ
+  - title: ಹಿನ್ನೆಲೆಯನ್ನು ಚಲಿಸಿ
+    completion: engaged
+  - title: ಇನ್ನಷ್ಟು ಸ್ಪ್ರೈಟ್‌ಗಳನ್ನು ಚಲಿಸಿ
+  - title: ಮಾದರಿಯನ್ನು ಸಂಗ್ರಹಿಸಿ
+  - title: ಇನ್ನೊಂದು ಮಾದರಿಯನ್ನು ರಚಿಸಿ
+  - title: ಪುನರ್ಮನನ
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion: internal
+  - title: ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ ಅಪ್‌ಗ್ರೇಡ್‌ ಮಾಡಿ
+    completion: external
+  - title: ಮುಂದೆ ಏನು?
