@@ -1,10 +1,10 @@
-## What next?
+## ಮುಂದೆ ಏನು?
 
-If you are following the [Further Scratch](https://projects.raspberrypi.org/en/pathways/further-scratch) pathway, you can move on to the [Puzzle room](https://projects.raspberrypi.org/en/projects/puzzle-room) project. In this project, you will make a space ship puzzle room with a character that solves the puzzles.
+ನೀವು [Further Scratch](https://projects.raspberrypi.org/en/pathways/further-scratch) ಮಾರ್ಗವನ್ನು ಅನುಸರಿಸುತ್ತಿದ್ದರೆ, ನೀವು [Puzzle room](https://projects.raspberrypi.org/en/projects/puzzle-room) ಪ್ರಾಜೆಕ್ಟ್‌ಗೆ ಹೋಗಬಹುದು. ಈ ಪ್ರಾಜೆಕ್ಟ್‌ನಲ್ಲಿ, ನೀವು ಪಝಲ್‌ಗಳನ್ನು ಪರಿಹರಿಸುವ ಪಾತ್ರವುಳ್ಳ ಬಾಹ್ಯಾಕಾಶ ನೌಕೆ ಪಝಲ್‌ ಕೊಠಡಿಯನ್ನು ಮಾಡುತ್ತೀರಿ.
 
 --- print-only ---
 
-![Puzzle room](images/puzzle_room.png)
+![ಪಝಲ್‌ ಕೊಠಡಿ](images/puzzle_room.png)
 
 --- /print-only ---
 
@@ -16,4 +16,4 @@ If you are following the [Further Scratch](https://projects.raspberrypi.org/en/p
 
 --- /no-print ---
 
-If you want to have more fun exploring Scratch, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch&curriculum%5B%5D=%201).
+ನೀವು Scratch ನ್ನು ಇನ್ನೂ ಅನ್ವೇಷಿಸಿ ಆನಂದಿಸುವುದಾಧರೆ [ಈ ಪ್ರಾಜೆಕ್ಟ್‌ಗಳ](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch&curriculum%5B%5D=%201)ಲ್ಲಿ ಯಾವುದಾದರೂ ಪ್ರಯತ್ನಿಸಬಹುದು.
