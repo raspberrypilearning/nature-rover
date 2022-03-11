@@ -1,8 +1,8 @@
-## Scroll the background
+## నేపథ్యాన్ని స్క్రోల్ చేయండి
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For the rover to look like it's moving left and right, instead of the **rover** sprite moving, the **background** sprite moves or scrolls to the left or right.
+రోవర్ ఎడమ మరియు కుడి వైపుకు కదులుతున్నట్లుగా కనిపించాలంటే, **rover** sprite కదలడం కాకుండా, **background** sprite ఎడమ లేదా కుడి వైపుకు కదులుతుంది లేదా స్క్రోల్ చేస్తుంది.
 </div>
 <div>
 ![](images/step-3.gif){:width="300px"}
@@ -11,9 +11,9 @@ For the rover to look like it's moving left and right, instead of the **rover** 
 
 --- task ---
 
-Select the **hills** sprite. At the start of the game, you need to make sure that it is in the correct position and on the back layer.
+**hills** sprite ని ఎంచుకోండి. ఆట ప్రారంభంలో, మీరు అది సరైన స్థానంలో మరియు వెనుక లేయర్లో ఉందని నిర్ధారించుకోవాలి.
 
-![The hills sprite.](images/hills-sprite.png)
+![Hills sprite.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -24,14 +24,14 @@ go to x: (0) y: (0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Layers**</span> are like stacked sheets of clear plastic that you can draw images on. If an image on the top of the stack is covering the image below it, you will not be able to see the bottom image properly. Background images should be near the **back** layer. Images closer to the viewer should be near the **front** layer.
+<span style="color: #0faeb0">**లేయర్‌లు**</span> మీరు చిత్రాలను గీయగలిగే స్పష్టమైన ప్లాస్టిక్‌తో పేర్చబడిన షీట్‌ల వలె ఉంటాయి. స్టాక్ పైభాగంలో ఉన్న చిత్రం దాని క్రింద ఉన్న చిత్రాన్ని కవర్ చేస్తున్నట్లయితే, మీరు దిగువ చిత్రాన్ని సరిగ్గా చూడలేరు. నేపథ్య చిత్రాలు **back** లేయర్‌కు సమీపంలో ఉండాలి. వీక్షకుడికి దగ్గరగా ఉండే చిత్రాలు **front** లేయర్‌కు సమీపంలో ఉండాలి.
 </p>
 
 --- task ---
 
-The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3control'}. Then, the original sprite can be moved to the far right-hand side of the screen.
+**hills** sprite తనని తను కాపీని తయారు చేసుకోవాలి. వీటిని `clones`{:class='block3control'} అంటారు. అప్పుడు, ఒరిజినల్ sprite ని స్క్రీన్‌కి కుడి వైపునకు తరలించవచ్చు.
 
-![The hills sprite.](images/hills-sprite.png)
+![Hills sprite.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -43,17 +43,17 @@ go to x: (0) y: (0)
 
 --- /task ---
 
-When the `left`{:class='block3events'} and `right`{:class='block3events'} broadcasts are received, the **hills** sprite should move. To give the appearance of moving in the correct direction, the background moves **left** when the **rover** is moving right. The direction of motion should be **opposite** to the `broadcast`{:class='block3events'}.
+`left`{:class='block3events'} మరియు `right`{:class='block3events'} బ్రాడ్ కాస్ట్ లు అందుకోగానే, the **hills** sprite కదలడం ప్రారంభించాలి. సరైన దిశలో కదులుతున్నట్లు కనిపించడానికి, **rover** కుడివైపు కదులుతున్నప్పుడు, వెనుక నేపథ్యం **left** కి కదులుతుంది. చలన దిశ `broadcast`{:class='block3events'} కి **ఎదురుగా** గా ఉంటుంది.
 
-So, if the broadcast is `left`{:class="block3events"}, then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"}, then the `x`{:class="block3motion"} of the **hills** will decrease.
+కాబట్టి, ఒకవేళ బ్రాడ్ కాస్ట్ `left`{:class="block3events"} అయితే, అప్పుడు `x`{:class="block3motion"} పొజిషన్ పెరుగుతుంది. కాబట్టి, ఒకవేళ బ్రాడ్ కాస్ట్ `right`{:class="block3events"} అయితే, **hills** యొక్క `x`{:class="block3motion"} పొజిషన్ తగ్గుతుంది.
 
-![Scratch stage shown with a sprite in the bottom right-hand corner and an x y coordinate system shown as the backdrop.](images/scratch-grid.png)
+![Scratch దశ దిగువన కుడి-చేతి మూలలో sprite మరియు బ్యాక్‌డ్రాప్‌గా చూపబడిన xy కోఆర్డినేట్ సిస్టమ్‌తో Stage కనిపిస్తుంది.](images/scratch-grid.png)
 
 --- task ---
 
-Add blocks to control the motion of the **hills** sprite and its clone.
+**hills** sprite మరియు దాని క్లోన్ యొక్క కదలికను కంట్రోల్ చేయడానికి బ్లాక్‌లను జోడించండి.
 
-![The hills sprite.](images/hills-sprite.png)
+![Hills sprite.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -67,19 +67,19 @@ change x by (-3)
 
 --- task ---
 
-**Test**: Use the controller or the <kbd>arrow</kbd> keys to move around. The rover should appear to be moving left and right.
+**పరీక్ష**: చుట్టూ తిరగడానికి కంట్రోలర్ లేదా <kbd>బాణం</kbd> కీ లను ఉపయోగించండి. రోవర్ ఎడమ మరియు కుడికి కదులుతున్నట్లు కనిపించాలి.
 
 --- /task ---
 
-At the moment, there are two copies of the **hills** sprite: the original and a clone. When you get to the end of either one, you'll notice that the screen is just white.
+ప్రస్తుతానికి **hills** sprite యొక్క రెండు కాపీలు ఉన్నాయి: ఒరిజినల్ మరియు క్లోన్. మీరు ఒకదాని చివరకి చేరుకున్నప్పుడు, స్క్రీన్ తెల్లగా ఉన్నట్లు మీరు గమనించవచ్చు.
 
-To fix this, the sprite and its clone need to be moved to the other side of the screen when they go too far.
+దీన్ని పరిష్కరించడానికి, sprite మరియు దాని క్లోన్ చాలా దూరం వెళ్లినప్పుడు వాటిని స్క్రీన్‌కి అవతలి వైపుకు తరలించాలి.
 
 --- task ---
 
-Create a new broadcast called `scroll`{:class='block3events'} and add it to the `start`{:class='block3events'} script.
+`scroll`{:class='block3events'} అనే కొత్త బ్రాడ్ కాస్ట్ ను సృష్టించండి మరియు దానిని `start`{:class='block3events'} స్క్రిప్ట్‌కు జోడించండి.
 
-![The hills sprite.](images/hills-sprite.png)
+![Hills sprite.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -94,9 +94,9 @@ change x by (460)
 
 --- task ---
 
-Add code to detect if the **hills** sprite or its clone have moved too far to the left or right, and then reset their positions to the other side of the screen.
+**hills** sprite లేదా దాని క్లోన్ ఎడమ లేదా కుడికి చాలా దూరం తరలించబడిందో లేదో గుర్తించడానికి కోడ్‌ను జోడించి, ఆపై వాటి స్థానాలను స్క్రీన్‌కు అవతలి వైపుకు రీసెట్ చేయండి.
 
-![The hills sprite.](images/hills-sprite.png)
+![Hills sprite.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [scroll v]
@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**Test**: Use the controller or <kbd>arrow</kbd> keys to move the **rover**. The background should scroll, and the **rover** should never reach the end.
+**పరీక్ష** **rover**ని తరలించడానికి కంట్రోలర్ లేదా <kbd>arrow</kbd> కీ లను ఉపయోగించండి. బాక్ గ్రౌండ్ స్క్రోల్ చేయాలి మరియు **rover** ఎప్పటికీ చివరకు చేరుకోకూడదు.
 
 --- /task ---
 
