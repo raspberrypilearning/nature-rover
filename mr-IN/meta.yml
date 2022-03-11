@@ -1,0 +1,26 @@
+---
+title: नेचर रोव्हर
+hero_image: images/banner.png
+description: नेचर रोव्हर एक्सप्लोर करण्यासाठी वाळवंटाचे दृश्य तयार करण्यासाठी Scratch वापरा
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - title: परिचय
+  - title: रोव्हर नियंत्रित करा
+  - title: बॅकग्राऊंड स्क्रोल करा
+    completion: engaged
+  - title: अधिक स्प्राईट्स स्क्रोल करा
+  - title: नमुना गोळा करा
+  - title: दुसरा नमूना तयार करा
+  - title: परावर्तन
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion: internal
+  - title: तुमचा प्रोजेक्ट अपग्रेड करा
+    completion: external
+  - title: पुढे काय?
