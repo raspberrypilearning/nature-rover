@@ -1,8 +1,8 @@
-## Create another sample
+## दुसरा नमूना तयार करा
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Choose what the rover samples next! Does it see a new species of plant, bug, or animal? Does it see some water or mysterious liquid? Does it want to sample some dirt or a rock, or even the air? Or something else?
+रोव्हरचे पुढील नमूने कोणते ते निवडा! त्यात वनस्पती, बग किंवा प्राणी यांची नवीन प्रजाती दिसते का? त्यात काही पाणी किंवा रहस्यमय द्रव दिसतो का? त्याला काही धूळ किंवा खडक किंवा हवेचा नमुना घ्यायचा आहे का? किंवा काहीतरी आणखी?
 </div>
 <div>
 ![](images/step-6.gif){:width="300px"}
@@ -11,29 +11,29 @@ Choose what the rover samples next! Does it see a new species of plant, bug, or 
 
 --- task ---
 
-**Choose:** Add a new **sample** sprite for the rover to collect. You can add this to your project either by selecting one from the library or drawing your own.
+**निवडा:** रोव्हरला गोळा करण्यासाठी नवीन **sample** स्प्राईट जोडा. हे तुम्ही तुमच्या प्रोजेक्टला लायब्ररी मधून सिलेक्ट करून किंवा स्वतःचे चित्र काढून जोडू शकता.
 
 --- /task ---
 
-Get your **sample** sprite to scroll. If it is low down on the screen it should move more (`change x by`{:class='block3motion'} should be higher than `5`), and if it is high up on the screen it should move less (`change x by`{:class='block3motion'} should be lower than `5`).
+स्क्रोल करण्यासाठी तुमचा **sample** स्प्राईट मिळवा. तो स्क्रीनवर कमी असल्यास तो अधिक (`change x by`{:class='block3motion'} हलायला हवा तो `5`) पेक्षा मोठा असायला हवा, आणि तो स्क्रीनवर मोठा असल्यास तो कमी (`change x by`{:class='block3motion'} हलायला हवा तो `5`) पेक्षा लहान असायला हवा.
 
 --- task ---
 
-Add code so that your sprite scrolls.
+तुमचा स्प्राईट स्क्रोल करण्यासाठी कोड जोडा.
 
 --- /task ---
 
-**Choose:** Depending on what you want the rover to sample next, you can either use the rover animations that are there already, or create more animation sequences by duplicating and editing the costumes.
+**निवडा:** रोव्हरने पुढे कशाचा नमूना घ्यावा याआधारे, तुम्ही रोव्हर ऍनिमेशनचा वापर करू शकता जे आधीच उपलब्ध आहे, किंवा कॉश्चुम डुप्लीकेट करून आणि एडिट करून अधिक ऍनिमेशन सिक्वेंस तयार करू शकता.
 
 --- task ---
 
-Add a `My Blocks`{:class='block3myblocks'} block to your **rover** sprite to animate the rover when it collects the new sample. You can copy and paste the code from one of the other `My Blocks`{:class='block3myblocks'} you have created.
+`My Blocks`{:class='block3myblocks'} ब्लॉक तुमच्या **rover** स्प्राईटला जोडा नवीन नमूना गोळा केल्यावर रोव्हर ऍनिमेट करण्यासाठी. तुम्ही तयार केलेल्या एका `My Blocks`{:class='block3myblocks'} मधून कोड कॉपी आणि पेस्ट करू शकता.
 
-For instance, here is a costume sequence for collecting solar energy:
+उदाहरणार्थ, सोलर एनर्जी गोळा करण्यासाठी येथे कॉश्चुम सिक्वेंस आहे:
 
-![Three costumes shown with the rover extending a solar panel.](images/solar-animation.png)
+![रोव्हर सोलर पॅनल वाढवत असल्यासह दाखवलेले तीन कॉश्चुम.](images/solar-animation.png)
 
-To animate this series of costumes you could use the following code:
+कॉश्चुमची ही सीरिज ऍनिमेट करण्यासाठी, तुम्ही खालील कोडचा वापर करू शकता:
 
 ```blocks3
 define recharge
@@ -57,19 +57,19 @@ wait (0.3) seconds
 
 --- task ---
 
-Next, `broadcast`{:class='block3events'} a new message in your new `My Block`{:class='block3myblocks'} block that will cause a `costume`{:class='block3looks'} or `graphic effect`{:class='block3looks'} change in the **sample** sprite.
+पुढे, नवीन मेसेज `broadcast`{:class='block3events'} कराल तुमच्या नवीन `My Block`{:class='block3myblocks'} ब्लॉकमध्ये ज्यामुळे `costume`{:class='block3looks'} किंवा `graphic effect`{:class='block3looks'} हा **sample** स्प्राईटमध्ये बदलतो.
 
 --- /task ---
 
 --- task ---
 
-Use an `if`{:class='block3control'} block to detect if the rover is touching the sprite or touching a colour on the sprite, so that the new `My Block`{:class='block3myblocks'} is only used then.
+रोव्हर स्प्राईटला स्पर्श करतो आहे का किंवा स्प्राईटच्या रंगाला स्पर्श करतो आहे का हे ओळखण्यासाठी `if`{:class='block3control'} ब्लॉकचा वापर करा, जेणेकरून नवीन `My Block`{:class='block3myblocks'} ब्लॉकचाच त्यानंतर वापर केला जाईल.
 
 --- /task ---
 
 --- task ---
 
-If you like, add an animation to the sprite, so that its appearance changes when the rover has collected the sample.
+तुम्हाला आवडत असल्यास, स्प्राईटला ऍनिमेशन जोडा, जेणेकरून रोव्हरने नमूना गोळा केल्यावर त्याचे स्वरूप बदलेल.
 
 --- /task ---
 
