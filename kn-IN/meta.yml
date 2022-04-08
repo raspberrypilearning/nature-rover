@@ -14,13 +14,13 @@ steps:
   - title: ಇನ್ನಷ್ಟು ಸ್ಪ್ರೈಟ್‌ಗಳನ್ನು ಚಲಿಸಿ
   - title: ಮಾದರಿಯನ್ನು ಸಂಗ್ರಹಿಸಿ
   - title: ಇನ್ನೊಂದು ಮಾದರಿಯನ್ನು ರಚಿಸಿ
+    completion: internal
   - title: ಪುನರ್ಮನನ
+    completion: external
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
-      passing_score: 3
-    completion: internal
-  - title: ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ ಅಪ್‌ಗ್ರೇಡ್‌ ಮಾಡಿ
-    completion: external
+      passing_score: 3  
+  - title: ನಿಮ್ಮ ಪ್ರಾಜೆಕ್ಟ್‌ ಅಪ್‌ಗ್ರೇಡ್‌ ಮಾಡಿ  
   - title: ಮುಂದೆ ಏನು?
