@@ -20,16 +20,16 @@ steps:
     title: नमुना गोळा करा
   - 
     title: दुसरा नमूना तयार करा
+    completion: internal
   - 
     title: परावर्तन
+    completion: external
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
-    completion: internal
   - 
     title: तुमचा प्रोजेक्ट अपग्रेड करा
-    completion: external
   - 
     title: पुढे काय?
