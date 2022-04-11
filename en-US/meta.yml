@@ -20,16 +20,16 @@ steps:
     title: Collect a sample
   - 
     title: Create another sample
+    completion: internal
   - 
     title: Reflection
+    completion: external
     knowledge_quiz:
       path: quiz1
       version: 1
       questions: 3
       passing_score: 3
-    completion: internal
   - 
     title: Upgrade your project
-    completion: external
   - 
     title: What next?
