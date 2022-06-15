@@ -1,0 +1,32 @@
+Smaller looks further away
+
+Bigger looks closer
+
+Create a copy of the hills
+
+Move the original hills to the right of the screen
+
+The hills sprite is off the right side of the screen
+
+Reset to the left side of the screen
+
+The hills sprite is off the left side of the screen
+
+Reset to the right side of the screen
+
+Use a bigger number than for the hills
+
+The tree is at the far right
+
+Move the tree to the far left
+
+The tree is at the far left
+
+Move the tree to the far right
+
+Animates the robot to collect fruit
+
+Run the animation
+
+Colour of fruit
+
