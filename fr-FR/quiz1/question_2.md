@@ -1,17 +1,17 @@
-## Reflection
+## Réflexion
 
 
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Question 2 sur 3
 ---
 
-Have a look at this project showing a rover exploring a mountain scene.
+Jette un coup d'oeil à ce projet montrant un rover explorant une scène de montagne.
 
-![animation showing rover with mountain moving in the background and a static cloud](images/mountain-animation.gif)
+![animation montrant un rover avec une montagne en mouvement en arrière-plan et un nuage statique](images/mountain-animation.gif)
 
-Here is the code for moving the mountain.
+Voici le code pour déplacer la montagne.
 
 ```blocks3
 when I receive [left v]
@@ -21,7 +21,7 @@ when I receive [right v]
 change x by (-10)
 ```
 
-Which code blocks would get the cloud to scroll slower than the mountain?
+Quels blocs de code feraient défiler le nuage plus lentement que la montagne ?
 
 --- choices ---
 
@@ -37,7 +37,7 @@ change x by (5)
 
   --- feedback ---
 
-The cloud is scrolling slower than the mountain here, but this code makes the cloud difficult for the rover to reach because it moves in the same direction as the rover.
+Le nuage défile plus lentement que la montagne ici, mais ce code rend le nuage difficile à atteindre pour le rover car il se déplace dans la même direction que le rover.
 
   --- /feedback ---
 
@@ -54,7 +54,7 @@ change y by (5)
 
   --- feedback ---
 
-  With this code, the cloud will be moving up and down instead of left and right. How can you get the cloud to move left and right? Think about the stage as a coordinate grid.
+  Avec ce code, le nuage se déplacera vers le haut et vers le bas au lieu de gauche et de droite. Comment peux-tu faire bouger le nuage à gauche et à droite ? Pense à la scène comme une grille de coordonnées.
 
   --- /feedback ---
 
@@ -70,7 +70,7 @@ change y by (-20)
 
   --- feedback ---
 
-  The cloud is scrolling in the right direction here, however it is scrolling much faster than the mountain, even though it is farther away from the rover than the mountain.
+  Le nuage défile dans la bonne direction ici, mais il défile beaucoup plus vite que la montagne, même s'il est plus éloigné du rover que la montagne.
 
   --- /feedback ---
 
@@ -86,7 +86,7 @@ change x by (-5)
 
   --- feedback ---
 
-Great! the cloud moves right when the rover moves left, and left when the rover moves right.  The cloud scrolls slower than the mountain because x is changed in increments of 5.
+Super ! le nuage se déplace vers la droite lorsque le rover se déplace vers la gauche, et vers la gauche lorsque le rover se déplace vers la droite.  Le nuage défile plus lentement que la montagne car x est modifié par incréments de 5.
 
   --- /feedback ---
 
