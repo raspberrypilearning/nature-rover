@@ -1,24 +1,23 @@
+## Quick quiz
 
-बहुत बढ़िया, आपने बहुत कुछ सीखा! अब, अब उस पर विचार करने का समय है - विचार करना सीखने का एक महत्वपूर्ण हिस्सा है, क्योंकि यह आपके दिमाग को तेज़ करता है।
+Answer the three questions. There are hints to guide you to the correct answer.
 
-आपने जो सीखा है उस पर चिंतन करने के लिए नीचे दिए गए तीन प्रश्नों के उत्तर दें।
+When you have answered each question, click on **Check my answer**.
 
-प्रत्येक प्रश्न के बाद, सबमिट करें दबाएं। वह आपको सही उत्तर की तरफ लेकर जाएगा। आप इस गतिविधि को जितनी बार चाहें उतनी बार कर सकते हैं।
-
-मजे करें!
+Have fun!
 
 
 --- question ---
 
 ---
-legend: 3 में से पहला प्रश्न
+legend: Question 1 of 3
 ---
 
-यहाँ एक नियंत्रक है जो उप बटन पर क्लिक करने पर ऊपर प्रसारित करता है और डाउन बटन पर क्लिक करने पर नीचे:
+Here is a controller that broadcasts up when the up button is clicked and down when the down button is clicked:
 
-![चार बटन वाला नियंत्रक](images/controller.png)
+![four button controller](images/controller.png)
 
-**the rover sprite** को ऊपर और नीचे ले जाने के लिए आप निम्न में से कौन सा कोड ब्लॉक जोड़ेंगे
+Which of the following code blocks would you add to **the rover sprite** to make it move up and down
 
 --- choices ---
 
@@ -38,7 +37,7 @@ change y by (-10)
 
   --- feedback ---
 
-  यह रोवर को तब हिलाएगा जब वह बटनों को छू रहा होगा, बजाय इसके कि जब बटन दबाए जाएं।
+  This would move the rover when it is touching the buttons, rather than when the buttons are pressed.
 
   --- /feedback ---
 
@@ -51,7 +50,7 @@ change y by (10)
 
 --- feedback ---
 
-  यह रोवर को तब हिलाएगा जब उस पर क्लिक किया गया था, बजाय इसके कि जब बटन पर क्लिक किया जाए।
+  This would move the rover when it was clicked on, rather than when the buttons are clicked on.
 
   --- /feedback ---
 
@@ -68,7 +67,7 @@ change y by (-10)
 
   --- feedback ---
 
-  हां, यह स्क्रिप्ट कंट्रोलर बटनों से ऊपर और नीचे प्रसारण प्राप्त करती है और रोवर को ऊपर और नीचे ले जाती है।
+  Yes, this script receives the up and down broadcasts from the controller buttons and gets the rover to move up and down.
 
   --- /feedback ---
 
@@ -86,7 +85,7 @@ change y by (-10)
 
   --- feedback ---
 
-  यह ऊपर और नीचे जाने के लिए फलन बनाता है, लेकिन जैसा कि फलन को कॉल नहीं किया जाता है, रोवर नहीं चलेगा।
+  This creates functions for moving up and down, but as the functions are not called, the rover would not move.
 
   --- /feedback ---
 
