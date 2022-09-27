@@ -1,8 +1,8 @@
-## Create another sample
+## Neem nog een monster
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Choose what the rover samples next! Does it see a new species of plant, bug, or animal? Does it see some water or mysterious liquid? Does it want to sample some dirt or a rock, or even the air? Or something else?
+Kies welk monster de rover nu gaat nemen! Ziet het een nieuwe soort plant, insect of dier? Ziet het wat water of mysterieuze vloeistof? Wil hij een monster van wat vuil, een steen of zelfs de lucht? Of iets anders?
 </div>
 <div>
 ![](images/step-6.gif){:width="300px"}
@@ -11,29 +11,29 @@ Choose what the rover samples next! Does it see a new species of plant, bug, or 
 
 --- task ---
 
-**Choose:** Add a new **sample** sprite for the rover to collect. You can add this to your project either by selecting one from the library or drawing your own.
+**Kies:** Voeg een nieuwe **sample** sprite toe voor de rover om te verzamelen. Je kunt dit aan je project toevoegen door er een te selecteren in de bibliotheek of door er een te tekenen.
 
 --- /task ---
 
-Get your **sample** sprite to scroll. If it is low down on the screen it should move more (`change x by`{:class='block3motion'} should be higher than `5`), and if it is high up on the screen it should move less (`change x by`{:class='block3motion'} should be lower than `5`).
+Laat je **monster** sprite bewegen. Als het laag op het scherm staat zou het meer moeten bewegen (`verander x met`{:class='block3motion'} moet hoger zijn dan `5`), en als het hoog op het scherm staat zou het minder moeten bewegen (`verander x met`{:class='block3motion'} moet lager zijn dan `5`).
 
 --- task ---
 
-Add code so that your sprite scrolls.
+Voeg code toe zodat je sprite kan schuiven.
 
 --- /task ---
 
-**Choose:** Depending on what you want the rover to sample next, you can either use the rover animations that are there already, or create more animation sequences by duplicating and editing the costumes.
+**Kies:** afhankelijk van wat je wil dat de rover als volgend monster neemt, kun je de rover-animaties gebruiken die er al zijn, of meer animatie-reeksen maken door de uiterlijken te dupliceren en te bewerken.
 
 --- task ---
 
-Add a `My Blocks`{:class='block3myblocks'} block to your **rover** sprite to animate the rover when it collects the new sample. You can copy and paste the code from one of the other `My Blocks`{:class='block3myblocks'} you have created.
+Voeg een `Mijn blokken`{:class='block3myblocks'} blok toe aan je **rover** sprite om de rover te animeren wanneer deze het nieuwe monster verzamelt. Je kunt de code kopiëren en plakken van een van de andere `Mijn blokken`{:class='block3myblocks'} die je hebt gemaakt.
 
-For instance, here is a costume sequence for collecting solar energy:
+Hier is bijvoorbeeld een uiterlijken reeks gemaakt voor het verzamelen van zonne-energie:
 
-![Three costumes shown with the rover extending a solar panel.](images/solar-animation.png)
+![Drie uiterlijken die worden getoond met de rover die een zonnepaneel uitklapt.](images/solar-animation.png)
 
-To animate this series of costumes you could use the following code:
+Om deze reeks uiterlijken te animeren zou je de volgende code kunnen gebruiken:
 
 ```blocks3
 define recharge
@@ -57,19 +57,19 @@ wait (0.3) seconds
 
 --- task ---
 
-Next, `broadcast`{:class='block3events'} a new message in your new `My Block`{:class='block3myblocks'} block that will cause a `costume`{:class='block3looks'} or `graphic effect`{:class='block3looks'} change in the **sample** sprite.
+Vervolgens `zend signaal`{:class='block3events'} een nieuw bericht in je nieuwe `Mijn blokken`{:class='block3myblocks'} blok dat een `uiterlijk`{:class='block3looks'} of `grafisch effect`{:class='block3looks'} verandering in het **monster**sprite zal veroorzaken.
 
 --- /task ---
 
 --- task ---
 
-Use an `if`{:class='block3control'} block to detect if the rover is touching the sprite or touching a colour on the sprite, so that the new `My Block`{:class='block3myblocks'} is only used then.
+Gebruik een `als`{:class='block3control'} blok om te detecteren of de rover de sprite raakt of een kleur op de sprite raakt, zodat het nieuwe `Mijn blok`{:class='block3myblocks'} alleen dan wordt gebruikt.
 
 --- /task ---
 
 --- task ---
 
-If you like, add an animation to the sprite, so that its appearance changes when the rover has collected the sample.
+Als je wilt, voeg dan een animatie toe aan de sprite, zodat het uiterlijk verandert wanneer de rover het monster heeft verzameld.
 
 --- /task ---
 
