@@ -1,8 +1,8 @@
-## Create another sample
+## Créer un autre échantillon
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Choose what the rover samples next! Does it see a new species of plant, bug, or animal? Does it see some water or mysterious liquid? Does it want to sample some dirt or a rock, or even the air? Or something else?
+Choisis ce que le rover échantillonne ensuite ! Voit-il une nouvelle espèce de plante, d'insecte ou d'animal ? Voit-il de l'eau ou un liquide mystérieux ? Veut-il échantillonner de la terre, un rocher ou même l'air ? Ou autre chose ?
 </div>
 <div>
 ![](images/step-6.gif){:width="300px"}
@@ -11,29 +11,29 @@ Choose what the rover samples next! Does it see a new species of plant, bug, or 
 
 --- task ---
 
-**Choose:** Add a new **sample** sprite for the rover to collect. You can add this to your project either by selecting one from the library or drawing your own.
+**Choisir :** Ajoute un nouveau sprite **échantillon** que le rover va collecter. Tu peux l'ajouter à ton projet en en sélectionnant un dans la bibliothèque ou en dessinant le tien.
 
 --- /task ---
 
-Get your **sample** sprite to scroll. If it is low down on the screen it should move more (`change x by`{:class='block3motion'} should be higher than `5`), and if it is high up on the screen it should move less (`change x by`{:class='block3motion'} should be lower than `5`).
+Fais défiler ton sprite **échantillon**. S'il est bas sur l'écran, il doit bouger plus (`ajouter à x`{:class='block3motion'} doit être supérieur à `5`), et s'il est haut sur l'écran, il doit bouger moins (`ajouter à x`{:class='block3motion'} doit être inférieur à `5`).
 
 --- task ---
 
-Add code so that your sprite scrolls.
+Ajoute du code pour que ton sprite défile.
 
 --- /task ---
 
-**Choose:** Depending on what you want the rover to sample next, you can either use the rover animations that are there already, or create more animation sequences by duplicating and editing the costumes.
+**Choisir :** En fonction de ce que tu veux que le rover échantillonne ensuite, tu peux soit utiliser les animations de rover qui existent déjà, soit créer plus de séquences d'animation en dupliquant et en modifiant les costumes.
 
 --- task ---
 
-Add a `My Blocks`{:class='block3myblocks'} block to your **rover** sprite to animate the rover when it collects the new sample. You can copy and paste the code from one of the other `My Blocks`{:class='block3myblocks'} you have created.
+Ajoute un bloc `Mes blocs`{:class='block3myblocks'} à ton sprite **rover** pour animer le rover quand il collecte le nouvel échantillon. Tu peux copier et coller le code de l'un des autres `Mes Blocs`{:class='block3myblocks'} que tu as créés.
 
-For instance, here is a costume sequence for collecting solar energy:
+Par exemple, voici une séquence de costumes pour la collecte de l'énergie solaire :
 
-![Three costumes shown with the rover extending a solar panel.](images/solar-animation.png)
+![Trois costumes montrés avec le rover étendant un panneau solaire.](images/solar-animation.png)
 
-To animate this series of costumes you could use the following code:
+Pour animer cette série de costumes, tu peux utiliser le code suivant :
 
 ```blocks3
 define recharge
@@ -57,19 +57,19 @@ wait (0.3) seconds
 
 --- task ---
 
-Next, `broadcast`{:class='block3events'} a new message in your new `My Block`{:class='block3myblocks'} block that will cause a `costume`{:class='block3looks'} or `graphic effect`{:class='block3looks'} change in the **sample** sprite.
+Ensuite, `envoyer à tous`{:class='block3events'} un nouveau message dans ton nouveau `Mes Bloc`{:class='block3myblocks'} qui provoquera un changement `de costume`{:class='block3looks'} ou `d'effet graphique`{:class='block3looks'} dans le sprite **échantillon**.
 
 --- /task ---
 
 --- task ---
 
-Use an `if`{:class='block3control'} block to detect if the rover is touching the sprite or touching a colour on the sprite, so that the new `My Block`{:class='block3myblocks'} is only used then.
+Utilise un bloc `si`{:class='block3control'} pour détecter si le rover touche le sprite ou touche une couleur sur le sprite, afin que le nouveau `Mon Bloc`{:class='block3myblocks'} ne soit utilisé qu'à ce moment-là.
 
 --- /task ---
 
 --- task ---
 
-If you like, add an animation to the sprite, so that its appearance changes when the rover has collected the sample.
+Si tu le souhaites, ajoute une animation au sprite, afin que son apparence change lorsque le rover a collecté l'échantillon.
 
 --- /task ---
 
