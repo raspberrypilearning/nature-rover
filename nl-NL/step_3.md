@@ -1,8 +1,8 @@
-## Scroll the background
+## Laat de achtergrond bewegen
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For the rover to look like it's moving left and right, instead of the **rover** sprite moving, the **background** sprite moves or scrolls to the left or right.
+Om het te laten lijken dat de rover naar links en rechts beweegt, laat je niet de **rover** sprite bewegen, maar de **achtergrond** sprite naar links of rechts bewegen.
 </div>
 <div>
 ![](images/step-3.gif){:width="300px"}
@@ -11,9 +11,9 @@ For the rover to look like it's moving left and right, instead of the **rover** 
 
 --- task ---
 
-Select the **hills** sprite. At the start of the game, you need to make sure that it is in the correct position and on the back layer.
+Selecteer de **heuvels** sprite. Aan het begin van het spel moet je ervoor zorgen dat het zich op de juiste positie en op de achterste laag bevindt.
 
-![The hills sprite.](images/hills-sprite.png)
+![De heuvels sprite.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -24,14 +24,14 @@ go to x: (0) y: (0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Layers**</span> are like stacked sheets of clear plastic that you can draw images on. If an image on the top of the stack is covering the image below it, you will not be able to see the bottom image properly. Background images should be near the **back** layer. Images closer to the viewer should be near the **front** layer.
+<span style="color: #0faeb0">**Lagen**</span> zijn als gestapelde vellen helder plastic waarop je afbeeldingen kunt tekenen. Als een afbeelding aan de bovenkant van de stapel de afbeelding eronder bedekt, kun je de onderste afbeelding niet goed zien. Achtergrondafbeeldingen moeten in de buurt van de **achterlaag** zijn. Afbeeldingen die dichter bij de kijker staan, moeten zich in de buurt van de **voorste** laag bevinden.
 </p>
 
 --- task ---
 
-The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3control'}. Then, the original sprite can be moved to the far right-hand side of the screen.
+De **heuvels** sprite moet een kopie van zichzelf maken. Deze worden `klonen`{:class='block3control'} genoemd. Vervolgens kan de originele sprite naar de rechterkant van het scherm worden verplaatst.
 
-![The hills sprite.](images/hills-sprite.png)
+![De heuvels sprite.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -43,17 +43,17 @@ go to x: (0) y: (0)
 
 --- /task ---
 
-When the `left`{:class='block3events'} and `right`{:class='block3events'} broadcasts are received, the **hills** sprite should move. To give the appearance of moving in the correct direction, the background moves **left** when the **rover** is moving right. The direction of motion should be **opposite** to the `broadcast`{:class='block3events'}.
+Wanneer de `links`{:class='block3events'} en `rechts`{:class='block3events'} berichten worden ontvangen, zou de **heuvels** sprite moeten bewegen. Om het idee van het bewegen in de juiste richting te geven, beweegt de achtergrond **naar links** wanneer de **rover** naar rechts beweegt. De bewegingsrichting moet **tegenovergesteld** zijn aan het `zend signaal`{:class='block3events'}.
 
-So, if the broadcast is `left`{:class="block3events"}, then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"}, then the `x`{:class="block3motion"} of the **hills** will decrease.
+Dus als het bericht `links`{:class="block3events"} is, zal de `x`{:class="block3motion"} positie toenemen. Als het bericht `rechts`{:class="block3events"} is, zal de `x`{:class="block3motion"} van de **heuvels** afnemen.
 
-![Scratch stage shown with a sprite in the bottom right-hand corner and an x y coordinate system shown as the backdrop.](images/scratch-grid.png)
+![Scratch speelveld weergegeven met een sprite in de rechterbenedenhoek en een x y-coördinatensysteem als achtergrond.](images/scratch-grid.png)
 
 --- task ---
 
-Add blocks to control the motion of the **hills** sprite and its clone.
+Voeg blokken toe om de beweging van de **heuvels** sprite en de kloon te regelen.
 
-![The hills sprite.](images/hills-sprite.png)
+![De heuvels sprite.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -67,19 +67,19 @@ change x by (-3)
 
 --- task ---
 
-**Test**: Use the controller or the <kbd>arrow</kbd> keys to move around. The rover should appear to be moving left and right.
+**Test**: Gebruik de controller of de <kbd>pijl</kbd> toetsen om te bewegen. Het lijk erop of de de rover naar links en rechts beweegt.
 
 --- /task ---
 
-At the moment, there are two copies of the **hills** sprite: the original and a clone. When you get to the end of either one, you'll notice that the screen is just white.
+Op dit moment zijn er twee exemplaren van de **heuvels** sprite: Het origineel en een kloon. Wanneer je aan het einde van een van beide komt, zul je zien dat het scherm gewoon wit is.
 
-To fix this, the sprite and its clone need to be moved to the other side of the screen when they go too far.
+Om dit op te lossen moeten de sprite en de kloon naar de andere kant van het scherm worden verplaatst wanneer ze te ver gaan.
 
 --- task ---
 
-Create a new broadcast called `scroll`{:class='block3events'} and add it to the `start`{:class='block3events'} script.
+Maak een nieuw bericht met de naam `beweeg`{:class='block3events'} en voeg deze toe aan het `start`{:class='block3events'} script.
 
-![The hills sprite.](images/hills-sprite.png)
+![De heuvels sprite.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -94,9 +94,9 @@ change x by (460)
 
 --- task ---
 
-Add code to detect if the **hills** sprite or its clone have moved too far to the left or right, and then reset their positions to the other side of the screen.
+Voeg code toe om te controleren of de **heuvels** sprite of de kloon te ver naar links of rechts zijn verplaatst, en zet vervolgens de posities terug naar de andere kant van het scherm.
 
-![The hills sprite.](images/hills-sprite.png)
+![De heuvels sprite.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [scroll v]
@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**Test**: Use the controller or <kbd>arrow</kbd> keys to move the **rover**. The background should scroll, and the **rover** should never reach the end.
+**Test**: Gebruik de controller of <kbd>pijl</kbd> toetsen om de **rover** te verplaatsen. De achtergrond zou moeten schuiven en de **rover** zou nooit het einde moeten bereiken
 
 --- /task ---
 
