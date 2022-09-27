@@ -1,43 +1,43 @@
-up
+avant
 
-start
+départ
 
-down
+arrière
 
-right
+à droite
 
-left
+à gauche
 
-scroll
+défilement
 
-sample fruit
+échantillon de fruits
 
-inactive
+inactif
 
-arm 1
+bras 1
 
-arm 2
+bras 2
 
-tree with fruit
+arbre avec des fruits
 
-tree without fruit
+arbre sans fruit
 
 recharge
 
-solar 1
+solaire 1
 
-solar 2
+solaire 2
 
-solar 3
+solaire 3
 
-cat animation
+animation de chat
 
 costume 1
 
 costume 2
 
-cat dance
+danse du chat
 
-collect sample
+récolter l'échantillon
 
-energy
+énergie
