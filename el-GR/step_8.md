@@ -1,14 +1,14 @@
-## Upgrade your project
+## Αναβάθμιση του έργου σου
 
-Make your rover interact with the nature scene even more, similar to how a real rover would behave.
+Κάντε το rover σου να αλληλεπιδρά με τη σκηνή της φύσης ακόμα περισσότερο, όπως θα συμπεριφερόταν ένα πραγματικό rover.
 
-You can:
-- Add even more samples to your project, using the prebuilt animations or ones you create yourself
-- Use variables to count samples; increase the count each time a sample is collected
-- Introduce an energy variable so that the rover has to use a renewable energy source like the sun, to recharge
-- Animate the rover when it has collected enough samples (for example, it could do a dance and then fly away)
+Μπορείς:
+- Να προσθέσεις ακόμη περισσότερα δείγματα στο έργο σου, χρησιμοποιώντας τα προκατασκευασμένα κινούμενα σχέδια ή αυτά που δημιουργείς μόνος/η σου
+- Να χρησιμοποιήσεις μεταβλητές για να μετρήσεις τα δείγματα, αυξάνοντας τον αριθμό κάθε φορά που συλλέγεται ένα δείγμα
+- Να εισαγάγεις μια μεταβλητή για την ενέργεια έτσι ώστε το rover να πρέπει να χρησιμοποιήσει μια ανανεώσιμη πηγή ενέργειας όπως ο ήλιος, για να επαναφορτιστεί
+- Να δώσεις κίνηση στο rover όταν έχει συλλέξει αρκετά δείγματα (για παράδειγμα, θα μπορούσε να χορέψει και μετά να πετάξει μακριά)
 
-You can use any of the blocks that you learned about in this project, as well as those that you already know.
+Μπορείς να χρησιμοποιήσεις οποιοδήποτε από τα μπλοκ που έμαθες σε αυτό το έργο, καθώς και αυτά που γνωρίζεις ήδη.
 
 ```blocks3
 define collect sample ::custom
@@ -31,7 +31,7 @@ if <touching color (#FFAA00) ?> then
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/536887721/?autostart=false" frameborder="0"></iframe>
 </div>
 
-You can view the complete project [here](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
+Μπορείς να δεις το πλήρες έργο [εδώ](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
 
 
 
