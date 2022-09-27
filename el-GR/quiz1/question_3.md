@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Ερώτηση 3 από 3
 ---
 
-This script is a function that is used to get a cat to dance:
+Αυτό το script είναι μια συνάρτηση που χρησιμοποιείται για να κάνει μια γάτα να χορέψει:
 
 ```blocks3
 define cat animation
@@ -15,7 +15,7 @@ switch costume to [costume 2 v]
 wait (0.1) seconds
 ```
 
-Which of the following scripts would use the `cat animation`{:class='block3myblocks'} above to make the cat dance when the Sprite is clicked?
+Ποιο από τα παρακάτω scripts θα χρησιμοποιούσε το παραπάνω `cat animation`{:class='block3myblocks'} για να κάνει τη γάτα να χορεύει όταν γίνεται κλικ στο Αντικείμενο;
 
 --- choices ---
 
@@ -31,7 +31,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but does not use `cat animation`{:class='block3myblocks'} the that has been made.
+  Αυτό θα έκανε τη γάτα να χορέψει, αλλά δεν χρησιμοποιεί το μπλοκ `animation cat`{:class='block3myblocks'} που έχει δημιουργηθεί.
 
   --- /feedback ---
 
@@ -44,7 +44,8 @@ cat dance ::custom
 
   --- feedback ---
 
-  This is calling a `cat dance`{:class='block3myblocks'} block, but not the cat `cat animation`{:class='block3myblocks'} block.
+  Αυτό καλεί ένα μπλοκ `cat dance`{:class='block3myblocks'}, αλλά όχι το μπλοκ `cat 
+ animation`{:class='block3myblocks'}.
 
   --- /feedback ---
 
@@ -60,7 +61,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but not when the sprite is clicked. It also does not use the `cat animation`{:class='block3myblocks'} block.
+  Αυτό θα έκανε τη γάτα να χορέψει, αλλά όχι όταν γίνει κλικ στο αντικείμενο. Επίσης, δεν χρησιμοποιεί το μπλοκ `cat animation`{:class='block3myblocks'}.
 
   --- /feedback ---
 
@@ -73,7 +74,7 @@ cat animation ::custom
 
   --- feedback ---
 
-Yes, in this answer, the `cat animation`{:class='block3myblocks'} block is used when the sprite is clicked, causing the cat to dance.
+Ναι, σε αυτή την απάντηση, χρησιμοποιείται το μπλοκ `cat animation`{:class='block3myblocks'} όταν γίνει κλικ στο αντικείμενο, προκαλώντας τον χορό της γάτας.
 
   --- /feedback ---
 
