@@ -5,10 +5,10 @@ description: ಪ್ರಕೃತಿ ರೋವರ್‌ ಅನ್ವೇಷಿಸ�
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-03-26'
+last_tested: "2021-03-26"
 steps:
   - 
-    title: ಪರಿಚಯ
+    title: You will make
   - 
     title: ರೋವರ್‌ನ್ನು ನಿಯಂತ್ರಿಸಿ
   - 
@@ -24,7 +24,7 @@ steps:
     completion:
       - internal
   - 
-    title: ಪುನರ್ಮನನ
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
