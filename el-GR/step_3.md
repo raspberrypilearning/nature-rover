@@ -1,8 +1,8 @@
-## Scroll the background
+## Κύλιση του φόντου
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For the rover to look like it's moving left and right, instead of the **rover** sprite moving, the **background** sprite moves or scrolls to the left or right.
+Για να φαίνεται το ρομποτικό όχημα ότι κινείται αριστερά και δεξιά, αντί να κινείται το αντικείμενο **rover**, κινείται ή μετακινείται το αντικείμενο **φόντο** προς τα αριστερά ή τα δεξιά.
 </div>
 <div>
 ![](images/step-3.gif){:width="300px"}
@@ -11,9 +11,9 @@ For the rover to look like it's moving left and right, instead of the **rover** 
 
 --- task ---
 
-Select the **hills** sprite. At the start of the game, you need to make sure that it is in the correct position and on the back layer.
+Επίλεξε το αντικείμενο **hills**. Στην αρχή του παιχνιδιού, πρέπει να βεβαιωθείς ότι είναι στη σωστή θέση και στο υπόβαθρο.
 
-![The hills sprite.](images/hills-sprite.png)
+![Το αντικείμενο hills.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -24,14 +24,14 @@ go to x: (0) y: (0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Layers**</span> are like stacked sheets of clear plastic that you can draw images on. If an image on the top of the stack is covering the image below it, you will not be able to see the bottom image properly. Background images should be near the **back** layer. Images closer to the viewer should be near the **front** layer.
+<span style="color: #0faeb0">**Τα επίπεδα**</span> είναι σαν στοιβαγμένα φύλλα από διαφανές πλαστικό στα οποία μπορείς να σχεδιάσεις εικόνες. Εάν μια εικόνα στο επάνω μέρος της στοίβας καλύπτει την εικόνα κάτω από αυτήν, δεν θα μπορείς να δεις σωστά την κάτω εικόνα. Οι εικόνες φόντου πρέπει να βρίσκονται κοντά στο **πίσω** επίπεδο. Οι εικόνες πιο κοντά στον θεατή θα πρέπει να βρίσκονται κοντά στο **μπροστινό** επίπεδο.
 </p>
 
 --- task ---
 
-The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3control'}. Then, the original sprite can be moved to the far right-hand side of the screen.
+Το αντικείμενο **hills** πρέπει να δημιουργήσει ένα αντίγραφο του εαυτού του. Αυτά ονομάζονται `κλώνοι`{:class='block3control'}. Στη συνέχεια, το αρχικό αντικείμενο μπορεί να μετακινηθεί στη δεξιά πλευρά της οθόνης.
 
-![The hills sprite.](images/hills-sprite.png)
+![Το αντικείμενο hills.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -43,17 +43,17 @@ go to x: (0) y: (0)
 
 --- /task ---
 
-When the `left`{:class='block3events'} and `right`{:class='block3events'} broadcasts are received, the **hills** sprite should move. To give the appearance of moving in the correct direction, the background moves **left** when the **rover** is moving right. The direction of motion should be **opposite** to the `broadcast`{:class='block3events'}.
+Όταν ληφθούν οι μεταδόσεις `left`{:class='block3events'} και `right`{:class='block3events'}, το αντικείμενο **hills** θα πρέπει να μετακινηθεί. Για να φαίνεται ότι κινείται προς τη σωστή κατεύθυνση, το φόντο μετακινείται **αριστερά** όταν το **rover** κινείται δεξιά. Η κατεύθυνση της κίνησης πρέπει να είναι **αντίθετα** από τη `μετάδοση`{:class='block3events'}.
 
-So, if the broadcast is `left`{:class="block3events"}, then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"}, then the `x`{:class="block3motion"} of the **hills** will decrease.
+Έτσι, εάν η μετάδοση είναι `left`{:class="block3events"}, τότε η θέση `x`{:class="block3motion"} θα αυξηθεί. Εάν η μετάδοση είναι `right`{:class="block3events"}, τότε το `x`{:class="block3motion"} των **hills** θα μειωθεί.
 
-![Scratch stage shown with a sprite in the bottom right-hand corner and an x y coordinate system shown as the backdrop.](images/scratch-grid.png)
+![Η σκηνή Scratch εμφανίζεται με ένα αντικείμενο στην κάτω δεξιά γωνία και ένα σύστημα συντεταγμένων xy που εμφανίζεται ως υπόβαθρο.](images/scratch-grid.png)
 
 --- task ---
 
-Add blocks to control the motion of the **hills** sprite and its clone.
+Πρόσθεσε μπλοκ για να ελέγξεις την κίνηση του αντικειμένου **hills** και του κλώνου του.
 
-![The hills sprite.](images/hills-sprite.png)
+![Το αντικείμενο hills.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -67,19 +67,19 @@ change x by (-3)
 
 --- task ---
 
-**Test**: Use the controller or the <kbd>arrow</kbd> keys to move around. The rover should appear to be moving left and right.
+**Δοκιμή**: Χρησιμοποίησε το χειριστήριο ή τα πλήκτρα <kbd>βελάκια</kbd> για να μετακινηθείς. Το rover θα πρέπει να φαίνεται ότι κινείται αριστερά και δεξιά.
 
 --- /task ---
 
-At the moment, there are two copies of the **hills** sprite: the original and a clone. When you get to the end of either one, you'll notice that the screen is just white.
+Προς το παρόν, υπάρχουν δύο αντίγραφα του αντιγράφου **hills**: το πρωτότυπο και ένας κλώνος. Όταν φτάσεις στο τέλος ενός από τα δύο, θα παρατηρήσεις ότι η οθόνη είναι απλώς λευκή.
 
-To fix this, the sprite and its clone need to be moved to the other side of the screen when they go too far.
+Για να διορθωθεί αυτό, το αντικείμενο και ο κλώνος του πρέπει να μετακινηθούν στην άλλη πλευρά της οθόνης όταν πάνε πολύ μακριά.
 
 --- task ---
 
-Create a new broadcast called `scroll`{:class='block3events'} and add it to the `start`{:class='block3events'} script.
+Δημιούργησε μια νέα μετάδοση που ονομάζεται `scroll`{:class='block3events'} και πρόσθεσέ τη στο script `start`{:class='block3events'}.
 
-![The hills sprite.](images/hills-sprite.png)
+![Το αντικείμενο hills.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -94,9 +94,9 @@ change x by (460)
 
 --- task ---
 
-Add code to detect if the **hills** sprite or its clone have moved too far to the left or right, and then reset their positions to the other side of the screen.
+Πρόσθεσε κώδικα για να εντοπίσεις εάν το αντικείμενο **hills** ή ο κλώνος του έχουν μετακινηθεί πολύ αριστερά ή δεξιά και στη συνέχεια, επανάφερε τις θέσεις τους στην άλλη πλευρά της οθόνης.
 
-![The hills sprite.](images/hills-sprite.png)
+![Το αντικείμενο hills.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [scroll v]
@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**Test**: Use the controller or <kbd>arrow</kbd> keys to move the **rover**. The background should scroll, and the **rover** should never reach the end.
+**Δοκιμή**: Χρησιμοποίησε το χειριστήριο ή τα πλήκτρα <kbd>βελάκια</kbd> για να μετακινήσεις το **rover**. Το φόντο πρέπει να κυλήσει και το **rover** δεν πρέπει ποτέ να φτάσει στο τέλος.
 
 --- /task ---
 
