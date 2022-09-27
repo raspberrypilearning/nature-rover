@@ -1,17 +1,17 @@
-## Reflection
+## Reflectie
 
 
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Vraag 2 van 3
 ---
 
-Have a look at this project showing a rover exploring a mountain scene.
+Bekijk dit project om een rover te tonen die een berglandschap verkent.
 
-![animation showing rover with mountain moving in the background and a static cloud](images/mountain-animation.gif)
+![animatie die de rover toont met de berg op de achtergrond en een statische wolk](images/mountain-animation.gif)
 
-Here is the code for moving the mountain.
+Hier is de code voor het verplaatsen van de berg.
 
 ```blocks3
 when I receive [left v]
@@ -21,7 +21,7 @@ when I receive [right v]
 change x by (-10)
 ```
 
-Which code blocks would get the cloud to scroll slower than the mountain?
+Welke codeblokken zouden de wolk langzamer laten bewegen dan de berg?
 
 --- choices ---
 
@@ -37,7 +37,7 @@ change x by (5)
 
   --- feedback ---
 
-The cloud is scrolling slower than the mountain here, but this code makes the cloud difficult for the rover to reach because it moves in the same direction as the rover.
+De wolk beweegt langzamer dan de berg hier, maar deze code maakt het moeilijk voor de rover om de wolk te bereiken omdat deze in dezelfde richting beweegt als de rover.
 
   --- /feedback ---
 
@@ -54,7 +54,7 @@ change y by (5)
 
   --- feedback ---
 
-  With this code, the cloud will be moving up and down instead of left and right. How can you get the cloud to move left and right? Think about the stage as a coordinate grid.
+  Met deze code beweegt de wolk omhoog en omlaag in plaats van naar links en rechts. Hoe kun je de wolk naar links en rechts laten bewegen? Denk aan het podium als een coördinatenraster.
 
   --- /feedback ---
 
@@ -70,7 +70,7 @@ change y by (-20)
 
   --- feedback ---
 
-  The cloud is scrolling in the right direction here, however it is scrolling much faster than the mountain, even though it is farther away from the rover than the mountain.
+  De wolk beweegt hier in de juiste richting, maar beweegt veel sneller dan de berg, ook al is hij verder van de rover verwijderd dan de berg.
 
   --- /feedback ---
 
@@ -86,7 +86,7 @@ change x by (-5)
 
   --- feedback ---
 
-Great! the cloud moves right when the rover moves left, and left when the rover moves right.  The cloud scrolls slower than the mountain because x is changed in increments of 5.
+Geweldig! de wolk beweegt naar rechts wanneer de rover naar links beweegt, en naar links wanneer de rover naar rechts beweegt.  De wolk beweegt langzamer dan de berg omdat x wordt veranderd in stappen van 5.
 
   --- /feedback ---
 
