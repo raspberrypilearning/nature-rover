@@ -1,8 +1,8 @@
-## Collect an air sample
+## Neem een luchtmonster
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Another way of making the rover appear to collect samples, is by changing some of the properties of a sprite, rather than it's costume.
+Een andere manier om de rover monsters te laten verzamelen, is door sommige eigenschappen van een sprite te veranderen in plaats van het uiterlijk.
 </div>
 <div>
 ![](images/step-5.gif){:width="300px"}
@@ -10,27 +10,27 @@ Another way of making the rover appear to collect samples, is by changing some o
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Parallax scrolling**</span> is when background images move past the camera more slowly than foreground images
+<span style="color: #0faeb0">**Parallax beweging**</span> is wanneer achtergrondafbeeldingen langzamer voorbij de camera bewegen dan voorgrondafbeeldingen
 </p>
 
 --- task ---
 
-Add a cloud sprite to your project from the library of sprites in Scratch, or draw one yourself, and position and resize it below the sky so that the rover can reach it.
+Voeg een wolkensprite toe aan je project uit de bibliotheek met sprites in Scratch, of teken er zelf een, en positioneer en verklein deze onder de lucht zodat de rover hem kan bereiken.
 
-![image of the scratch scene, with an added cloud resized to 50%](images/add-cloud.png)
+![afbeelding van de scratch-scene, met een toegevoegde cloud die is verkleind tot 50%](images/add-cloud.png)
 
 --- /task ---
 
 --- collapse ---
 ---
-title: Add graphic effects to the cloud
+title: Voeg grafische effecten toe aan de wolk
 ---
 
-Using some graphic effects, change the appearance of the cloud sprite, so that it looks like a swirling ball of gas. You can play with different graphic effects, but the below example makes the sprite appear a little transparent and makes it swirl around.
+Verander met behulp van enkele grafische effecten het uiterlijk van de wolkensprite, zodat deze eruit ziet als een wervelende gasbal. Je kunt met verschillende grafische effecten spelen, maar het onderstaande voorbeeld maakt de sprite een beetje transparant en laat hem ronddraaien.
 
-![animation of the cloud swirling in a cycle](images/cloud.gif)
+![animatie van de wolk die in een cyclus draait](images/cloud.gif)
 
-![cloud sprite](images/cloud-sprite.png)
+![wolk sprite](images/cloud-sprite.png)
 ```blocks3
 when I receive [start v]
 show
@@ -51,13 +51,13 @@ change [whirl v] effect by (50)
 
 --- /collapse ---
 
-For the cloud to scroll, it needs to move when it receives the `left`{:class='block3events'} and `right`{:class='block3events'} messages. As the cloud is further away from the viewer than the tree, it should move a smaller distance each time, and still dissapear off the edge of the screen and reappear on the other side.
+Om te kunnen bewegen moet de wolk bewegen wanneer deze de `links`{:class='block3events'} en `rechts`{:class='block3events'} berichten ontvangt. Omdat de wolk verder van de kijker verwijderd is dan de boom, zou deze elke keer een kleinere afstand moeten verplaatsen, en nog steeds aan de rand van het scherm moeten verdwijnen en weer aan de andere kant moeten verschijnen.
 
 --- task ---
 
-Add code to make the cloud move. You may need to adjust the numbers, depending on the size and position of the sprite. As the cloud should appear further back, it should move less than the tree.
+Voeg code toe om de wolk te laten bewegen. Mogelijk moet je de getallen aanpassen, afhankelijk van de grootte en positie van de sprite. Naarmate de wolk verder naar achteren zou moeten verschijnen, zou deze minder moeten bewegen dan de boom.
 
-![cloud sprite](images/cloud-sprite.png)
+![wolk sprite](images/cloud-sprite.png)
 ```blocks3
 when I receive [left v]
 change x by (5)
@@ -78,22 +78,22 @@ end
 
 --- /task ---
 
-Get the rover to collect the air sample.
+Laat de rover het luchtmonster nemen.
 
 --- task ---
 
-Set up an animation function for the rover sprite, so that it can collect the air sample. You can duplicate the code from the sample tree function to do this.
+Stel een animatie-functie in voor de rover sprite, zodat deze het luchtmonster kan verzamelen. Je kunt de code uit de voorbeeldboom functie dupliceren om dit te doen.
 
 --- collapse ---
 ---
 
-title: Duplicating code
+title: Code dupliceren
 
 ---
 
-Here is an easy way of duplicating the code for your new function.
+Hier is een eenvoudige manier om de code voor je nieuwe functie te dupliceren.
 
-![animation showing code being duplicated](images/duplicating.gif)
+![animatie met code die wordt gedupliceerd](images/duplicating.gif)
 
 --- /collapse ---
 
@@ -117,38 +117,38 @@ switch costume to (inactive v)
 
 --- /task ---
 
-Get the rover to broadcast a message to the cloud sprite so that it knows when to animate.
+Laat de rover een bericht naar de cloud-sprite sturen zodat hij weet wanneer de animatie moet starten.
 
 --- task ---
 
-Create a new broadcast message called `sample air`{:class='block3events'} and then add it into your `sample air`{:class='block3custom'} function.
+Maak een nieuw zend signaal bericht met de naam `luchtmonster`{:class='block3events'} en voeg het toe aan je `luchtmonster`{:class='block3custom'} functie.
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
-define sample air
-switch costume to (inactive v)
-wait (0.3) seconds
-switch costume to (air 1 v)
-wait (0.3) seconds
-switch costume to (air 2 v)
-wait (0.3) seconds
-switch costume to (air 3 v)
-wait (0.3) seconds
-+ broadcast (sample air v)
-switch costume to (air 2 v)
-wait (0.3) seconds
-switch costume to (air 1 v)
-wait (0.3) seconds
-switch costume to (inactive v)
+definieer voorbeeld lucht
+verander uiterlijk naar (inactief v)
+wacht (0,3) seconden
+verander uiterlijk naar (lucht 1 v)
+wacht (0.) seconden
+verander uiterlijk naar (lucht 2 v)
+wacht (0,3) seconden
+verander uiterlijk naar (lucht 3 v)
+wacht (0.) seconden
++ zend signaal (voorbeeld lucht v)
+verander uiterlijk naar (lucht 2 v)
+wacht (0.) seconden
+verander uiterlijk naar (lucht 1 v)
+wacht (0,3) seconden
+verander uiterlijk naar (inactief v)
 ```
 
 --- /task ---
 
-The function should only be called if the rover is touching the cloud sprite.
+De functie moet alleen worden aangeroepen als de rover de wolkensprite raakt.
 
 --- task ---
 
-Add code so that the rover only `samples air`{:class='block3custom'} `if`{:class='block3control'} it is `touching the cloud`{:class='block3sensing'}.
+Voeg code toe zodat de rover alleen een `luchtmonster`{:class='block3custom'} neemt `als`{:class='block3control'} `raak ik wolk`{:class='block3sensing'} waar is.
 
 ![rover sprite](images/rover-sprite.png)
 ```blocks3
@@ -160,13 +160,13 @@ end
 
 --- /task ---
 
-Get the air sample to animate when the rover collects it. You can make it do what you like but in this example it disappears while being sucked up by the rover.
+Start een animatie voor het luchtmonster wanneer de rover het verzamelt. Je kunt het laten doen wat je wilt, maar in dit voorbeeld verdwijnt het terwijl het wordt opgezogen door de rover.
 
 --- task ---
 
-Add an animated effect to the cloud that changes the size.
+Voeg een animatie-effect toe aan de wolk die de grootte verandert.
 
-![cloud sprite](images/cloud-sprite.png)
+![wolk sprite](images/cloud-sprite.png)
 ```blocks3
 when I receive [sample air v]
 repeat (5)
@@ -180,15 +180,15 @@ set size to (50) %
 
 --- task ---
 
-**Test** your project by clicking the green flag and then moving your rover until it touches the cloud. Click on the rover and it should appear to suck up the cloud.
+**Test** je project door op de groene vlag te klikken en vervolgens je rover te verplaatsen totdat hij de wolk raakt. Klik op de rover en het zou moeten lijken alsof hij de wolk opzuigt.
 
 --- /task ---
 
 --- task ---
 
-Now change your cloud sprite's code so that it resets when it goes off the screen.
+Wijzig nu de code van je wolk sprite zodat deze opnieuw wordt ingesteld wanneer hij van het scherm wordt verwijderd.
 
-![cloud sprite](images/cloud-sprite.png)
+![wolk sprite](images/cloud-sprite.png)
 ```blocks3
 when I receive [start v]
 + forever
