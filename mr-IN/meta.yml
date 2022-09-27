@@ -5,10 +5,10 @@ description: नेचर रोव्हर एक्सप्लोर कर�
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-03-26'
+last_tested: "2021-03-26"
 steps:
   - 
-    title: परिचय
+    title: You will make
   - 
     title: रोव्हर नियंत्रित करा
   - 
@@ -24,7 +24,7 @@ steps:
     completion:
       - internal
   - 
-    title: परावर्तन
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
