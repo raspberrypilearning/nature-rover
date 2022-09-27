@@ -1,14 +1,14 @@
-## Upgrade your project
+## Verbeter je project
 
-Make your rover interact with the nature scene even more, similar to how a real rover would behave.
+Laat je rover nog meer interactie hebben met de natuur, vergelijkbaar met hoe een echte rover zich zou gedragen.
 
-You can:
-- Add even more samples to your project, using the prebuilt animations or ones you create yourself
-- Use variables to count samples; increase the count each time a sample is collected
-- Introduce an energy variable so that the rover has to use a renewable energy source like the sun, to recharge
-- Animate the rover when it has collected enough samples (for example, it could do a dance and then fly away)
+Je kan:
+- Nog meer monsters toe aan je project toevoegen met behulp van de vooraf gemaakte animaties of de monsters die je zelf maakt
+- Variabelen gebruiken om monsters te tellen; verhoog het aantal telkens wanneer een monster wordt verzameld
+- Een energievariabele introduceren zodat de rover een duurzame energiebron zoals de zon moet gebruiken om op te laden
+- De rover animeren wanneer deze genoeg monsters heeft verzameld (het kan bijvoorbeeld een dans doen en dan wegvliegen)
 
-You can use any of the blocks that you learned about in this project, as well as those that you already know.
+Je kunt elk van de blokken gebruiken die je in dit project hebt geleerd, en natuurlijk ook de blokken die je al kent.
 
 ```blocks3
 define collect sample ::custom
@@ -31,7 +31,7 @@ if <touching color (#FFAA00) ?> then
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/536887721/?autostart=false" frameborder="0"></iframe>
 </div>
 
-You can view the complete project [here](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
+Je kunt het volledige project [hier](https://scratch.mit.edu/projects/536887721){:target="_blank"} bekijken.
 
 
 
