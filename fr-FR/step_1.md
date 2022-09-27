@@ -1,6 +1,6 @@
-## You will make
+## Tu feras
 
-Create a wilderness scene for a nature rover to explore.
+Crée une scène sauvage à explorer par un rover nature.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">Les **rovers**</span> sont des robots. Ils peuvent être utilisés pour réaliser des expériences scientifiques dans des endroits éloignés, comme Mars !  Ils examinent leur environnement et peuvent être dirigés vers des éléments intéressants et prendre des échantillons. S'ils sont alimentés par le soleil, ils peuvent se placer dans une position ensoleillée pour recharger leurs batteries.
@@ -18,7 +18,7 @@ Tu vas devoir :
 
 --- no-print ---
 
-### Play ▶️
+### Joue ▶️
 
 --- task ---
 
