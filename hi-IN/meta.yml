@@ -5,10 +5,10 @@ description: नेचर रोवर के लिए घूमने और �
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-03-26'
+last_tested: "2021-03-26"
 steps:
   - 
-    title: परिचय
+    title: You will make
   - 
     title: रोवर को नियंत्रित करें
   - 
@@ -24,7 +24,7 @@ steps:
     completion:
       - internal
   - 
-    title: सोचिए
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
