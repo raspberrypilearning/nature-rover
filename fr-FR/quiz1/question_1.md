@@ -1,23 +1,23 @@
-## Quick quiz
+## Questionnaire rapide
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Réponds aux trois questions. Il y a des indices pour te guider vers la bonne réponse.
 
-When you have answered each question, click on **Check my answer**.
+Lorsque tu as répondu à chaque question, clique sur **Vérifier ma réponse**.
 
-Have fun!
+Amuse-toi bien !
 
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Question 1 sur 3
 ---
 
-Here is a controller that broadcasts up when the up button is clicked and down when the down button is clicked:
+Voici un contrôleur qui diffuse vers le haut lorsque le bouton haut est cliqué et vers le bas lorsque le bouton bas est cliqué :
 
-![four button controller](images/controller.png)
+![contrôleur à quatre boutons](images/controller.png)
 
-Which of the following code blocks would you add to **the rover sprite** to make it move up and down
+Lequel des blocs de code suivants ajouterais-tu au **sprite du rover** pour le faire monter et descendre
 
 --- choices ---
 
@@ -37,7 +37,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This would move the rover when it is touching the buttons, rather than when the buttons are pressed.
+  Cela déplacerait le rover quand il touche les boutons, plutôt que lorsque les boutons sont enfoncés.
 
   --- /feedback ---
 
@@ -50,7 +50,7 @@ change y by (10)
 
 --- feedback ---
 
-  This would move the rover when it was clicked on, rather than when the buttons are clicked on.
+  Cela déplacerait le rover quand il a été cliqué, plutôt que lorsque les boutons sont cliqués.
 
   --- /feedback ---
 
@@ -67,7 +67,7 @@ change y by (-10)
 
   --- feedback ---
 
-  Yes, this script receives the up and down broadcasts from the controller buttons and gets the rover to move up and down.
+  Oui, ce script reçoit les diffusions de haut et de bas des boutons du contrôleur et fait monter et descendre le rover.
 
   --- /feedback ---
 
@@ -85,7 +85,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This creates functions for moving up and down, but as the functions are not called, the rover would not move.
+  Cela crée des fonctions pour monter et descendre, mais comme les fonctions ne sont pas appelées, le rover ne bouge pas.
 
   --- /feedback ---
 
