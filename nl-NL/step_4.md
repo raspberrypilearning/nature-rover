@@ -1,21 +1,21 @@
-## Scroll more sprites
+## Laat meer sprites bewegen
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-When adding more sprites to your scene, these need to scroll left and right as well.
+Wanneer je meer sprites aan je scène toevoegt, moeten deze ook naar links en rechts bewegen.
 </div>
 <div>
 ![](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
-Now you can add some more objects to your scene, and scroll them in a similar way.
+Nu kun je nog meer objecten aan je scène toevoegen en deze op dezelfde manier laten bewegen.
 
 --- task ---
 
-Add a **tree** sprite to your project, and then set its starting position.
+Voeg een **boom** sprite toe aan je project en stel vervolgens de beginpositie in.
 
-![The tree sprite.](images/tree-sprite.png)
+![De boom sprite.](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
 go to x:(0) y:(-80)
@@ -23,17 +23,17 @@ go to x:(0) y:(-80)
 
 --- /task ---
 
-The **tree** sprite should also move in the **opposite** direction to the broadcast as well.
+De **boom** sprite moet ook in de **tegenovergestelde** richting van het bericht bewegen.
 
-![Animation of a tree moving right and left, showing the x coordinate changing.](images/scrolling-tree.gif)
+![Animatie van een boom die naar rechts en links beweegt, waarbij de x-coördinaat verandert.](images/scrolling-tree.gif)
 
-As the tree is closer to the viewer, it should appear to move a greater distance than the hills each time the button or key is pressed.
+Naarmate de boom dichter bij de kijker staat, zou deze een grotere afstand moeten lijken te verplaatsen dan de heuvels telkens wanneer op de knop of toets wordt gedrukt.
 
 --- task ---
 
-To get this moving effect, change the `x`{:class='block3motion'} values that the **tree** sprite moves by when the `left`{:class="block3events"} and `right`{:class="block3events"} broadcasts are received.
+Om dit bewegende effect te krijgen, wijzig je de `x`{:class='block3motion'} waarden die de **boom** sprite beweegt wanneer de `links`{:class="block3events"} en `rechts`{:class="block3events"} berichten worden ontvangen.
 
-![The tree sprite.](images/tree-sprite.png)
+![De boom sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -47,19 +47,19 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**Test:** Check your left and right buttons now. The tree should move each time you click on the controller.
+**Test:** Controleer nu de linker- en rechterknop. De boom moet elke keer bewegen als je op de controller klikt.
 
-**Test:** What happens if you go as far away from the tree as you can?
+**Test:** wat gebeurt er als je zo ver weg van de boom gaat als je kunt?
 
 --- /task ---
 
-Did you notice that when the tree reaches the very edge of the screen, it stops moving? You can fix this by moving the tree to the other side of the screen, when its `x`{:class='block3motion'} coordinate is too high or too low.
+Heb je gemerkt dat wanneer de boom de rand van het scherm bereikt, deze stopt met bewegen? Je kunt dit oplossen door de boom naar de andere kant van het scherm te verplaatsen wanneer de `x`{:class='block3motion'} coördinaat te hoog of te laag is.
 
 --- task ---
 
-Using a `forever`{:class='block3control'} loop, and `if`{:class='block3control'} blocks, check the `x`{:class='block3motion'} coordinate of the tree, and move it to the other side of the screen when `x`{:class='block3motion'} is higher than `290` or lower than `-290`.
+Gebruik een `herhaal`{:class='block3control'} lus, en `als`{:class='block3control'} blokken, controleer de `x`{:class='block3motion'} coördinaat van de boom en verplaats deze naar de andere kant van het scherm wanneer `x`{:class='block3motion'> hoger is dan `290` of lager is dan `-290`.
 
-![The tree sprite.](images/tree-sprite.png)
+![De boom sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -78,15 +78,15 @@ end
 
 --- task ---
 
-Now move your **rover** sprite around the screen. When the tree reaches the edge, it should vanish off the edge of the screen and reappear on the other side.
+Beweeg nu je **rover** sprite over het scherm. Wanneer de boom de rand bereikt, zou deze van de rand van het scherm moeten verdwijnen en weer aan de andere kant moeten verschijnen.
 
 --- /task ---
 
 --- task ---
 
-Lastly, make the **rover** turn left and right so that it faces the direction it is moving in.
+Laat ten slotte de **rover** naar links en rechts draaien, zodat hij in de richting wijst waarin hij zich beweegt.
 
-![The rover sprite.](images/rover-sprite.png)
+![De rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -104,6 +104,6 @@ point in direction (90)
 
 --- task ---
 
-**Test**: Run your project and test it. Make sure the tree appears to fall off the edge of the screen and appears on the other side when the rover moves.
+**Test**: Voer je project uit en test het. Zorg ervoor dat de boom van de rand van het scherm lijkt te vallen en aan de andere kant verschijnt wanneer de rover beweegt.
 
 --- /task ---
