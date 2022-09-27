@@ -5,10 +5,10 @@ description: Use Scratch to create a wilderness scene for a nature rover to expl
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-03-26'
+last_tested: "2021-03-26"
 steps:
   - 
-    title: Introduction
+    title: You will make
   - 
     title: Control the rover
   - 
@@ -24,7 +24,7 @@ steps:
     completion:
       - internal
   - 
-    title: Reflection
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
