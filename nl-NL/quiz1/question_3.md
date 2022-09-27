@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Vraag 3 van 3
 ---
 
-This script is a function that is used to get a cat to dance:
+Dit script is een functie die wordt gebruikt om een kat te laten dansen:
 
 ```blocks3
 define cat animation
@@ -15,7 +15,7 @@ switch costume to [costume 2 v]
 wait (0.1) seconds
 ```
 
-Which of the following scripts would use the `cat animation`{:class='block3myblocks'} above to make the cat dance when the Sprite is clicked?
+Welke van de volgende scripts zouden de `kat animatie`{:class='block3myblocks'} hierboven gebruiken om de kat te laten dansen wanneer op de Sprite wordt geklikt?
 
 --- choices ---
 
@@ -31,7 +31,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but does not use `cat animation`{:class='block3myblocks'} the that has been made.
+  Dit zou de kat laten dansen, maar er wordt geen `kat animatie`{:class='block3myblocks'} gebruikt, die hiervoor werd gemaakt.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ cat dance ::custom
 
   --- feedback ---
 
-  This is calling a `cat dance`{:class='block3myblocks'} block, but not the cat `cat animation`{:class='block3myblocks'} block.
+  Dit roept een `kat dans`{:class='block3myblocks'} blok op, maar niet het kat `kat animatie`{:class='block3myblocks'} blok.
 
   --- /feedback ---
 
@@ -60,7 +60,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but not when the sprite is clicked. It also does not use the `cat animation`{:class='block3myblocks'} block.
+  Hierdoor zou de kat dansen, maar niet wanneer op de sprite wordt geklikt. Het gebruikt ook geen `kat-animatie`{:class='block3myblocks'} blok.
 
   --- /feedback ---
 
@@ -73,7 +73,7 @@ cat animation ::custom
 
   --- feedback ---
 
-Yes, in this answer, the `cat animation`{:class='block3myblocks'} block is used when the sprite is clicked, causing the cat to dance.
+Ja, in dit antwoord wordt het `kat animatie`{:class='block3myblocks'} blok gebruikt wanneer op de sprite wordt geklikt, waardoor de kat gaat dansen.
 
   --- /feedback ---
 
