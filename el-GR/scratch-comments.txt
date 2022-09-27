@@ -1,32 +1,32 @@
-Smaller looks further away
+Όσο μικρότερο φαίνεται να είναι πιο μακρυά
 
-Bigger looks closer
+Όσο μεγαλύτερο φαίνεται να είναι πιο κοντά
 
-Create a copy of the hills
+Κάνε αντίγραφο των λόφων
 
-Move the original hills to the right of the screen
+Μετακίνησε τους αρχικούς λόφους στα δεξιά της οθόνης
 
-The hills sprite is off the right side of the screen
+Το αντικείμενο hills βρίσκεται πέρα από τη δεξιά πλευρά της οθόνης
 
-Reset to the left side of the screen
+Επαναφορά στην αριστερή πλευρά της οθόνης
 
-The hills sprite is off the left side of the screen
+Το αντικείμενο hills βρίσκεται πέρα από την αριστερή πλευρά της οθόνης
 
-Reset to the right side of the screen
+Επαναφορά στη δεξιά πλευρά της οθόνης
 
-Use a bigger number than for the hills
+Χρησιμοποίησε έναν μεγαλύτερο αριθμό από ότι για τους λόφους
 
-The tree is at the far right
+Το δέντρο βρίσκεται στην άκρη δεξιά
 
-Move the tree to the far left
+Μετακίνησε το δέντρο προς τα αριστερά
 
-The tree is at the far left
+Το δέντρο είναι στην άκρη αριστερά
 
-Move the tree to the far right
+Μετακίνησε το δέντρο προς τα δεξιά
 
-Animates the robot to collect fruit
+Δώσε κίνηση στο ρομπότ για να συλλέγει καρπούς
 
-Run the animation
+Εκτέλεση του κινούμενου σχεδίου
 
-Colour of fruit
+Χρώμα των καρπών
 
