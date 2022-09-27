@@ -1,43 +1,43 @@
-up
+omhoog
 
 start
 
-down
+omlaag
 
-right
+rechts
 
-left
+links
 
-scroll
+bewegen
 
-sample fruit
+fruitmonster
 
-inactive
+niet actief
 
 arm 1
 
 arm 2
 
-tree with fruit
+boom met fruit
 
-tree without fruit
+boom zonder fruit
 
-recharge
+opladen
 
-solar 1
+zonne-energie 1
 
-solar 2
+zonne-energie 2
 
-solar 3
+zonne-energie 3
 
-cat animation
+kat animatie
 
-costume 1
+uiterlijk 1
 
-costume 2
+uiterlijk 2
 
-cat dance
+kat dansen
 
-collect sample
+neem een monster
 
-energy
+energie
