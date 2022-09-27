@@ -1,24 +1,23 @@
+## Quick quiz
 
-छान, तुम्ही खूप काही शिकलात! आता, चिंतन करण्याची वेळ आहे - चिंतन हा अभ्यासाचा महत्वाचा भाग आहे, कारण त्यामुळे तुमच्या मेंदूला नवीन माहिती मिळण्यास मदत होते.
+Answer the three questions. There are hints to guide you to the correct answer.
 
-तुम्ही काय शिकलात याचे चिंतन करण्यासाठी खालील तीन प्रश्नांची उत्तरे द्या.
+When you have answered each question, click on **Check my answer**.
 
-प्रत्येक प्रश्नानंतर submit दाबा. तुम्हाला योग्य उत्तराचे मार्गदर्शन केले जाईल. तुम्हाला हवे तेवढ्या वेळा तुम्ही ही कृती करू शकता.
-
-मजा करा!
+Have fun!
 
 
 --- question ---
 
 ---
-legend: प्रश्न 3 पैकी 1
+legend: Question 1 of 3
 ---
 
-येथे एक कंट्रोलर आहे जो वरचे बटण क्लिक केल्यावर वर आणि डाउन बटणावर क्लिक केल्यावर खाली ब्रॉडकास्ट करतो:
+Here is a controller that broadcasts up when the up button is clicked and down when the down button is clicked:
 
-![चार बटन कंट्रोलर](images/controller.png)
+![four button controller](images/controller.png)
 
-खालीलपैकी कोणता कोड तुम्ही तो वर आणि खाली हलवण्यासाठी **the rover sprite** मध्ये जोडाल
+Which of the following code blocks would you add to **the rover sprite** to make it move up and down
 
 --- choices ---
 
@@ -38,7 +37,7 @@ change y by (-10)
 
   --- feedback ---
 
-  हे बटन दाबल्यावर पेक्षा बटनाला स्पर्श केल्यावर रोव्हर हलवेल.
+  This would move the rover when it is touching the buttons, rather than when the buttons are pressed.
 
   --- /feedback ---
 
@@ -51,7 +50,7 @@ change y by (10)
 
 --- feedback ---
 
-  हे रोव्हरला बटन क्लिक केल्यावर पेक्षा त्यावर क्लिक केल्यावर हलवेल.
+  This would move the rover when it was clicked on, rather than when the buttons are clicked on.
 
   --- /feedback ---
 
@@ -68,7 +67,7 @@ change y by (-10)
 
   --- feedback ---
 
-  हो, या स्क्रिप्टला कंट्रोलर बटन मधून वर आणि खाली ब्रॉडकास्ट मिळतो आणि रोव्हर वर आणि खाली हलतो.
+  Yes, this script receives the up and down broadcasts from the controller buttons and gets the rover to move up and down.
 
   --- /feedback ---
 
@@ -86,7 +85,7 @@ change y by (-10)
 
   --- feedback ---
 
-  वर आणि खाली हलण्यासाठी हे फंक्शन तयार करते, परंतु फंक्शनला बोलविले नाही तर, रोव्हर हलणार नाही.
+  This creates functions for moving up and down, but as the functions are not called, the rover would not move.
 
   --- /feedback ---
 
