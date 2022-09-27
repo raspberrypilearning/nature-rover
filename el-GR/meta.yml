@@ -1,30 +1,30 @@
 ---
-title: Nature rover
+title: Ρομποτικό όχημα εξερεύνησης της φύσης
 hero_image: images/banner.png
-description: Use Scratch to create a wilderness scene for a nature rover to explore
+description: Χρησιμοποίησε το Scratch για να δημιουργήσεις μια σκηνή άγριας φύσης που θα την εξερευνήσει ένα ρομποτικό όχημα εξερεύνησης φύσης
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-03-26'
+last_tested: "2021-03-26"
 steps:
   - 
-    title: Introduction
+    title: You will make
   - 
-    title: Control the rover
+    title: Έλεγχος του ρομποτικού όχηματος
   - 
-    title: Scroll the background
+    title: Κύλιση του φόντου
     completion:
       - engaged
   - 
-    title: Scroll more sprites
+    title: Κύλιση περισσότερων αντικειμένων
   - 
-    title: Collect a sample
+    title: Συλλογή δείγματος
   - 
-    title: Create another sample
+    title: Δημιουργία ενός άλλου δείγματος
     completion:
       - internal
   - 
-    title: Reflection
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +33,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Αναβάθμιση του έργου σου
   - 
-    title: What next?
+    title: Και μετά;
