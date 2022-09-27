@@ -1,32 +1,32 @@
-Smaller looks further away
+Kleiner lijkt verder weg
 
-Bigger looks closer
+Groter ziet er dichterbij uit
 
-Create a copy of the hills
+Maak een kopie van de heuvels
 
-Move the original hills to the right of the screen
+Verplaats de originele heuvels naar de rechterkant van het scherm
 
-The hills sprite is off the right side of the screen
+De heuvels sprite is van de rechterkant van het scherm gevallen
 
-Reset to the left side of the screen
+Reset naar de linkerkant van het scherm
 
-The hills sprite is off the left side of the screen
+De heuvels sprite is van de linkerkant van het scherm gevallen
 
-Reset to the right side of the screen
+Reset naar de rechterkant van het scherm
 
-Use a bigger number than for the hills
+Gebruik een groter getal dan voor de heuvels
 
-The tree is at the far right
+De boom staat nu helemaal rechts
 
-Move the tree to the far left
+Beweeg de boom helemaal naar links
 
-The tree is at the far left
+De boom staat nu helemaal links
 
-Move the tree to the far right
+Beweeg de boom helemaal naar rechts
 
-Animates the robot to collect fruit
+Voegt een animatie aan de robot toe om fruit te verzamelen
 
-Run the animation
+Voer de animatie uit
 
-Colour of fruit
+Kleur van het fruit
 
