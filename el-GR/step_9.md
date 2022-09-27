@@ -1,10 +1,10 @@
-## What next?
+## Και τώρα;
 
-If you are following the [Further Scratch](https://projects.raspberrypi.org/en/pathways/further-scratch) pathway, you can move on to the [Puzzle room](https://projects.raspberrypi.org/en/projects/puzzle-room) project. In this project, you will make a space ship puzzle room with a character that solves the puzzles.
+Εάν ακολουθείς το μονοπάτι [Περισσότερη Scratch](https://projects.raspberrypi.org/en/pathways/further-scratch), μπορείς να προχωρήσεις στο έργο [Δωμάτιο με γρίφους](https://projects.raspberrypi.org/en/projects/puzzle-room). Σε αυτό το έργο, θα φτιάξεις ένα δωμάτιο γρίφων με έναν χαρακτήρα μέσα σε ένα διαστημόπλοιο που λύνει τους γρίφους.
 
 --- print-only ---
 
-![Puzzle room](images/puzzle_room.png)
+![Δωμάτιο με γρίφους](images/puzzle_room.png)
 
 --- /print-only ---
 
@@ -16,4 +16,4 @@ If you are following the [Further Scratch](https://projects.raspberrypi.org/en/p
 
 --- /no-print ---
 
-If you want to have more fun exploring Scratch, then you could try out any of [these projects](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch&curriculum%5B%5D=%201).
+Αν θέλεις να διασκεδάσεις περισσότερο εξερευνώντας την Scratch, τότε μπορείς να δοκιμάσεις οποιοδήποτε από [αυτά τα έργα](https://projects.raspberrypi.org/en/projects?software%5B%5D=scratch&curriculum%5B%5D=%201).
