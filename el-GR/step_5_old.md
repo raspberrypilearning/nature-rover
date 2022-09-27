@@ -1,8 +1,8 @@
-## Collect an air sample
+## Συλλογή δείγματος από τον αέρα
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Another way of making the rover appear to collect samples, is by changing some of the properties of a sprite, rather than it's costume.
+Ένας άλλος τρόπος για να κάνεις το ρομποτικό όχημα να φαίνεται ότι συλλέγει δείγματα, είναι να αλλάξεις μερικές από τις ιδιότητες ενός αντικειμένου, παρά την ενδυμασία του.
 </div>
 <div>
 ![](images/step-5.gif){:width="300px"}
@@ -10,27 +10,27 @@ Another way of making the rover appear to collect samples, is by changing some o
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Parallax scrolling**</span> is when background images move past the camera more slowly than foreground images
+<span style="color: #0faeb0">**Κύλιση Parallax**</span> είναι όταν οι εικόνες στο φόντο περνούν από την κάμερα πιο αργά από τις εικόνες στο προσκήνιο
 </p>
 
 --- task ---
 
-Add a cloud sprite to your project from the library of sprites in Scratch, or draw one yourself, and position and resize it below the sky so that the rover can reach it.
+Πρόσθεσε ένα αντικείμενο cloud στο έργο σου από τη βιβλιοθήκη αντικειμένων στο Scratch, ή σχεδίασε ένα μόνος/η σου, και τοποθέτησε και άλλαξε το μέγεθός του κάτω από τον ουρανό, έτσι ώστε το ρομποτικό όχημα να μπορεί να το φτάσει.
 
-![image of the scratch scene, with an added cloud resized to 50%](images/add-cloud.png)
+![εικόνα της σκηνής του scratch, με πρόσθετο σύννεφο με μέγεθος στο 50%](images/add-cloud.png)
 
 --- /task ---
 
 --- collapse ---
 ---
-title: Add graphic effects to the cloud
+title: Προσθήκη εφέ γραφικών στο σύννεφο
 ---
 
-Using some graphic effects, change the appearance of the cloud sprite, so that it looks like a swirling ball of gas. You can play with different graphic effects, but the below example makes the sprite appear a little transparent and makes it swirl around.
+Χρησιμοποιώντας μερικά εφέ γραφικών, άλλαξε την εμφάνιση του αντικειμένου cloud, έτσι ώστε να μοιάζει με μια μπάλα αερίου που στροβιλίζεται. Μπορείς να παίξεις με διαφορετικά εφέ γραφικών, αλλά το παρακάτω παράδειγμα κάνει το αντικείμενο να φαίνεται λίγο διαφανές και να το κάνει να στροβιλίζεται.
 
-![animation of the cloud swirling in a cycle](images/cloud.gif)
+![κινούμενη εικόνα του σύννεφου που στροβιλίζεται σε έναν κύκλο](images/cloud.gif)
 
-![cloud sprite](images/cloud-sprite.png)
+![αντικείμενο cloud](images/cloud-sprite.png)
 ```blocks3
 when I receive [start v]
 show
@@ -51,13 +51,13 @@ change [whirl v] effect by (50)
 
 --- /collapse ---
 
-For the cloud to scroll, it needs to move when it receives the `left`{:class='block3events'} and `right`{:class='block3events'} messages. As the cloud is further away from the viewer than the tree, it should move a smaller distance each time, and still dissapear off the edge of the screen and reappear on the other side.
+Για να κάνει κύλιση το σύννεφο, πρέπει να μετακινηθεί όταν λάβει τα μηνύματα `left`{:class='block3events'} και `right`{:class='block3events'}. Καθώς το σύννεφο είναι πιο μακριά από τον θεατή από ότι το δέντρο, θα πρέπει να μετακινείται κατά μικρότερη απόσταση κάθε φορά και να εξαφανίζεται από την άκρη της οθόνης και να εμφανίζεται ξανά στην άλλη πλευρά.
 
 --- task ---
 
-Add code to make the cloud move. You may need to adjust the numbers, depending on the size and position of the sprite. As the cloud should appear further back, it should move less than the tree.
+Πρόσθεσε κώδικα για να μετακινήσεις το σύννεφο. Ίσως χρειαστεί να προσαρμόσεις τους αριθμούς, ανάλογα με το μέγεθος και τη θέση του αντικειμένου. Καθώς το σύννεφο πρέπει να εμφανίζεται πιο πίσω, θα πρέπει να κινείται λιγότερο από ότι το δέντρο.
 
-![cloud sprite](images/cloud-sprite.png)
+![αντικείμενο cloud](images/cloud-sprite.png)
 ```blocks3
 when I receive [left v]
 change x by (5)
@@ -78,26 +78,26 @@ end
 
 --- /task ---
 
-Get the rover to collect the air sample.
+Κάνε το ρομποτικό όχημα να συλλέξει το δείγμα αέρα.
 
 --- task ---
 
-Set up an animation function for the rover sprite, so that it can collect the air sample. You can duplicate the code from the sample tree function to do this.
+Όρισε μια συνάρτηση κινούμενης εικόνας για το αντικείμενο rover, ώστε να μπορεί να συλλέξει το δείγμα αέρα. Μπορείς να αντιγράψεις τον κώδικα από τη συνάρτηση sample tree για να το κάνεις αυτό.
 
 --- collapse ---
 ---
 
-title: Duplicating code
+τίτλος: Αντιγραφή κώδικα
 
 ---
 
-Here is an easy way of duplicating the code for your new function.
+Εδώ είναι ένας εύκολος τρόπος για να αντιγράψεις τον κώδικα για τη νέα σου συνάρτηση.
 
-![animation showing code being duplicated](images/duplicating.gif)
+![κινούμενη εικόνα που δείχνει τον κώδικα να αντιγράφεται](images/duplicating.gif)
 
 --- /collapse ---
 
-![rover sprite](images/rover-sprite.png)
+![αντικείμενο rover](images/rover-sprite.png)
 ```blocks3
 define sample air
 switch costume to (inactive v)
@@ -117,13 +117,13 @@ switch costume to (inactive v)
 
 --- /task ---
 
-Get the rover to broadcast a message to the cloud sprite so that it knows when to animate.
+Ζήτα από το rover να μεταδώσει ένα μήνυμα στο αντικείμενο cloud, ώστε να γνωρίζει πότε να κάνει κίνηση.
 
 --- task ---
 
-Create a new broadcast message called `sample air`{:class='block3events'} and then add it into your `sample air`{:class='block3custom'} function.
+Δημιούργησε μια νέα μετάδοση που ονομάζεται `sample air`{:class='block3events'} και πρόσθεσέ τη μέσα στη συνάρτηση `sample air`{:class='block3events'}.
 
-![rover sprite](images/rover-sprite.png)
+![αντικείμενο rover](images/rover-sprite.png)
 ```blocks3
 define sample air
 switch costume to (inactive v)
@@ -144,13 +144,13 @@ switch costume to (inactive v)
 
 --- /task ---
 
-The function should only be called if the rover is touching the cloud sprite.
+Η συνάρτηση πρέπει να καλείται μόνο εάν το rover αγγίζει το αντικείμενο cloud.
 
 --- task ---
 
-Add code so that the rover only `samples air`{:class='block3custom'} `if`{:class='block3control'} it is `touching the cloud`{:class='block3sensing'}.
+Πρόσθεσε κώδικα ώστε το rover να `λαμβάνει δείγματα αέρα`{:class='block3custom'} μόνο `εάν`{:class='block3control'} `αγγίζει το σύννεφο`{:class='block3sensing'}.
 
-![rover sprite](images/rover-sprite.png)
+![αντικείμενο rover](images/rover-sprite.png)
 ```blocks3
 when this sprite clicked
 if <touching color [Cloud v] ?> then
@@ -160,13 +160,13 @@ end
 
 --- /task ---
 
-Get the air sample to animate when the rover collects it. You can make it do what you like but in this example it disappears while being sucked up by the rover.
+Κάνε το air sample κινούμενο σχέδιο όταν το συλλέξει το rover. Μπορείς να το αναγκάσεις να κάνει ό, τι θέλεις, αλλά σε αυτό το παράδειγμα εξαφανίζεται ενώ το απορροφά το rover.
 
 --- task ---
 
-Add an animated effect to the cloud that changes the size.
+Πρόσθεσε ένα εφέ κίνησης στο σύννεφο που αλλάζει το μέγεθος.
 
-![cloud sprite](images/cloud-sprite.png)
+![αντικείμενο cloud](images/cloud-sprite.png)
 ```blocks3
 when I receive [sample air v]
 repeat (5)
@@ -180,15 +180,15 @@ set size to (50) %
 
 --- task ---
 
-**Test** your project by clicking the green flag and then moving your rover until it touches the cloud. Click on the rover and it should appear to suck up the cloud.
+**Δοκίμασε** το έργο σου κάνοντας κλικ στην πράσινη σημαία και στη συνέχεια μετακινώντας το ρομποτικό σου όχημα μέχρι να αγγίξει το σύννεφο. Κάνε κλικ στο rover και θα πρέπει να φαίνεται ότι απορροφά το cloud.
 
 --- /task ---
 
 --- task ---
 
-Now change your cloud sprite's code so that it resets when it goes off the screen.
+Τώρα άλλαξε τον κώδικα του αντικειμένου σου cloud, ώστε να το επαναφέρει όταν σβήσει από την οθόνη.
 
-![cloud sprite](images/cloud-sprite.png)
+![αντικείμενο cloud](images/cloud-sprite.png)
 ```blocks3
 when I receive [start v]
 + forever
