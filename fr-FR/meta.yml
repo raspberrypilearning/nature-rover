@@ -1,30 +1,30 @@
 ---
-title: Nature rover
+title: Rover nature
 hero_image: images/banner.png
-description: Use Scratch to create a wilderness scene for a nature rover to explore
+description: Utiliser Scratch pour créer une scène sauvage à explorer par un rover nature
 version: 4
 listed: true
 copyedit: true
-last_tested: '2021-03-26'
+last_tested: "2021-03-26"
 steps:
   - 
-    title: Introduction
+    title: You will make
   - 
-    title: Control the rover
+    title: Contrôler le rover
   - 
-    title: Scroll the background
+    title: Faire défiler l'arrière-plan
     completion:
       - engaged
   - 
-    title: Scroll more sprites
+    title: Faire défiler plus de sprites
   - 
-    title: Collect a sample
+    title: Recueillir un échantillon
   - 
-    title: Create another sample
+    title: Créer un autre échantillon
     completion:
       - internal
   - 
-    title: Reflection
+    title: Quick quiz
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +33,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Améliorer ton projet
   - 
-    title: What next?
+    title: Et ensuite ?
