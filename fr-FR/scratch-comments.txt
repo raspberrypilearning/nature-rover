@@ -1,32 +1,32 @@
-Smaller looks further away
+Plus petit semble plus loin
 
-Bigger looks closer
+Plus grand semble plus proche
 
-Create a copy of the hills
+Crée une copie des collines
 
-Move the original hills to the right of the screen
+Déplace les collines d'origine vers la droite de l'écran
 
-The hills sprite is off the right side of the screen
+Le sprite des collines est sur le côté droit de l'écran
 
-Reset to the left side of the screen
+Réinitialiser sur le côté gauche de l'écran
 
-The hills sprite is off the left side of the screen
+Le sprite des collines est sur le côté gauche de l'écran
 
-Reset to the right side of the screen
+Réinitialiser sur le côté droit de l'écran
 
-Use a bigger number than for the hills
+Utiliser un plus grand nombre que pour les collines
 
-The tree is at the far right
+L'arbre est à l'extrême droite
 
-Move the tree to the far left
+Déplacer l'arbre vers l'extrême gauche
 
-The tree is at the far left
+L'arbre est à l'extrême gauche
 
-Move the tree to the far right
+Déplacer l'arbre à l'extrême droite
 
-Animates the robot to collect fruit
+Anime le robot pour récolter des fruits
 
-Run the animation
+Exécuter l'animation
 
-Colour of fruit
+Couleur des fruits
 
