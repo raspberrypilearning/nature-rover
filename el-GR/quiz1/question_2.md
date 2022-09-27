@@ -1,17 +1,17 @@
-## Reflection
+## Και τώρα;
 
 
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Ερώτηση 2 από 3
 ---
 
-Have a look at this project showing a rover exploring a mountain scene.
+Ρίξε μια ματιά σε αυτό το έργο που δείχνει ένα ρομποτικό όχημα να εξερευνά μια σκηνή στο βουνό.
 
-![animation showing rover with mountain moving in the background and a static cloud](images/mountain-animation.gif)
+![κινούμενη εικόνα που δείχνει ένα ρομποτικό όχημα με το βουνό να κινείται στο βάθος και ένα στατικό σύννεφο](images/mountain-animation.gif)
 
-Here is the code for moving the mountain.
+Εδώ είναι ο κώδικας για τη μετακίνηση του βουνού.
 
 ```blocks3
 when I receive [left v]
@@ -21,7 +21,7 @@ when I receive [right v]
 change x by (-10)
 ```
 
-Which code blocks would get the cloud to scroll slower than the mountain?
+Ποια μπλοκ κώδικα θα έκαναν το σύννεφο να μετακινείται πιο αργά από το βουνό;
 
 --- choices ---
 
@@ -37,7 +37,7 @@ change x by (5)
 
   --- feedback ---
 
-The cloud is scrolling slower than the mountain here, but this code makes the cloud difficult for the rover to reach because it moves in the same direction as the rover.
+Το σύννεφο κυλά πιο αργά από το βουνό εδώ, αλλά αυτός ο κώδικας καθιστά το σύννεφο δύσκολο να φτάσει το ρομποτικό όχημα επειδή κινείται στην ίδια κατεύθυνση με το ρομποτικό όχημα.
 
   --- /feedback ---
 
@@ -54,7 +54,7 @@ change y by (5)
 
   --- feedback ---
 
-  With this code, the cloud will be moving up and down instead of left and right. How can you get the cloud to move left and right? Think about the stage as a coordinate grid.
+  Με αυτόν τον κώδικα, το σύννεφο θα κινείται πάνω και κάτω αντί για αριστερά και δεξιά. Πώς μπορείς να κάνεις το σύννεφο να κινείται δεξιά και αριστερά; Σκέψου τη σκηνή ως ένα πλέγμα συντεταγμένων.
 
   --- /feedback ---
 
@@ -70,7 +70,7 @@ change y by (-20)
 
   --- feedback ---
 
-  The cloud is scrolling in the right direction here, however it is scrolling much faster than the mountain, even though it is farther away from the rover than the mountain.
+  Το σύννεφο κυλάει προς τη σωστή κατεύθυνση εδώ, ωστόσο κινείται πολύ πιο γρήγορα από το βουνό, παρόλο που είναι πιο μακριά από το ρομποτικό όχημα από ότι το βουνό.
 
   --- /feedback ---
 
@@ -86,7 +86,7 @@ change x by (-5)
 
   --- feedback ---
 
-Great! the cloud moves right when the rover moves left, and left when the rover moves right.  The cloud scrolls slower than the mountain because x is changed in increments of 5.
+Εξαιρετικά! το σύννεφο κινείται δεξιά όταν το ρομποτικό όχημα κινείται αριστερά και αριστερά όταν το ρομποτικό όχημα κινείται δεξιά.  Το σύννεφο κυλά πιο αργά από το βουνό επειδή το x αυξάνεται κατά 5.
 
   --- /feedback ---
 
