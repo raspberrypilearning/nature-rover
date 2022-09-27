@@ -1,8 +1,8 @@
-## Control the rover
+## Contrôler le rover
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will use an on-screen controller or the keyboard to move your rover up and down.
+Dans cette étape, tu utiliseras un contrôleur à l’écran ou le clavier pour déplacer ton rover de haut en bas.
 </div>
 <div>
 ![](images/step-2.gif){:width="300px"}
@@ -11,31 +11,31 @@ In this step, you will use an on-screen controller or the keyboard to move your 
 
 --- task ---
 
-Open the starter project online at [rpf.io/nature-rover-starter](https://rpf.io/nature-rover-starter){:target="_blank"}.
+Ouvre le projet de démarrage en ligne à [rpf.io/nature-rover-starter](https://rpf.io/nature-rover-starter){:target="_blank"}.
 
 --- collapse ---
 ---
-title: Working offline
+title: Travailler hors ligne
 ---
 
-If you are working offline, the starter project can be found at [rpf.io/p/en/nature-rover-go](https://rpf.io/p/en/nature-rover-go)
+Si tu travailles hors ligne, le projet de démarrage peut être trouvé à [rpf.io/p/en/nature-rover-go](https://rpf.io/p/en/nature-rover-go)
 
 --- /collapse ---
 
 
 --- /task ---
 
-You should see a scene with a robotic rover, a hilly background, and a controller in the bottom, left-hand corner.
+Tu devrais voir une scène avec un rover robotisé, un arrière-plan vallonné et un contrôleur dans le coin inférieur gauche.
 
-![The staring background showing hills, a pile of mud, and a robot.](images/starter-background.png)
+![L'arrière-plan fixe montrant des collines, une motte de terre et un robot.](images/starter-background.png)
 
-You are going to use the controller or keyboard controls to make the rover look as if it is moving towards or away from the viewer.
+Tu vas utiliser le contrôleur ou les commandes du clavier pour donner l'impression que le rover se rapproche ou s'éloigne du spectateur.
 
 --- task ---
 
-Look at the **Code** tab for each of the buttons. The code will look something like this:
+Regarde l'onglet **Code** pour chacun des boutons. Le code devrait ressembler à quelque chose comme ceci :
 
-![The up sprite.](images/up-sprite.png)
+![Le sprite haut.](images/up-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -48,17 +48,17 @@ go to x:(-190) y: (-121)
 end
 ```
 
-This keeps the buttons in the correct position, and broadcasts their directions when they are clicked.
+Cela garde les boutons dans la bonne position et diffuse leur direction quand on les clique.
 
 --- /task ---
 
-The **rover** is going to control the start of the game for all the other sprites; so when the green flag is clicked, the **rover** sprite needs to broadcast a `start`{:class='block3events'} message.
+Le **rover** va contrôler le début du jeu pour tous les autres sprites ; ainsi, lorsque le drapeau vert est cliqué, le sprite **rover** doit diffuser un message `départ`{:class='block3events'}.
 
 --- task ---
 
-Add the broadcast to a `green flag clicked`{:class='block3events'} block.
+Ajoute la diffusion à un bloc `quand le drapeau vert est cliqué`{:class='block3events'}.
 
-![The rover sprite.](images/rover-sprite.png)
+![Le sprite rover.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -69,9 +69,9 @@ broadcast [start v]
 
 --- task ---
 
-If you are working on a computer, it might be easier to use the keyboard controls, rather than using the buttons. Keyboard controls can be added to the **rover** sprite.
+Si tu travailles sur un ordinateur, il peut être plus facile d'utiliser les commandes du clavier plutôt que d'utiliser les boutons. Des commandes au clavier peuvent être ajoutées au sprite **rover**.
 
-![The rover sprite.](images/rover-sprite.png)
+![Le sprite rover.](images/rover-sprite.png)
 
 ```blocks3
 when [up arrow v] key pressed
@@ -87,8 +87,7 @@ when [left arrow v] key pressed
 broadcast [left v]
 ```
 
-If you don't want to use the controller, then click on each of the **button** sprites and click on the `hide`{:class='block3looks'} block in the `looks`{:class='block3looks'} 
-menu.
+Si tu ne veux pas utiliser le contrôleur, alors clique sur chacun des sprites **bouton** et clique sur le bloc `cacher`{:class='block3looks'} dans le menu `apparence`{:class='block3looks'}.
 
 ```blocks3
 hide
@@ -96,13 +95,13 @@ hide
 
 --- /task ---
 
-When the **up** button is clicked or the <kbd>up arrow</kbd> is pressed, the **rover** should change its `y`{:class="block3motion"} position by a small amount. Increasing `y`{:class="block3motion"} will make the **rover** move up. Decreasing `y`{:class="block3motion"} will make the **rover** move down.
+Lorsque le bouton **haut** est cliqué ou que la flèche <kbd>vers le haut</kbd> est enfoncée, le **rover** doit modifier légèrement sa position `y`{:class="block3motion"}. Augmenter `y`{:class="block3motion"} fera monter le **rover**. Diminuer `y`{:class="block3motion"} fera descendre le **rover**.
 
 --- task ---
 
-Add code so the **up** button makes the **rover** move up.
+Ajoute du code pour que le bouton **haut** fasse monter le **rover**.
 
-![The rover sprite.](images/rover-sprite.png)
+![Le sprite rover.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [up v]
@@ -114,17 +113,17 @@ change y by (-10)
 
 --- /task ---
 
-**You don't need to worry about the left and right motion yet. Left and right motion will be added in the next step of the project.**
+**Tu n'as pas encore à te soucier du mouvement gauche et droit. Les mouvements gauche et droite seront ajoutés à la prochaine étape du projet.**
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Perspective**</span> is used in computer graphics to make a scene more realistic. Objects that are far away normally appear to be smaller and higher up the screen. Objects that are close appear to be larger and lower down the screen.
+<span style="color: #0faeb0">**Perspective**</span> est utilisé en infographie pour rendre une scène plus réaliste. Les objets éloignés semblent normalement plus petits et plus haut sur l'écran. Les objets proches semblent être plus grands et plus bas sur l'écran.
 </p>
 
 --- task ---
 
-Add **perspective** to your **rover** by making it smaller when it moves upwards, and larger when it moves downwards.
+Ajoute la **perspective** à ton **rover** en le rendant plus petit lorsqu'il se déplace vers le haut et plus grand lorsqu'il se déplace vers le bas.
 
-![The rover sprite.](images/rover-sprite.png)
+![Le sprite rover.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [up v]
@@ -141,7 +140,7 @@ change size by (1) //Bigger looks closer
 
 --- task ---
 
-You'll need to reset the **rover's** size at the start of the game.
+Tu devras réinitialiser la taille du **rover** au début du jeu.
 
 ```blocks3
 when I receive [start v]
@@ -153,15 +152,15 @@ set size to (50) %
 
 --- task ---
 
-**Test:** Click the **up** and **down** buttons to check the control of your **rover**, or use the arrow keys.
+**Test :** Clique sur les boutons **haut** et **bas** pour vérifier le contrôle de ton **rover**, ou utilise les touches fléchées.
 
 --- /task ---
 
 --- task ---
 
-Now reset the position of the **rover** each time the game starts.
+Maintenant, réinitialise la position du **rover** à chaque fois que le jeu démarre.
 
-![The rover sprite.](images/rover-sprite.png)
+![Le sprite rover.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -173,9 +172,9 @@ set size to (50) %
 
 --- task ---
 
-For now, the **rover** should appear in front of the other sprites. Move the **rover** to the front layer.
+Pour l'instant, le **rover** devrait apparaître devant les autres sprites. Déplace le **rover** à l'avant plan.
 
-![The rover sprite.](images/rover-sprite.png)
+![Le sprite rover.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -188,7 +187,7 @@ go to x: (0) y: (-90)
 
 --- task ---
 
-**Test**: Click the green flag to test that your game resets correctly.
+**Test**: Clique sur le drapeau vert pour tester que ton jeu se réinitialise correctement.
 
 --- /task ---
 
