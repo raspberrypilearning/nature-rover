@@ -40,4 +40,4 @@ cat dance
 
 collect sample
 
-energy
+ενέργεια
