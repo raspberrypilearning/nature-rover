@@ -1,8 +1,8 @@
-## Create another sample
+## Δημιουργία άλλου δείγματος
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Choose what the rover samples next! Does it see a new species of plant, bug, or animal? Does it see some water or mysterious liquid? Does it want to sample some dirt or a rock, or even the air? Or something else?
+Επίλεξε ποιο θα είναι το επόμενο δείγμα για το rover! Βλέπει ένα νέο είδος φυτού, ζωύφιου ή ζώου; Βλέπει λίγο νερό ή ένα μυστηριώδες υγρό; Θέλει να μαζέψει λίγο χώμα ή έναν βράχο ή ακόμα και τον αέρα; Ή κάτι άλλο;
 </div>
 <div>
 ![](images/step-6.gif){:width="300px"}
@@ -11,29 +11,29 @@ Choose what the rover samples next! Does it see a new species of plant, bug, or 
 
 --- task ---
 
-**Choose:** Add a new **sample** sprite for the rover to collect. You can add this to your project either by selecting one from the library or drawing your own.
+**Επίλεξε:** Πρόσθεσε ένα νέο αντικείμενο **sample** για να συλλέξει το rover. Μπορείς να το προσθέσεις στο έργο σου είτε επιλέγοντας ένα από τη βιβλιοθήκη είτε σχεδιάζοντας το δικό σου.
 
 --- /task ---
 
-Get your **sample** sprite to scroll. If it is low down on the screen it should move more (`change x by`{:class='block3motion'} should be higher than `5`), and if it is high up on the screen it should move less (`change x by`{:class='block3motion'} should be lower than `5`).
+Κάνε το αντικείμενό σου **sample** να μετακινηθεί. Εάν είναι χαμηλά στην οθόνη, θα πρέπει να κινείται περισσότερο (`άλλαξε x κατά`{:class='block3motion'} θα πρέπει να είναι μεγαλύτερο από `5`), και αν είναι ψηλά στην οθόνη θα πρέπει να κινείται λιγότερο (`άλλαξε x κατά`{:class='block3motion'} θα πρέπει να είναι μικρότερο από `5`).
 
 --- task ---
 
-Add code so that your sprite scrolls.
+Πρόσθεσε κώδικα ώστε το αντικείμενό σου να μετακινηθεί.
 
 --- /task ---
 
-**Choose:** Depending on what you want the rover to sample next, you can either use the rover animations that are there already, or create more animation sequences by duplicating and editing the costumes.
+**Επίλεξε:** Ανάλογα με το τι θέλεις να μαζέψει το rover στη συνέχεια, μπορείς είτε να χρησιμοποιήσεις τα κινούμενα σχέδια του rover που υπάρχουν ήδη, είτε να δημιουργήσεις περισσότερες ακολουθίες κινούμενων εικόνων κάνοντας αντιγραφή και επεξεργασία στις ενδυμασίες.
 
 --- task ---
 
-Add a `My Blocks`{:class='block3myblocks'} block to your **rover** sprite to animate the rover when it collects the new sample. You can copy and paste the code from one of the other `My Blocks`{:class='block3myblocks'} you have created.
+Πρόσθεσε ένα μπλοκ `Οι Εντολές μου`{:class='block3myblocks'} στο αντικείμενο **rover** για να κινήσει το rover όταν συλλέγει το νέο δείγμα. Μπορείς να αντιγράψεις και να επικολλήσεις τον κώδικα από μιά από τις άλλες `Οι Εντολές μου`{:class='block3myblocks'} που έχεις δημιουργήσει.
 
-For instance, here is a costume sequence for collecting solar energy:
+Για παράδειγμα, εδώ είναι μια ακολουθία ενδυμασιών για τη συλλογή ηλιακής ενέργειας:
 
-![Three costumes shown with the rover extending a solar panel.](images/solar-animation.png)
+![Τρεις ενδυμασίες που εμφανίζουν το rover να επεκτείνει ένα ηλιακό πάνελ.](images/solar-animation.png)
 
-To animate this series of costumes you could use the following code:
+Για να δημιουργήσεις κίνηση σε αυτήν τη σειρά ενδυμασιών, θα μπορούσες να χρησιμοποιήσεις τον ακόλουθο κώδικα:
 
 ```blocks3
 define recharge
@@ -57,19 +57,19 @@ wait (0.3) seconds
 
 --- task ---
 
-Next, `broadcast`{:class='block3events'} a new message in your new `My Block`{:class='block3myblocks'} block that will cause a `costume`{:class='block3looks'} or `graphic effect`{:class='block3looks'} change in the **sample** sprite.
+Στη συνέχεια, `μετάδωσε`{:class='block3events'} ένα νέο μήνυμα στο νέο σου μπλοκ `H Εντολή μου`{:class='block3myblocks'} που θα προκαλέσει μια αλλαγή στην `ενδυμασία`{:class='block3looks'} ή στα `εφέ γραφικών`{:class='block3looks'} στο αντικείμενο **sample**.
 
 --- /task ---
 
 --- task ---
 
-Use an `if`{:class='block3control'} block to detect if the rover is touching the sprite or touching a colour on the sprite, so that the new `My Block`{:class='block3myblocks'} is only used then.
+Χρησιμοποίησε ένα μπλοκ `εάν`{:class='block3control'} για να ανιχνεύσεις αν το rover αγγίξει το αντικείμενο ή αγγίξει ένα χρώμα πάνω στο αντικείμενο, έτσι ώστε το νέο μπλοκ `Η Εντολή μου`{:class='block3myblocks'} να χρησιμοποιείται μόνο τότε.
 
 --- /task ---
 
 --- task ---
 
-If you like, add an animation to the sprite, so that its appearance changes when the rover has collected the sample.
+Αν θέλεις, πρόσθεσε ένα κινούμενο σχέδιο στο αντικείμενο, έτσι ώστε η εμφάνισή του να αλλάζει όταν το rover έχει συλλέξει το δείγμα.
 
 --- /task ---
 
