@@ -1,8 +1,8 @@
-## Collect a sample
+## Neem een monster
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will change the appearance of a sprite and the rover to show the rover collecting samples.
+In deze stap verander je het uiterlijk van een sprite en de rover om de rover te laten zien die monsters verzamelt.
 </div>
 <div>
 ![](images/step-4.gif){:width="300px"}
@@ -11,32 +11,32 @@ In this step, you will change the appearance of a sprite and the rover to show t
 
 --- task ---
 
-Look at the **rover** sprite's costumes. There are six animations available. The **rover** can:
-- Extend its arm
+Kijk naar de **rover** sprite's uiterlijken. Er zijn zes animaties beschikbaar. De **rover** kan:
+- Zijn arm uitschuiven
 
-![Three costumes showing the rover arm extending.](images/arm-animation.png)
+![Drie uiterlijken die de rover arm laten uitstrekken.](images/arm-animation.png)
 
-- Drill into the ground
-- Suck in air
-- Extend a solar panel
-- Take a picture
-- Scoop something up
+- In de grond boren
+- Lucht opzuigen
+- Een zonnepaneel openen
+- Een foto maken
+- Iets opscheppen
 
 --- /task ---
 
-When you want to organise a lot of code in Scratch, such as several costume changes, it is useful to use `My Blocks`{:class="block3myblocks"}. This allows you to create your own custom blocks.
+Wanneer je veel code in Scratch wilt organiseren, zoals verschillende wijzigingen van uiterlijken, is het handig om `Mijn blokken`{:class="block3myblocks"} te gebruiken. Hiermee kun je je eigen (aangepaste) blokken maken.
 
-Your **rover** sprite will have a `My Block`{:class="block3myblocks"} for each animation.
+Je **rover** sprite heeft een `Mijn blok`{:class="block3myblocks"} voor elke animatie.
 
 --- task ---
 
-In the `My Blocks`{:class="block3myblocks"} menu, click on **Make a Block**, and name your new block `sample fruit`{:class="block3myblocks"}.
+Klik in het menu `Mijn blokken`{:class="block3myblocks"} op **Maak een blok** en noem je nieuwe blok `fruitmonster`{:class="block3myblocks"}.
 
 --- /task ---
 
-A new block should appear in your script. It will look like this:
+Er zou een nieuw blok in je script moeten verschijnen. Het ziet er als volgt uit:
 
-![The rover sprite.](images/rover-sprite.png)
+![De rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -44,11 +44,11 @@ define sample fruit
 
 --- task ---
 
-Beneath this block, attach some `switch costume`{:class="block3looks"} blocks and `wait`{:class="block3control"} blocks, to animate the robot.
+Voeg onder dit blok een paar `verander uiterlijk naar`{:class="block3looks"} blokken en `wacht`{:class="block3control"} blokken toe om de robot te animeren.
 
-**Tip:** It is quicker to create your first `switch costume`{:class='block3looks'} block and `wait`{:class='block3control'} block, then duplicate them, and change the costume being used.
+**Tip:** het is sneller om je eerste `verander uiterlijk`{:class='block3looks'} blok en `wacht`{:class='block3control'} blok te maken, ze vervolgens te dupliceren en het gebruikte uiterlijk te veranderen.
 
-![The rover sprite.](images/rover-sprite.png)
+![De rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit //Animates the robot to collect fruit
@@ -67,9 +67,9 @@ switch costume to (inactive v)
 
 --- task ---
 
-Add a block so that the **rover** sprite plays a sound when it collects the fruit sample.
+Voeg een blok toe zodat de **rover** sprite een geluid afspeelt wanneer hij het fruitmonster verzamelt.
 
-![The rover sprite.](images/rover-sprite.png)
+![De rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit //Animates the robot to collect fruit
@@ -90,17 +90,17 @@ switch costume to (inactive v)
 
 --- task ---
 
-You can click on the `define sample fruit`{:class="block3myblocks"} block to see the animation. If you are on a small screen, you might need to look closely.
+Je kunt op het `definieer fruitmonster`{:class="block3myblocks"} blok klikken om de animatie te bekijken. Als je op een klein scherm werkt, moet je misschien goed kijken.
 
-The animation won't run when you click the green flag though, as you have not yet used your new `sample fruit block`{:class='block3myblocks'} in your project.
+De animatie wordt echter niet uitgevoerd als je op de groene vlag klikt, omdat je je nieuwe `fruitmonster`{:class='block3myblocks'} nog niet hebt gebruikt in je project.
 
 --- /task ---
 
 --- task ---
 
-To use your new block, you can attach it to an `event`{:class="block3events"} block. In the `My Blocks`{:class="block3myblocks"} menu, you should see the block you made. Use it in the following script.
+Om je nieuwe blok te gebruiken, kun je het koppelen aan een `gebeurtenissen`{:class="block3events"} blok. In het `Mijn blokken`{:class="block3myblocks"} menu zou je het blok moeten zien dat je hebt gemaakt. Gebruik het in het volgende script.
 
-![The rover sprite.](images/rover-sprite.png)
+![De rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -111,23 +111,23 @@ sample fruit ::custom //Run the animation
 
 --- task ---
 
-Click on the **rover** sprite, and you should see the animation.
+Klik op de **rover** sprite en je zou de animatie moeten zien.
 
 --- /task ---
 
-Now you need to make the rover actually collect a sample. In this example, the rover will collect a fruit from a tree.
+Nu moet je ervoor zorgen dat de rover daadwerkelijk een monster verzamelt. In dit voorbeeld zal de rover fruit uit een boom verzamelen.
 
 --- task ---
 
-The **tree** sprite should be edited to give it two different costumes. One with a fruit on (`tree with fruit`{:class="block3looks"}), and one without a fruit (`tree without fruit`{:class="block3looks"}). Edit one of the costumes, so that the **tree** has two different costumes.
+De **boom** sprite moet worden bewerkt om hem twee verschillende uiterlijken te geven. Een met fruit (`boom met fruit`{:class="block3looks"}), en een zonder fruit (`boom zonder fruit`{:class="block3looks"}). Bewerk een van de uiterlijken, zodat de **boom** twee verschillende uiterlijken heeft.
 
 --- /task ---
 
 --- task ---
 
-On the **tree** sprite, add blocks to set the costume of the **tree** at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
+Voeg aan de **boom** sprite blokken toe om het uiterlijk van de **boom** aan het begin van het project in te stellen, en het uiterlijk waar het naar moet overschakelen wanneer het een `fruitmonster`{:class="block3events"} bericht ontvangt.
 
-![The tree sprite.](images/tree-sprite.png)
+![De boom sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -150,9 +150,9 @@ end
 
 --- task ---
 
-On the **rover** sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new `broadcast`{:class="block3events"} into your `define sample fruit`{:class="block3myblocks"} function.
+Aan de **rover** sprite kun je de nieuwe `zend signaal`{:class="block3events"} blokken gebruiken om de verandering van uiterlijk te activeren. Voeg deze nieuwe `zend signaal`{:class="block3events"} blokken toe aan je `definieer fruitmonster`{:class="block3myblocks"} functie.
 
-![The rover sprite.](images/rover-sprite.png)
+![De rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -172,21 +172,21 @@ switch costume to (inactive v)
 
 --- task ---
 
-**Test:** To check that your code is working, click on the flag, and then click on your **rover** sprite. Its arm should extend, and the **tree** sprite should change costumes.
+**Test:** om te controleren of je code werkt, klik je op de vlag en vervolgens op je **rover** sprite. De arm zou moeten uitstrekken, en de **boom** sprite zou van uiterlijk moeten veranderen.
 
-**Tip:** Switch to full screen mode and you will be able to see the animation more easily.
+**Tip:** Schakel over naar de modus volledig scherm en je kunt de animatie gemakkelijker zien.
 
 --- /task ---
 
-The rover should only be able to collect the fruit, if it is touching it.
+De rover zou het fruit alleen moeten kunnen verzamelen als hij het raakt.
 
 --- task ---
 
-On the **rover** sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the **rover** sprite is touching the colour of your fruit.
+Wijzig op de **rover** sprite de `wanneer op deze sprite wordt geklikt`{:class="block3events"} reeks blokken, zodat de `fruitmonster`{:class="block3myblocks"} functie alleen wordt aangeroepen als de **rover** sprite de kleur van je vrucht raakt.
 
-**Tip:** Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
+**Tip:** Je uiterlijk verandert van het testen en kan betekenen dat het fruit niet zichtbaar is. Klik op het tabblad kostuums voor de **boom** sprite en schakel over naar het kostuum met het zichtbare fruit.
 
-![The rover sprite.](images/rover-sprite.png)
+![De rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -198,9 +198,9 @@ sample fruit ::custom
 
 --- task ---
 
-Now that the **tree** sprite changes when a fruit is sampled, you need to reset the sprite to its first costume when it goes off the screen.
+Nu de **boom** sprite verandert wanneer een fruit wordt verzamelt, moet je de sprite resetten naar zijn eerste uiterlijk wanneer het van het scherm komt.
 
-![The tree sprite.](images/tree-sprite.png)
+![De boom sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -222,7 +222,7 @@ end
 
 --- task ---
 
-**Test:** Move the **rover** sprite so that it is touching the fruit, then click on the **rover** sprite and watch it collect the fruit from the tree.
+**Test:** Verplaats de **rover** sprite zodat deze het fruit raakt, klik dan op de **rover** sprite en kijk hoe het de vruchten uit de boom verzamelt.
 
 --- /task ---
 
