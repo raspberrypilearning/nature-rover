@@ -1,0 +1,43 @@
+avant
+
+départ
+
+arrière
+
+à droite
+
+à gauche
+
+défilement
+
+échantillon de fruits
+
+inactif
+
+bras 1
+
+bras 2
+
+arbre avec des fruits
+
+arbre sans fruit
+
+recharge
+
+solaire 1
+
+solaire 2
+
+solaire 3
+
+animation de chat
+
+costume 1
+
+costume 2
+
+danse du chat
+
+récolter l'échantillon
+
+énergie

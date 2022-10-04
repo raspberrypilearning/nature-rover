@@ -1,0 +1,29 @@
+---
+title: Natuur rover
+hero_image: images/banner.png
+description: Gebruik Scratch om een wildernis-scene te maken voor een natuur-rover om te verkennen
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - title: Je gaat maken
+  - title: Bestuur de rover
+  - title: Laat de achtergrond bewegen
+    completion:
+      - engaged
+  - title: Laat meer sprites bewegen
+  - title: Neem een monster
+  - title: Neem nog een monster
+    completion:
+      - internal
+  - title: Snelle quiz
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: Verbeter je project
+  - title: Wat kun je verder nog doen?

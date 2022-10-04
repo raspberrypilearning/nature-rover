@@ -1,0 +1,43 @@
+omhoog
+
+start
+
+omlaag
+
+rechts
+
+links
+
+bewegen
+
+fruitmonster
+
+niet actief
+
+arm 1
+
+arm 2
+
+boom met fruit
+
+boom zonder fruit
+
+opladen
+
+zonne-energie 1
+
+zonne-energie 2
+
+zonne-energie 3
+
+kat animatie
+
+uiterlijk 1
+
+uiterlijk 2
+
+kat dansen
+
+neem een monster
+
+energie

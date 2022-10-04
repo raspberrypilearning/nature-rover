@@ -1,0 +1,32 @@
+Plus petit semble plus loin
+
+Plus grand semble plus proche
+
+Crée une copie des collines
+
+Déplace les collines d'origine vers la droite de l'écran
+
+Le sprite des collines est sur le côté droit de l'écran
+
+Réinitialiser sur le côté gauche de l'écran
+
+Le sprite des collines est sur le côté gauche de l'écran
+
+Réinitialiser sur le côté droit de l'écran
+
+Utiliser un plus grand nombre que pour les collines
+
+L'arbre est à l'extrême droite
+
+Déplacer l'arbre vers l'extrême gauche
+
+L'arbre est à l'extrême gauche
+
+Déplacer l'arbre à l'extrême droite
+
+Anime le robot pour récolter des fruits
+
+Exécuter l'animation
+
+Couleur des fruits
+
