@@ -8,7 +8,7 @@ copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: You will make
+    title: Je gaat maken
   - 
     title: Bestuur de rover
   - 
@@ -24,7 +24,7 @@ steps:
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Snelle quiz
     knowledge_quiz:
       path: quiz1
       version: 1
