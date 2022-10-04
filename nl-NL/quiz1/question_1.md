@@ -1,23 +1,23 @@
-## Quick quiz
+## Snelle quiz
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Beantwoord de drie vragen. Er zijn tips om je naar het juiste antwoord te leiden.
 
-When you have answered each question, click on **Check my answer**.
+Wanneer je elke vraag hebt beantwoord, klik je op **Verzenden**.
 
-Have fun!
+Veel plezier!
 
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Vraag 1 van 3
 ---
 
-Here is a controller that broadcasts up when the up button is clicked and down when the down button is clicked:
+Hier is een controller die omhoog uitzendt wanneer op de omhoog-knop wordt geklikt en omlaag wanneer op de omlaag-knop wordt geklikt:
 
-![four button controller](images/controller.png)
+![controller met vier knoppen](images/controller.png)
 
-Which of the following code blocks would you add to **the rover sprite** to make it move up and down
+Welke van de volgende codeblokken zou je toevoegen aan **de rover sprite** om hem omhoog en omlaag te laten bewegen
 
 --- choices ---
 
@@ -37,7 +37,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This would move the rover when it is touching the buttons, rather than when the buttons are pressed.
+  Dit zou de rover verplaatsen wanneer de knoppen worden aangeraakt, in plaats van wanneer er op de knoppen wordt gedrukt.
 
   --- /feedback ---
 
@@ -50,7 +50,7 @@ change y by (10)
 
 --- feedback ---
 
-  This would move the rover when it was clicked on, rather than when the buttons are clicked on.
+  Dit zou de rover bewegen wanneer er op de rover sprite wordt geklikt, in plaats van wanneer op de knoppen wordt geklikt.
 
   --- /feedback ---
 
@@ -67,7 +67,7 @@ change y by (-10)
 
   --- feedback ---
 
-  Yes, this script receives the up and down broadcasts from the controller buttons and gets the rover to move up and down.
+  Ja, dit script ontvangt de omhoog en omlaagsignalen van de controllerknoppen en laat de rover omhoog en omlaag bewegen.
 
   --- /feedback ---
 
@@ -85,7 +85,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This creates functions for moving up and down, but as the functions are not called, the rover would not move.
+  Dit creëert functies om omhoog en omlaag te bewegen, maar omdat de functies niet worden aangeroepen, zal de rover niet bewegen.
 
   --- /feedback ---
 
