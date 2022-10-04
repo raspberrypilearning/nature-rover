@@ -1,6 +1,6 @@
-## You will make
+## Je gaat maken
 
-Create a wilderness scene for a nature rover to explore.
+Gebruik Scratch om een wildernis-scene te maken voor een natuur-rover om te verkennen.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 <span style="color: #0faeb0">**Rovers**</span> zijn robots. Ze kunnen worden gebruikt om wetenschappelijke experimenten uit te voeren op afgelegen plaatsen, zoals Mars!  Ze onderzoeken hun omgeving en kunnen naar interessante functies worden geleid en monsters nemen. Als ze op zonne-energie werken, kunnen ze zichzelf op een zonnige plek plaatsen om hun batterijen op te laden.
@@ -18,7 +18,7 @@ Je gaat:
 
 --- no-print ---
 
-### Play ▶️
+### Afspelen ▶️
 
 --- task ---
 
