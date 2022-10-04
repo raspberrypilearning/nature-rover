@@ -1,0 +1,32 @@
+Kleiner lijkt verder weg
+
+Groter ziet er dichterbij uit
+
+Maak een kopie van de heuvels
+
+Verplaats de originele heuvels naar de rechterkant van het scherm
+
+De heuvels sprite is van de rechterkant van het scherm gevallen
+
+Reset naar de linkerkant van het scherm
+
+De heuvels sprite is van de linkerkant van het scherm gevallen
+
+Reset naar de rechterkant van het scherm
+
+Gebruik een groter getal dan voor de heuvels
+
+De boom staat nu helemaal rechts
+
+Beweeg de boom helemaal naar links
+
+De boom staat nu helemaal links
+
+Beweeg de boom helemaal naar rechts
+
+Voegt een animatie aan de robot toe om fruit te verzamelen
+
+Voer de animatie uit
+
+Kleur van het fruit
+
