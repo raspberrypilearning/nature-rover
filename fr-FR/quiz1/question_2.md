@@ -1,10 +1,7 @@
-## Réflexion
-
-
 --- question ---
 
 ---
-legend: Question 2 sur 3
+legend: Question 2 of 3
 ---
 
 Jette un coup d'oeil à ce projet montrant un rover explorant une scène de montagne.
