@@ -31,7 +31,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  Αυτό θα έκανε τη γάτα να χορέψει, αλλά δεν χρησιμοποιεί το μπλοκ `animation cat`{:class='block3myblocks'} που έχει δημιουργηθεί.
+  This would make the cat dance, but does not use the `cat animation`{:class='block3myblocks'} block that has been made.
 
   --- /feedback ---
 
