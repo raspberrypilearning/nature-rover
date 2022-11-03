@@ -31,7 +31,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  यह बिल्ली को नृत्य करा देगा, लेकिन `cat animation`{:class='block3myblocks'} का उपयोग नहीं करता है जिसे बनाया गया है।
+  This would make the cat dance, but does not use the `cat animation`{:class='block3myblocks'} block that has been made.
 
   --- /feedback ---
 
