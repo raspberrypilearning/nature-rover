@@ -31,7 +31,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  ఇది పిల్లిని నృత్యం చేయిస్తుంది, కానీ `cat animation`{:class='block3myblocks'}ని ఉపయోగించదు.
+  This would make the cat dance, but does not use the `cat animation`{:class='block3myblocks'} block that has been made.
 
   --- /feedback ---
 
