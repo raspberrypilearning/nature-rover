@@ -25,7 +25,7 @@ Welke codeblokken zouden de wolk langzamer laten bewegen dan de berg?
 - ( )
 
 ```blocks3
-when I receive [omlaag v]
+when I receive [links v]
 change x by (-5)
 
 when I receive [rechts v]
@@ -41,7 +41,7 @@ De wolk beweegt langzamer dan de berg hier, maar deze code maakt het moeilijk vo
 - ( )
 
 ```blocks3
-when I receive [omlaag v]
+when I receive [links v]
 change y by (5)
 
 when I receive [rechts v]
@@ -58,7 +58,7 @@ change y by (5)
 - ( )
 
 ```blocks3
-when I receive [omlaag v]
+when I receive [links v]
 change x by (20)
 
 when I receive [rechts v]
@@ -74,7 +74,7 @@ change y by (-20)
 - (x)
 
 ```blocks3
-when I receive [omlaag v]
+when I receive [links v]
 change x by (5)
 
 when I receive [rechts v]
