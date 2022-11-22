@@ -1,7 +1,7 @@
 --- question ---
 
 ---
-legend: Question 2 of 3
+legend: Vraag 2 van 3
 ---
 
 Bekijk dit project om een rover te tonen die een berglandschap verkent.
