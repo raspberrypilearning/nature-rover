@@ -56,7 +56,7 @@ De **rover** gaat het begin van het spel voor alle andere sprites besturen; dus 
 
 --- task ---
 
-Voeg het bericht toe aan een `wanneer op de groene vlag is geklikt`{:class='block3events'} blok.
+Voeg het bericht toe aan een blok `wanneer op de groene vlag wordt geklikt`{:class='block3events'}.
 
 ![De rover sprite.](images/rover-sprite.png)
 
