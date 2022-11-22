@@ -31,7 +31,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but does not use the `cat animation`{:class='block3myblocks'} block that has been made.
+  Dit zou de kat laten dansen, maar er wordt geen `kat animatie`{:class='block3myblocks'} gebruikt, die hiervoor werd gemaakt.
 
   --- /feedback ---
 
