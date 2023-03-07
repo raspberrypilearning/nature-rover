@@ -1,43 +1,43 @@
-up
+فوق
 
-start
+إبدأ
 
-down
+تحت
 
-right
+يمين
 
-left
+يسار
 
-scroll
+تمرير
 
-sample fruit
+عينة الفاكهة
 
-inactive
+خامل
 
-arm 1
+ذراع 1
 
-arm 2
+الذراع 2
 
-tree with fruit
+شجرة بالفاكهة
 
-tree without fruit
+شجرة بدون فاكهة
 
-recharge
+إعادة شحن
 
-solar 1
+الطاقة الشمسية 1
 
-solar 2
+الطاقة الشمسية 2
 
-solar 3
+الطاقة الشمسية 3
 
-cat animation
+تحريك القط
 
-costume 1
+زي 1
 
-costume 2
+زي 2
 
-cat dance
+رقصة القط
 
-collect sample
+جمع عيّنة
 
-energy
+طاقة
