@@ -1,8 +1,8 @@
-## Create another sample
+## قم بإنشاء عينة أخرى
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Choose what the rover samples next! Does it see a new species of plant, bug, or animal? Does it see some water or mysterious liquid? Does it want to sample some dirt or a rock, or even the air? Or something else?
+اختر ما يعينه الكشاف بعدها! هل يرى أنواع جديدة من النباتات، الحشرات، أو الحيوانات؟ هل يرى بعض الماء أو السوائل الغامضة؟ هل تريد أن تأخذ عينة من بعض التراب أو الصخور أو حتى الهواء؟ أو شيء آخر؟
 </div>
 <div>
 ![](images/step-6.gif){:width="300px"}
@@ -11,29 +11,29 @@ Choose what the rover samples next! Does it see a new species of plant, bug, or 
 
 --- task ---
 
-**Choose:** Add a new **sample** sprite for the rover to collect. You can add this to your project either by selecting one from the library or drawing your own.
+**اختر:** أضف كائن **عينة** للكشاف لجمعه. يمكنك إضافة هذا لمشروعك إما بتحديد واحد من المكتبة أو رسم واحد يخصك.
 
 --- /task ---
 
-Get your **sample** sprite to scroll. If it is low down on the screen it should move more (`change x by`{:class='block3motion'} should be higher than `5`), and if it is high up on the screen it should move less (`change x by`{:class='block3motion'} should be lower than `5`).
+احصل على كائن**عينتك** لتمرر. إذا كانت منخفضة أسفل الشاشة، يجب أن تتحرك أكثر(`بدل x بـ`{:class='block3motion'}يجب أن تكون أعلى من `5`)، و إذا كانت أعلى الشاشة يجب أن تتحرك أقل(`بدل x بـ`{:class='block3motion'} يجب أن تكون أقل من `5`).
 
 --- task ---
 
-Add code so that your sprite scrolls.
+أضف كودا بحيث يمرر كائنك.
 
 --- /task ---
 
-**Choose:** Depending on what you want the rover to sample next, you can either use the rover animations that are there already, or create more animation sequences by duplicating and editing the costumes.
+**اختر:** اعتمادا على ما تريد الكاشاف أن يعينه تاليا، يمكنك إما استخدام رسوم الكشاف المتحركة الموجودة هناك أصلا، أو خلق مزيد من متسلسلات الرسوم المتحركة بمضاعفتها و تعديل مظاهرها.
 
 --- task ---
 
-Add a `My Blocks`{:class='block3myblocks'} block to your **rover** sprite to animate the rover when it collects the new sample. You can copy and paste the code from one of the other `My Blocks`{:class='block3myblocks'} you have created.
+أضف مجموعة `مجموعاتي`{:class='block3myblocks'} إلى كائن**كشافك** لتحريك رسوم الكشاف عند جمعه لعينة جديدة. يمكنك نسخ و لصق الكود من أحد الـ `مجموعتي`{:class='block3myblocks'} الأخرى التي أنشأتها.
 
-For instance, here is a costume sequence for collecting solar energy:
+للذكر، هاهنا متسلسل مظهر لجمع الطاقة الشمسية:
 
-![Three costumes shown with the rover extending a solar panel.](images/solar-animation.png)
+![ثلاثة مظاهر معروضة مع مد الكشاف للوح شمسي.](images/solar-animation.png)
 
-To animate this series of costumes you could use the following code:
+لتحريك سلسلة المظاهر هذه يمكنك استخدام الكود التالي:
 
 ```blocks3
 define recharge
@@ -57,19 +57,19 @@ wait (0.3) seconds
 
 --- task ---
 
-Next, `broadcast`{:class='block3events'} a new message in your new `My Block`{:class='block3myblocks'} block that will cause a `costume`{:class='block3looks'} or `graphic effect`{:class='block3looks'} change in the **sample** sprite.
+التالي, `بث`{:class='block3events'} رسالة جديدة في مجموعة `مجموعتي`{:class='block3myblocks'} الجديدة التي ستسبب تغير `المظهر`{:class='block3looks'} أو `مؤثر الرسم`{:class='block3looks'} في كائن **العينة**.
 
 --- /task ---
 
 --- task ---
 
-Use an `if`{:class='block3control'} block to detect if the rover is touching the sprite or touching a colour on the sprite, so that the new `My Block`{:class='block3myblocks'} is only used then.
+استعمل مجموعة `إذا`{:class='block3control'} للكشف إذا كان الكشاف يلامس الكائن أو لون على الكائن، بحيث تكون `مجموعتي`{:class='block3myblocks'} الوحيدة المستخدمة ذلك الآن.
 
 --- /task ---
 
 --- task ---
 
-If you like, add an animation to the sprite, so that its appearance changes when the rover has collected the sample.
+إذا كنت ترغب في ذلك، أضف رسوما متحركة إلى الكائن، بحيث يتغير مظهرها عندما يكون الكشاف قد جمع العينة.
 
 --- /task ---
 
