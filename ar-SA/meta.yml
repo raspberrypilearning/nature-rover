@@ -1,30 +1,30 @@
 ---
-title: Nature rover
+title: الروبوت كشّاف الطبيعة
 hero_image: images/banner.png
-description: Use Scratch to create a wilderness scene for a nature rover to explore
+description: استخدام سكراتش لخلق مشهد برّي ليستكشفه روبوت كشّاف للطبيعة
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: You will make
+    title: سوف تصنع
   - 
-    title: Control the rover
+    title: التحكم بالروبوت الكشّاف للطبيعة
   - 
-    title: Scroll the background
+    title: تمرير الخلفية
     completion:
       - engaged
   - 
-    title: Scroll more sprites
+    title: تمرير المزيد من الكائنات
   - 
-    title: Collect a sample
+    title: جمع عيّنة
   - 
-    title: Create another sample
+    title: قم بإنشاء عينة أخرى
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: اختبار سريع
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -33,6 +33,6 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: قم بترقية مشروعك
   - 
-    title: What next?
+    title: ما التالي؟
