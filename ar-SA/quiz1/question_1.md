@@ -1,25 +1,25 @@
-## Quick quiz
+## اختبار سريع
 
-Answer the three questions. There are hints to guide you to the correct answer.
+أجب على الاسئلة الثلاثة. هناك تلميحات لإرشادك إلى الإجابة الصحيحة.
 
-When you have answered each question, click on **Check my answer**.
+عندما تجيب على كل سؤال، انقر فوق **تحقق من إجابتي**.
 
-Have fun!
+استمتع!
 
 
---- question ---
+--- سؤال ---
 
 ---
-legend: Question 1 of 3
+القائمة: السؤال 1 من 3
 ---
 
-Here is a controller that broadcasts up when the up button is clicked and down when the down button is clicked:
+إليك وحدة تحكم تقوم بالبث لأعلى عند النقر فوق الزر لأعلى وأسفل عند النقر على الزر أسفل:
 
-![four button controller](images/controller.png)
+![أربعة أزرار تحكم](images/controller.png)
 
-Which of the following code blocks would you add to **the rover sprite** to make it move up and down
+أي من مجموعات الأكواد التالية ستضيفها **لكائن الكشاف** لجعله يتحرك للأعلى و الأسفل
 
---- choices ---
+--- اختيارات ---
 
 - ( )
 
@@ -35,11 +35,11 @@ change y by (-10)
 ```
 
 
-  --- feedback ---
+  --- تعليق ---
 
-  This would move the rover when it is touching the buttons, rather than when the buttons are pressed.
+  هذا سيحرك الكشاف عند لمسه للزر، بدلاً من عند ضغط الزر.
 
-  --- /feedback ---
+  --- /تعليق ---
 
 - ( )
 
@@ -48,11 +48,11 @@ when this sprite clicked
 change y by (10)
 ```
 
---- feedback ---
+--- تعليق ---
 
-  This would move the rover when it was clicked on, rather than when the buttons are clicked on.
+  هذا سيحرك الكشاف عند نقره، بدلاً من عند نقر الأزرار.
 
-  --- /feedback ---
+  --- /تعليق ---
 
 - (x)
 
@@ -65,11 +65,11 @@ change y by (-10)
 
 ```
 
-  --- feedback ---
+  --- تعليق ---
 
-  Yes, this script receives the up and down broadcasts from the controller buttons and gets the rover to move up and down.
+  نعم، يتلقى هذا البرنامج النصي عمليات البث لأعلى ولأسفل من أزرار وحدة التحكم ويجعل الكشاف يتحرك لأعلى ولأسفل.
 
-  --- /feedback ---
+  --- /تعليق ---
 
 - ( )
 
@@ -83,12 +83,12 @@ change y by (-10)
 ```
 
 
-  --- feedback ---
+  --- تعليق ---
 
-  This creates functions for moving up and down, but as the functions are not called, the rover would not move.
+  هذا ينشئ دالة للتحرك لأعلى و أسفل، لكن بما أن الدوال لم تُستدعى، الكشاف لن يتحرك.
 
-  --- /feedback ---
+  --- /تعليق ---
 
---- /choices ---
+--- /اختيارات ---
 
---- /question ---
+--- /سؤال ---
