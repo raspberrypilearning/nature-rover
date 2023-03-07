@@ -1,21 +1,21 @@
-## Scroll more sprites
+## تمرير المزيد من الكائنات
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-When adding more sprites to your scene, these need to scroll left and right as well.
+عند إضافة المزيد من الكائنات لمشهدك، تحتاج هذه إلى التمرير إلى اليسار واليمين أيضًا.
 </div>
 <div>
 ![](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
-Now you can add some more objects to your scene, and scroll them in a similar way.
+يمكنك الآن إضافة المزيد من الأشياء لمشهدك، وتمريرها بطريقة مماثلة.
 
 --- task ---
 
-Add a **tree** sprite to your project, and then set its starting position.
+أضف كائن **شجرة** إلى مشروعك، ثم اضبط موضع البداية.
 
-![The tree sprite.](images/tree-sprite.png)
+![كائن الشجرة.](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
 go to x:(0) y:(-80)
@@ -23,17 +23,17 @@ go to x:(0) y:(-80)
 
 --- /task ---
 
-The **tree** sprite should also move in the **opposite** direction to the broadcast as well.
+كائن **الشجرة** يجب أيضا أن يتحرك إلى الجانب **المقابل** للبث كذلك.
 
-![Animation of a tree moving right and left, showing the x coordinate changing.](images/scrolling-tree.gif)
+![تحريك الشجرة المتحركة لليمين واليسار، يظهر تغير في الإحداثيات x.](images/scrolling-tree.gif)
 
-As the tree is closer to the viewer, it should appear to move a greater distance than the hills each time the button or key is pressed.
+بما أن الشجرة أقرب إلى المشاهد، يجب أن تبدو تتحرك مسافة أكبر من التلال كل مرة يُضغط الزر أو المفتاح.
 
 --- task ---
 
-To get this moving effect, change the `x`{:class='block3motion'} values that the **tree** sprite moves by when the `left`{:class="block3events"} and `right`{:class="block3events"} broadcasts are received.
+لتحصل على هذا المؤثر الحركي’ غيّر قيمة الـ`<code>x`{:class='block3motion'} التي تحرك كائن **الشجرة** عندما يُبث أو يُستقبل `اليسار`{:class="block3events"}و <0>اليمين</code>{:class="block3events"}.
 
-![The tree sprite.](images/tree-sprite.png)
+![كائن الشجرة.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -47,19 +47,19 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**Test:** Check your left and right buttons now. The tree should move each time you click on the controller.
+**اختبار:** تحقق من زرك اليسار و اليمين الآن. الشجرة يجب أن تتحرك كلما ضغطت على المتحكم.
 
-**Test:** What happens if you go as far away from the tree as you can?
+**اختبار:** ماذا يحدث إذا ابتعدت عن الشجرة قدرما أمكن؟
 
 --- /task ---
 
-Did you notice that when the tree reaches the very edge of the screen, it stops moving? You can fix this by moving the tree to the other side of the screen, when its `x`{:class='block3motion'} coordinate is too high or too low.
+هل لاحظت أن الشجرة عندما تصل إلى أقصى حافة الشاشة، تتوقف عن الحركة؟ يمكنك إصلاح هذا بتحريك الشجرة إلى الجانب الآخر من الشاشة، عندما تكون الإحداثية `×`{: class = 'block3motion'} جد مرتفعة أو جد منخفضة.
 
 --- task ---
 
-Using a `forever`{:class='block3control'} loop, and `if`{:class='block3control'} blocks, check the `x`{:class='block3motion'} coordinate of the tree, and move it to the other side of the screen when `x`{:class='block3motion'} is higher than `290` or lower than `-290`.
+مستخدما حلقة `دائما`{:class='block3control'}, و مجموعة `إذا`{:class='block3control'}, تحقق إحداثية الشجرة `x`{:class='block3motion'}, و حركها إلى الجانب الآخر من الشاشة عندما يكون `x`{:class='block3motion'} أكبر من `290` أو أصغر من `-290`.
 
-![The tree sprite.](images/tree-sprite.png)
+![كائن الشجرة.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -78,15 +78,15 @@ end
 
 --- task ---
 
-Now move your **rover** sprite around the screen. When the tree reaches the edge, it should vanish off the edge of the screen and reappear on the other side.
+الآن حرك كائن **كشافك** في أرجاء الشاشة. عندما تصل الشجرة إلى الحافة، يجب أن تتلاشى من حافة الشاشة وتعاود الظهور على الجانب الآخر.
 
 --- /task ---
 
 --- task ---
 
-Lastly, make the **rover** turn left and right so that it faces the direction it is moving in.
+أخيرا, اجعل **الكشاف** يدور يسارا و يمينا حتى يواجه الإتجاه الذي يسير فيه.
 
-![The rover sprite.](images/rover-sprite.png)
+![كائن الكشّاف.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -104,6 +104,6 @@ point in direction (90)
 
 --- task ---
 
-**Test**: Run your project and test it. Make sure the tree appears to fall off the edge of the screen and appears on the other side when the rover moves.
+**اختبار:**شغل مشروعك و اختبره. تأكد من ظهور الشجرة تسقط من حافة الشاشة و تظهر على الجانب الآخر عندما يتحرك الكشاف.
 
 --- /task ---
