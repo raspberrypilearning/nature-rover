@@ -1,14 +1,14 @@
-## Upgrade your project
+## قم بترقية او تطوير مشروعك
 
-Make your rover interact with the nature scene even more, similar to how a real rover would behave.
+اجعل كشافك يتعامل مع مشهد الطبيعة أكثر، بشكل مشابه لكيفية تصرف الكشاف الحقيقي.
 
-You can:
-- Add even more samples to your project, using the prebuilt animations or ones you create yourself
-- Use variables to count samples; increase the count each time a sample is collected
-- Introduce an energy variable so that the rover has to use a renewable energy source like the sun, to recharge
-- Animate the rover when it has collected enough samples (for example, it could do a dance and then fly away)
+تستطيع:
+- أضف عينات أكثر لمشروعك، مستعملا الرسوم المتحركة الجاهزة أو التي أنشأتها أنت
+- استعمل المتغيرات لعد العينات، زد العد كل مرة تُجمع فيه عينة
+- أدخل متغير للطاقة حتى يتسنى للكشاف استعمال مصدر طاقة متجدد كالشمس ليشحن.
+- حرك الكشاف عند جمعه لعينات كافية (مثلاً، يمكنه فعل رقصة من ثم يطير بعيدا)
 
-You can use any of the blocks that you learned about in this project, as well as those that you already know.
+يمكنك استخدام أي من الكتل التي تعلمتها في هذا المشروع ، بالإضافة إلى تلك التي تعرفها بالفعل.
 
 ```blocks3
 define collect sample ::custom
@@ -31,7 +31,7 @@ if <touching color (#FFAA00) ?> then
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/536887721/?autostart=false" frameborder="0"></iframe>
 </div>
 
-You can view the complete project [here](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
+يمكنك معاينة كل المشروع [هنا](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
 
 
 
