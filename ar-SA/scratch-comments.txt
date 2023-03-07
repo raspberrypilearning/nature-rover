@@ -1,32 +1,32 @@
-Smaller looks further away
+الأصغر يظهر أبعد
 
-Bigger looks closer
+الأكبر يظهر أقرب
 
-Create a copy of the hills
+قم بإنشاء نسخة من التلال
 
-Move the original hills to the right of the screen
+انقل التلال الأصلية إلى يمين الشاشة
 
-The hills sprite is off the right side of the screen
+كائن التلال يوجد خارج الجانب الأيمن للشاشة
 
-Reset to the left side of the screen
+إعادة التعيين إلى الجانب الأيسر للشاشة
 
-The hills sprite is off the left side of the screen
+كائن التلال يوجد خارج الجانب الأيسر للشاشة
 
-Reset to the right side of the screen
+إعادة التعيين إلى الجانب الأيمن للشاشة
 
-Use a bigger number than for the hills
+استخدم رقمًا أكبر من رقم التلال
 
-The tree is at the far right
+الشجرة في أقصى اليمين
 
-Move the tree to the far left
+انقل الشجرة إلى أقصى اليسار
 
-The tree is at the far left
+الشجرة في أقصى اليسار
 
-Move the tree to the far right
+انقل الشجرة إلى أقصى اليمين
 
-Animates the robot to collect fruit
+حرّك الروبوت لجمع الفاكهة
 
-Run the animation
+شغّل الرسوم المتحركة
 
-Colour of fruit
+لون الفاكهة
 
