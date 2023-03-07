@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+القائمة: السؤال 3 من 3
 ---
 
-This script is a function that is used to get a cat to dance:
+هذا البرنامج النصي هو دالة تستخدم للحصول على قطة للرقص:
 
 ```blocks3
 define cat animation
@@ -15,7 +15,7 @@ switch costume to [costume 2 v]
 wait (0.1) seconds
 ```
 
-Which of the following scripts would use the `cat animation`{:class='block3myblocks'} above to make the cat dance when the Sprite is clicked?
+أي من النصوص البرمجية التالية سيستخدم `الرسوم المتحركة للقطط`{: class = 'block3myblocks'} أعلاه لجعل القطة ترقص عند النقر فوق Sprite؟
 
 --- choices ---
 
@@ -31,7 +31,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but does not use the `cat animation`{:class='block3myblocks'} block that has been made.
+  هذا سيجعل القط يرقص، و لكن لا يستعمل `رسوم القط المتحركة`{:class='block3myblocks'} التي تم إنشاؤها.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ cat dance ::custom
 
   --- feedback ---
 
-  This is calling a `cat dance`{:class='block3myblocks'} block, but not the cat `cat animation`{:class='block3myblocks'} block.
+  هذه تدعى مجموعة `رقصة القط`{:class='block3myblocks'}، و ليس مجموعة`رسوم القط المتحركة`{:class='block3myblocks'}.
 
   --- /feedback ---
 
@@ -60,7 +60,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but not when the sprite is clicked. It also does not use the `cat animation`{:class='block3myblocks'} block.
+  هذا سيجعل القط يرقص، لكن ليس عندما يتم نقر الكائن. كما أنه لا بستعمل مجموعة `رسوم القط المتحركة`{:class='block3myblocks'}.
 
   --- /feedback ---
 
@@ -73,7 +73,7 @@ cat animation ::custom
 
   --- feedback ---
 
-Yes, in this answer, the `cat animation`{:class='block3myblocks'} block is used when the sprite is clicked, causing the cat to dance.
+نعم، في هذا الجواب مجموعة `رسوم القط المتحركة`{:class='block3myblocks'} استُعملت عند نقر القط, جاعلة القط يرقص.
 
   --- /feedback ---
 
