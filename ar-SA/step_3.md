@@ -1,8 +1,8 @@
-## Scroll the background
+## تمرير الخلفية
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For the rover to look like it's moving left and right, instead of the **rover** sprite moving, the **background** sprite moves or scrolls to the left or right.
+ليبدو الكشاف كأنه يتحرك لليسار و اليمين، بدلا من تحرك كائن **الكشاف**، كائن **الخلفية** يتحرك أو يمرر لليمين أو اليسار.
 </div>
 <div>
 ![](images/step-3.gif){:width="300px"}
@@ -11,9 +11,9 @@ For the rover to look like it's moving left and right, instead of the **rover** 
 
 --- task ---
 
-Select the **hills** sprite. At the start of the game, you need to make sure that it is in the correct position and on the back layer.
+عين كائن**التلال**. في بداية اللعبة، عليك التأكد أنه في الموضع الصحيح وعلى الطبقة الخلفية.
 
-![The hills sprite.](images/hills-sprite.png)
+![كائن التلال.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -24,14 +24,14 @@ go to x: (0) y: (0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Layers**</span> are like stacked sheets of clear plastic that you can draw images on. If an image on the top of the stack is covering the image below it, you will not be able to see the bottom image properly. Background images should be near the **back** layer. Images closer to the viewer should be near the **front** layer.
+<span style="color: #0faeb0">**الطبقات**</span> هي كصفائح بلاستيكية شفافة مكدسة يمكن الرسم عليها. إذا كانت هناك صورة على الطبقة العلوية تحجب صورة أسفلها، فلن تستطيع رؤية الصورة السفلية جيداً. الصور الخلفية يجب أن تكون قرب الطبقة **الخلفية**. الصور الأقرب للمشاهد يجب أن تكون قريبة من الطبقة **العلوية**.
 </p>
 
 --- task ---
 
-The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3control'}. Then, the original sprite can be moved to the far right-hand side of the screen.
+كائنات **التلال**يجب أن تنسخ نفسها. هذه تدعى `مستنسخات`{:class='block3control'}. بعدها، الكائن الأصلي يمكن نقله إلى أقصى الجانب الأيمن من الشاشة.
 
-![The hills sprite.](images/hills-sprite.png)
+![كائن التلال.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -43,17 +43,17 @@ go to x: (0) y: (0)
 
 --- /task ---
 
-When the `left`{:class='block3events'} and `right`{:class='block3events'} broadcasts are received, the **hills** sprite should move. To give the appearance of moving in the correct direction, the background moves **left** when the **rover** is moving right. The direction of motion should be **opposite** to the `broadcast`{:class='block3events'}.
+عندما يتم استلام بث `اليسار`{:class='block3events'} و `اليمين`{:class='block3events'}، كائنات **التلال** يجب أن تتحرك. لإعطاء مظهر الحركة في الاتجاه الصحيح، الخلفية تتحرك **يسارا** عندما يتحرك **الكشاف** يمينا. اتجاه الحركة يجب أن يكون **عكس** `البث`{:class='block3events'}.
 
-So, if the broadcast is `left`{:class="block3events"}, then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"}, then the `x`{:class="block3motion"} of the **hills** will decrease.
+لذلك, إذا كان البث `يسارا`{:class="block3events"}، إذاً الموضع `x`{:class="block3motion"} سيزداد. لذلك، إذا كان البث `يمينا`{:class="block3events"}، إذا موضع **التلال** `x`{:class="block3motion"} سينخفض.
 
-![Scratch stage shown with a sprite in the bottom right-hand corner and an x y coordinate system shown as the backdrop.](images/scratch-grid.png)
+![منصة سكراتش تظهر بكائن في الزاوية أسفل يدك اليمنى و نظام إحداثيات x y يظهر كخلفية.](images/scratch-grid.png)
 
 --- task ---
 
-Add blocks to control the motion of the **hills** sprite and its clone.
+أضف مجموعة للتحكم في حركة كائن **التلال** ومستنسخاته.
 
-![The hills sprite.](images/hills-sprite.png)
+![كائن التلال.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -67,19 +67,19 @@ change x by (-3)
 
 --- task ---
 
-**Test**: Use the controller or the <kbd>arrow</kbd> keys to move around. The rover should appear to be moving left and right.
+**اختبار**: استخدم المتحكم أو أزرار <kbd>الأسهم </kbd> للتحرك في الأرجاء. يفترض أن يبدو الكشاف يتحرك يسارا أو يمينا.
 
 --- /task ---
 
-At the moment, there are two copies of the **hills** sprite: the original and a clone. When you get to the end of either one, you'll notice that the screen is just white.
+حاليا، هناك نسختان من كائن **التلال**: الأصلي و المستنسخ. عندما تصل لنهاية أي منهما، ستلاحظ أن الشاشة بيضاء فقط.
 
-To fix this, the sprite and its clone need to be moved to the other side of the screen when they go too far.
+لإصلاح هذا، يجب تحريك الكائن و مستنسخه إلى جهة أخرى من الشاشة عندما يذهبان بعيدا.
 
 --- task ---
 
-Create a new broadcast called `scroll`{:class='block3events'} and add it to the `start`{:class='block3events'} script.
+أنشئ بث جديد يدعى `تمرير`{:class='block3events'} و أضفه إلى البرنامج النصي `بداية`{:class='block3events'}.
 
-![The hills sprite.](images/hills-sprite.png)
+![كائن التلال.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -94,9 +94,9 @@ change x by (460)
 
 --- task ---
 
-Add code to detect if the **hills** sprite or its clone have moved too far to the left or right, and then reset their positions to the other side of the screen.
+أضف تعليمة برمجية للكشف عما إذا كان كائن **التلال** أو استنساخه قد تحركت بعيدا جدا إلى اليسار أو اليمين ثم أعد تعيين مواقعهم على الجانب الآخر من الشاشة.
 
-![The hills sprite.](images/hills-sprite.png)
+![كائن التلال.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [scroll v]
@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**Test**: Use the controller or <kbd>arrow</kbd> keys to move the **rover**. The background should scroll, and the **rover** should never reach the end.
+**اختبار**: استخدم المتحكم أو أزرار <kbd>الأسهم </kbd> للتحريك **الكشاف**. يجب أن تمرر الخلفية، و **الكشاف** يجب أن لا يصل النهاية أبداً.
 
 --- /task ---
 
