@@ -1,0 +1,29 @@
+---
+title: الروبوت كشّاف الطبيعة
+hero_image: images/banner.png
+description: استخدام سكراتش لخلق مشهد برّي ليستكشفه روبوت كشّاف للطبيعة
+version: 4
+listed: true
+copyedit: true
+last_tested: "2021-03-26"
+steps:
+  - title: سوف تصنع
+  - title: التحكم بالروبوت الكشّاف للطبيعة
+  - title: تمرير الخلفية
+    completion:
+      - engaged
+  - title: تمرير المزيد من الكائنات
+  - title: جمع عيّنة
+  - title: قم بإنشاء عينة أخرى
+    completion:
+      - internal
+  - title: اختبار سريع
+    knowledge_quiz:
+      path: quiz1
+      version: 1
+      questions: 3
+      passing_score: 3
+    completion:
+      - external
+  - title: قم بترقية مشروعك
+  - title: ما التالي؟
