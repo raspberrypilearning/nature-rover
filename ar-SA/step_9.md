@@ -1,4 +1,4 @@
-## ما هي الخطوة التالية؟
+## ما التالي؟
 
 إذا كنت تتابع مسار [سكراتش أكثر](https://projects.raspberrypi.org/ar-SA/pathways/further-scratch)، يمكنك المضي قدما في مشروع [ غرفة الأحاجي](https://projects.raspberrypi.org/ar-SA/projects/puzzle-room). في هذا المشروع، ستصنع غرفة أحاجي سفينة فضائية مع شخصيات تحل الأحاجي.
 
