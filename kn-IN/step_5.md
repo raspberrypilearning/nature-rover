@@ -5,7 +5,7 @@
 ಈ ಹಂತದಲ್ಲಿ, ರೋವರ್ ಮಾದರಿಗಳನ್ನು ಸಂಗ್ರಹಿಸುವುದನ್ನು ತೋರಿಸಲು ನೀವು ಸ್ಪ್ರೈಟ್ ಮತ್ತು ರೋವರ್‌ನ ನೋಟವನ್ನು ಬದಲಾಯಿಸುತ್ತೀರಿ.
 </div>
 <div>
-![](images/step-4.gif){:width="300px"}
+![Animation of the rover moving across the stage, from time to time the rover appears to move further into the background getting smaller and then returning to the foreground](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
