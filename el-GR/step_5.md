@@ -5,7 +5,7 @@
 Σε αυτό το βήμα, θα αλλάξεις την εμφάνιση ενός αντικειμένου και του rover για να εμφανίσεις το ρομποτικό όχημα να συλλέγει δείγματα.
 </div>
 <div>
-![](images/step-4.gif){:width="300px"}
+![Animation of the rover moving across the stage, from time to time the rover appears to move further into the background getting smaller and then returning to the foreground](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
