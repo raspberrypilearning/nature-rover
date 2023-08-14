@@ -47,7 +47,7 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**चाचणी:** आता तुमचे डावे आणि उजवे बटन तपासा. तुम्ही प्रत्येक वेळी कंट्रोलरवर क्लिक केल्यावर झाड हलायला हवे.
+**Test:** Click the green flag and check your left and right buttons now. तुम्ही प्रत्येक वेळी कंट्रोलरवर क्लिक केल्यावर झाड हलायला हवे.
 
 **चाचणी:** तुम्ही झाडापासून शक्य तेवढे दूर गेल्यावर काय घडते?
 
@@ -84,7 +84,7 @@ end
 
 --- task ---
 
-शेवटी, **rover** डावीकडे आणि उजवीकडे वळू द्या जेणेकरून तो हलणाऱ्या दिशेकडे तोंड करून असेल.
+Lastly, make the **rover** turn left and right so that it faces the direction it is moving in, and resets at the start.
 
 ![rover स्प्राईट.](images/rover-sprite.png)
 
@@ -98,6 +98,12 @@ point in direction (-90)
 
 when I receive [right v]
 point in direction (90)
+
+when I receive [start v]
+set size to (50) %
+go to x: (0) y: (-90)
+go to [front v] layer
++ point in direction (90)
 ```
 
 --- /task ---
