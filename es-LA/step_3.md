@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**Test**: Use the controller or <kbd>arrow</kbd> keys to move the **rover**. The background should scroll, and the **rover** should never reach the end.
+**Test**: Click the green flag to reset the scene and then use the controller or <kbd>arrow</kbd> keys to move the **rover**. The background should scroll, and the **rover** should never reach the end.
 
 --- /task ---
 
