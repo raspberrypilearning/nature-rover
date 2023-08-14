@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**Test** : Utilise les touches du contrôleur ou de la <kbd>flèche</kbd> pour déplacer le **rover**. L'arrière-plan devrait défiler, et le **rover** ne devrait jamais atteindre la fin.
+**Test**: Click the green flag to reset the scene and then use the controller or <kbd>arrow</kbd> keys to move the **rover**. L'arrière-plan devrait défiler, et le **rover** ne devrait jamais atteindre la fin.
 
 --- /task ---
 
