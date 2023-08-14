@@ -47,7 +47,7 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**Test :** Vérifie maintenant tes boutons gauche et droite. L'arbre doit se déplacer à chaque fois que tu cliques sur le contrôleur.
+**Test:** Click the green flag and check your left and right buttons now. L'arbre doit se déplacer à chaque fois que tu cliques sur le contrôleur.
 
 **Test :** Que se passe-t-il si tu t'éloignes le plus possible de l'arbre ?
 
@@ -84,7 +84,7 @@ Maintenant, déplace ton sprite **rover** sur l'écran. Lorsque l'arbre atteint 
 
 --- task ---
 
-Enfin, fais tourner le **rover** à gauche et à droite pour qu'il fasse face à la direction dans laquelle il se déplace.
+Lastly, make the **rover** turn left and right so that it faces the direction it is moving in, and resets at the start.
 
 ![Le sprite rover.](images/rover-sprite.png)
 
@@ -98,6 +98,12 @@ point in direction (-90)
 
 when I receive [right v]
 point in direction (90)
+
+when I receive [start v]
+set size to (50) %
+go to x: (0) y: (-90)
+go to [front v] layer
++ point in direction (90)
 ```
 
 --- /task ---
