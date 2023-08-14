@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**Δοκιμή**: Χρησιμοποίησε το χειριστήριο ή τα πλήκτρα <kbd>βελάκια</kbd> για να μετακινήσεις το **rover**. Το φόντο πρέπει να κυλήσει και το **rover** δεν πρέπει ποτέ να φτάσει στο τέλος.
+**Test**: Click the green flag to reset the scene and then use the controller or <kbd>arrow</kbd> keys to move the **rover**. Το φόντο πρέπει να κυλήσει και το **rover** δεν πρέπει ποτέ να φτάσει στο τέλος.
 
 --- /task ---
 
