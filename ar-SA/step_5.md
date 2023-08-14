@@ -67,7 +67,7 @@ switch costume to (inactive v)
 
 --- task ---
 
-أضف مجموعة بحيث كائن **الكشاف** يصدر صوتاً عندما يجمع عينة فاكهة.
+Add a block so that the **rover** sprite plays a sound when it collects the fruit sample. You can find the **Collect** sound in the Sound gallery.
 
 ![كائن الكشاف.](images/rover-sprite.png)
 
@@ -119,15 +119,17 @@ sample fruit ::custom //Run the animation
 
 --- task ---
 
-كائن **الشجرة** يجب تعديله ليعطي مظهرين مختلفين. واحد مع فاكهة على(`شجرة بفاكهة`{:class="block3looks"})، و واحدة بدون فاكهة (`شجرة بلا فاكهة`{:class="block3looks"}). عدل أحد الأزياء، بحيث يكون لـ **الشجرة** مظهرين مختلفين.
+The **tree** sprite needs two costumes, one without fruit on (`tree without fruit`{:class="block3looks"}), and one with fruit (`tree with fruit`{:class="block3looks"}). Add another costume to the **tree**, change the names and draw some fruit on the **with fruit** one.
+
+![The 'tree with fruit' costume, with 5 light red circles on it to represent fruit](images/tree-with-fruit.png)
 
 --- /task ---
 
 --- task ---
 
-على كائن **الشجرة**، أضف مجموعة لتعيين مظهر **الشجرة** في بداية المشروع، و الزي يجب أن يتبدل عندما يستقبل عينة `عينة فاكهة`{:class="block3events"}.
+On the **tree** sprite, add blocks to set the costume of the **tree** at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
 
-![كائن الشجرة.](images/tree-sprite.png)
+![The tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -150,9 +152,9 @@ end
 
 --- task ---
 
-على كائن **الكشاف**، يمكنك استعمال `البث`{:class="block3events"} الجديد لإطلاق تبدل المظهر. أضف هذ `البث`{:class="block3events"} الجديد إلى دالتك `عرف عينة فاكهة`{:class="block3myblocks"}.
+On the **rover** sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new `broadcast`{:class="block3events"} into your `define sample fruit`{:class="block3myblocks"} function.
 
-![كائن الكشاف.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -161,6 +163,7 @@ wait (0.3) seconds
 switch costume to (arm 1 v)
 wait (0.3) seconds
 switch costume to (arm 2 v)
+start sound (Collect v)
 wait (0.3) seconds
 + broadcast (sample fruit v)
 switch costume to (arm 1 v)
@@ -172,21 +175,21 @@ switch costume to (inactive v)
 
 --- task ---
 
-**اختبار:** للتحقق من عمل الكود الخاص بك، انقر فوق العلم، من ثم انقر على كائن **الكشاف**. يجب أن يمتد ذراعه، كائن **الشجرة** يفترض تغيير مظهره.
+**Test:** To check that your code is working, click on the flag, and then click on your **rover** sprite. Its arm should extend, and the **tree** sprite should change costumes.
 
-**نصيحة:** بدل إلى وضع شاشة كاملة و ستصبح رؤية الرسوم المتحركة أسهل.
+**Tip:** Switch to full screen mode and you will be able to see the animation more easily.
 
 --- /task ---
 
-ينبغي أن يكون الكشاف قادراً على جمع الثمار فقط إذا لمسها.
+The rover should only be able to collect the fruit, if it is touching it.
 
 --- task ---
 
-على كائن **الكشاف**، غير مجموعة المجموعات `عند النقر على هذا الكائن`{:class="block3events"}، بحيث الدالة `عينة فاكهة`{:class="block3myblocks"} تستدعى فقط إذا كان كائن **الكشاف** يلامس لون فاكهتك.
+On the **rover** sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the **rover** sprite is touching the colour of your fruit.
 
-**نصيحة:** تغير مظهر من الإختبار قد يعني أن فاكهتك شفافة. فقط انقر على تبويب المظهر لكائن **الشجرة** و بدل للمظهر مع الفواكه الشفافة.
+**Tip:** Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
 
-![كائن الكشاف.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -198,9 +201,9 @@ sample fruit ::custom
 
 --- task ---
 
-الآن بما أن كائن **الشجرة** يتغير عند تعيين فاكهة، تحتاج إعادة تعيين الكائن لمظهره الأول عندما يخرج من الشاشة.
+Now that the **tree** sprite changes when a fruit is sampled, you need to reset the sprite to its first costume when it goes off the screen.
 
-![كائن الشجرة.](images/tree-sprite.png)
+![The tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -222,7 +225,7 @@ end
 
 --- task ---
 
-**اختبار:** حرك كائن **الكشاف** بحيث يكون يلمس الفاكهة، ثم انقر على كائن **الكشاف** و شاهده يجمع الفواكه من الشجرة.
+**Test:** Move the **rover** sprite so that it is touching the fruit, then click on the **rover** sprite and watch it collect the fruit from the tree.
 
 --- /task ---
 
