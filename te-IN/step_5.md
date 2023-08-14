@@ -67,7 +67,7 @@ switch costume to (inactive v)
 
 --- task ---
 
-పండ్ల నమూనాను సేకరించినప్పుడు **rover** sprite ధ్వనిని ప్లే చేసేలా బ్లాక్‌ను జోడించండి.
+Add a block so that the **rover** sprite plays a sound when it collects the fruit sample. You can find the **Collect** sound in the Sound gallery.
 
 ![Rover sprite.](images/rover-sprite.png)
 
@@ -119,15 +119,17 @@ sample fruit ::custom //Run the animation
 
 --- task ---
 
-**tree** spriteకి రెండు వేర్వేరు costumes ఉండేలా ఎడిట్ చేయాలి. పండుని కలిగింది ఒకటి (`tree with fruit`{:class="block3looks"}), మరియు పండు లేనిది ఒకటి (`tree without fruit`{:class="block3looks"}). Costumesలో ఒకదానిని ఎడిట్ చేయండి, తద్వారా **tree** లో రెండు వేర్వేరు costumes ఉంటాయి.
+The **tree** sprite needs two costumes, one without fruit on (`tree without fruit`{:class="block3looks"}), and one with fruit (`tree with fruit`{:class="block3looks"}). Add another costume to the **tree**, change the names and draw some fruit on the **with fruit** one.
+
+![The 'tree with fruit' costume, with 5 light red circles on it to represent fruit](images/tree-with-fruit.png)
 
 --- /task ---
 
 --- task ---
 
-**tree** sprite లో, ప్రాజెక్ట్ ప్రారంభంలో **tree** costume ను మరియు `sample fruit`{:class="block3events"} బ్రాడ్ కాస్ట్ ని అందుకున్నప్పుడు అది మారవలసిన costume ను, సెట్ చేయడానికి బ్లాక్‌లను జోడించండి.
+On the **tree** sprite, add blocks to set the costume of the **tree** at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
 
-![Tree sprite.](images/tree-sprite.png)
+![The tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -150,9 +152,9 @@ end
 
 --- task ---
 
-**rover** sprite లో, costume మార్పు చేయడానికి, మీరు కొత్త `broadcast`{:class="block3events"} ని ఉపయోగించవచ్చు. ఈ కొత్త `broadcast`{:class="block3events"} ని, మీ `define sample fruit`{:class="block3myblocks"} ఫంక్షన్ లోనికి జోడింఛండి.
+On the **rover** sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new `broadcast`{:class="block3events"} into your `define sample fruit`{:class="block3myblocks"} function.
 
-![Rover sprite.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -161,6 +163,7 @@ wait (0.3) seconds
 switch costume to (arm 1 v)
 wait (0.3) seconds
 switch costume to (arm 2 v)
+start sound (Collect v)
 wait (0.3) seconds
 + broadcast (sample fruit v)
 switch costume to (arm 1 v)
@@ -172,21 +175,21 @@ switch costume to (inactive v)
 
 --- task ---
 
-**పరీక్ష:** మీ కోడ్ పని చేస్తుందో లేదో తనిఖీ చేయడానికి, ఫ్లాగ్‌పై క్లిక్ చేసి, ఆపై మీ **rover** sprite పై క్లిక్ చేయండి. దాని చేయి విస్తరించాలి మరియు **tree** sprite costume లను మార్చాలి.
+**Test:** To check that your code is working, click on the flag, and then click on your **rover** sprite. Its arm should extend, and the **tree** sprite should change costumes.
 
-**చిట్కా:** పూర్తి స్క్రీన్ మోడ్‌కి మారండి మరియు మీరు యానిమేషన్‌ను మరింత సులభంగా చూడగలరు.
+**Tip:** Switch to full screen mode and you will be able to see the animation more easily.
 
 --- /task ---
 
-రోవర్ పండ్లను తాకినట్లయితే మాత్రమే దానిని సేకరించగలగాలి.
+The rover should only be able to collect the fruit, if it is touching it.
 
 --- task ---
 
-**rover** sprite పైన, `when this sprite clicked`{:class="block3events"} బ్లాకుల సెట్ ను మార్చండి, తద్వారా **rover** sprite పండు కలర్ ను తాకినప్పుడు మాత్రమే, `sample fruit`{:class="block3myblocks"} ఫంక్షన్ పిలవబడుతుంది.
+On the **rover** sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the **rover** sprite is touching the colour of your fruit.
 
-**చిట్కా:** టెస్టింగ్ నుండి మీ costume మారడం వల్ల పండు కనిపించడం లేదని అర్థం కావచ్చు. **tree** sprite కోసం costume ట్యాబ్‌పై క్లిక్ చేసి, కనిపించే పండుతో గల costumeకి మారండి.
+**Tip:** Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
 
-![Rover sprite.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -198,9 +201,9 @@ sample fruit ::custom
 
 --- task ---
 
-ఇప్పుడు **tree** sprite ఒక పండును శాంపిల్ చేసినప్పుడు మారుతుంది, కాబట్టి మీరు sprite స్క్రీన్‌పైకి వెళ్లినప్పుడు దాని మొదటి కాస్ట్యూమ్‌కి రీసెట్ చేయాలి.
+Now that the **tree** sprite changes when a fruit is sampled, you need to reset the sprite to its first costume when it goes off the screen.
 
-![Tree sprite.](images/tree-sprite.png)
+![The tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -222,7 +225,7 @@ end
 
 --- task ---
 
-**పరీక్ష:** **rover** sprite ను అది పండ్లను తాకేలా తరలించి, ఆపై **rover** sprite పై క్లిక్ చేసి, చెట్టు నుండి పండ్లను సేకరించడాన్ని చూడండి.
+**Test:** Move the **rover** sprite so that it is touching the fruit, then click on the **rover** sprite and watch it collect the fruit from the tree.
 
 --- /task ---
 
