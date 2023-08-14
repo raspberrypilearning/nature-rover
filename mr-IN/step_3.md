@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**चाचणी **: कंट्रोलर किंवा <kbd>arrow</kbd> की चा वापर करा **rover** हलविण्यासाठी. बॅकग्राऊंड स्क्रोल करायला हवा, आणि **rover** ने कधिही शेवटी पोहोचायला नको.
+**Test**: Click the green flag to reset the scene and then use the controller or <kbd>arrow</kbd> keys to move the **rover**. बॅकग्राऊंड स्क्रोल करायला हवा, आणि **rover** ने कधिही शेवटी पोहोचायला नको.
 
 --- /task ---
 
