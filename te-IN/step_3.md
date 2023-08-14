@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**పరీక్ష** **rover**ని తరలించడానికి కంట్రోలర్ లేదా <kbd>arrow</kbd> కీ లను ఉపయోగించండి. బాక్ గ్రౌండ్ స్క్రోల్ చేయాలి మరియు **rover** ఎప్పటికీ చివరకు చేరుకోకూడదు.
+**Test**: Click the green flag to reset the scene and then use the controller or <kbd>arrow</kbd> keys to move the **rover**. బాక్ గ్రౌండ్ స్క్రోల్ చేయాలి మరియు **rover** ఎప్పటికీ చివరకు చేరుకోకూడదు.
 
 --- /task ---
 
