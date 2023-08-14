@@ -47,7 +47,7 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**اختبار:** تحقق من زرك اليسار و اليمين الآن. الشجرة يجب أن تتحرك كلما ضغطت على المتحكم.
+**Test:** Click the green flag and check your left and right buttons now. الشجرة يجب أن تتحرك كلما ضغطت على المتحكم.
 
 **اختبار:** ماذا يحدث إذا ابتعدت عن الشجرة قدرما أمكن؟
 
@@ -84,7 +84,7 @@ end
 
 --- task ---
 
-أخيرا, اجعل **الكشاف** يدور يسارا و يمينا حتى يواجه الإتجاه الذي يسير فيه.
+Lastly, make the **rover** turn left and right so that it faces the direction it is moving in, and resets at the start.
 
 ![كائن الكشّاف.](images/rover-sprite.png)
 
@@ -98,6 +98,12 @@ point in direction (-90)
 
 when I receive [right v]
 point in direction (90)
+
+when I receive [start v]
+set size to (50) %
+go to x: (0) y: (-90)
+go to [front v] layer
++ point in direction (90)
 ```
 
 --- /task ---
