@@ -47,7 +47,7 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**Test:** Controleer nu de linker- en rechterknop. De boom moet elke keer bewegen als je op de controller klikt.
+**Test:** Click the green flag and check your left and right buttons now. De boom moet elke keer bewegen als je op de controller klikt.
 
 **Test:** wat gebeurt er als je zo ver weg van de boom gaat als je kunt?
 
@@ -84,7 +84,7 @@ Beweeg nu je **rover** sprite over het scherm. Wanneer de boom de rand bereikt, 
 
 --- task ---
 
-Laat ten slotte de **rover** naar links en rechts draaien, zodat hij in de richting wijst waarin hij zich beweegt.
+Lastly, make the **rover** turn left and right so that it faces the direction it is moving in, and resets at the start.
 
 ![De rover sprite.](images/rover-sprite.png)
 
@@ -98,6 +98,12 @@ point in direction (-90)
 
 when I receive [right v]
 point in direction (90)
+
+when I receive [start v]
+set size to (50) %
+go to x: (0) y: (-90)
+go to [front v] layer
++ point in direction (90)
 ```
 
 --- /task ---
