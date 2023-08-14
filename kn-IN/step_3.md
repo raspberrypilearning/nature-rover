@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**ಪರೀಕ್ಷೆ**: **rover**ನ್ನು ಚಲಿಸಲು ನಿಯಂತ್ರಕ ಅಥವಾ <kbd>arrow</kbd> ಕೀಗಳನ್ನು ಉಪಯೋಗಿಸಿ. ಹಿನ್ನೆಲೆ ಚಲಿಸಬೇಕು, ಮತ್ತು **rover** ಎಂದಿಗೂ ತುದಿಯನ್ನು ತಲುಪಬಾರದು.
+**Test**: Click the green flag to reset the scene and then use the controller or <kbd>arrow</kbd> keys to move the **rover**. ಹಿನ್ನೆಲೆ ಚಲಿಸಬೇಕು, ಮತ್ತು **rover** ಎಂದಿಗೂ ತುದಿಯನ್ನು ತಲುಪಬಾರದು.
 
 --- /task ---
 
