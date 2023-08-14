@@ -47,7 +47,7 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**Δοκιμή:** Έλεγξε τώρα το αριστερό και το δεξί κουμπί. Το δέντρο πρέπει να μετακινείται κάθε φορά που κάνεις κλικ στο χειριστήριο.
+**Test:** Click the green flag and check your left and right buttons now. Το δέντρο πρέπει να μετακινείται κάθε φορά που κάνεις κλικ στο χειριστήριο.
 
 **Δοκιμή:** Τι συμβαίνει αν απομακρύνεσαι όσο πιο μακριά μπορείς από το δέντρο;
 
@@ -84,7 +84,7 @@ end
 
 --- task ---
 
-Τέλος, κάνε το **rover** να στρίψει αριστερά και δεξιά, ώστε να βλέπει προς την κατεύθυνση προς την οποία κινείται.
+Lastly, make the **rover** turn left and right so that it faces the direction it is moving in, and resets at the start.
 
 ![Το αντικείμενο rover.](images/rover-sprite.png)
 
@@ -98,6 +98,12 @@ point in direction (-90)
 
 when I receive [right v]
 point in direction (90)
+
+when I receive [start v]
+set size to (50) %
+go to x: (0) y: (-90)
+go to [front v] layer
++ point in direction (90)
 ```
 
 --- /task ---
