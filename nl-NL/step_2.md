@@ -11,7 +11,7 @@ In deze stap gebruik je een controller op het scherm of het toetsenbord om je ro
 
 --- task ---
 
-Open het startersproject online op [rpf.io/nature-rover-starter](https://rpf.io/nature-rover-starter){:target="_blank"}.
+Open het startersproject online op [scratch.mit.edu/projects/740719456](https://scratch.mit.edu/projects/740719456){:target="_blank"}.
 
 --- collapse ---
 ---
