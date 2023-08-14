@@ -67,7 +67,7 @@ switch costume to (inactive v)
 
 --- task ---
 
-ब्लॉक जोडा जेणेकरून **rover** स्प्राईट फळ नमूना गोळा करतो तेव्हा साऊंड प्ले करेल.
+Add a block so that the **rover** sprite plays a sound when it collects the fruit sample. You can find the **Collect** sound in the Sound gallery.
 
 ![rover स्प्राईट.](images/rover-sprite.png)
 
@@ -119,15 +119,17 @@ sample fruit ::custom //Run the animation
 
 --- task ---
 
-**tree** स्प्राईट दोन वेगवेगळे कॉश्चुम देण्यासाठी एडिट करायला हवा. एक फळासहित (`tree with fruit`{:class="block3looks"}), आणि दुसरा फळाशिवाय (`tree without fruit`{:class="block3looks"}). एक कॉश्चुम एडिट करा, जेणेकरून **tree** ला दोन वेगवेगळे कॉश्चुम असतील.
+The **tree** sprite needs two costumes, one without fruit on (`tree without fruit`{:class="block3looks"}), and one with fruit (`tree with fruit`{:class="block3looks"}). Add another costume to the **tree**, change the names and draw some fruit on the **with fruit** one.
+
+![The 'tree with fruit' costume, with 5 light red circles on it to represent fruit](images/tree-with-fruit.png)
 
 --- /task ---
 
 --- task ---
 
-**tree** स्प्राईटवर, प्रोजेक्टच्या सुरूवातीला, **tree** चा कॉश्चुम सेट करण्यासाठी ब्लॉक्स जोडा, आणि त्याचा कॉश्चुम त्याला `sample fruit`{:class="block3events"} ब्रॉडकास्ट प्राप्त झाल्यावर बदलायला हवा.
+On the **tree** sprite, add blocks to set the costume of the **tree** at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
 
-![tree स्प्राईट.](images/tree-sprite.png)
+![The tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -150,9 +152,9 @@ end
 
 --- task ---
 
-**rover** स्प्राईटवर, कॉश्चुम बदल प्रवर्तीत होण्यासाठी तुम्ही नवीन `broadcast`{:class="block3events"} चा वापर करू शकता. हा नवीन `broadcast`{:class="block3events"} तुमच्या `define sample fruit`{:class="block3myblocks"} फंक्शन मध्ये जोडा.
+On the **rover** sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new `broadcast`{:class="block3events"} into your `define sample fruit`{:class="block3myblocks"} function.
 
-![rover स्प्राईट.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -161,6 +163,7 @@ wait (0.3) seconds
 switch costume to (arm 1 v)
 wait (0.3) seconds
 switch costume to (arm 2 v)
+start sound (Collect v)
 wait (0.3) seconds
 + broadcast (sample fruit v)
 switch costume to (arm 1 v)
@@ -172,21 +175,21 @@ switch costume to (inactive v)
 
 --- task ---
 
-**चाचणी:** तुमचा कोड काम करतो का ते तपासण्यासाठी, झेंड्यावर क्लिक करा, आणि त्यानंतर तुमच्या **rover** स्प्राईटवर क्लिक करा. त्याचा हात वाढवायला हवा, आणि **tree** स्प्राईटने कॉश्चुम बदलायला हवा.
+**Test:** To check that your code is working, click on the flag, and then click on your **rover** sprite. Its arm should extend, and the **tree** sprite should change costumes.
 
-**टीप:** फूल स्क्रीन मोड बदला आणि तुम्ही जास्त सहजतेने ऍनिमेशन बघू शकाल.
+**Tip:** Switch to full screen mode and you will be able to see the animation more easily.
 
 --- /task ---
 
-रोव्हर त्याला स्पर्श करत असल्यासच केवळ फळ गोळा करू शकतो.
+The rover should only be able to collect the fruit, if it is touching it.
 
 --- task ---
 
-**rover** स्प्राईटवर, `when this sprite clicked`{:class="block3events"} ब्लॉक्सचा सेट बदला, जेणेकरून `sample fruit`{:class="block3myblocks"} फंक्शन तेव्हाच करा जेव्हा **rover** स्प्राईट तुमच्या फळाच्या रंगाला स्पर्श करेल.
+On the **rover** sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the **rover** sprite is touching the colour of your fruit.
 
-**टीप:** चाचणीमधून तुमचा कॉश्चुम बदलला याचा अर्थ फळ दिसत नाही असा असू शकतो. **tree** स्प्राईट साठी केवळ कॉश्चुम टॅबवर क्लिक करा, आणि दिसणाऱ्या फळासह कॉश्चुम बदला.
+**Tip:** Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
 
-![rover स्प्राईट.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -198,9 +201,9 @@ sample fruit ::custom
 
 --- task ---
 
-आता, **tree** स्प्राईट फळ नमूना घेतला गेल्यावर बदलतो, तुम्हाला स्प्राईट त्याच्या पहिल्या कॉश्चुमला रीसेट करणे आवश्यक आहे जेव्हा तो स्क्रीनवर जातो.
+Now that the **tree** sprite changes when a fruit is sampled, you need to reset the sprite to its first costume when it goes off the screen.
 
-![tree स्प्राईट.](images/tree-sprite.png)
+![The tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -222,7 +225,7 @@ end
 
 --- task ---
 
-**चाचणी:** **rover** स्प्राईट हलवा जेणेकरून तो फळावर स्पर्श करेल, त्यानंतर **rover** स्प्राईटवर क्लिक करा आणि तो झाडावरून फळे गोळा करतो का ते बघा.
+**Test:** Move the **rover** sprite so that it is touching the fruit, then click on the **rover** sprite and watch it collect the fruit from the tree.
 
 --- /task ---
 
