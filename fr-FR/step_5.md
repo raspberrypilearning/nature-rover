@@ -67,7 +67,7 @@ switch costume to (inactive v)
 
 --- task ---
 
-Ajoute un bloc pour que le sprite **rover** émette un son lorsqu'il récupère l'échantillon de fruit.
+Add a block so that the **rover** sprite plays a sound when it collects the fruit sample. You can find the **Collect** sound in the Sound gallery.
 
 ![Le sprite rover.](images/rover-sprite.png)
 
@@ -119,15 +119,17 @@ Maintenant tu dois faire en sorte que le rover collecte un échantillon. Dans ce
 
 --- task ---
 
-Le sprite **arbre** doit être modifié pour lui donner deux costumes différents. Un avec un fruit (`arbre avec fruit`{:class="block3looks"}), et un sans fruit (`arbre sans fruit`{:class="block3looks"}). Modifie l'un des costumes, afin que **l'arbre** ait deux costumes différents.
+The **tree** sprite needs two costumes, one without fruit on (`tree without fruit`{:class="block3looks"}), and one with fruit (`tree with fruit`{:class="block3looks"}). Add another costume to the **tree**, change the names and draw some fruit on the **with fruit** one.
+
+![The 'tree with fruit' costume, with 5 light red circles on it to represent fruit](images/tree-with-fruit.png)
 
 --- /task ---
 
 --- task ---
 
-Sur le sprite **arbre**, ajoute des blocs pour définir le costume de **l'arbre** au début du projet, et le costume auquel il doit passer lorsqu'il reçoit une diffusion de `échantillon de fruits`{:class="block3events"}.
+On the **tree** sprite, add blocks to set the costume of the **tree** at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
 
-![Le sprite arbre.](images/tree-sprite.png)
+![The tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -150,9 +152,9 @@ end
 
 --- task ---
 
-Sur le sprite **rover**, tu peux utiliser le nouveau `envoyer à tous`{:class="block3events"} pour déclencher le changement de costume. Ajoute ce nouveau `envoyer à tous`{:class="block3events"} dans ta fonction `définir échantillon de fruits`{:class="block3myblocks"}.
+On the **rover** sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new `broadcast`{:class="block3events"} into your `define sample fruit`{:class="block3myblocks"} function.
 
-![Le sprite rover.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -161,6 +163,7 @@ wait (0.3) seconds
 switch costume to (arm 1 v)
 wait (0.3) seconds
 switch costume to (arm 2 v)
+start sound (Collect v)
 wait (0.3) seconds
 + broadcast (sample fruit v)
 switch costume to (arm 1 v)
@@ -172,21 +175,21 @@ switch costume to (inactive v)
 
 --- task ---
 
-**Tests :** Pour vérifier que ton code fonctionne, clique sur le drapeau, puis clique sur ton sprite **rover**. Son bras devrait s'étendre, et le sprite **arbre** devrait changer de costumes.
+**Test:** To check that your code is working, click on the flag, and then click on your **rover** sprite. Its arm should extend, and the **tree** sprite should change costumes.
 
-**Astuce :** Passe en mode plein écran et tu pourras voir l'animation plus facilement.
+**Tip:** Switch to full screen mode and you will be able to see the animation more easily.
 
 --- /task ---
 
-Le rover ne devrait pouvoir récolter le fruit que s'il le touche.
+The rover should only be able to collect the fruit, if it is touching it.
 
 --- task ---
 
-Sur le sprite **rover**, change l'ensemble de blocs `quand ce sprite est cliqué`{:class="block3events"}, de sorte que `échantillon de fruits`{:class="block3myblocks"} ne soit appelé que si le sprite **rover** touche la couleur de ton fruit.
+On the **rover** sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the **rover** sprite is touching the colour of your fruit.
 
-**Astuce :** Ton changement de costume suite aux tests peut signifier que le fruit n'est pas visible. Il suffit de cliquer sur l'onglet costumes pour le sprite **arbre** et de basculer vers le costume avec le fruit visible.
+**Tip:** Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
 
-![Le sprite rover.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -198,9 +201,9 @@ sample fruit ::custom
 
 --- task ---
 
-Maintenant que le sprite **arbre** change quand un fruit est échantillonné, tu dois réinitialiser le sprite à son premier costume quand il sort de l'écran.
+Now that the **tree** sprite changes when a fruit is sampled, you need to reset the sprite to its first costume when it goes off the screen.
 
-![Le sprite arbre.](images/tree-sprite.png)
+![The tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -222,7 +225,7 @@ end
 
 --- task ---
 
-**Test :** Déplace le sprite **rover** jusqu'à ce qu'il touche le fruit, puis clique sur le sprite **rover** et regarde-le ramasser le fruit de l'arbre.
+**Test:** Move the **rover** sprite so that it is touching the fruit, then click on the **rover** sprite and watch it collect the fruit from the tree.
 
 --- /task ---
 
