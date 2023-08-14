@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**Test**: Gebruik de controller of <kbd>pijl</kbd> toetsen om de **rover** te verplaatsen. De achtergrond zou moeten schuiven en de **rover** zou nooit het einde moeten bereiken
+**Test**: Click the green flag to reset the scene and then use the controller or <kbd>arrow</kbd> keys to move the **rover**. De achtergrond zou moeten schuiven en de **rover** zou nooit het einde moeten bereiken
 
 --- /task ---
 
