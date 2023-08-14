@@ -3,7 +3,7 @@
 Laat je rover nog meer interactie hebben met de natuur, vergelijkbaar met hoe een echte rover zich zou gedragen.
 
 Je kan:
-- Nog meer monsters toe aan je project toevoegen met behulp van de vooraf gemaakte animaties of de monsters die je zelf maakt
+- Nog meer monsters aan je project toevoegen met behulp van de vooraf gemaakte animaties of de monsters die je zelf maakt
 - Variabelen gebruiken om monsters te tellen; verhoog het aantal telkens wanneer een monster wordt verzameld
 - Een energievariabele introduceren zodat de rover een duurzame energiebron zoals de zon moet gebruiken om op te laden
 - De rover animeren wanneer deze genoeg monsters heeft verzameld (het kan bijvoorbeeld een dans doen en dan wegvliegen)

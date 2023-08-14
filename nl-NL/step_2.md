@@ -11,7 +11,7 @@ In deze stap gebruik je een controller op het scherm of het toetsenbord om je ro
 
 --- task ---
 
-Open het startersproject online op [scratch.mit.edu/projects/740719456](https://scratch.mit.edu/projects/740719456){:target="_blank"}.
+Open het startersproject online op [rpf.io/nature-rover-starter](https://rpf.io/nature-rover-starter){:target="_blank"}.
 
 --- collapse ---
 ---
@@ -56,7 +56,7 @@ De **rover** gaat het begin van het spel voor alle andere sprites besturen; dus 
 
 --- task ---
 
-Voeg het bericht toe aan een `wanneer op de groene vlag is geklikt`{:class='block3events'} blok.
+Voeg het bericht toe aan een blok `wanneer op de groene vlag wordt geklikt`{:class='block3events'}.
 
 ![De rover sprite.](images/rover-sprite.png)
 

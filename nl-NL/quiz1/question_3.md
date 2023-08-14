@@ -60,7 +60,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  Hierdoor zou de kat dansen, maar niet wanneer op de sprite wordt geklikt. Het gebruikt ook geen `kat animatie`{:class='block3myblocks'} blok.
+  Hierdoor zou de kat dansen, maar niet wanneer op de sprite wordt geklikt. Het gebruikt ook geen `kat-animatie`{:class='block3myblocks'} blok.
 
   --- /feedback ---
 
