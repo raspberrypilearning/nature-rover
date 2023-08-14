@@ -5,7 +5,7 @@
 In deze stap verander je het uiterlijk van een sprite en de rover om de rover te laten zien die monsters verzamelt.
 </div>
 <div>
-![](images/step-4.gif){:width="300px"}
+![Animatie van de verkenner die over het speelveld beweegt, van tijd tot tijd lijkt de verkenner verder naar de achtergrond te gaan, kleiner te worden en dan terug te keren naar de voorgrond](images/step-4.gif){:width="300px"}
 </div>
 </div>
 

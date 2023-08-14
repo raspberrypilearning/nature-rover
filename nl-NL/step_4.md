@@ -57,7 +57,7 @@ Heb je gemerkt dat wanneer de boom de rand van het scherm bereikt, deze stopt me
 
 --- task ---
 
-Gebruik een `herhaal`{:class='block3control'} lus, en `als`{:class='block3control'} blokken, controleer de `x`{:class='block3motion'} coördinaat van de boom en verplaats deze naar de andere kant van het scherm wanneer `x`{:class='block3motion'> hoger is dan `290` of lager is dan `-290`.
+Gebruik een `herhaal`{:class='block3control'} lus, en `als`{:class='block3control'} blokken, controleer de `x`{:class='block3motion'} coördinaat van de boom en verplaats deze naar de andere kant van het scherm wanneer `x`{:class='block3motion'} hoger is dan `290` of lager is dan `-290`.
 
 ![De boom sprite.](images/tree-sprite.png)
 

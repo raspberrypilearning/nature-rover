@@ -67,7 +67,7 @@ switch costume to (inactive v)
 
 --- task ---
 
-Add a block so that the **rover** sprite plays a sound when it collects the fruit sample.
+Add a block so that the **rover** sprite plays a sound when it collects the fruit sample. You can find the **Collect** sound in the Sound gallery.
 
 ![The rover sprite.](images/rover-sprite.png)
 
@@ -119,7 +119,9 @@ Now you need to make the rover actually collect a sample. In this example, the r
 
 --- task ---
 
-The **tree** sprite should be edited to give it two different costumes. One with a fruit on (`tree with fruit`{:class="block3looks"}), and one without a fruit (`tree without fruit`{:class="block3looks"}). Edit one of the costumes, so that the **tree** has two different costumes.
+The **tree** sprite needs two costumes, one without fruit on (`tree without fruit`{:class="block3looks"}), and one with fruit (`tree with fruit`{:class="block3looks"}). Add another costume to the **tree**, change the names and draw some fruit on the **with fruit** one.
+
+![The 'tree with fruit' costume, with 5 light red circles on it to represent fruit](images/tree-with-fruit.png)
 
 --- /task ---
 
@@ -161,6 +163,7 @@ wait (0.3) seconds
 switch costume to (arm 1 v)
 wait (0.3) seconds
 switch costume to (arm 2 v)
+start sound (Collect v)
 wait (0.3) seconds
 + broadcast (sample fruit v)
 switch costume to (arm 1 v)
