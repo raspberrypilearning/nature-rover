@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**اختبار**: استخدم المتحكم أو أزرار <kbd>الأسهم </kbd> للتحريك **الكشاف**. يجب أن تمرر الخلفية، و **الكشاف** يجب أن لا يصل النهاية أبداً.
+**Test**: Click the green flag to reset the scene and then use the controller or <kbd>arrow</kbd> keys to move the **rover**. يجب أن تمرر الخلفية، و **الكشاف** يجب أن لا يصل النهاية أبداً.
 
 --- /task ---
 
