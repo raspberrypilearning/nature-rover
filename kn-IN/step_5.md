@@ -67,7 +67,7 @@ switch costume to (inactive v)
 
 --- task ---
 
-**rover** ಸ್ಪ್ರೈಟ್‌ ಹಣ್ಣಿನ ಮಾದರಿಯನ್ನು ಸಂಗ್ರಹಿಸಿದಾಗ ಧ್ವನಿಯನ್ನು ನುಡಿಸುವಂತೆ ಬ್ಲಾಕ್‌ ಸೇರಿಸಿ.
+Add a block so that the **rover** sprite plays a sound when it collects the fruit sample. You can find the **Collect** sound in the Sound gallery.
 
 ![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
@@ -119,15 +119,17 @@ sample fruit ::custom //Run the animation
 
 --- task ---
 
-ಎರಡು ಬೇರೆ ಬೇರೆ ಉಡುಪುಗಳನ್ನು ಅದಕ್ಕೆ ಕೊಡಲು **tree** ಸ್ಪ್ರೈಟ್‌ನ್ನು ಎಡಿಟ್‌ ಮಾಡಬೇಕು. ಒಂದು ಹಣ್ಣು ಹಾಕಿಕೊಂಡು (`tree with fruit`{:class="block3looks"}), ಮತ್ತು ಒಂದು ಹಣ್ಣಿಲ್ಲದೆ (`tree without fruit`{:class="block3looks"}). **tree** ಗೆ ಎರಡು ಬೇರೆ ಬೇರೆ ಉಡುಪುಗಳು ಇರುವಂತೆ ಅವುಗಳಲ್ಲಿ ಒಂದು ಉಡುಪನ್ನು ಎಡಿಟ್‌ ಮಾಡಿ.
+The **tree** sprite needs two costumes, one without fruit on (`tree without fruit`{:class="block3looks"}), and one with fruit (`tree with fruit`{:class="block3looks"}). Add another costume to the **tree**, change the names and draw some fruit on the **with fruit** one.
+
+![The 'tree with fruit' costume, with 5 light red circles on it to represent fruit](images/tree-with-fruit.png)
 
 --- /task ---
 
 --- task ---
 
-**tree** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ, **tree** ಉಡುಪನ್ನು ಪ್ರಾಜೆಕ್ಟ್‌ ಪ್ರಾರಂಭದಲ್ಲಿ ಹೊಂದಿಸಲು, ಮತ್ತು ಅದು `sample fruit`{:class="block3events"} ಪ್ರಸಾರವನ್ನು ಸ್ವೀಕರಿಸಿದಾಗ ಬದಲಾಯಿಸಬೇಕಾದ ಉಡುಪಿಗೆ ಬ್ಲಾಕ್‌ಗಳನ್ನು ಸೇರಿಸಿ.
+On the **tree** sprite, add blocks to set the costume of the **tree** at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
 
-![ಮರ ಸ್ಪ್ರೈಟ್.](images/tree-sprite.png)
+![The tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -150,9 +152,9 @@ end
 
 --- task ---
 
-**rover** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ, ಉಡುಪು ಬದಲಾವಣೆಯನ್ನು ಪ್ರಚೋದಿಸಲು ನೀವು ಹೊಸ `broadcast`{:class="block3events"} ಉಪಯೋಗಿಸಬಹುದು. ಈ ಹೊಸ `broadcast`{:class="block3events"} ನ್ನು ನಿಮ್ಮ`define sample fruit`{:class="block3myblocks"} ಫಂಕ್ಷನ್‌ ಒಳಗೆ ಸೇರಿಸಿ.
+On the **rover** sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new `broadcast`{:class="block3events"} into your `define sample fruit`{:class="block3myblocks"} function.
 
-![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -161,6 +163,7 @@ wait (0.3) seconds
 switch costume to (arm 1 v)
 wait (0.3) seconds
 switch costume to (arm 2 v)
+start sound (Collect v)
 wait (0.3) seconds
 + broadcast (sample fruit v)
 switch costume to (arm 1 v)
@@ -172,21 +175,21 @@ switch costume to (inactive v)
 
 --- task ---
 
-**ಪರೀಕ್ಷೆ:** ನಿಮ್ಮ ಕೋಡ್‌ ಕೆಲಸಮಾಡುತ್ತಿದೆಯೇ ಎಂದು ಪರಿಶೀಲಿಸಲು, ಬಾವುಟದ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು ನಂತರ ನಿಮ್ಮ **rover** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ. ಅದರ ತೋಳುಗಳು ವಿಸ್ತರಿಸಬೇಕು, ಮತ್ತು **tree** ಸ್ಪ್ರೈಟ್‌ ಉಡುಪುಗಳನ್ನು ಬದಲಾಯಿಸಬೇಕು.
+**Test:** To check that your code is working, click on the flag, and then click on your **rover** sprite. Its arm should extend, and the **tree** sprite should change costumes.
 
-**ಸಲಹೆ:** ಫುಲ್‌ ಸ್ಕ್ರೀನ್‌ ಮೋಡ್‌ಗೆ ಬದಲಾಯಿಸಿ ಮತ್ತು ನೀವು ಅನಿಮೇಶನ್‌ನ್ನು ಇನ್ನೂ ಸುಲಭವಾಗಿ ನೋಡಬಹುದು.
+**Tip:** Switch to full screen mode and you will be able to see the animation more easily.
 
 --- /task ---
 
-ರೋವರ್‌ ಹಣ್ಣನ್ನು ಸ್ಪರ್ಶಿಸುತ್ತಿದ್ದರೆ ಮಾತ್ರ, ಅದಕ್ಕೆ ಹಣ್ಣನ್ನು ಸಂಗ್ರಹಿಸಲು ಸಾಧ್ಯವಾಗಬೇಕು.
+The rover should only be able to collect the fruit, if it is touching it.
 
 --- task ---
 
-**rover** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ, `when this sprite clicked`{:class="block3events"} ಬ್ಲಾಕ್‌ಗಳ ಸೆಟ್‌ನ್ನು ಬದಲಾಯಿಸಿ, ಅದರಿಂದ **rover** ಸ್ಪ್ರೈಟ್‌ ನಿಮ್ಮ ಹಣ್ಣಿನ ಬಣ್ಣವನ್ನು ಸ್ಪರ್ಶಿಸುತ್ತಿದ್ದರೆ ಮಾತ್ರ `sample fruit`{:class="block3myblocks"} ಫಂಕ್ಷನ್‌ನ್ನು ಆಮಂತ್ರಿಸಲಾಗುತ್ತದೆ.
+On the **rover** sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the **rover** sprite is touching the colour of your fruit.
 
-**ಸಲಹೆ:** ಪರೀಕ್ಷೆಯಿಂದ ನಿಮ್ಮ ಉಡುಪುಗಳ ಬದಲಾವಣೆಯು ಹಣ್ಣು ಕಾಣಿಸುತ್ತಿಲ್ಲ ಎಂದು ಅರ್ಥ ಕೊಡಬಹುದು. **tree** ಸ್ಪ್ರೈಟ್‌ಗೆ ಕಾಸ್ಟ್ಯೂಮ್‌ ಟ್ಯಾಬ್‌ ಮೇಲಷ್ಟೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ, ಮತ್ತು ಹಣ್ಣು ಕಾಣಿಸುತ್ತಿರುವ ಉಡುಪಿಗೆ ಬದಲಾಯಿಸಿ.
+**Tip:** Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
 
-![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -198,9 +201,9 @@ sample fruit ::custom
 
 --- task ---
 
-ಈಗ **tree** ಸ್ಪ್ರೈಟ್ ಹಣ್ಣಿನ ಮಾದರಿ ಸಂಗ್ರಹಿಸಿದಾಗ ಬದಲಾಗುತ್ತದೆಯಾದುದರಿಂದ, ಅದು ಪರದೆಯಿಂದ ಹೊರಹೋದಾಗ ನೀವು ಸ್ಪ್ರೈಟ್‌ನ್ನು ಅದರ ಮೊದಲನೆಯ ಉಡುಪಿಗೆ ಮರುಹೊಂದಿಸಬೇಕು.
+Now that the **tree** sprite changes when a fruit is sampled, you need to reset the sprite to its first costume when it goes off the screen.
 
-![ಮರ ಸ್ಪ್ರೈಟ್.](images/tree-sprite.png)
+![The tree sprite.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -222,7 +225,7 @@ end
 
 --- task ---
 
-**ಪರೀಕ್ಷೆ:** **rover** ಸ್ಪ್ರೈಟ್‌ ಹಣ್ಣನ್ನು ಸ್ಪರ್ಶಿಸುವಂತೆ ಅದನ್ನು ಚಲಿಸಿ, ನಂತರ **rover** ಸ್ಪ್ರೈಟ್‌ ಮೇಲೆ ಕ್ಲಿಕ್‌ ಮಾಡಿ ಮತ್ತು ಅದು ಮರದಿಂದ ಹಣ್ಣು ಸಂಗ್ರಹಿಸುವುದನ್ನು ವೀಕ್ಷಿಸಿ.
+**Test:** Move the **rover** sprite so that it is touching the fruit, then click on the **rover** sprite and watch it collect the fruit from the tree.
 
 --- /task ---
 
