@@ -47,7 +47,7 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**Test:** Check your left and right buttons now. The tree should move each time you click on the controller.
+**Test:** Click the green flag and check your left and right buttons now. The tree should move each time you click on the controller.
 
 **Test:** What happens if you go as far away from the tree as you can?
 
@@ -84,7 +84,7 @@ Now move your **rover** sprite around the screen. When the tree reaches the edge
 
 --- task ---
 
-Lastly, make the **rover** turn left and right so that it faces the direction it is moving in.
+Lastly, make the **rover** turn left and right so that it faces the direction it is moving in, and resets at the start.
 
 ![The rover sprite.](images/rover-sprite.png)
 
@@ -98,6 +98,12 @@ point in direction (-90)
 
 when I receive [right v]
 point in direction (90)
+
+when I receive [start v]
+set size to (50) %
+go to x: (0) y: (-90)
+go to [front v] layer
++ point in direction (90)
 ```
 
 --- /task ---
