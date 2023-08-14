@@ -47,7 +47,7 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**ಪರೀಕ್ಷೆ:** ಈಗ ನಿಮ್ಮ ಎಡ ಮತ್ತು ಬಲ ಬಟನ್‌ಗಳನ್ನು ಪರಿಶೀಲಿಸಿ. ನೀವು ಪ್ರತಿಯೊಂದು ಬಾರಿ ನಿಯಂತ್ರಕವನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಮರ ಚಲಿಸಬೇಕು.
+**Test:** Click the green flag and check your left and right buttons now. ನೀವು ಪ್ರತಿಯೊಂದು ಬಾರಿ ನಿಯಂತ್ರಕವನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ ಮರ ಚಲಿಸಬೇಕು.
 
 **ಪರೀಕ್ಷೆ:** ನೀವು ಮರದಿಂದ ಸಾಧ್ಯವಾದಷ್ಟು ದೂರ ಹೋದರೆ ಏನಾಗುತ್ತದೆ?
 
@@ -84,7 +84,7 @@ end
 
 --- task ---
 
-ಕೊನೆಯದಾಗಿ, **rover** ನ್ನು ಅದು ಚಲಿಸುತ್ತಿರುವ ದಿಕ್ಕಿನಲ್ಲಿ ಮುಖಮಾಡಿರುವಂತೆ ಮಾಡಲು ಎಡ ಮತ್ತು ಬಲಕ್ಕೆ ಅದನ್ನು ತಿರುಗಿಸಿ.
+Lastly, make the **rover** turn left and right so that it faces the direction it is moving in, and resets at the start.
 
 ![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
@@ -98,6 +98,12 @@ point in direction (-90)
 
 when I receive [right v]
 point in direction (90)
+
+when I receive [start v]
+set size to (50) %
+go to x: (0) y: (-90)
+go to [front v] layer
++ point in direction (90)
 ```
 
 --- /task ---
