@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**परिक्षण**: **rover** को हिलाने के लिए कंट्रोलर या <kbd>arrow</kbd> कुंजियों का उपयोग करें। पृष्ठभूमि को स्क्रॉल करना चाहिए, और **rover** को कभी भी अंत तक नहीं पहुंचना चाहिए।
+**Test**: Click the green flag to reset the scene and then use the controller or <kbd>arrow</kbd> keys to move the **rover**. पृष्ठभूमि को स्क्रॉल करना चाहिए, और **rover** को कभी भी अंत तक नहीं पहुंचना चाहिए।
 
 --- /task ---
 
