@@ -1,0 +1,43 @@
+up
+
+start
+
+down
+
+right
+
+left
+
+scroll
+
+sample fruit
+
+inactive
+
+arm 1
+
+arm 2
+
+tree with fruit
+
+tree without fruit
+
+recharge
+
+solar 1
+
+solar 2
+
+solar 3
+
+cat animation
+
+costume 1
+
+costume 2
+
+cat dance
+
+collect sample
+
+ενέργεια
