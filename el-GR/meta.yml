@@ -2,15 +2,15 @@
 title: Ρομποτικό όχημα εξερεύνησης της φύσης
 hero_image: images/banner.png
 description: Χρησιμοποίησε το Scratch για να δημιουργήσεις μια σκηνή άγριας φύσης που θα την εξερευνήσει ένα ρομποτικό όχημα εξερεύνησης φύσης
-meta_title: Scratch coding projects for kids and teens | Nature rover
-meta_description: Learn Scratch with the Raspberry Pi Foundation's coding projects for kids and teens. Create a wilderness scene with Scratch for a nature rover to explore.
+meta_title: Έργα κώδικα σε Scratch για παιδιά και εφήβους | Ρομποτικό όχημα εξερεύνησης της φύσης
+meta_description: Μάθε το Scratch με τα έργα κώδικα του Ιδρύματος Raspberry Pi για παιδιά και εφήβους. Δημιούργησε μια σκηνή άγριας φύσης με το Scratch για να την εξερευνήσεις με ένα ρομποτικό όχημα εξερεύνησης της φύσης.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: You will make
+    title: Τι θα φτιάξεις
   - 
     title: Έλεγχος του ρομποτικού όχηματος
   - 
@@ -26,7 +26,7 @@ steps:
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Γρήγορο κουίζ
     knowledge_quiz:
       path: quiz1
       version: 1
