@@ -5,7 +5,7 @@
 Σε αυτό το βήμα, θα αλλάξεις την εμφάνιση ενός αντικειμένου και του rover για να εμφανίσεις το ρομποτικό όχημα να συλλέγει δείγματα.
 </div>
 <div>
-![Animation of the rover moving across the stage, from time to time the rover appears to move further into the background getting smaller and then returning to the foreground](images/step-4.gif){:width="300px"}
+![Κινούμενη εικόνα του ρόβερ που κινείται κατά μήκος της σκηνής, πότε πότε το ρόβερ φαίνεται να κινείται περισσότερο στο παρασκήνιο με το να γίνεται μικρότερο και στη συνέχεια επιστρέφει στο προσκήνιο](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
@@ -67,7 +67,7 @@ switch costume to (inactive v)
 
 --- task ---
 
-Add a block so that the **rover** sprite plays a sound when it collects the fruit sample. You can find the **Collect** sound in the Sound gallery.
+Πρόσθεσε ένα μπλοκ έτσι ώστε το αντικείμενο **rover** να παίζει έναν ήχο όταν συλλέγει το δείγμα καρπών. Μπορείς να βρεις τον ήχο **Collect** στη συλλογή Ήχων.
 
 ![Το αντικείμενο rover.](images/rover-sprite.png)
 
@@ -119,17 +119,17 @@ sample fruit ::custom //Run the animation
 
 --- task ---
 
-The **tree** sprite needs two costumes, one without fruit on (`tree without fruit`{:class="block3looks"}), and one with fruit (`tree with fruit`{:class="block3looks"}). Add another costume to the **tree**, change the names and draw some fruit on the **with fruit** one.
+Το αντικείμενο **tree** χρειάζεται δύο ενδυμασίες, μια χωρίς φρούτα (`tree without fruit`{:class="block3looks"}) και μια με φρούτα (`tree with fruit`{:class="block3looks"}). Πρόσθεσε μια άλλη ενδυμασία στο **δέντρο **, άλλαξε τα ονόματα και σχεδίασε μερικά φρούτα στο δέντρο **με τα φρούτα**.
 
-![The 'tree with fruit' costume, with 5 light red circles on it to represent fruit](images/tree-with-fruit.png)
+![Η ενδυμασία «tree with fruit», με 5 ανοιχτούς κόκκινους κύκλους πάνω για να αναπαριστούν φρούτα](images/tree-with-fruit.png)
 
 --- /task ---
 
 --- task ---
 
-On the **tree** sprite, add blocks to set the costume of the **tree** at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
+Στο αντικείμενο **tree**, πρόσθεσε μπλοκ για να ορίσεις την ενδυμασία του **tree** στην αρχή του έργου και την ενδυμασία στην οποία θα πρέπει να αλλάξει όταν λαμβάνει μια μετάδοση `δείγμα φρούτου`{:class="block3events"}.
 
-![The tree sprite.](images/tree-sprite.png)
+![Το αντικείμενο tree.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -152,9 +152,9 @@ end
 
 --- task ---
 
-On the **rover** sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new `broadcast`{:class="block3events"} into your `define sample fruit`{:class="block3myblocks"} function.
+Στο αντικείμενο **rover** μπορείς να χρησιμοποιήσεις τη νέα `μετάδοση`{:class="block3events"} για να ενεργοποιήσεις την αλλαγή ενδυμασίας. Πρόσθεσε αυτήν τη νέα `μετάδοση`{:class="block3events"} στη συνάρτηση `ορισμός δείγματος φρούτου`{:class="block3myblocks"}.
 
-![The rover sprite.](images/rover-sprite.png)
+![Το αντικείμενο rover.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -175,21 +175,21 @@ switch costume to (inactive v)
 
 --- task ---
 
-**Test:** To check that your code is working, click on the flag, and then click on your **rover** sprite. Its arm should extend, and the **tree** sprite should change costumes.
+**Δοκιμή:** Για να ελέγξεις ότι ο κώδικάς σου λειτουργεί, κάνε κλικ στη σημαία και στη συνέχεια, κάνε κλικ στο αντικείμενο **rover**. Ο βραχίονάς του πρέπει να εκτείνεται και το αντικείμενο **tree** θα πρέπει να αλλάζει ενδυμασίες.
 
-**Tip:** Switch to full screen mode and you will be able to see the animation more easily.
+**Συμβουλή:** Άλλαξε σε λειτουργία πλήρους οθόνης και θα μπορείς να βλέπεις πιο εύκολα την κινούμενη εικόνα.
 
 --- /task ---
 
-The rover should only be able to collect the fruit, if it is touching it.
+Το rover θα πρέπει να μπορεί να συλλέξει τον καρπό μόνο εάν τον αγγίζει.
 
 --- task ---
 
-On the **rover** sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the **rover** sprite is touching the colour of your fruit.
+Στο αντικείμενο **rover** άλλαξε το σετ μπλοκ `όταν γίνει κλικ σε αυτό το αντικείμενο`{:class="block3events"}, έτσι ώστε η συνάρτηση `δείγμα φρούτου`{:class="block3myblocks"} να καλείται μόνο εάν το αντικείμενο **rover** αγγίζει το χρώμα των καρπών σου.
 
-**Tip:** Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
+**Συμβουλή:** Η αλλαγή της ενδυμασίας σου από τη δοκιμή μπορεί να σημαίνει ότι ο καρπός δεν είναι ορατός. Απλώς κάνε κλικ στην καρτέλα ενδυμασίες για το αντικείμενο **tree** και άλλαξε στην ενδυμασία με τους ορατούς καρπούς.
 
-![The rover sprite.](images/rover-sprite.png)
+![Το αντικείμενο rover.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -201,9 +201,9 @@ sample fruit ::custom
 
 --- task ---
 
-Now that the **tree** sprite changes when a fruit is sampled, you need to reset the sprite to its first costume when it goes off the screen.
+Τώρα που το αντικείμενο **tree** αλλάζει όταν γίνεται συλλογή ενός καρπού, πρέπει να επαναφέρεις το αντικείμενο στην αρχική του ενδυμασία όταν φύγει από την οθόνη.
 
-![The tree sprite.](images/tree-sprite.png)
+![Το αντικείμενο tree.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -225,7 +225,7 @@ end
 
 --- task ---
 
-**Test:** Move the **rover** sprite so that it is touching the fruit, then click on the **rover** sprite and watch it collect the fruit from the tree.
+**Δοκιμή:** Μετακίνησε το αντικείμενο **rover** έτσι ώστε να αγγίζει τον καρπό, μετά κάνε κλικ στο αντικείμενο **rover** και παρακολούθησέ το να μαζεύει τους καρπούς από το δέντρο.
 
 --- /task ---
 
