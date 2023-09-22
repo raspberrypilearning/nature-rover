@@ -15,11 +15,11 @@ define collect sample ::custom
 ```
 
 ```blocks3
-set [energy v] to (100)
+set [ενέργεια v] to (100)
 ```
 
 ```blocks3
-change [energy v] by (-1)
+change [ενέργεια v] by (-1)
 ```
 
 ```blocks3
