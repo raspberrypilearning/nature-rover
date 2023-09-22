@@ -1,23 +1,23 @@
-## Quick quiz
+## Γρήγορο κουίζ
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Απάντησε στις τρεις ερωτήσεις. Υπάρχουν συμβουλές που θα σε καθοδηγήσουν στη σωστή απάντηση.
 
-When you have answered each question, click on **Check my answer**.
+Όταν έχεις απαντήσει σε κάθε ερώτηση, κάνε κλικ στο **Έλεγξε την απάντησή μου**.
 
-Have fun!
+Διασκέδασέ το!
 
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legend: Ερώτηση 1 από 3
 ---
 
-Here is a controller that broadcasts up when the up button is clicked and down when the down button is clicked:
+Ακολουθεί ένα ελεγκτής που μεταδίδει το μήνυμα up όταν γίνει κλικ στο κουμπί up και down όταν γίνει κλικ στο κουμπί down:
 
-![four button controller](images/controller.png)
+![ελεγκτής τεσσάρων κουμπιών](images/controller.png)
 
-Which of the following code blocks would you add to **the rover sprite** to make it move up and down
+Ποια από τα ακόλουθα μπλοκ κώδικα θα προσθέσεις στο **αντικείμενο rover** για να το κάνεις να κινηθεί πάνω και κάτω
 
 --- choices ---
 
@@ -37,7 +37,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This would move the rover when it is touching the buttons, rather than when the buttons are pressed.
+  Αυτό θα μετακινούσε το rover όταν αγγίζει τα κουμπιά, αντί όταν πιέζονται τα κουμπιά.
 
   --- /feedback ---
 
@@ -50,7 +50,7 @@ change y by (10)
 
 --- feedback ---
 
-  This would move the rover when it was clicked on, rather than when the buttons are clicked on.
+  Αυτό θα μετακινούσε το rover όταν γίνει κλικ πάνω του, αντί όταν γίνεται κλικ στα κουμπιά.
 
   --- /feedback ---
 
@@ -67,7 +67,7 @@ change y by (-10)
 
   --- feedback ---
 
-  Yes, this script receives the up and down broadcasts from the controller buttons and gets the rover to move up and down.
+  Ναι, αυτό το script λαμβάνει τις μεταδόσεις up και down από τα κουμπιά του ελεγκτή και κάνει το rover να κινείται πάνω και κάτω.
 
   --- /feedback ---
 
@@ -85,7 +85,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This creates functions for moving up and down, but as the functions are not called, the rover would not move.
+  Αυτό δημιουργεί συναρτήσεις για κίνηση up και down, αλλά καθώς οι λειτουργίες δεν καλούνται, το rover δεν θα κινηθεί.
 
   --- /feedback ---
 
