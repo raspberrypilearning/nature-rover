@@ -1,6 +1,6 @@
-## You will make
+## Θα φτιάξεις
 
-Create a wilderness scene for a nature rover to explore.
+Θα δημιουργήσεις μια σκηνή άγριας φύσης που θα την εξερευνήσει ένα ρομποτικό όχημα εξερεύνησης φύσης.
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
 Τα <span style="color: #0faeb0">**Rovers**</span> είναι ρομπότ. Μπορούν να χρησιμοποιηθούν για τη διεξαγωγή επιστημονικών πειραμάτων σε απομακρυσμένα μέρη, όπως ο Άρης!  Εξετάζουν το περιβάλλον τους και μπορούν να καθοδηγηθούν σε ενδιαφέρουσες λειτουργίες και να πάρουν δείγματα. Εάν λειτουργούν με ηλιακή ενέργεια, μπορούν να τοποθετηθούν σε ηλιόλουστη θέση για να επαναφορτίσουν τις μπαταρίες τους.
@@ -18,7 +18,7 @@ Create a wilderness scene for a nature rover to explore.
 
 --- no-print ---
 
-### Play ▶️
+### Δοκίμασέ το ▶️
 
 --- task ---
 
