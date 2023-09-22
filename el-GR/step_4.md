@@ -47,7 +47,7 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**Test:** Click the green flag and check your left and right buttons now. Το δέντρο πρέπει να μετακινείται κάθε φορά που κάνεις κλικ στο χειριστήριο.
+**Δοκιμή:** Κάνε κλικ στην πράσινη σημαία και έλεγξε τώρα το αριστερό και το δεξί κουμπί. Το δέντρο πρέπει να μετακινείται κάθε φορά που κάνεις κλικ στο χειριστήριο.
 
 **Δοκιμή:** Τι συμβαίνει αν απομακρύνεσαι όσο πιο μακριά μπορείς από το δέντρο;
 
@@ -84,7 +84,7 @@ end
 
 --- task ---
 
-Lastly, make the **rover** turn left and right so that it faces the direction it is moving in, and resets at the start.
+Τέλος, κάνε το **rover** να στρίψει αριστερά και δεξιά, έτσι ώστε να βλέπει προς την κατεύθυνση προς την οποία κινείται και να επανέρχεται στην αρχή.
 
 ![Το αντικείμενο rover.](images/rover-sprite.png)
 
