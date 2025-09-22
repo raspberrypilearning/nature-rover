@@ -163,8 +163,8 @@ wait (0.3) seconds
 switch costume to (arm 1 v)
 wait (0.3) seconds
 switch costume to (arm 2 v)
-start sound (Collect v)
 wait (0.3) seconds
+start sound (Collect v)
 + broadcast (sample fruit v)
 switch costume to (arm 1 v)
 wait (0.3) seconds
