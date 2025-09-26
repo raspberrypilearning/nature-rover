@@ -52,17 +52,33 @@ end
 
 --- /task ---
 
-**rover** అన్ని ఇతర sprite ల కోసం ఆట ప్రారంభాన్ని కంట్రోల్ చేయబోతుంది; కాబట్టి ఆకుపచ్చ జెండాను క్లిక్ చేసినప్పుడు, **rover** sprite `start`{:class='block3events'} సందేశాన్ని బ్రాడ్ కాస్ట్ చేయాలి.
+The **rover** needs to be visible at all times, by making sure it is on the **front** layer.
 
 --- task ---
 
-`green flag clicked`{:class='block3events'} బ్లాక్ కు broadcast ను జోడించండి.
+Add a `go to front layer`{:class='block3looks'} to a `green flag clicked`{:class='block3events'} block.
 
 ![Rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
-broadcast [start v]
++ go to [front v] layer
+```
+
+--- /task ---
+
+**rover** అన్ని ఇతర sprite ల కోసం ఆట ప్రారంభాన్ని కంట్రోల్ చేయబోతుంది; కాబట్టి ఆకుపచ్చ జెండాను క్లిక్ చేసినప్పుడు, **rover** sprite `start`{:class='block3events'} సందేశాన్ని బ్రాడ్ కాస్ట్ చేయాలి.
+
+--- task ---
+
+Add a `broadcast`{:class='block3events'} block.
+
+![The rover sprite.](images/rover-sprite.png)
+
+```blocks3
+when flag clicked
+go to [front v] layer
++ broadcast [start v]
 ```
 
 --- /task ---
@@ -101,7 +117,7 @@ hide
 
 **up** బటన్ **rover** ని పైకి కదిలేలా చేయడానికి కోడ్‌ని జోడించండి.
 
-![Rover sprite.](images/rover-sprite.png)
+![Rovef sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [up v]
@@ -123,7 +139,7 @@ change y by (-10)
 
 అది పైకి కదులుతున్నప్పుడు చిన్నదిగా మరియు క్రిందికి కదులుతున్నప్పుడు పెద్దదిగా కనిపించేలా మీ **rover** కి **perspective** ని జోడించండి.
 
-![Rovef sprite.](images/rover-sprite.png)
+![Rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [up v]
@@ -160,7 +176,7 @@ set size to (50) %
 
 ఇప్పుడు ఆట ప్రారంభమైన ప్రతిసారీ **rover** స్థానాన్ని రీసెట్ చేయండి.
 
-![Rover sprite.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -174,7 +190,7 @@ set size to (50) %
 
 ప్రస్తుతానికి, **rover** ఇతర sprite ల కన్నా ముందు కనిపించాలి. **rover** ని ముందు లేయర్ కు తరలించండి.
 
-![Rover sprite.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
