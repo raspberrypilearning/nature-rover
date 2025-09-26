@@ -52,17 +52,33 @@ This keeps the buttons in the correct position, and broadcasts their directions 
 
 --- /task ---
 
-The **rover** is going to control the start of the game for all the other sprites; so when the green flag is clicked, the **rover** sprite needs to broadcast a `start`{:class='block3events'} message.
+The **rover** needs to be visible at all times, by making sure it is on the **front** layer.
 
 --- task ---
 
-Add the broadcast to a `green flag clicked`{:class='block3events'} block.
+Add a `go to front layer`{:class='block3looks'} to a `green flag clicked`{:class='block3events'} block.
 
 ![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
-broadcast [start v]
++ go to [front v] layer
+``` 
+
+--- /task ---
+
+The **rover** is going to control the start of the game for all the other sprites; so when the green flag is clicked, the **rover** sprite needs to broadcast a `start`{:class='block3events'} message.
+
+--- task ---
+
+Add a `broadcast`{:class='block3events'} block.
+
+![The rover sprite.](images/rover-sprite.png)
+
+```blocks3
+when flag clicked
+go to [front v] layer
++ broadcast [start v]
 ``` 
 
 --- /task ---
