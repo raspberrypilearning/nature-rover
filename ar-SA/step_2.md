@@ -52,17 +52,33 @@ end
 
 --- /task ---
 
-سيتحكم **الكشّاف** بداية اللعبة لجميع الكائنات الأخرى ؛ لذلك عندما النقر فوق العلم الأخضر، يحتاج الكائن **الكشّاف** إلى بث رسالة `البداية`{: class = 'block3events'}.
+The **rover** needs to be visible at all times, by making sure it is on the **front** layer.
 
 --- task ---
 
-أضف البث إلى مجموعة `العلم الأخضر منقور` {: class = 'block3events'}.
+Add a `go to front layer`{:class='block3looks'} to a `green flag clicked`{:class='block3events'} block.
 
 ![كائن الكشّاف.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
-broadcast [start v]
++ go to [front v] layer
+```
+
+--- /task ---
+
+سيتحكم **الكشّاف** بداية اللعبة لجميع الكائنات الأخرى ؛ لذلك عندما النقر فوق العلم الأخضر، يحتاج الكائن **الكشّاف** إلى بث رسالة `البداية`{: class = 'block3events'}.
+
+--- task ---
+
+Add a `broadcast`{:class='block3events'} block.
+
+![The rover sprite.](images/rover-sprite.png)
+
+```blocks3
+when flag clicked
+go to [front v] layer
++ broadcast [start v]
 ```
 
 --- /task ---
@@ -160,7 +176,7 @@ set size to (50) %
 
 الآن أعد تعيين موضع **الكشّاف** كلما بدأت اللعبة.
 
-![كائن الكشّاف.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -174,7 +190,7 @@ set size to (50) %
 
 في الوقت الحالي، **الكشاف** يجب أن يظهر أمام بقية الكائنات. حرك **الكشاف** إلى الطبقة الأمامية.
 
-![كائن الكشّاف.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
