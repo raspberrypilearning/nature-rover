@@ -52,17 +52,33 @@ Dit houdt de knoppen in de juiste positie en zendt hun richtingen uit wanneer ze
 
 --- /task ---
 
-De **rover** gaat het begin van het spel voor alle andere sprites besturen; dus wanneer op de groene vlag wordt geklikt, moet de **rover** sprite een `start`{:class='block3events'} bericht uitzenden.
+The **rover** needs to be visible at all times, by making sure it is on the **front** layer.
 
 --- task ---
 
-Voeg het bericht toe aan een blok `wanneer op de groene vlag wordt geklikt`{:class='block3events'}.
+Add a `go to front layer`{:class='block3looks'} to a `green flag clicked`{:class='block3events'} block.
 
 ![De rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
-broadcast [start v]
++ go to [front v] layer
+```
+
+--- /task ---
+
+De **rover** gaat het begin van het spel voor alle andere sprites besturen; dus wanneer op de groene vlag wordt geklikt, moet de **rover** sprite een `start`{:class='block3events'} bericht uitzenden.
+
+--- task ---
+
+Add a `broadcast`{:class='block3events'} block.
+
+![The rover sprite.](images/rover-sprite.png)
+
+```blocks3
+when flag clicked
+go to [front v] layer
++ broadcast [start v]
 ```
 
 --- /task ---
@@ -161,7 +177,7 @@ set size to (50) %
 
 Reset nu de positie van de **rover** telkens wanneer het spel begint.
 
-![De rover sprite.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -175,7 +191,7 @@ set size to (50) %
 
 Voorlopig zou de **rover** voor de andere sprites moeten verschijnen. Verplaats de **rover** naar de voorgrond.
 
-![De rover sprite.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
