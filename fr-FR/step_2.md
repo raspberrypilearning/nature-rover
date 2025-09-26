@@ -52,17 +52,33 @@ Cela garde les boutons dans la bonne position et diffuse leur direction quand on
 
 --- /task ---
 
-Le **rover** va contrôler le début du jeu pour tous les autres sprites ; ainsi, lorsque le drapeau vert est cliqué, le sprite **rover** doit diffuser un message `départ`{:class='block3events'}.
+The **rover** needs to be visible at all times, by making sure it is on the **front** layer.
 
 --- task ---
 
-Ajoute la diffusion à un bloc `quand le drapeau vert est cliqué`{:class='block3events'}.
+Add a `go to front layer`{:class='block3looks'} to a `green flag clicked`{:class='block3events'} block.
 
 ![Le sprite rover.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
-broadcast [start v]
++ go to [front v] layer
+```
+
+--- /task ---
+
+Le **rover** va contrôler le début du jeu pour tous les autres sprites ; ainsi, lorsque le drapeau vert est cliqué, le sprite **rover** doit diffuser un message `départ`{:class='block3events'}.
+
+--- task ---
+
+Add a `broadcast`{:class='block3events'} block.
+
+![The rover sprite.](images/rover-sprite.png)
+
+```blocks3
+when flag clicked
+go to [front v] layer
++ broadcast [start v]
 ```
 
 --- /task ---
@@ -160,7 +176,7 @@ set size to (50) %
 
 Maintenant, réinitialise la position du **rover** à chaque fois que le jeu démarre.
 
-![Le sprite rover.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -174,7 +190,7 @@ set size to (50) %
 
 Pour l'instant, le **rover** devrait apparaître devant les autres sprites. Déplace le **rover** à l'avant plan.
 
-![Le sprite rover.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
