@@ -90,6 +90,7 @@ Lastly, make the **rover** turn left and right so that it faces the direction it
 
 ```blocks3
 when flag clicked
+go to [front v] layer
 broadcast [start v]
 + set rotation style [left-right v]
 
