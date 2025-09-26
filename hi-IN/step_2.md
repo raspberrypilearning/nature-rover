@@ -52,17 +52,33 @@ end
 
 --- /task ---
 
-**rover** अन्य सभी स्प्राइट्स के लिए खेल की शुरुआत को नियंत्रित करने वाला है; इसलिए जब हरी झंडी पर क्लिक किया जाता है, तो **rover** स्प्राइट को `start`{:class='block3events'} संदेश प्रसारित करने की आवश्यकता होती है।
+The **rover** needs to be visible at all times, by making sure it is on the **front** layer.
 
 --- task ---
 
-`green flag clicked`{:class='block3events'} ब्लॉक पर प्रसारण जोड़ें।
+Add a `go to front layer`{:class='block3looks'} to a `green flag clicked`{:class='block3events'} block.
 
 ![rover स्प्राइट।](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
-broadcast [start v]
++ go to [front v] layer
+```
+
+--- /task ---
+
+**rover** अन्य सभी स्प्राइट्स के लिए खेल की शुरुआत को नियंत्रित करने वाला है; इसलिए जब हरी झंडी पर क्लिक किया जाता है, तो **rover** स्प्राइट को `start`{:class='block3events'} संदेश प्रसारित करने की आवश्यकता होती है।
+
+--- task ---
+
+Add a `broadcast`{:class='block3events'} block.
+
+![The rover sprite.](images/rover-sprite.png)
+
+```blocks3
+when flag clicked
+go to [front v] layer
++ broadcast [start v]
 ```
 
 --- /task ---
@@ -160,7 +176,7 @@ set size to (50) %
 
 अब हर बार खेल शुरू होने पर **rover** की स्थिति को रीसेट करें।
 
-![rover स्प्राइट।](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -174,7 +190,7 @@ set size to (50) %
 
 अभी के लिए, **rover** को अन्य स्प्राइट्स के सामने प्रकट होना चाहिए। **rover** को सामने की परत पर ले जाएं।
 
-![rover स्प्राइट।](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
