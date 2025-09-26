@@ -52,17 +52,33 @@ end
 
 --- /task ---
 
-**rover** ಉಳಿದ ಎಲ್ಲಾ ಸ್ಪ್ರೈಟ್‌ಗಳಿಗೂ ಆಟದ ಪ್ರಾರಂಭವನ್ನು ನಿಯಂತ್ರಿಸುತ್ತದೆ; ಆದುದರಿಂದ, ಹಸಿರು ಬಾವುಟವನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ, **rover** ಸ್ಪ್ರೈಟ್‌ `start`{:class='block3events'} ಸಂದೇಶವನ್ನು ಪ್ರಸಾರಮಾಡಬೇಕು.
+The **rover** needs to be visible at all times, by making sure it is on the **front** layer.
 
 --- task ---
 
-`green flag clicked`{:class='block3events'} ಬ್ಲಾಕ್‌ಗೆ ಪ್ರಸಾರವನ್ನು ಸೇರಿಸಿ.
+Add a `go to front layer`{:class='block3looks'} to a `green flag clicked`{:class='block3events'} block.
 
 ![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
-broadcast [start v]
++ go to [front v] layer
+```
+
+--- /task ---
+
+**rover** ಉಳಿದ ಎಲ್ಲಾ ಸ್ಪ್ರೈಟ್‌ಗಳಿಗೂ ಆಟದ ಪ್ರಾರಂಭವನ್ನು ನಿಯಂತ್ರಿಸುತ್ತದೆ; ಆದುದರಿಂದ, ಹಸಿರು ಬಾವುಟವನ್ನು ಕ್ಲಿಕ್‌ ಮಾಡಿದಾಗ, **rover** ಸ್ಪ್ರೈಟ್‌ `start`{:class='block3events'} ಸಂದೇಶವನ್ನು ಪ್ರಸಾರಮಾಡಬೇಕು.
+
+--- task ---
+
+Add a `broadcast`{:class='block3events'} block.
+
+![The rover sprite.](images/rover-sprite.png)
+
+```blocks3
+when flag clicked
+go to [front v] layer
++ broadcast [start v]
 ```
 
 --- /task ---
@@ -160,7 +176,7 @@ set size to (50) %
 
 ಈಗ ಪ್ರತಿಬಾರಿ ಆಟ ಪ್ರಾರಂಭವಾಗುವಾಗ **rover** ನ ಸ್ಥಾನವನ್ನು ಮರುಹೊಂದಿಸಿ.
 
-![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -174,7 +190,7 @@ set size to (50) %
 
 ಸದ್ಯಕ್ಕೆ, **rover** ಉಳಿದ ಸ್ಪ್ರೈಟ್‌ಗಳ ಮುಂದೆ ಕಾಣಿಸಿಕೊಳ್ಳಬೇಕು. **rover**ನ್ನು ಮುಂಭಾಗದ ಪದರಕ್ಕೆ ಚಲಿಸಿ.
 
-![ರೋವರ್‌ ಸ್ಪ್ರೈಟ್.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
