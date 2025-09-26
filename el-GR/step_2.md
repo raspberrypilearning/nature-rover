@@ -52,17 +52,33 @@ end
 
 --- /task ---
 
-Το **ρομποτικό όχημα** θα ελέγχει την έναρξη του παιχνιδιού για όλα τα άλλα αντικείμενα. Έτσι, όταν κάνεις κλικ στην πράσινη σημαία, το αντικείμενο **rover** πρέπει να μεταδώσει ένα μήνυμα `start`{:class='block3events'}.
+The **rover** needs to be visible at all times, by making sure it is on the **front** layer.
 
 --- task ---
 
-Πρόσθεσε τη μετάδοση σε ένα μπλοκ `όταν γίνει κλικ σε πράσινη σημαία`{:class='block3events'}.
+Add a `go to front layer`{:class='block3looks'} to a `green flag clicked`{:class='block3events'} block.
 
 ![Το αντικείμενο rover.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
-broadcast [start v]
++ go to [front v] layer
+```
+
+--- /task ---
+
+Το **ρομποτικό όχημα** θα ελέγχει την έναρξη του παιχνιδιού για όλα τα άλλα αντικείμενα. Έτσι, όταν κάνεις κλικ στην πράσινη σημαία, το αντικείμενο **rover** πρέπει να μεταδώσει ένα μήνυμα `start`{:class='block3events'}.
+
+--- task ---
+
+Add a `broadcast`{:class='block3events'} block.
+
+![The rover sprite.](images/rover-sprite.png)
+
+```blocks3
+when flag clicked
+go to [front v] layer
++ broadcast [start v]
 ```
 
 --- /task ---
@@ -160,7 +176,7 @@ set size to (50) %
 
 Τώρα πρέπει να επαναφέρεις τη θέση του **rover** κάθε φορά που ξεκινά το παιχνίδι.
 
-![Το αντικείμενο rover.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -174,7 +190,7 @@ set size to (50) %
 
 Προς το παρόν, το **rover** θα πρέπει να εμφανίζεται μπροστά από τα άλλα αντικείμενα. Μετακίνησε το **rover** στο προσκήνιο.
 
-![Το αντικείμενο rover.](images/rover-sprite.png)
+![The rover sprite.](images/rover-sprite.png)
 
 ```blocks3
 when I receive [start v]
