@@ -1,14 +1,14 @@
-## Upgrade your project
+## Melhore o seu projeto
 
-Make your rover interact with the nature scene even more, similar to how a real rover would behave.
+Faça com que seu robô interaja ainda mais com a natureza, de forma semelhante ao comportamento de um robô real.
 
-You can:
-- Add even more samples to your project, using the prebuilt animations or ones you create yourself
-- Use variables to count samples; increase the count each time a sample is collected
-- Introduce an energy variable so that the rover has to use a renewable energy source like the sun, to recharge
-- Animate the rover when it has collected enough samples (for example, it could do a dance and then fly away)
+Você pode:
+- Adicione ainda mais amostras ao seu projeto, usando as animações pré-construídas ou aquelas que você mesmo cria
+- Use variáveis para contar amostras; aumente a contagem cada vez que uma amostra for coletada
+- Introduza uma variável de energia para que o robô tenha que usar uma fonte de energia renovável, como o sol, para recarregar
+- Anime o robô quando ele tiver coletado amostras suficientes (por exemplo, ele poderia dançar e depois voar para longe)
 
-You can use any of the blocks that you learned about in this project, as well as those that you already know.
+Você pode usar qualquer um dos blocos que você já aprendeu neste projeto, bem como aqueles que você já tem conhecimento.
 
 ```blocks3
 define collect sample ::custom
@@ -31,7 +31,7 @@ if <touching color (#FFAA00) ?> then
   <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/536887721/?autostart=false" frameborder="0"></iframe>
 </div>
 
-You can view the complete project [here](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
+Você pode ver o projeto concluído [aqui](https://scratch.mit.edu/projects/536887721){:target="_blank"}.
 
 
 
