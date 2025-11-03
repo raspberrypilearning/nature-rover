@@ -1,21 +1,21 @@
-## Scroll more sprites
+## Mova mais atores
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-When adding more sprites to your scene, these need to scroll left and right as well.
+Ao adicionar mais atores à sua cena, eles também precisam se mover para a esquerda e para a direita.
 </div>
 <div>
 ![](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
-Now you can add some more objects to your scene, and scroll them in a similar way.
+Agora você pode adicionar mais alguns objetos à sua cena e movê-los de maneira semelhante.
 
 --- task ---
 
-Add a **tree** sprite to your project, and then set its starting position.
+Adicione um ator **árvore** ao seu projeto e, em seguida, defina sua posição inicial.
 
-![The tree sprite.](images/tree-sprite.png)
+![O ator Árvore.](images/tree-sprite.png)
 ```blocks3
 when I receive [start v]
 go to x:(0) y:(-80)
@@ -23,17 +23,17 @@ go to x:(0) y:(-80)
 
 --- /task ---
 
-The **tree** sprite should also move in the **opposite** direction to the broadcast as well.
+O ator da **árvore** também deve se mover na direção **oposta** à transmissão.
 
-![Animation of a tree moving right and left, showing the x coordinate changing.](images/scrolling-tree.gif)
+![Animação de uma árvore se movendo para a direita e para a esquerda, mostrando as coordenadas x mudando.](images/scrolling-tree.gif)
 
-As the tree is closer to the viewer, it should appear to move a greater distance than the hills each time the button or key is pressed.
+Como a árvore está mais perto do espectador, deve parecer se mover uma distância maior do que as colinas cada vez que o botão ou a tecla são pressionados.
 
 --- task ---
 
-To get this moving effect, change the `x`{:class='block3motion'} values that the **tree** sprite moves by when the `left`{:class="block3events"} and `right`{:class="block3events"} broadcasts are received.
+Para obter esse efeito de movimento, altere os valores `x`{:class='block3motion'} pelos quais o ator da **árvore** se move quando as transmissões `esquerda`{:class="block3events"} e `direita`{:class="block3events"} são recebidas.
 
-![The tree sprite.](images/tree-sprite.png)
+![O ator Árvore.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -47,19 +47,19 @@ change x by (-10) //Use a bigger number than for the hills
 
 --- task ---
 
-**Test:** Click the green flag and check your left and right buttons now. The tree should move each time you click on the controller.
+**Teste:** Clique na bandeira verde e verifique seus botões esquerdo e direito agora. A árvore deve se mover cada vez que você clicar no controle.
 
-**Test:** What happens if you go as far away from the tree as you can?
+**Teste:** O que acontece se você se afastar o máximo possível da árvore?
 
 --- /task ---
 
-Did you notice that when the tree reaches the very edge of the screen, it stops moving? You can fix this by moving the tree to the other side of the screen, when its `x`{:class='block3motion'} coordinate is too high or too low.
+Você notou que quando a árvore chega na borda da tela, ela para de se mover? Você pode corrigir isso movendo a árvore para o outro lado da tela, quando sua coordenada `x`{:class='block3motion'} estiver muito alta ou muito baixa.
 
 --- task ---
 
-Using a `forever`{:class='block3control'} loop, and `if`{:class='block3control'} blocks, check the `x`{:class='block3motion'} coordinate of the tree, and move it to the other side of the screen when `x`{:class='block3motion'} is higher than `290` or lower than `-290`.
+Usando um loop `sempre`{:class='block3control'}, e blocos `se`{:class='block3control'}, verifique a coordenada `x`{:class='block3motion'} da árvore, e a mova para o outro lado da tela quando `x`{:class='block3motion'} for maior que `290` ou menor que `-290`.
 
-![The tree sprite.](images/tree-sprite.png)
+![O ator Árvore.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -78,15 +78,15 @@ end
 
 --- task ---
 
-Now move your **rover** sprite around the screen. When the tree reaches the edge, it should vanish off the edge of the screen and reappear on the other side.
+Agora mova seu ator **rover** pela tela. Quando a árvore atingir a borda, ela deverá desaparecer da borda da tela e reaparecer do outro lado.
 
 --- /task ---
 
 --- task ---
 
-Lastly, make the **rover** turn left and right so that it faces the direction it is moving in, and resets at the start.
+Por fim, faça o **rover** virar à esquerda e à direita de modo que fique voltado para a direção em que está se movendo e reinicie no início.
 
-![The rover sprite.](images/rover-sprite.png)
+![O ator Rover.](images/rover-sprite.png)
 
 ```blocks3
 when flag clicked
@@ -111,6 +111,6 @@ go to [front v] layer
 
 --- task ---
 
-**Test**: Run your project and test it. Make sure the tree appears to fall off the edge of the screen and appears on the other side when the rover moves.
+**Teste**: Execute e teste seu projeto. Certifique-se de que a árvore pareça cair da borda da tela e apareça do outro lado quando o rover se move.
 
 --- /task ---
