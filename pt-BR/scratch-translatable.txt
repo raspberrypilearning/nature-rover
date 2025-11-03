@@ -1,28 +1,28 @@
-up
+para cima
 
-start
+início
 
-down
+para baixo
 
-right
+direita
 
-left
+esquerda
 
-scroll
+rolar
 
-sample fruit
+amostra de fruta
 
-inactive
+inativo
 
-arm 1
+braço 1
 
-arm 2
+braço 2
 
-tree with fruit
+árvore com frutas
 
-tree without fruit
+árvore sem frutas
 
-recharge
+recarregar
 
 solar 1
 
@@ -30,14 +30,14 @@ solar 2
 
 solar 3
 
-cat animation
+animação de gato
 
-costume 1
+fantasia 1
 
-costume 2
+fantasia 2
 
-cat dance
+dança de gato
 
-collect sample
+coleta amostra
 
-energy
+energia
