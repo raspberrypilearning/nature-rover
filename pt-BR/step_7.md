@@ -1,2 +1,2 @@
-## Quick quiz
+## Teste Rápido
 
