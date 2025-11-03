@@ -1,23 +1,23 @@
-## Quick quiz
+## Teste rápido
 
-Answer the three questions. There are hints to guide you to the correct answer.
+Responda às três perguntas. Existem dicas para guiá-lo para a resposta correta.
 
-When you have answered each question, click on **Check my answer**.
+Quando você tiver respondido a cada pergunta, clique em **Verificar minha resposta**.
 
-Have fun!
+Divirta-se!
 
 
 --- question ---
 
 ---
-legend: Question 1 of 3
+legenda: Pergunta 1 de 3
 ---
 
-Here is a controller that broadcasts up when the up button is clicked and down when the down button is clicked:
+Aqui está um controle que transmite para cima quando o botão para cima é clicado, e para baixo quando o botão para baixo é clicado:
 
-![four button controller](images/controller.png)
+![controlador de quatro botões](images/controller.png)
 
-Which of the following code blocks would you add to **the rover sprite** to make it move up and down
+Qual dos seguintes blocos de código você adicionaria ao **ator do rover** para fazê-lo mover-se para cima e para baixo
 
 --- choices ---
 
@@ -37,7 +37,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This would move the rover when it is touching the buttons, rather than when the buttons are pressed.
+  Isto moveria o rover quando está tocando os botões, ao invés de quando os botões são pressionados.
 
   --- /feedback ---
 
@@ -50,7 +50,7 @@ change y by (10)
 
 --- feedback ---
 
-  This would move the rover when it was clicked on, rather than when the buttons are clicked on.
+  Isso moveria o rover quando ele fosse clicado, e não quando os botões fossem clicados.
 
   --- /feedback ---
 
@@ -67,7 +67,7 @@ change y by (-10)
 
   --- feedback ---
 
-  Yes, this script receives the up and down broadcasts from the controller buttons and gets the rover to move up and down.
+  Sim, este script recebe as transmissões para cima e para baixo dos botões de controle e faz com que o rover vá para cima e para baixo.
 
   --- /feedback ---
 
@@ -85,7 +85,7 @@ change y by (-10)
 
   --- feedback ---
 
-  This creates functions for moving up and down, but as the functions are not called, the rover would not move.
+  Isso cria funções para mover para cima e para baixo, mas como as funções não são chamadas, o rover não se moveria.
 
   --- /feedback ---
 
