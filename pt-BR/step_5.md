@@ -1,42 +1,42 @@
-## Collect a sample
+## Colete uma amostra
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-In this step, you will change the appearance of a sprite and the rover to show the rover collecting samples.
+Nesta etapa, você mudará a aparência de um ator e do rover para mostrar o rover coletando amostras.
 </div>
 <div>
-![Animation of the rover moving across the stage, from time to time the rover appears to move further into the background getting smaller and then returning to the foreground](images/step-4.gif){:width="300px"}
+![Animação do rover se movendo pelo palco, ocasionalmente o rover parece se mover mais para o fundo, ficando menor e depois retornando ao primeiro plano](images/step-4.gif){:width="300px"}
 </div>
 </div>
 
 --- task ---
 
-Look at the **rover** sprite's costumes. There are six animations available. The **rover** can:
-- Extend its arm
+Olhe para as fantasias do ator **rover**. Há seis animações disponíveis. O **rover** pode:
+- Estender o braço
 
-![Three costumes showing the rover arm extending.](images/arm-animation.png)
+![Três fantasias mostrando o braço do rover se estendendo.](images/arm-animation.png)
 
-- Drill into the ground
-- Suck in air
-- Extend a solar panel
-- Take a picture
-- Scoop something up
+- Perfurar o solo
+- Sugar o ar
+- Estender um painel solar
+- Tirar uma foto
+- Pegar alguma coisa
 
 --- /task ---
 
-When you want to organise a lot of code in Scratch, such as several costume changes, it is useful to use `My Blocks`{:class="block3myblocks"}. This allows you to create your own custom blocks.
+Quando você quiser organizar muitos códigos no Scratch, como várias mudanças de fantasia, é útil usar `Meus Blocos`{:class="block3myblocks"}. Isso permite que você crie seus próprios blocos personalizados.
 
-Your **rover** sprite will have a `My Block`{:class="block3myblocks"} for each animation.
+Seu ator **rover** terá um `Meu Bloco`{:class="block3myblocks"} para cada animação.
 
 --- task ---
 
-In the `My Blocks`{:class="block3myblocks"} menu, click on **Make a Block**, and name your new block `sample fruit`{:class="block3myblocks"}.
+No menu `Meus Blocos`{:class="block3myblocks"}, clique em **Faça um Bloco**, e nomeie o seu novo bloco `amostra de fruta`{:class="block3myblocks"}.
 
 --- /task ---
 
-A new block should appear in your script. It will look like this:
+Um novo bloco deve aparecer no seu script. Ficará assim:
 
-![The rover sprite.](images/rover-sprite.png)
+![O ator Rover.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -44,11 +44,11 @@ define sample fruit
 
 --- task ---
 
-Beneath this block, attach some `switch costume`{:class="block3looks"} blocks and `wait`{:class="block3control"} blocks, to animate the robot.
+Abaixo deste bloco, anexe alguns blocos `mudar a fantasia`{:class="block3looks"} e blocos `espere`{:class="block3control"} para animar o robô.
 
-**Tip:** It is quicker to create your first `switch costume`{:class='block3looks'} block and `wait`{:class='block3control'} block, then duplicate them, and change the costume being used.
+**Dica:** É mais rápido criar seu primeiro bloco `mudar a fantasia`{:class='block3looks'} e `espere`{:class='block3control'}, depois duplicá-los e alterar a fantasia que está sendo usada.
 
-![The rover sprite.](images/rover-sprite.png)
+![O ator Rover.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit //Animates the robot to collect fruit
@@ -67,9 +67,9 @@ switch costume to (inactive v)
 
 --- task ---
 
-Add a block so that the **rover** sprite plays a sound when it collects the fruit sample. You can find the **Collect** sound in the Sound gallery.
+Adicione um bloco para que o ator **rover** reproduza um som quando coletar a amostra de fruta. Você pode encontrar o som **Collect** na galeria de Sons.
 
-![The rover sprite.](images/rover-sprite.png)
+![O ator Rover.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit //Animates the robot to collect fruit
@@ -90,17 +90,17 @@ switch costume to (inactive v)
 
 --- task ---
 
-You can click on the `define sample fruit`{:class="block3myblocks"} block to see the animation. If you are on a small screen, you might need to look closely.
+Você pode clicar no bloco `definir amostra de fruta`{:class="block3myblocks"} para ver a animação. Se você estiver em uma pequena tela, talvez precise olhar de perto.
 
-The animation won't run when you click the green flag though, as you have not yet used your new `sample fruit block`{:class='block3myblocks'} in your project.
+A animação não será executada quando você clicar na bandeira verde, pois você ainda não usou seu novo `bloco de amostra de fruta`{:class='block3myblocks'} em seu projeto.
 
 --- /task ---
 
 --- task ---
 
-To use your new block, you can attach it to an `event`{:class="block3events"} block. In the `My Blocks`{:class="block3myblocks"} menu, you should see the block you made. Use it in the following script.
+Para usar seu novo bloco, você pode anexá-lo a um bloco `evento`{:class="block3events"}. No menu `Meus Blocos`{:class="block3myblocks"}, você deverá ver o bloco que criou. Use-o no script a seguir.
 
-![The rover sprite.](images/rover-sprite.png)
+![O ator Rover.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -111,25 +111,25 @@ sample fruit ::custom //Run the animation
 
 --- task ---
 
-Click on the **rover** sprite, and you should see the animation.
+Clique no ator **rover** e você deverá ver a animação.
 
 --- /task ---
 
-Now you need to make the rover actually collect a sample. In this example, the rover will collect a fruit from a tree.
+Agora você precisa fazer o rover realmente coletar uma amostra. Neste exemplo, o rover irá colher uma fruta de uma árvore.
 
 --- task ---
 
-The **tree** sprite needs two costumes, one without fruit on (`tree without fruit`{:class="block3looks"}), and one with fruit (`tree with fruit`{:class="block3looks"}). Add another costume to the **tree**, change the names and draw some fruit on the **with fruit** one.
+O ator **árvore** precisa de duas fantasias, uma sem frutas (`árvore sem frutas`{:class="block3looks"}) e uma com frutas (`árvore com frutas`{:class="block3looks"}). Adicione outra fantasia à **árvore**, troque os nomes e desenhe algumas frutas na **com a fruta**.
 
-![The 'tree with fruit' costume, with 5 light red circles on it to represent fruit](images/tree-with-fruit.png)
+![A fantasia de 'árvore com frutas', com 5 círculos vermelhos claros para representar frutas](images/tree-with-fruit.png)
 
 --- /task ---
 
 --- task ---
 
-On the **tree** sprite, add blocks to set the costume of the **tree** at the start of the project, and the costume it should switch to when it receives a `sample fruit`{:class="block3events"} broadcast.
+No ator da **árvore**, adicione blocos para definir o fantasia da **árvore** no início do projeto e a fantasia para o qual ela deve mudar quando receber uma transmissão de `amostra de fruta`{:class="block3events"}.
 
-![The tree sprite.](images/tree-sprite.png)
+![O ator Árvore.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -152,9 +152,9 @@ end
 
 --- task ---
 
-On the **rover** sprite, you can use the new `broadcast`{:class="block3events"} to trigger the costume change. Add this new `broadcast`{:class="block3events"} into your `define sample fruit`{:class="block3myblocks"} function.
+No ator **rover**, você pode usar a nova `transmissão`{:class="block3events"} para acionar a mudança de fantasia. Adicione esta nova `transmissão`{:class="block3events"} na sua função `defina amostra de fruta`{:class="block3myblocks"}.
 
-![The rover sprite.](images/rover-sprite.png)
+![O ator Rover.](images/rover-sprite.png)
 
 ```blocks3
 define sample fruit
@@ -175,21 +175,21 @@ switch costume to (inactive v)
 
 --- task ---
 
-**Test:** To check that your code is working, click on the flag, and then click on your **rover** sprite. Its arm should extend, and the **tree** sprite should change costumes.
+**Teste:** Para verificar se seu código está funcionando, clique na bandeira e depois clique no seu ator **rover**. O braço dele deve se estender, e o ator **árvore** deve mudar de fantasia.
 
-**Tip:** Switch to full screen mode and you will be able to see the animation more easily.
+**Dica:** Mude para o modo de tela cheia e você poderá ver a animação mais facilmente.
 
 --- /task ---
 
-The rover should only be able to collect the fruit, if it is touching it.
+O rover só deve conseguir coletar a fruta se estiver tocando nela.
 
 --- task ---
 
-On the **rover** sprite, change the `when this sprite clicked`{:class="block3events"} set of blocks, so that the `sample fruit`{:class="block3myblocks"} function is only called if the **rover** sprite is touching the colour of your fruit.
+No ator **rover**, mude o valor `quando este ator clicar em`{:class="block3events"} dos blocos, para que a função `amostra de fruta`{:class="block3myblocks"} só seja chamada se o ator **rover** estiver tocando a cor da sua fruta.
 
-**Tip:** Your costume change from testing might mean that the fruit is not visible. Just click on the costumes tab for the **tree** sprite, and switch to the costume with the visible fruit.
+**Dica:** Sua mudança de fantasia após o teste pode fazer com que a fruta não fique visível. Basta clicar na aba de fantasias do ator **árvore** e mudar para a fantasia com a fruta visível.
 
-![The rover sprite.](images/rover-sprite.png)
+![O ator Rover.](images/rover-sprite.png)
 
 ```blocks3
 when this sprite clicked
@@ -201,9 +201,9 @@ sample fruit ::custom
 
 --- task ---
 
-Now that the **tree** sprite changes when a fruit is sampled, you need to reset the sprite to its first costume when it goes off the screen.
+Agora que o ator **árvore** muda quando uma fruta é amostrada, você precisa redefinir o ator para sua primeira fantasia quando ele sai da tela.
 
-![The tree sprite.](images/tree-sprite.png)
+![O ator Árvore.](images/tree-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -225,7 +225,7 @@ end
 
 --- task ---
 
-**Test:** Move the **rover** sprite so that it is touching the fruit, then click on the **rover** sprite and watch it collect the fruit from the tree.
+**Teste:** Mova o ator **rover** de modo que ele toque a fruta, então clique no ator **rover** e observe-o coletar a fruta da árvore.
 
 --- /task ---
 
