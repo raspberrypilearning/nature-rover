@@ -1,8 +1,8 @@
-## Collect an air sample
+## Colete uma amostra de ar
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-Another way of making the rover appear to collect samples, is by changing some of the properties of a sprite, rather than it's costume.
+Outra forma de fazer o veículo parecer estar coletando amostras é alterando algumas das propriedades de um ator, em vez de sua roupa.
 </div>
 <div>
 ![](images/step-5.gif){:width="300px"}
@@ -10,27 +10,27 @@ Another way of making the rover appear to collect samples, is by changing some o
 </div>
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Parallax scrolling**</span> is when background images move past the camera more slowly than foreground images
+<span style="color: #0faeb0">**Rolagem com paralaxe**</span> ocorre quando as imagens de fundo se movem pela câmera mais lentamente do que as imagens de primeiro plano
 </p>
 
 --- task ---
 
-Add a cloud sprite to your project from the library of sprites in Scratch, or draw one yourself, and position and resize it below the sky so that the rover can reach it.
+Adicione um ator de nuvem ao seu projeto a partir da biblioteca de ator do Scratch, ou desenhe um você mesmo, e posicione e redimensione-o abaixo do céu para que o rover possa alcançá-lo.
 
-![image of the scratch scene, with an added cloud resized to 50%](images/add-cloud.png)
+![imagem da cena do arranhão, com uma nuvem adicionada e redimensionada para 50%](images/add-cloud.png)
 
 --- /task ---
 
 --- collapse ---
 ---
-title: Add graphic effects to the cloud
+título: Adicionar efeitos gráficos à nuvem
 ---
 
-Using some graphic effects, change the appearance of the cloud sprite, so that it looks like a swirling ball of gas. You can play with different graphic effects, but the below example makes the sprite appear a little transparent and makes it swirl around.
+Utilizando alguns efeitos gráficos, altere a aparência do sprite da nuvem para que pareça uma bola de gás giratória. Você pode experimentar diferentes efeitos gráficos, mas o exemplo abaixo faz com que o ator pareça um pouco transparente e gire em torno dele.
 
-![animation of the cloud swirling in a cycle](images/cloud.gif)
+![animação da nuvem girando em um ciclo](images/cloud.gif)
 
-![cloud sprite](images/cloud-sprite.png)
+![ator de nuvem](images/cloud-sprite.png)
 ```blocks3
 when I receive [start v]
 show
@@ -51,13 +51,13 @@ change [whirl v] effect by (50)
 
 --- /collapse ---
 
-For the cloud to scroll, it needs to move when it receives the `left`{:class='block3events'} and `right`{:class='block3events'} messages. As the cloud is further away from the viewer than the tree, it should move a smaller distance each time, and still dissapear off the edge of the screen and reappear on the other side.
+Para que a nuvem role, ela precisa se mover quando receber as mensagens `esquerda`{:class='block3events'} e `direita`{:class='block3events'}. Como a nuvem está mais distante do observador do que a árvore, ela deve se mover uma distância menor a cada vez, desaparecendo da borda da tela e reaparecendo do outro lado.
 
 --- task ---
 
-Add code to make the cloud move. You may need to adjust the numbers, depending on the size and position of the sprite. As the cloud should appear further back, it should move less than the tree.
+Adicione o código para fazer a nuvem se mover. Você pode precisar ajustar os números, dependendo do tamanho e da posição do ator. Como a nuvem deve aparecer mais ao fundo, ela deve se mover menos que a árvore.
 
-![cloud sprite](images/cloud-sprite.png)
+![ator de nuvem](images/cloud-sprite.png)
 ```blocks3
 when I receive [left v]
 change x by (5)
@@ -78,26 +78,26 @@ end
 
 --- /task ---
 
-Get the rover to collect the air sample.
+Faça com que o veículo explorador colete a amostra de ar.
 
 --- task ---
 
-Set up an animation function for the rover sprite, so that it can collect the air sample. You can duplicate the code from the sample tree function to do this.
+Configure uma função de animação para o ator do rover, para que ele possa coletar a amostra de ar. Você pode duplicar o código da função de árvore de exemplo para fazer isso.
 
 --- collapse ---
 ---
 
-title: Duplicating code
+título: Duplicando código
 
 ---
 
-Here is an easy way of duplicating the code for your new function.
+Aqui está uma maneira fácil de duplicar o código para sua nova função.
 
-![animation showing code being duplicated](images/duplicating.gif)
+![animação mostrando a duplicação de código](images/duplicating.gif)
 
 --- /collapse ---
 
-![rover sprite](images/rover-sprite.png)
+![ator de rover](images/rover-sprite.png)
 ```blocks3
 define sample air
 switch costume to (inactive v)
@@ -117,40 +117,40 @@ switch costume to (inactive v)
 
 --- /task ---
 
-Get the rover to broadcast a message to the cloud sprite so that it knows when to animate.
+Faça com que o rover transmita uma mensagem para o ator da nuvem para que ele saiba quando animar.
 
 --- task ---
 
-Create a new broadcast message called `sample air`{:class='block3events'} and then add it into your `sample air`{:class='block3custom'} function.
+Crie uma nova mensagem de transmissão chamada `sample air`{:class='block3events'} e adicione-a à sua função `sample air`{:class='block3custom'}.
 
-![rover sprite](images/rover-sprite.png)
+![ator  de rover](images/rover-sprite.png)
 ```blocks3
-define sample air
-switch costume to (inactive v)
-wait (0.3) seconds
-switch costume to (air 1 v)
-wait (0.3) seconds
-switch costume to (air 2 v)
-wait (0.3) seconds
-switch costume to (air 3 v)
-wait (0.3) seconds
-+ broadcast (sample air v)
-switch costume to (air 2 v)
-wait (0.3) seconds
-switch costume to (air 1 v)
-wait (0.3) seconds
-switch costume to (inactive v)
+definir amostra de ar
+alternar traje para (inativo v)
+esperar (0,3) segundos
+alternar traje para (ar 1 v)
+esperar (0,3) segundos
+alternar traje para (ar 2 v)
+esperar (0,3) segundos
+alternar traje para (ar 3 v)
+esperar (0,3) segundos
++ transmitir (amostra de ar v)
+alternar traje para (ar 2 v)
+esperar (0,3) segundos
+alternar traje para (ar 1 v)
+aguarde (0,3) segundos
+troque de traje para (v inativo)
 ```
 
 --- /task ---
 
-The function should only be called if the rover is touching the cloud sprite.
+A função só deve ser chamada se o rover estiver em contato com o ator da nuvem.
 
 --- task ---
 
-Add code so that the rover only `samples air`{:class='block3custom'} `if`{:class='block3control'} it is `touching the cloud`{:class='block3sensing'}.
+Adicione código para que o rover apenas `recolha amostras de ar`{:class='block3custom'} `se`{:class='block3control'} ele estiver `tocando a nuvem`{:class='block3sensing'}.
 
-![rover sprite](images/rover-sprite.png)
+![ator  de rover](images/rover-sprite.png)
 ```blocks3
 when this sprite clicked
 if <touching color [Cloud v] ?> then
@@ -160,11 +160,11 @@ end
 
 --- /task ---
 
-Get the air sample to animate when the rover collects it. You can make it do what you like but in this example it disappears while being sucked up by the rover.
+Faça com que a amostra de ar seja animada quando o rover a coletar. Você pode fazer com que ele faça o que quiser, mas neste exemplo ele desaparece enquanto é sugado pelo veículo explorador.
 
 --- task ---
 
-Add an animated effect to the cloud that changes the size.
+Adicione um efeito animado à nuvem que altere seu tamanho.
 
 ![cloud sprite](images/cloud-sprite.png)
 ```blocks3
@@ -180,15 +180,15 @@ set size to (50) %
 
 --- task ---
 
-**Test** your project by clicking the green flag and then moving your rover until it touches the cloud. Click on the rover and it should appear to suck up the cloud.
+**Teste** seu projeto clicando na bandeira verde e movendo seu rover até que ele toque a nuvem. Clique no rover e ele deverá parecer estar sugando a nuvem.
 
 --- /task ---
 
 --- task ---
 
-Now change your cloud sprite's code so that it resets when it goes off the screen.
+Agora altere o código do seu ator de nuvem para que ele seja reiniciado quando sair da tela.
 
-![cloud sprite](images/cloud-sprite.png)
+![ator de nuvem](images/cloud-sprite.png)
 ```blocks3
 when I receive [start v]
 + forever
