@@ -2,10 +2,10 @@
 --- question ---
 
 ---
-legend: Question 3 of 3
+legend: Pergunta 3 de 3
 ---
 
-This script is a function that is used to get a cat to dance:
+Este script é uma função usada para fazer um gato dançar:
 
 ```blocks3
 define cat animation
@@ -15,7 +15,7 @@ switch costume to [costume 2 v]
 wait (0.1) seconds
 ```
 
-Which of the following scripts would use the `cat animation`{:class='block3myblocks'} above to make the cat dance when the Sprite is clicked?
+Qual dos seguintes scripts usariam a animação `gato`{:class='block3myblocks'} acima para fazer o gato dançar quando o Ator fosse clicado?
 
 --- choices ---
 
@@ -31,7 +31,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but does not use the `cat animation`{:class='block3myblocks'} block that has been made.
+  Este faria o gato dançar, mas não usa o bloco `animação de gato`{:class='block3myblocks'} que foi criado.
 
   --- /feedback ---
 
@@ -44,7 +44,7 @@ cat dance ::custom
 
   --- feedback ---
 
-  This is calling a `cat dance`{:class='block3myblocks'} block, but not the cat `cat animation`{:class='block3myblocks'} block.
+  Este está chamando um bloco `dança de gato`{:class='block3myblocks'}, mas não o bloco de gato `animação de gato`{:class='block3myblocks'}.
 
   --- /feedback ---
 
@@ -60,7 +60,7 @@ wait (0.1) seconds
 
   --- feedback ---
 
-  This would make the cat dance, but not when the sprite is clicked. It also does not use the `cat animation`{:class='block3myblocks'} block.
+  Este faria o gato dançar, mas não quando o ator fosse clicado. Também não usa o bloco `animação de gato`{:class='block3myblocks'}.
 
   --- /feedback ---
 
@@ -73,7 +73,7 @@ cat animation ::custom
 
   --- feedback ---
 
-Yes, in this answer, the `cat animation`{:class='block3myblocks'} block is used when the sprite is clicked, causing the cat to dance.
+Sim, nesta resposta, o bloco `animação de gato`{:class='block3myblocks'} é usado quando o ator é clicado, fazendo o gato dançar.
 
   --- /feedback ---
 
