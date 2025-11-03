@@ -1,32 +1,32 @@
 ---
-title: Nature rover
+title: Rover da Natureza
 hero_image: images/banner.png
-description: Use Scratch to create a wilderness scene for a nature rover to explore
-meta_title: Scratch coding projects for kids and teens | Nature rover
-meta_description: Learn Scratch with the Raspberry Pi Foundation's coding projects for kids and teens. Create a wilderness scene with Scratch for a nature rover to explore.
+description: Use o Scratch para criar uma cena selvagem para um rover da natureza explorar
+meta_title: Projetos de programação Scratch para crianças e adolescentes | Rover da Natureza
+meta_description: Aprenda Scratch com os projetos de programação da Raspberry Pi Foundation para crianças e adolescentes. Crie uma cena selvagem no Scratch para um rover da natureza explorar.
 version: 4
 listed: true
 copyedit: true
 last_tested: "2021-03-26"
 steps:
   - 
-    title: You will make
+    title: Você vai fazer
   - 
-    title: Control the rover
+    title: Controlar o rover
   - 
-    title: Scroll the background
+    title: Mover o cenário
     completion:
       - engaged
   - 
-    title: Scroll more sprites
+    title: Mover mais atores
   - 
-    title: Collect a sample
+    title: Coletar uma amostra
   - 
-    title: Create another sample
+    title: Criar outra amostra
     completion:
       - internal
   - 
-    title: Quick quiz
+    title: Teste rápido
     knowledge_quiz:
       path: quiz1
       version: 1
@@ -35,4 +35,4 @@ steps:
     completion:
       - external
   - 
-    title: Upgrade your project
+    title: Melhore o seu projeto
