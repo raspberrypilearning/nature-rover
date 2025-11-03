@@ -1,8 +1,8 @@
-## Scroll the background
+## Mova o cenário
 
 <div style="display: flex; flex-wrap: wrap">
 <div style="flex-basis: 200px; flex-grow: 1; margin-right: 15px;">
-For the rover to look like it's moving left and right, instead of the **rover** sprite moving, the **background** sprite moves or scrolls to the left or right.
+Para que o rover pareça estar se movendo para a esquerda e para a direita, em vez do ator do **rover** se mover, o ator do **fundo** se move ou rola para a esquerda ou para a direita.
 </div>
 <div>
 ![](images/step-3.gif){:width="300px"}
@@ -11,9 +11,9 @@ For the rover to look like it's moving left and right, instead of the **rover** 
 
 --- task ---
 
-Select the **hills** sprite. At the start of the game, you need to make sure that it is in the correct position and on the back layer.
+Selecione o ator **colinas**. No início do jogo, você precisa ter certeza de que ele está na posição correta e na camada traseira.
 
-![The hills sprite.](images/hills-sprite.png)
+![O ator Colinas.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -24,14 +24,14 @@ go to x: (0) y: (0)
 --- /task ---
 
 <p style="border-left: solid; border-width:10px; border-color: #0faeb0; background-color: aliceblue; padding: 10px;">
-<span style="color: #0faeb0">**Layers**</span> are like stacked sheets of clear plastic that you can draw images on. If an image on the top of the stack is covering the image below it, you will not be able to see the bottom image properly. Background images should be near the **back** layer. Images closer to the viewer should be near the **front** layer.
+<span style="color: #0faeb0">**Camadas**</span> são como folhas empilhadas de plástico transparente nas quais você pode desenhar imagens. Se uma imagem no topo da pilha estiver cobrindo a imagem abaixo dela, você não conseguirá ver a imagem de baixo corretamente. As imagens de fundo devem estar próximas da camada **traseira**. Imagens mais próximas do espectador devem estar perto da camada **frontal**.
 </p>
 
 --- task ---
 
-The **hills** sprite needs to make a copy of itself. These are called `clones`{:class='block3control'}. Then, the original sprite can be moved to the far right-hand side of the screen.
+O ator **colinas** precisa fazer uma cópia de si mesmo. Eles são chamados `clones`{:class='block3control'}. Então, o ator original pode ser movido para o lado direito da tela.
 
-![The hills sprite.](images/hills-sprite.png)
+![O ator Colinas.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -43,17 +43,17 @@ go to x: (0) y: (0)
 
 --- /task ---
 
-When the `left`{:class='block3events'} and `right`{:class='block3events'} broadcasts are received, the **hills** sprite should move. To give the appearance of moving in the correct direction, the background moves **left** when the **rover** is moving right. The direction of motion should be **opposite** to the `broadcast`{:class='block3events'}.
+Quando as transmissões `esquerda`{:class='block3events'} e `direita`{:class='block3events'} forem recebidas, o ator **colinas** deve se mover. Para dar a aparência de movimento na direção correta, o fundo se move **para a esquerda** quando o **rover** está se movendo para a direita. A direção do movimento deve ser **oposta** à transmissão ``{:class='block3events'}.
 
-So, if the broadcast is `left`{:class="block3events"}, then the `x`{:class="block3motion"} position will increase. If the broadcast is `right`{:class="block3events"}, then the `x`{:class="block3motion"} of the **hills** will decrease.
+Então, se a transmissão for `esquerda`{:class="block3events"}, então a posição `x`{:class="block3motion"} aumentará. Se a transmissão for `direita`{:class="block3events"}, então o `x`{:class="block3motion"} das **colinas** diminuirá.
 
-![Scratch stage shown with a sprite in the bottom right-hand corner and an x y coordinate system shown as the backdrop.](images/scratch-grid.png)
+![Estágio Scratch mostrado com um ator no canto inferior direito e um sistema de coordenadas x y mostrado como cenário.](images/scratch-grid.png)
 
 --- task ---
 
-Add blocks to control the motion of the **hills** sprite and its clone.
+Adicione blocos para controlar o movimento do ator **colinas** e seu clone.
 
-![The hills sprite.](images/hills-sprite.png)
+![O ator Colinas.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [left v]
@@ -67,19 +67,19 @@ change x by (-3)
 
 --- task ---
 
-**Test**: Use the controller or the <kbd>arrow</kbd> keys to move around. The rover should appear to be moving left and right.
+**Teste**: Use o controle ou as teclas de <kbd>seta</kbd> para se movimentar. O rover deve parecer estar se movendo para a esquerda e para a direita.
 
 --- /task ---
 
-At the moment, there are two copies of the **hills** sprite: the original and a clone. When you get to the end of either one, you'll notice that the screen is just white.
+No momento, há duas cópias do ator **colinas**: o original e um clone. Quando você chegar ao final de qualquer um deles, notará que a tela estará toda branca.
 
-To fix this, the sprite and its clone need to be moved to the other side of the screen when they go too far.
+Para corrigir isso, o ator e seu clone precisam ser movidos para o outro lado da tela quando forem longe demais.
 
 --- task ---
 
-Create a new broadcast called `scroll`{:class='block3events'} and add it to the `start`{:class='block3events'} script.
+Crie uma nova transmissão chamada `rolar`{:class='block3events'} e adicione-a ao script `começar`{:class='block3events'}.
 
-![The hills sprite.](images/hills-sprite.png)
+![O ator Colinas.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [start v]
@@ -94,9 +94,9 @@ change x by (460)
 
 --- task ---
 
-Add code to detect if the **hills** sprite or its clone have moved too far to the left or right, and then reset their positions to the other side of the screen.
+Adicione código para detectar se o ator **colinas** ou seu clone se moveram muito para a esquerda ou direita e, em seguida, redefina suas posições para o outro lado da tela.
 
-![The hills sprite.](images/hills-sprite.png)
+![O ator Colinas.](images/hills-sprite.png)
 
 ```blocks3
 when I receive [scroll v]
@@ -113,7 +113,7 @@ end
 
 --- task ---
 
-**Test**: Click the green flag to reset the scene and then use the controller or <kbd>arrow</kbd> keys to move the **rover**. The background should scroll, and the **rover** should never reach the end.
+**Teste**: Clique na bandeira verde para redefinir a cena e então use o controle ou as teclas de <kbd>seta</kbd> para mover o **rover**. O fundo deve rolar, e o **rover** nunca deve chegar ao fim.
 
 --- /task ---
 
