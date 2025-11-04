@@ -1,0 +1,43 @@
+para cima
+
+início
+
+para baixo
+
+direita
+
+esquerda
+
+rolar
+
+amostra de fruta
+
+inativo
+
+braço 1
+
+braço 2
+
+árvore com frutas
+
+árvore sem frutas
+
+recarregar
+
+solar 1
+
+solar 2
+
+solar 3
+
+animação de gato
+
+fantasia 1
+
+fantasia 2
+
+dança de gato
+
+coleta amostra
+
+energia

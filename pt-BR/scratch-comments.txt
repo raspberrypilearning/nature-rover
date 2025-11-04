@@ -1,0 +1,32 @@
+O menor parece mais distante
+
+O maior parece mais próximo
+
+Cria uma cópia das colinas
+
+Move as colinas originais para a direita da tela
+
+O ator das colinas está fora da tela do lado direito
+
+Redefine para o lado esquerdo da tela
+
+O ator das colinas está fora da tela do lado esquerdo
+
+Redefine para o lado direito da tela
+
+Usa um número maior do que para as colinas
+
+A árvore está na extrema-direita
+
+Move a árvore para a extrema-esquerda
+
+A árvore está na extrema-esquerda
+
+Move a árvore para a extrema-direita
+
+Anima o rover para coletar frutas
+
+Executa a animação
+
+Cor da fruta
+
