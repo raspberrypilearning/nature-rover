@@ -8,7 +8,7 @@ legend: Pergunta 3 de 3
 Este script é uma função usada para fazer um gato dançar:
 
 ```blocks3
-define cat animation
+define animação de gato
 switch costume to [fantasia 1 v]
 wait (0.1) seconds
 switch costume to [fantasia 2 v]

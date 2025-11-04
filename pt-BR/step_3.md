@@ -43,7 +43,7 @@ go to x: (0) y: (0)
 
 --- /task ---
 
-Quando as transmissões `esquerda`{:class='block3events'} e `direita`{:class='block3events'} forem recebidas, o ator **colinas** deve se mover. Para dar a aparência de movimento na direção correta, o fundo se move **para a esquerda** quando o **rover** está se movendo para a direita. A direção do movimento deve ser **oposta** à transmissão ``{:class='block3events'}.
+Quando as transmissões `esquerda`{:class='block3events'} e `direita`{:class='block3events'} forem recebidas, o ator **colinas** deve se mover. Para dar a aparência de movimento na direção correta, o fundo se move **para a esquerda** quando o **rover** está se movendo para a direita. A direção do movimento deve ser **oposta** à `transmissão`{:class='block3events'}.
 
 Então, se a transmissão for `esquerda`{:class="block3events"}, então a posição `x`{:class="block3motion"} aumentará. Se a transmissão for `direita`{:class="block3events"}, então o `x`{:class="block3motion"} das **colinas** diminuirá.
 
